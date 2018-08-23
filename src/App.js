@@ -9,14 +9,13 @@ import Logo from './assets/images/ojo-logo.svg';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
 import iconClose from './assets/images/icon-close.svg';
-// import iconChevronRight from './assets/images/icon-chevron-right.svg';
+import iconChevronRight from './assets/images/icon-chevron-right.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
 // import iconCheckmark from './assets/images/icon-checkmark.svg';
 import iconCheckboxChecked from './assets/images/icon-checkmark-checked.svg';
 import iconCheckboxUnchecked from './assets/images/icon-checkbox-unchecked.svg';
 import iconPhoneCircle from './assets/images/icon-phone-circle.svg';
 import iconMessageCircle from './assets/images/icon-message-circle.svg';
-import profilePlaceholder from './assets/images/profile-placeholder.svg';
 
 const Home = () => (
   <div className="app">
@@ -43,7 +42,7 @@ const Home = () => (
 
     <main className="container mx-auto px-6">
 
-      <div className="flex mb-10 referral-tracking">
+      <div className="flex mb-4 referral-tracking">
         <div className="flex-1">
           <h3 className="mb-2">Client Tracking</h3>
           <p className="text-gray-dark font-normal text-xs">Easily track &amp; maintain your clients</p>
@@ -60,22 +59,110 @@ const Home = () => (
 
       {/* REFERRAL TRACKING LIST */}
       <div className="mb-16">
-        <div className="py-4 border-b border-grey-light">
-          <div>
-            <img src={profilePlaceholder} alt="" />
+        <div className="py-4 border-b border-grey-light flex">
+          <div className="rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
+            GC
           </div>
-          <div>
-            <Link to="/clients/client-1">Gunny Celis</Link>
+          <div className="flex-1 ml-4">
+            <Link to="/clients/client-1" className="text-lg block mb-2">
+              Gunny Celis
+            </Link>
             <div>
-              <img src={iconCheckboxChecked} alt="" />
-              <img src={iconCheckboxUnchecked} alt="" />
-              <img src={iconCheckboxUnchecked} alt="" />
-              <img src={iconCheckboxUnchecked} alt="" />
-              <img src={iconCheckboxUnchecked} alt="" />
-              <img src={iconCheckboxUnchecked} alt="" />
+              <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
+              <span className="ml-1 inline text-gray-dark text-xs">Talk</span>
             </div>
           </div>
+          <div className="flex-1 text-right">
+            <Link to="/clients/client-1">
+              <span className="text-red text-sm mr-1">Needs Review</span>
+              <img src={iconChevronRight} alt="" />
+            </Link>
+          </div>
         </div>
+
+        <div className="py-4 border-b border-grey-light flex">
+          <div className="rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
+            SK
+          </div>
+          <div className="flex-1 ml-4">
+            <Link to="/clients/client-2" className="text-lg block mb-2">
+              Stephan Kiker
+            </Link>
+            <div>
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
+              <span className="ml-1 inline text-gray-dark text-xs"></span>
+            </div>
+          </div>
+          <div className="flex-1 text-right">
+            <Link to="/clients/client-1">
+              <span className="text-red text-sm mr-1">Needs Review</span>
+              <img src={iconChevronRight} alt="" />
+            </Link>
+          </div>
+        </div>
+
+        <div className="py-4 border-b border-grey-light flex">
+          <div className="rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
+            JB
+          </div>
+          <div className="flex-1 ml-4">
+            <Link to="/clients/client-2" className="text-lg block mb-2">
+              Javier Benitez
+            </Link>
+            <div>
+              <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
+              <span className="ml-1 inline text-gray-dark text-xs">Set</span>
+            </div>
+          </div>
+          <div className="flex-1 text-right">
+            <Link to="/clients/client-1">
+              <span className="text-red text-sm mr-1"></span>
+              <img src={iconChevronRight} className="svg-gray" alt="" />
+            </Link>
+          </div>
+        </div>
+
+        <div className="py-4 border-b border-grey-light flex">
+          <div className="rounded-full flex items-center justify-center h-10 w-10 bg-gray-light text-white">
+            DJ
+          </div>
+          <div className="flex-1 ml-4">
+            <Link to="/clients/client-4" className="text-lg block mb-2">
+              Deadicous Jones
+            </Link>
+            <div>
+              <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
+              <span className="ml-1 inline text-gray-dark text-xs">Set</span>
+            </div>
+          </div>
+          <div className="flex-1 text-right">
+            <Link to="/clients/client-1">
+              <span className="text-red text-sm mr-1"></span>
+              <img src={iconChevronRight} className="svg-gray" alt="" />
+            </Link>
+          </div>
+        </div>
+
       </div>
 
       <div className="milestone-count mb-16">
@@ -182,7 +269,7 @@ const Client = ({ match }) => (
       <div className="flex justify-center">
         <a href="sms:15125551234" className="py-6 px-4 block text-center">
           <div>
-            <img src={iconMessageCircle} alt="" />
+            <img src={iconMessageCircle} className="h-12 w-12" alt="sms message" />
           </div>
           <small className="block text-blue">
             message
@@ -190,7 +277,7 @@ const Client = ({ match }) => (
         </a>
         <a href="tel:15125551234" className="py-6 px-4 block text-center">
           <div>
-            <img src={iconPhoneCircle} alt="" />
+            <img src={iconPhoneCircle} className="h-12 w-12" alt="" />
           </div>
           <small className="block text-blue">
             call
@@ -332,10 +419,12 @@ const Client = ({ match }) => (
           </div>
         </section>
 
-        <section className="pb-6 flex items-center fixed pin-b actions">
-          <span className="flex-1 text-xs text-gray-dark">Everything look good?</span>
-          <div className="flex-1">
-            <button className="btn btn-green">Save</button>
+        <section className="fixed pin-b actions">
+          <div className="container flex items-center px-6 mx-auto">
+            <span className="flex-1 text-xs text-gray-dark">Everything look good?</span>
+            <div className="flex-1">
+              <button className="btn btn-green">Save</button>
+            </div>
           </div>
         </section>
     </main>
