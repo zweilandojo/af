@@ -29,8 +29,8 @@ h1 { font-size: 1.5rem } /* 24px */
   padding: 0;
 }
 .app-header-back-button a {
-  padding-top: 12px;
-  padding-left: 1.5rem;
+  padding-top: 14px;
+  padding-left: 1rem;
   height: 48px;
 }
 .app-header-back-button span {
@@ -64,14 +64,66 @@ h1 { font-size: 1.5rem } /* 24px */
 .bg-white { background-color: white; }
 
 
-/* */
+/* BORDERS */
 .border-grey-light { border-color: #EEEEEE; }
 
 
-/* COMPONENTS */
+/* LINKS */
 a {
   color: #3366FF;
   text-decoration: none;
+}
+
+
+/* BUTTONS */
+.btn {
+  display: block;
+  width: 100%;
+  background: #3366ff;
+}
+.btn-green {
+  background: #00CA4C;
+  color: white;
+  min-height: 48px;
+  border-radius: 4rem;
+  font-size: 1.125rem;
+}
+
+
+/* FORMS */
+.input {
+  width: 100%;
+  display: block;
+  border: 2px solid #eee;
+  border-radius: 0.875rem;
+  padding: .875rem 1rem;
+  min-height: 48px;
+}
+.textarea {
+  min-height: 8rem;
+  padding-top: 0.75rem;
+}
+select {
+  background: white;
+  background-image: url(./images/icon-arrow-down-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  border-radius: 48px;
+}
+
+/* COMPONENTS */
+
+.img-radio {
+  width: 32px;
+  height: 32px;
+}
+
+.actions {
+  background: white;
+  left: 0;
+  right: 0;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 -2px 16px rgba(0,0,0,.07);
 }
 
 

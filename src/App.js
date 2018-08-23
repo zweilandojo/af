@@ -1,4 +1,4 @@
-import React, { Component, Text } from 'react';
+import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -9,7 +9,7 @@ import Logo from './assets/images/ojo-logo.svg';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
 import iconClose from './assets/images/icon-close.svg';
-import iconChevronRight from './assets/images/icon-chevron-right.svg';
+// import iconChevronRight from './assets/images/icon-chevron-right.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
 // import iconCheckmark from './assets/images/icon-checkmark.svg';
 import iconCheckboxChecked from './assets/images/icon-checkmark-checked.svg';
@@ -19,7 +19,7 @@ import iconMessageCircle from './assets/images/icon-message-circle.svg';
 import profilePlaceholder from './assets/images/profile-placeholder.svg';
 
 const Home = () => (
-  <div>
+  <div className="app">
     <header className="app-header flex content-start flex-wrap">
       <div className="w-1/3">
         {/* waiting for menu */}
@@ -170,7 +170,7 @@ const Client = ({ match }) => (
       </div>
     </header>
 
-    <div className="app-banner text-center pt-8 pb-8 mb-8">
+    <div className="app-banner text-center pt-8 pb-4 mb-8">
       <h2 className="mb-2">
         Gunny Celis
         {/* {match.params.clientId} */}
@@ -199,10 +199,145 @@ const Client = ({ match }) => (
       </div>
     </div>
 
-    <main className="container px-6">
-        <h3>
-          {match.params.clientId}
-        </h3>
+    <main className="container mx-auto px-6 pb-24">
+      <section className="pb-6 mb-6 border-b border-gray-lightest">
+          <header className="mb-6">
+            <h3 className="mb-2">
+              Client Progress
+              <span className="ml-2 text-sm text-gray">(16% complete)</span>
+            </h3>
+            <p className="text-gray-dark text-xs">Check the box if you have completed this step</p>
+          </header>
+          <div className="flex">
+            <div className="flex-1 text-center">
+              <h5 className="uppercase text-xs mb-1 font-normal">Talk</h5>
+              <img src={iconCheckboxChecked} className="img-radio" alt="checked" />
+            </div>
+            <div className="flex-1 text-center">
+              <h5 className="uppercase text-xs mb-1 font-normal">Set</h5>
+              <img src={iconCheckboxUnchecked} className="img-radio" alt="checked" />
+            </div>
+            <div className="flex-1 text-center">
+              <h5 className="uppercase text-xs mb-1 font-normal">Met</h5>
+              <img src={iconCheckboxUnchecked} className="img-radio" alt="checked" />
+            </div>
+            <div className="flex-1 text-center">
+              <h5 className="uppercase text-xs mb-1 font-normal">Offer</h5>
+              <img src={iconCheckboxUnchecked} className="img-radio" alt="checked" />
+            </div>
+            <div className="flex-1 text-center">
+              <h5 className="uppercase text-xs mb-1 font-normal">Accept</h5>
+              <img src={iconCheckboxUnchecked} className="img-radio" alt="checked" />
+            </div>
+            <div className="flex-1 text-center">
+              <h5 className="uppercase text-xs mb-1 font-normal">Transact</h5>
+              <img src={iconCheckboxUnchecked} className="img-radio" alt="checked" />
+            </div>
+          </div>
+        </section>
+
+        <section className="pb-6 mb-6 border-b border-gray-lightest">
+          <header className="mb-4">
+            <h3 className="mb-2">
+              Relationship Quality
+            </h3>
+            <p className="text-gray-dark text-xs">How are things working out?</p>
+          </header>
+          <form className="">
+            <div className="mb-2">
+              <label className="text-base">
+                <input type="radio" className="mr-2" name="relationship" />
+                Dead
+              </label>
+            </div>
+            <div className="mb-2">
+              <label className="text-base">
+                <input type="radio" className="mr-2" name="relationship" />
+                Very Weak
+              </label>
+            </div>
+            <div className="mb-2">
+              <label className="text-base">
+                <input type="radio" className="mr-2" name="relationship" />
+                Weak
+              </label>
+            </div>
+            <div className="mb-2">
+              <label className="text-lg">
+                <input type="radio" className="mr-2" name="relationship" />
+                Average
+              </label>
+            </div>
+            <div className="mb-2">
+              <label className="text-base">
+                <input type="radio" className="mr-2" name="relationship" />
+                Strong
+              </label>
+            </div>
+            <div className="mb-2">
+              <label className="text-base">
+                <input type="radio" className="mr-2" name="relationship" />
+                Very Strong
+              </label>
+            </div>
+          </form>
+        </section>
+
+        <section className="pb-6 mb-6 border-b border-gray-lightest">
+          <header className="mb-4">
+            <h3 className="mb-2">
+              Projected Close Month
+            </h3>
+            <p className="text-gray-dark text-xs">
+              When do you think they’ll close?
+            </p>
+          </header>
+          <div>
+            <select className="input select">
+              <option>Dead</option>
+              <option>September ’18</option>
+              <option>October ’18</option>
+              <option>November ’18</option>
+              <option>December ’18</option>
+              <option>January ’19</option>
+              <option>February ’19</option>
+              <option>March ’19</option>
+              <option>April ’19</option>
+              <option>May ’19</option>
+              <option>June ’19</option>
+              <option>July ’19</option>
+              <option>August ’19</option>
+              <option>September ’19</option>
+              <option>October ’19</option>
+              <option>November ’19</option>
+              <option>December ’19</option>
+              <option>n/a</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </section>
+
+        <section className="pb-6 mb-6">
+          <header className="mb-4">
+            <h3 className="mb-2">
+              Notes
+            </h3>
+            <p className="text-gray-dark text-xs">
+              Anything special about this client?
+            </p>
+          </header>
+          <div>
+            <textarea className="input textarea" placeholder="What's the situation?">
+            </textarea>
+          </div>
+        </section>
+
+        <section className="pb-6 flex items-center fixed pin-b actions">
+          <span className="flex-1 text-xs text-gray-dark">Everything look good?</span>
+          <div className="flex-1">
+            <button className="btn btn-green">Save</button>
+          </div>
+        </section>
     </main>
   </div>
 )
