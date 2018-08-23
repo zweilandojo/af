@@ -1,0 +1,78 @@
+
+body {
+ margin: 0;
+ padding: 0;
+ font-family: "Sofia Pro", sans-serif;
+ font-size: 100%;
+ color: #212121;
+}
+
+h1, h2, h3, h4 { font-weight: 500; }
+h1 { font-size: 1.5rem } /* 24px */
+
+.app-header {
+  background: white;
+  height: 48px;
+}
+
+.app-logo {
+  margin-top: 12px;
+}
+
+.app-header-ctas a, .app-header-title {
+  padding: 12px 1.5rem;
+  line-height: 24px;
+}
+
+.app-header-back-button {
+  height: 48px;
+  padding: 0;
+}
+.app-header-back-button a {
+  padding-top: 12px;
+  padding-left: 1.5rem;
+  height: 48px;
+}
+.app-header-back-button span {
+  position: relative;
+  top: 3px;
+}
+
+.app-banner {
+  background-color: #FAFAFA;
+}
+
+
+
+/* COLORS */
+.text-black { color: #212121; }
+.text-gray-darkest { color: #424242; }
+.text-gray-dark { color: #757575; }
+.text-gray { color: #BDBDBD; }
+.text-gray-light { color: #EEEEEE; }
+.text-gray-lightest { color: #FAFAFA; }
+.text-white { color: white; }
+
+.text-blue { color: #3366FF; }
+
+.bg-black { background-color: #212121; }
+.bg-gray-darkest { background-color: #424242; }
+.bg-gray-dark { background-color: #757575; }
+.bg-gray { background-color: #BDBDBD; }
+.bg-gray-light { background-color: #EEEEEE; }
+.bg-gray-lightest { background-color: #FAFAFA; }
+.bg-white { background-color: white; }
+
+
+/* */
+.border-grey-light { border-color: #EEEEEE; }
+
+
+/* COMPONENTS */
+a {
+  color: #3366FF;
+  text-decoration: none;
+}
+
+
+/* UTILITIES */

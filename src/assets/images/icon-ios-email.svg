@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18,12 L0,12 L0,0.65625 L6.140625,5.325 L2.953125,8.953125 L3.046875,9.046875 L6.7453125,5.784375 L9,7.5 L11.2546875,5.784375 L14.953125,9.046875 L15.046875,8.953125 L11.8546875,5.325 L18,0.646875 L18,12 Z M17.6109375,0 L9,6.5578125 L0.375,0 L17.6109375,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Agent-Detail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Support-(Mobile)" transform="translate(-330.000000, -247.000000)">
+            <g id="icon/ios-email-gray" transform="translate(327.000000, 241.000000)">
+                <g id="Group-4" transform="translate(3.000000, 6.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#BDBDBD" xlink:href="#path-1"></use>
+                    <g id="↳-🎨Color" mask="url(#mask-2)">
+                        <g transform="translate(-3.000000, -6.000000)" id="fill/grey/1---black">
+                            <g>
+                                <rect id="Rectangle" fill="#212121" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

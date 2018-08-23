@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Back button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Agent-Detail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Agent-Profile-(Mobile)" transform="translate(-341.000000, -326.000000)" fill="#EC1561">
+            <polygon id="Back-button" points="349 333 342.28 340 341 338.666667 346.44 333 341 327.333333 342.28 326"></polygon>
+        </g>
+    </g>
+</svg>

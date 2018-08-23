@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="19px" viewBox="0 0 12 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.29999975,9.88999994 L10.9799992,16.8499993 C11.1933335,17.0633337 11.1933335,17.2766649 10.9799992,17.4899993 L9.77999926,18.7299992 C9.56666488,18.9433335 9.3533337,18.9433335 9.13999932,18.7299992 L0.980000046,10.2099999 C0.899999653,10.1299995 0.860000057,10.0233339 0.860000057,9.88999994 C0.860000057,9.75666595 0.899999653,9.65000036 0.980000046,9.56999997 L9.13999932,1.05000073 C9.3533337,0.836666348 9.56666488,0.836666348 9.77999926,1.05000073 L10.9799992,2.29000062 C11.1933335,2.503335 11.1933335,2.71666618 10.9799992,2.93000056 L4.29999975,9.88999994 Z" id="path-1"></path>
+    </defs>
+    <g id="Agent-Detail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Client-Profile-(Mobile)" transform="translate(-22.000000, -84.000000)">
+            <g id="icon/ios-arrow-left" transform="translate(16.000000, 82.000000)">
+                <g id="Group-14" transform="translate(6.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#212121" xlink:href="#path-1"></use>
+                    <g id="↳-🎨Color" mask="url(#mask-2)">
+                        <g transform="translate(-6.000000, -2.000000)" id="fill/brand/blue/3">
+                            <g>
+                                <rect id="Box" fill="#3366FF" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
