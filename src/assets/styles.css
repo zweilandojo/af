@@ -181,6 +181,63 @@ select {
   border-radius: 56px;
   -webkit-appearance: none;
 }
+.input-radio {
+  background: #EEEEEE;
+}
+.input-radio-container {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 28px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.input-radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.input-radio-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #FAFAFA;
+  border: 2px solid #EEEEEE;
+  border-radius: 50%;
+}
+.input-radio-container:hover input ~ .checkmark {
+  background-color: #FAFAFA;
+  border: 2px solid #EEEEEE;
+}
+.input-radio-container input:checked ~ .checkmark {
+    background-color: #00CA4C;
+    border: 2px solid #00CA4C;
+}
+.input-radio-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.input-radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.input-radio-container .checkmark:after {
+ 	top: 4px;
+	left: 4px;
+	width: 12px;
+	height: 11px;
+	background: url('./images/icon-checkmark-white.svg') no-repeat 0 0;
+  background-size: 12px 11px;
+}
+
+
 
 /* COMPONENTS */
 

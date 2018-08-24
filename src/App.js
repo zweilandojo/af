@@ -16,6 +16,7 @@ import iconChevronLeft from './assets/images/icon-chevron-left.svg';
 import iconCheckboxChecked from './assets/images/icon-checkmark-checked.svg';
 import iconCheckboxUnchecked from './assets/images/icon-checkbox-unchecked.svg';
 import iconCheckboxGray from './assets/images/icon-checkmark-checked-gray.svg';
+// import iconCheckmarkWhite from './assets/images/icon-checkmark-white.svg';
 import iconPhoneCircle from './assets/images/icon-phone-circle.svg';
 import iconMessageCircle from './assets/images/icon-message-circle.svg';
 
@@ -78,14 +79,14 @@ const Home = () => (
 
       {/* REFERRAL TRACKING LIST */}
       <div className="mb-10 clear">
-        <div className="py-4 border-b border-grey-light flex">
+        <Link to="/clients/client-1" className="py-4 border-b border-grey-light flex">
           <div className="rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
             GC
           </div>
-          <div className="flex-1 ml-4">
-            <Link to="/clients/client-1" className="text-lg block mb-1">
+          <div className="flex-initial ml-4">
+            <span className="text-lg block mb-1">
               Gunny Celis
-            </Link>
+            </span>
             <div>
               <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
               <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
@@ -97,21 +98,21 @@ const Home = () => (
             </div>
           </div>
           <div className="flex-1 text-right">
-            <Link to="/clients/client-1">
+            <div>
               <span className="text-red text-sm mr-1">Needs Review</span>
               <img src={iconChevronRight} alt="" />
-            </Link>
+            </div>
           </div>
-        </div>
+        </Link>
 
-        <div className="py-4 border-b border-grey-light flex">
+        <Link to="/clients/client-2" className="py-4 border-b border-grey-light flex">
           <div className="rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
             SK
           </div>
-          <div className="flex-1 ml-4">
-            <Link to="/clients/client-2" className="text-lg block mb-1">
+          <div className="flex-initial ml-4">
+            <span className="text-lg block mb-1">
               Stephan Kiker
-            </Link>
+            </span>
             <div>
               <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
               <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
@@ -123,21 +124,21 @@ const Home = () => (
             </div>
           </div>
           <div className="flex-1 text-right">
-            <Link to="/clients/client-1">
+            <div>
               <span className="text-red text-sm mr-1">Needs Review</span>
               <img src={iconChevronRight} alt="" />
-            </Link>
+            </div>
           </div>
-        </div>
+        </Link>
 
-        <div className="py-4 border-b border-grey-light flex">
+        <Link to="/clients/client-2" className="py-4 border-b border-grey-light flex">
           <div className="rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
             JB
           </div>
-          <div className="flex-1 ml-4">
-            <Link to="/clients/client-2" className="text-lg block mb-1">
+          <div className="flex-initial ml-4">
+            <span className="text-lg block mb-1">
               Javier Benitez
-            </Link>
+            </span>
             <div>
               <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
               <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
@@ -149,21 +150,21 @@ const Home = () => (
             </div>
           </div>
           <div className="flex-1 text-right">
-            <Link to="/clients/client-1">
+            <div>
               <span className="text-red text-sm mr-1"></span>
               <img src={iconChevronRightGray} className="svg-gray" alt="" />
-            </Link>
+            </div>
           </div>
-        </div>
+        </Link>
 
-        <div className="py-4 border-b border-grey-light flex">
+        <Link to="/clients/client-4" className="py-4 border-b border-grey-light flex">
           <div className="rounded-full flex items-center justify-center h-10 w-10 bg-gray-light text-white">
             DJ
           </div>
-          <div className="flex-1 ml-4">
-            <Link to="/clients/client-4" className="text-lg block mb-1">
+          <div className="flex-initial ml-4">
+            <span className="text-lg block mb-1">
               Deadicous Jones
-            </Link>
+            </span>
             <div>
               <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
               <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
@@ -175,12 +176,12 @@ const Home = () => (
             </div>
           </div>
           <div className="flex-1 text-right">
-            <Link to="/clients/client-1">
+            <div>
               <span className="text-red text-sm mr-1"></span>
               <img src={iconChevronRightGray} className="svg-gray" alt="" />
-            </Link>
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
 
       <div className="milestone-count mb-16">
@@ -253,9 +254,9 @@ const Home = () => (
   </div>
 )
 
-const About = () => (
+const Settings = () => (
   <div>
-    <h2>About</h2>
+    <h2>Settings</h2>
   </div>
 )
 
@@ -350,39 +351,39 @@ const Client = ({ match }) => (
           </header>
           <form className="">
             <div className="mb-2">
-              <label className="text-base">
-                <input type="radio" className="mr-2" name="relationship" />
-                Dead
+              <label className="text-base input-radio-container">Dead
+                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <span className="checkmark"></span>
               </label>
             </div>
             <div className="mb-2">
-              <label className="text-base">
-                <input type="radio" className="mr-2" name="relationship" />
-                Very Weak
+              <label className="text-base input-radio-container">Very Weak
+                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <span className="checkmark"></span>
               </label>
             </div>
             <div className="mb-2">
-              <label className="text-base">
-                <input type="radio" className="mr-2" name="relationship" />
-                Weak
+              <label className="text-base input-radio-container">Weak
+                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <span className="checkmark"></span>
               </label>
             </div>
             <div className="mb-2">
-              <label className="text-lg">
-                <input type="radio" className="mr-2" name="relationship" />
-                Average
+              <label className="text-base input-radio-container">Average
+                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <span className="checkmark"></span>
               </label>
             </div>
             <div className="mb-2">
-              <label className="text-base">
-                <input type="radio" className="mr-2" name="relationship" />
-                Strong
+              <label className="text-base input-radio-container">Strong
+                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <span className="checkmark"></span>
               </label>
             </div>
             <div className="mb-2">
-              <label className="text-base">
-                <input type="radio" className="mr-2" name="relationship" />
-                Very Strong
+              <label className="text-base input-radio-container">Very Strong
+                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <span className="checkmark"></span>
               </label>
             </div>
           </form>
@@ -511,7 +512,7 @@ class App extends Component {
       <Router>
         <div>
           <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About}/>
+          <Route path="/settings" component={Settings}/>
           <Route path="/support" component={Support}/>
           <Route path="/clients" component={Clients}/>
         </div>
