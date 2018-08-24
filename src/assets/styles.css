@@ -236,6 +236,17 @@ select {
 	background: url('./images/icon-checkmark-white.svg') no-repeat 0 0;
   background-size: 12px 11px;
 }
+.input-radio-lg .checkmark {
+  height: 32px;
+  width: 32px;
+}
+.input-radio-lg .checkmark:after {
+ 	top: 6.5px;
+	left: 6px;
+	width: 16px;
+	height: 15px;
+  background-size: 16px 15px;
+}
 
 
 

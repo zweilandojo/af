@@ -316,28 +316,40 @@ const Client = ({ match }) => (
           </header>
           <div className="flex">
             <div className="flex-1 text-center">
-              <h5 className="uppercase text-xs mb-1 font-normal">Talk</h5>
-              <img src={iconCheckboxChecked} className="img-radio" alt="checked" />
+              <label className="text-base input-radio-container input-radio-lg">Talk
+                <input type="radio" className="input-radio mr-2" checked="checked" name="client-progress" />
+                <span className="checkmark"></span>
+              </label>
             </div>
             <div className="flex-1 text-center">
-              <h5 className="uppercase text-xs mb-1 font-normal">Set</h5>
-              <img src={iconCheckboxUnchecked} className="img-radio" alt="checked" />
+              <label className="text-base input-radio-container input-radio-lg">Set
+                <input type="radio" className="input-radio mr-2" name="client-progress" />
+                <span className="checkmark"></span>
+              </label>
             </div>
             <div className="flex-1 text-center">
-              <h5 className="uppercase text-xs mb-1 font-normal">Met</h5>
-              <img src={iconCheckboxUnchecked} className="img-radio" alt="checked" />
+              <label className="text-base input-radio-container input-radio-lg">Met
+                <input type="radio" className="input-radio mr-2" name="client-progress" />
+                <span className="checkmark"></span>
+              </label>
             </div>
             <div className="flex-1 text-center">
-              <h5 className="uppercase text-xs mb-1 font-normal">Offer</h5>
-              <img src={iconCheckboxUnchecked} className="img-radio" alt="checked" />
+              <label className="text-base input-radio-container input-radio-lg">Offer
+                <input type="radio" className="input-radio mr-2" name="client-progress" />
+                <span className="checkmark"></span>
+              </label>
             </div>
             <div className="flex-1 text-center">
-              <h5 className="uppercase text-xs mb-1 font-normal">Accept</h5>
-              <img src={iconCheckboxUnchecked} className="img-radio" alt="checked" />
+              <label className="text-base input-radio-container input-radio-lg">Accept
+                <input type="radio" className="input-radio mr-2" name="client-progress" />
+                <span className="checkmark"></span>
+              </label>
             </div>
             <div className="flex-1 text-center">
-              <h5 className="uppercase text-xs mb-1 font-normal">Transact</h5>
-              <img src={iconCheckboxUnchecked} className="img-radio" alt="checked" />
+              <label className="text-base input-radio-container input-radio-lg">Transact
+                <input type="radio" className="input-radio mr-2" name="client-progress" />
+                <span className="checkmark"></span>
+              </label>
             </div>
           </div>
         </section>
@@ -370,7 +382,7 @@ const Client = ({ match }) => (
             </div>
             <div className="mb-2">
               <label className="text-base input-radio-container">Average
-                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <input type="radio" className="input-radio mr-2" checked="checked" name="relationship" />
                 <span className="checkmark"></span>
               </label>
             </div>
