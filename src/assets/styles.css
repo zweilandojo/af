@@ -71,6 +71,66 @@ h1 { font-size: 1.5rem } /* 24px */
   fill: #BDBDBD;
 }
 
+.weekly-check-ins {
+  float: right;
+  width: auto;
+  text-align: right;
+  position: relative;
+  top: 4px;
+}
+.weekly-check-ins_title {
+  text-align: right;
+  float: left;
+  font-size: 12px;
+  display: inline-block;
+  position: relative;
+  top: 4px; right: 8px;
+}
+.circular-chart-wrapper {
+  position: relative;
+  float: right;
+  top: 0;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+}
+.circular-chart-wrapper svg {
+  position: absolute;
+  top: -8px; left: 0;
+}
+.circular-chart {
+  display: block;
+  width: 48px;
+  max-height: 250px;
+}
+.circle {
+  stroke: #EC1561;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+  z-index: 0;
+}
+.circular-chart-back .circle {
+  animation: none;
+  stroke: #EEEEEE;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.circular-chart-percentage {
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 8px; right: -1px;
+}
+.percentage-sign {
+  font-size: 9px;
+}
+
 
 /* BORDERS */
 .border-grey-light *, .border-grey-light ::after, .border-grey-light ::before {

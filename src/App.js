@@ -3,17 +3,19 @@ import {
   BrowserRouter as Router,
   Route,
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 
 import Logo from './assets/images/ojo-logo.svg';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
 import iconClose from './assets/images/icon-close.svg';
 import iconChevronRight from './assets/images/icon-chevron-right.svg';
+import iconChevronRightGray from './assets/images/icon-chevron-right-gray.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
 // import iconCheckmark from './assets/images/icon-checkmark.svg';
 import iconCheckboxChecked from './assets/images/icon-checkmark-checked.svg';
 import iconCheckboxUnchecked from './assets/images/icon-checkbox-unchecked.svg';
+import iconCheckboxGray from './assets/images/icon-checkmark-checked-gray.svg';
 import iconPhoneCircle from './assets/images/icon-phone-circle.svg';
 import iconMessageCircle from './assets/images/icon-message-circle.svg';
 
@@ -42,29 +44,46 @@ const Home = () => (
 
     <main className="container mx-auto px-6">
 
-      <div className="flex mb-4 referral-tracking">
-        <div className="flex-1">
+      <div className="mb-4 referral-tracking clearfix">
+        <div className="float-left">
           <h3 className="mb-2">Client Tracking</h3>
           <p className="text-gray-dark font-normal text-xs">Easily track &amp; maintain your clients</p>
         </div>
-        <div className="flex-1 flex text-right">
-          <small className="flex-1 text-right">
-            Weekly Check-Ins
+        <div className="weekly-check-ins">
+          <small className="text-gray-dark weekly-check-ins_title">
+            Weekly<br />Check-Ins
           </small>
-          <div className="flex-1 circle-graph">
-            <span>33%</span>
+          {/* Circular Chart Begin */}
+          <div className="circular-chart-wrapper">
+            <svg viewBox="0 0 36 36" className="circular-chart circular-chart-back">
+              <path className="circle"
+                strokeDasharray="100, 100"
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <svg viewBox="0 0 36 36" className="circular-chart">
+              <path className="circle"
+                strokeDasharray="25, 100"
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <span className="circular-chart-percentage">
+              25<sup className="percentage-sign">%</sup>
+            </span>
           </div>
+          {/* Circular Chart End */}
+
         </div>
       </div>
 
       {/* REFERRAL TRACKING LIST */}
-      <div className="mb-16">
+      <div className="mb-10 clear">
         <div className="py-4 border-b border-grey-light flex">
           <div className="rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
             GC
           </div>
           <div className="flex-1 ml-4">
-            <Link to="/clients/client-1" className="text-lg block mb-2">
+            <Link to="/clients/client-1" className="text-lg block mb-1">
               Gunny Celis
             </Link>
             <div>
@@ -90,7 +109,7 @@ const Home = () => (
             SK
           </div>
           <div className="flex-1 ml-4">
-            <Link to="/clients/client-2" className="text-lg block mb-2">
+            <Link to="/clients/client-2" className="text-lg block mb-1">
               Stephan Kiker
             </Link>
             <div>
@@ -116,7 +135,7 @@ const Home = () => (
             JB
           </div>
           <div className="flex-1 ml-4">
-            <Link to="/clients/client-2" className="text-lg block mb-2">
+            <Link to="/clients/client-2" className="text-lg block mb-1">
               Javier Benitez
             </Link>
             <div>
@@ -132,7 +151,7 @@ const Home = () => (
           <div className="flex-1 text-right">
             <Link to="/clients/client-1">
               <span className="text-red text-sm mr-1"></span>
-              <img src={iconChevronRight} className="svg-gray" alt="" />
+              <img src={iconChevronRightGray} className="svg-gray" alt="" />
             </Link>
           </div>
         </div>
@@ -142,27 +161,26 @@ const Home = () => (
             DJ
           </div>
           <div className="flex-1 ml-4">
-            <Link to="/clients/client-4" className="text-lg block mb-2">
+            <Link to="/clients/client-4" className="text-lg block mb-1">
               Deadicous Jones
             </Link>
             <div>
-              <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
+              <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
               <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
               <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
               <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
-              <span className="ml-1 inline text-gray-dark text-xs">Set</span>
+              <span className="ml-1 inline text-gray-dark text-xs">Met</span>
             </div>
           </div>
           <div className="flex-1 text-right">
             <Link to="/clients/client-1">
               <span className="text-red text-sm mr-1"></span>
-              <img src={iconChevronRight} className="svg-gray" alt="" />
+              <img src={iconChevronRightGray} className="svg-gray" alt="" />
             </Link>
           </div>
         </div>
-
       </div>
 
       <div className="milestone-count mb-16">
@@ -189,7 +207,7 @@ const Home = () => (
               <p className="text-gray-dark font-normal text-xs">Have you scheduled a time to meet the client?</p>
             </div>
             <div className="text-xl">
-              <span>25%</span>
+              <span>50%</span>
             </div>
           </div>
           <div className="flex py-4 border-b border-grey-light">
@@ -198,7 +216,7 @@ const Home = () => (
               <p className="text-gray-dark font-normal text-xs">Did you end up meeting with the client?</p>
             </div>
             <div className="text-xl">
-              <span>0%</span>
+              <span>25%</span>
             </div>
           </div>
           <div className="flex py-4 border-b border-grey-light">
