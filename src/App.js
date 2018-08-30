@@ -19,6 +19,46 @@ import iconCheckboxGray from './assets/images/icon-checkmark-checked-gray.svg';
 // import iconCheckmarkWhite from './assets/images/icon-checkmark-white.svg';
 import iconPhoneCircle from './assets/images/icon-phone-circle.svg';
 import iconMessageCircle from './assets/images/icon-message-circle.svg';
+import logoGoogle from './assets/images/logo-google.svg';
+import logoFB from './assets/images/logo-fb.svg';
+
+const SignIn = () => (
+  <div className="app">
+    <header className="container mx-auto px-6">
+        <Link className="block" to="/">
+          <img src={Logo} className="app-logo" alt="logo" />
+        </Link>
+    </header>
+    <main className="container mx-auto px-6">
+      <div className="text-center mt-20">
+        <h2 className="mb-4 font-black text-3xl">Welcome to the OJO Lead Tracker!</h2>
+        <p className="mb-8">Sign in to manage your OJO referrals:</p>
+        <Link to="/loading" className="btn btn-social btn-fb m-auto mb-4">
+          <img src={logoFB} alt="Facebook logo" />
+          <span>Continue with Facebook</span>
+        </Link>
+        <Link to="/loading" className="btn btn-social m-auto btn-google">
+          <img src={logoGoogle} alt="Google logoz" />
+          <span>Continue with Google</span>
+        </Link>
+      </div>
+    </main>
+    <footer className="fixed pin-b pin-x">
+      <div className="text-center py-4 text-xs">
+        <a href="mailto:support@ojolabs.com" className="inline-block">support@ojolabs.com</a>
+        <span className="mx-2 text-gray">|</span>
+        <a href="tel:15124568292" className="inline-block">(512) 456-8292</a>
+        <span className="mx-2 text-gray">|</span>
+        <a href="https://content.ojo.me/privacy-policy.pdf">Privacy Policy</a></div>
+    </footer>
+  </div>
+)
+
+const Loading = () => (
+  <div>
+    <h2>Loading</h2>
+  </div>
+)
 
 const Home = () => (
   <div className="app">
@@ -32,8 +72,8 @@ const Home = () => (
         </Link>
       </div>
       <div className="w-1/3 text-right align-middle app-header-ctas">
-        <Link className="inline-block" to="/support">
-          Support
+        <Link className="inline-block" to="/help">
+          Help
         </Link>
       </div>
     </header>
@@ -317,7 +357,7 @@ const Client = ({ match }) => (
           <div className="flex">
             <div className="flex-1 text-center">
               <label className="text-base input-radio-container input-radio-lg">Talk
-                <input type="radio" className="input-radio mr-2" checked="checked" name="client-progress" />
+                <input type="radio" className="input-radio mr-2" name="client-progress" />
                 <span className="checkmark"></span>
               </label>
             </div>
@@ -462,7 +502,7 @@ const Client = ({ match }) => (
   </div>
 )
 
-const Support = () => (
+const Help = () => (
   <div className="app">
     <header className="app-header flex">
       <div className="w-1/3">
@@ -472,7 +512,7 @@ const Support = () => (
       </div>
     </header>
     <div className="container mx-auto px-6 mt-12">
-      <h1 className="mb-8">Support</h1>
+      <h1 className="mb-8">Help &amp; Support</h1>
       <h4 className="mb-4">OJO Labs Contact Info</h4>
       <div>
         <a href="mailto:support@ojolabs.com" className="block py-4 border-t border-b border-grey-light">
@@ -525,8 +565,10 @@ class App extends Component {
         <div>
           <Route exact path="/" component={Home}/>
           <Route path="/settings" component={Settings}/>
-          <Route path="/support" component={Support}/>
+          <Route path="/help" component={Help}/>
           <Route path="/clients" component={Clients}/>
+          <Route path="/signin" component={SignIn}/>
+          <Route path="/loading" component={Loading}/>
         </div>
       </Router>
     );
