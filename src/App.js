@@ -24,7 +24,7 @@ import logoFB from './assets/images/logo-fb.svg';
 
 const SignIn = () => (
   <div className="app">
-    <header className="container mx-auto px-6">
+    <header className="container mx-auto text-center px-6">
         <Link className="block" to="/">
           <img src={Logo} className="app-logo" alt="logo" />
         </Link>
