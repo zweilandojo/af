@@ -7,6 +7,7 @@ import {
 
 import Logo from './assets/images/ojo-logo.svg';
 import logoSilver from './assets/images/ojo-logo-silver.svg';
+import ojoHappy from './assets/images/avatars/ojo-face/happy.png';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
 import iconClose from './assets/images/icon-close.svg';
@@ -63,8 +64,14 @@ const Loading = () => (
         </Link>
         <div className="right-nav-placeholder"></div>
     </header>
-    <main className="w-screen h-screen flex content-center flex-wrap">
+    <main className="container mx-auto mt-32 text-center">
+      <div>
+        <img src={ojoHappy} alt="Happy OJO" className="h-16 w-16 mb-4" />
+      </div>
+      <h3 className="mb-8">Welcome!</h3>
+      <div className="relative mx-auto">
         <div className="loader" id="loader"></div>
+      </div>
     </main>
   </div>
 )
