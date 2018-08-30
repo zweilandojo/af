@@ -17,6 +17,7 @@ h1 { font-size: 1.5rem } /* 24px */
 
 .app-logo {
   margin-top: 12px;
+  height: 1.5rem;
 }
 
 .app-header-ctas a, .app-header-title {
