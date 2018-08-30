@@ -103,12 +103,13 @@ const Home = () => (
 
       <div className="mb-4 referral-tracking clearfix">
         <div className="float-left">
-          <h3 className="mb-2">Client Tracking</h3>
-          <p className="text-gray-dark font-normal text-xs">Easily track &amp; maintain your clients</p>
+          <h3 className="mb-2">Referrals</h3>
+          <p className="text-gray-dark font-normal text-xs">
+          Track &amp; maintain your OJO leads</p>
         </div>
         <div className="weekly-check-ins">
           <small className="text-gray-dark weekly-check-ins_title">
-            Weekly<br />Check-Ins
+            Sign-off by:<br />[Wed]
           </small>
           {/* Circular Chart Begin */}
           <div className="circular-chart-wrapper">
@@ -327,7 +328,7 @@ const Client = ({ match }) => (
       </div>
       <div className="w-1/3 text-center align-middle">
         <div className="app-header-title">
-          Client
+          Referral
         </div>
       </div>
     </header>
@@ -365,7 +366,7 @@ const Client = ({ match }) => (
       <section className="pb-6 mb-6 border-b border-gray-lightest">
           <header className="mb-6">
             <h3 className="mb-2">
-              Client Progress
+              Referral Progress
               <span className="ml-2 text-sm text-gray">(16% complete)</span>
             </h3>
             <p className="text-gray-dark text-xs">Check the box if you have completed this step</p>
