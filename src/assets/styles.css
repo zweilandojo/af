@@ -286,3 +286,63 @@ select {
 
 
 /* UTILITIES */
+
+
+/* LOADING PAGE */
+.right-nav-placeholder {
+  background: #eee;
+  width: 2rem;
+  height: 0.625rem;
+  position: absolute;
+  top: 1.125rem;
+  right: 1.5rem;
+  border-radius: 16px;
+}
+
+.loader{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin: -40px 0 0 -20px;
+}
+
+/* LOADER 1 */
+
+#loader:before, #loader-1:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 4px solid transparent;
+  border-top-color: #BDBDBD;
+}
+
+#loader:before{
+  z-index: 100;
+  animation: spin .5s infinite;
+}
+
+#loader:after{
+  border: 4px solid white;
+}
+
+@keyframes spin{
+  0%{
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100%{
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

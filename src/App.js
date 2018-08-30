@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 import Logo from './assets/images/ojo-logo.svg';
+import logoSilver from './assets/images/ojo-logo-silver.svg';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
 import iconClose from './assets/images/icon-close.svg';
@@ -26,11 +27,11 @@ const SignIn = () => (
   <div className="app">
     <header className="container mx-auto text-center px-6">
         <Link className="block" to="/">
-          <img src={Logo} className="app-logo" alt="logo" />
+          <img src={Logo} className="app-logo -ml-px" alt="logo" />
         </Link>
     </header>
     <main className="container mx-auto px-6">
-      <div className="text-center mt-20">
+      <div className="text-center mt-24">
         <h2 className="mb-4 font-black text-3xl">Welcome to the OJO Lead Tracker!</h2>
         <p className="mb-8">Sign in to manage your OJO referrals:</p>
         <Link to="/loading" className="btn btn-social btn-fb m-auto mb-4">
@@ -38,25 +39,33 @@ const SignIn = () => (
           <span>Continue with Facebook</span>
         </Link>
         <Link to="/loading" className="btn btn-social m-auto btn-google">
-          <img src={logoGoogle} alt="Google logoz" />
+          <img src={logoGoogle} alt="Google logo" />
           <span>Continue with Google</span>
         </Link>
       </div>
     </main>
     <footer className="fixed pin-b pin-x">
       <div className="text-center py-4 text-xs">
-        <a href="mailto:support@ojolabs.com" className="inline-block">support@ojolabs.com</a>
+        <a href="mailto:support@ojolabs.com" className="inline-block text-gray-dark">support@ojolabs.com</a>
         <span className="mx-2 text-gray">|</span>
-        <a href="tel:15124568292" className="inline-block">(512) 456-8292</a>
+        <a href="tel:15124568292" className="inline-block text-gray-dark">(512) 456-8292</a>
         <span className="mx-2 text-gray">|</span>
-        <a href="https://content.ojo.me/privacy-policy.pdf">Privacy Policy</a></div>
+        <a href="https://content.ojo.me/privacy-policy.pdf" className="inline-block text-gray-dark">Privacy Policy</a></div>
     </footer>
   </div>
 )
 
 const Loading = () => (
-  <div>
-    <h2>Loading</h2>
+  <div className="app">
+    <header className="container mx-auto text-center px-6">
+        <Link className="block" to="/">
+          <img src={logoSilver} className="app-logo -ml-px" alt="logo" />
+        </Link>
+        <div className="right-nav-placeholder"></div>
+    </header>
+    <main className="w-screen h-screen flex content-center flex-wrap">
+        <div className="loader" id="loader"></div>
+    </main>
   </div>
 )
 
@@ -515,7 +524,7 @@ const Help = () => (
       <h1 className="mb-8">Help &amp; Support</h1>
       <h4 className="mb-4">OJO Labs Contact Info</h4>
       <div>
-        <a href="mailto:support@ojolabs.com" className="block py-4 border-t border-b border-grey-light">
+        <a href="mailto:support@ojolabs.com" className="block py-4 border-t border-b border-grey-light text-gray">
           <span>support@ojolabs.com</span>
           <img src={iconEmail} className="icon icon-email float-right" alt="email icon" />
         </a>
