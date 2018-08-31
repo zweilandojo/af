@@ -33,8 +33,8 @@ const SignIn = () => (
     </header>
     <main className="container mx-auto px-6">
       <div className="text-center mt-24">
-        <h2 className="mb-4 font-black text-3xl">Welcome to the OJO Lead Tracker!</h2>
-        <p className="mb-8">Sign in to manage your OJO referrals:</p>
+        <h2 className="mb-4 font-black text-3xl">Welcome to the OJO Referral Tracker!</h2>
+        <p className="mb-8 text-gray-dark">Sign in to manage your OJO referrals:</p>
         <Link to="/loading" className="btn btn-social btn-fb m-auto mb-4">
           <img src={logoFB} alt="Facebook logo" />
           <span>Continue with Facebook</span>
@@ -96,7 +96,7 @@ const Home = () => (
 
     <div className="app-banner text-center pt-8 pb-8 mb-8">
       <h2 className="mb-2">Matthew Witte</h2>
-      <h4 className="font-normal text-gray-dark text-sm">Agent Profile</h4>
+      <h4 className="font-normal text-gray-dark text-sm">BHG HomeCity</h4>
     </div>
 
     <main className="container mx-auto px-6">
@@ -367,7 +367,7 @@ const Client = ({ match }) => (
           <header className="mb-6">
             <h3 className="mb-2">
               Referral Progress
-              <span className="ml-2 text-sm text-gray">(16% complete)</span>
+              <span className="ml-2 text-sm text-gray">(0% complete)</span>
             </h3>
             <p className="text-gray-dark text-xs">Check the box if you have completed this step</p>
           </header>
