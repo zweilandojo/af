@@ -56,25 +56,30 @@ const SignIn = () => (
   </div>
 )
 
-const Loading = () => (
-  <div className="app">
-    <header className="container mx-auto text-center px-6">
-        <Link className="block" to="/">
-          <img src={logoSilver} className="app-logo -ml-px" alt="logo" />
-        </Link>
-        <div className="right-nav-placeholder"></div>
-    </header>
-    <main className="container mx-auto mt-32 text-center">
-      <div>
-        <img src={ojoHappy} alt="Happy OJO" className="h-16 w-16 mb-4" />
+class Loading extends React.Component {
+  render() {
+    return (
+      <div className="app">
+        <header className="container mx-auto text-center px-6">
+            <Link className="block" to="/">
+              <img src={logoSilver} className="app-logo -ml-px" alt="logo" />
+            </Link>
+            <div className="right-nav-placeholder"></div>
+        </header>
+        <main className="container mx-auto mt-32 text-center">
+          <div>
+            <img src={ojoHappy} alt="Happy OJO" className="h-16 w-16 mb-4" />
+          </div>
+          <h3 className="mb-8">Welcome!</h3>
+          <div className="relative mx-auto">
+            <div className="loader" id="loader"></div>
+          </div>
+        </main>
       </div>
-      <h3 className="mb-8">Welcome!</h3>
-      <div className="relative mx-auto">
-        <div className="loader" id="loader"></div>
-      </div>
-    </main>
-  </div>
-)
+    )
+  }
+}
+
 
 const Home = () => (
   <div className="app">
@@ -540,6 +545,9 @@ const Help = () => (
           <span>+1 (866) 973-1703</span>
           <img className="icon icon-phone float-right" src={iconPhone} alt="phone icon" />
         </a>
+      </div>
+      <div className="mt-16">
+        <Link to="/signin">Sign out</Link>
       </div>
     </div>
   </div>
