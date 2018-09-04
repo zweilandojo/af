@@ -543,7 +543,7 @@ const Help = () => (
       </div>
     </header>
     <div className="container mx-auto px-6 mt-12">
-      <h1 className="mb-8">Help</h1>
+      <h1 className="mb-10">Help &amp; Feedback</h1>
       <h4 className="mb-4">OJO Labs Contact Info</h4>
       <div>
         <a href="mailto:support@ojolabs.com" className="block py-4 border-t border-b border-grey-light">
