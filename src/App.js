@@ -23,6 +23,7 @@ import iconPhoneCircle from './assets/images/icon-phone-circle.svg';
 import iconMessageCircle from './assets/images/icon-message-circle.svg';
 import logoGoogle from './assets/images/logo-google.svg';
 import logoFB from './assets/images/logo-fb.svg';
+import weatherPartlySunny from './assets/images/weather/partly-sunny.svg';
 
 const SignIn = () => (
   <div className="app">
@@ -101,8 +102,9 @@ const Home = () => (
 
     <div className="text-center pt-16 pb-10 mb-8">
       <h2 className="mb-2 text-3xl">Afternoon, Matt!</h2>
-      <p className="text-gray-dark text-base">
-        Mostly Sunny 90° F
+      <p className="text-gray-dark text-base flex items-start justify-center">
+        <img src={weatherPartlySunny} className="mr-2" alt="Partly Sunny" />
+        <span className="inline-block">Mostly Sunny 90° F</span>
       </p>
     </div>
 

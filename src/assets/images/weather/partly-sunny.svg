@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="17px" viewBox="0 0 22 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.35729926,9.10673984 C8.90904813,9.07728546 8.48653864,9.17010388 8.11353232,9.34942909 C7.71218543,8.130785 6.56643476,7.25 5.21326583,7.25 C3.74029926,7.25 2.51113575,8.2927841 2.22290359,9.68023397 C1.07356394,9.83901536 0.2040409,10.8741265 0.317155624,12.0909142 C0.424082454,13.2413677 1.43072925,14.1 2.58600928,14.1 L9.19369131,14.1 C10.6077491,14.1 11.7474357,12.925785 11.6910021,11.4992276 C11.6410039,10.2355357 10.6192586,9.18965763 9.35729926,9.10673984 Z" id="path-1"></path>
+        <filter x="-30.7%" y="-36.5%" width="161.5%" height="202.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Agents-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Agent-Assistant-Home" transform="translate(-105.000000, -202.000000)" fill-rule="nonzero">
+            <g id="Group-7" transform="translate(107.000000, 202.000000)">
+                <circle id="Oval-3" fill="#FFF698" cx="12" cy="8" r="8"></circle>
+                <g id="Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FAFAFA" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
