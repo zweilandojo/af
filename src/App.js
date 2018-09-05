@@ -99,9 +99,11 @@ const Home = () => (
       </div>
     </header>
 
-    <div className="app-banner text-center pt-8 pb-8 mb-8">
-      <h2 className="mb-2">Matthew Witte</h2>
-      <h4 className="font-normal text-gray-dark text-sm">BHG HomeCity</h4>
+    <div className="text-center pt-16 pb-10 mb-8">
+      <h2 className="mb-2 text-3xl">Afternoon, Matt!</h2>
+      <p className="text-gray-dark text-base">
+        Mostly Sunny 90° F
+      </p>
     </div>
 
     <main className="container mx-auto px-6">
