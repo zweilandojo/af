@@ -80,21 +80,6 @@ h1 { font-size: 1.5rem } /* 24px */
   fill: #BDBDBD;
 }
 
-.weekly-check-ins {
-  float: right;
-  width: auto;
-  text-align: right;
-  position: relative;
-  top: 4px;
-}
-.weekly-check-ins_title {
-  text-align: right;
-  float: left;
-  font-size: 12px;
-  display: inline-block;
-  position: relative;
-  top: 4px; right: 8px;
-}
 .circular-chart-wrapper {
   position: relative;
   float: right;

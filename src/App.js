@@ -108,19 +108,17 @@ const Home = () => (
       </p>
     </div>
 
-    <main className="container mx-auto px-6">
+    <main className="container mx-auto px-2">
 
-      <div className="mb-4 referral-tracking clearfix">
-        <div className="float-left">
-          <h3 className="mb-2">Referrals</h3>
-          <p className="text-gray-dark font-normal text-xs">
-            Track &amp; maintain your OJO referrals
+      <div className="referral-tracking clearfix mb-12">
+        <h3 className="mb-4 ml-6 text-2xl">
+          Referrals
+        </h3>
+        <div className="border border-grey-light p-8 rounded-lg">
+          <p className="text-gray-dark text-base mb-4">
+            Please review by Wed, Sept 5, 2018
           </p>
-        </div>
-        <div className="weekly-check-ins">
-          <small className="text-gray-dark weekly-check-ins_title">
-            Sign-off by:<br />[Wed]
-          </small>
+
           {/* Circular Chart Begin */}
           <div className="circular-chart-wrapper">
             <svg viewBox="0 0 36 36" className="circular-chart circular-chart-back">
@@ -141,118 +139,117 @@ const Home = () => (
           </div>
           {/* Circular Chart End */}
 
+        {/* REFERRAL TRACKING LIST */}
+        <div className="clear">
+          <Link to="/clients/client-1" className="py-4 border-b border-grey-light flex">
+            <div className="rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
+              GC
+            </div>
+            <div className="flex-initial ml-4">
+              <span className="text-lg block mb-1">
+                Gunny Celis
+              </span>
+              <div>
+                <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
+                <span className="ml-1 inline text-gray-dark text-xs">Talk</span>
+              </div>
+            </div>
+            <div className="flex-1 text-right">
+              <div>
+                <span className="text-red text-sm mr-1">Needs Review</span>
+                <img src={iconChevronRight} alt="" />
+              </div>
+            </div>
+          </Link>
+
+          <Link to="/clients/client-2" className="py-4 border-b border-grey-light flex">
+            <div className="rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
+              SK
+            </div>
+            <div className="flex-initial ml-4">
+              <span className="text-lg block mb-1">
+                Stephan Kiker
+              </span>
+              <div>
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
+                <span className="ml-1 inline text-gray-dark text-xs"></span>
+              </div>
+            </div>
+            <div className="flex-1 text-right">
+              <div>
+                <span className="text-red text-sm mr-1">Needs Review</span>
+                <img src={iconChevronRight} alt="" />
+              </div>
+            </div>
+          </Link>
+
+          <Link to="/clients/client-2" className="py-4 border-b border-grey-light flex">
+            <div className="rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
+              JB
+            </div>
+            <div className="flex-initial ml-4">
+              <span className="text-lg block mb-1">
+                Javier Benitez
+              </span>
+              <div>
+                <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
+                <span className="ml-1 inline text-gray-dark text-xs">Set</span>
+              </div>
+            </div>
+            <div className="flex-1 text-right">
+              <div>
+                <span className="text-red text-sm mr-1"></span>
+                <img src={iconChevronRightGray} className="svg-gray" alt="" />
+              </div>
+            </div>
+          </Link>
+
+          <Link to="/clients/client-4" className="pt-4 flex">
+            <div className="rounded-full flex items-center justify-center h-10 w-10 bg-gray-light text-white">
+              DJ
+            </div>
+            <div className="flex-initial ml-4">
+              <span className="text-lg block mb-1">
+                Deadicous Jones
+              </span>
+              <div>
+                <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
+                <span className="ml-1 inline text-gray-dark text-xs">Met</span>
+              </div>
+            </div>
+            <div className="flex-1 text-right">
+              <div>
+                <span className="text-red text-sm mr-1"></span>
+                <img src={iconChevronRightGray} className="svg-gray" alt="" />
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
-
-      {/* REFERRAL TRACKING LIST */}
-      <div className="mb-10 clear">
-        <Link to="/clients/client-1" className="py-4 border-b border-grey-light flex">
-          <div className="rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
-            GC
-          </div>
-          <div className="flex-initial ml-4">
-            <span className="text-lg block mb-1">
-              Gunny Celis
-            </span>
-            <div>
-              <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
-              <span className="ml-1 inline text-gray-dark text-xs">Talk</span>
-            </div>
-          </div>
-          <div className="flex-1 text-right">
-            <div>
-              <span className="text-red text-sm mr-1">Needs Review</span>
-              <img src={iconChevronRight} alt="" />
-            </div>
-          </div>
-        </Link>
-
-        <Link to="/clients/client-2" className="py-4 border-b border-grey-light flex">
-          <div className="rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
-            SK
-          </div>
-          <div className="flex-initial ml-4">
-            <span className="text-lg block mb-1">
-              Stephan Kiker
-            </span>
-            <div>
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
-              <span className="ml-1 inline text-gray-dark text-xs"></span>
-            </div>
-          </div>
-          <div className="flex-1 text-right">
-            <div>
-              <span className="text-red text-sm mr-1">Needs Review</span>
-              <img src={iconChevronRight} alt="" />
-            </div>
-          </div>
-        </Link>
-
-        <Link to="/clients/client-2" className="py-4 border-b border-grey-light flex">
-          <div className="rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
-            JB
-          </div>
-          <div className="flex-initial ml-4">
-            <span className="text-lg block mb-1">
-              Javier Benitez
-            </span>
-            <div>
-              <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
-              <span className="ml-1 inline text-gray-dark text-xs">Set</span>
-            </div>
-          </div>
-          <div className="flex-1 text-right">
-            <div>
-              <span className="text-red text-sm mr-1"></span>
-              <img src={iconChevronRightGray} className="svg-gray" alt="" />
-            </div>
-          </div>
-        </Link>
-
-        <Link to="/clients/client-4" className="py-4 border-b border-grey-light flex">
-          <div className="rounded-full flex items-center justify-center h-10 w-10 bg-gray-light text-white">
-            DJ
-          </div>
-          <div className="flex-initial ml-4">
-            <span className="text-lg block mb-1">
-              Deadicous Jones
-            </span>
-            <div>
-              <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-              <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
-              <span className="ml-1 inline text-gray-dark text-xs">Met</span>
-            </div>
-          </div>
-          <div className="flex-1 text-right">
-            <div>
-              <span className="text-red text-sm mr-1"></span>
-              <img src={iconChevronRightGray} className="svg-gray" alt="" />
-            </div>
-          </div>
-        </Link>
       </div>
 
       <div className="milestone-count mb-16">
-        <h3 className="mb-4 text-2xl">
+        <h3 className="mb-4 ml-6 text-2xl">
           Milestones
         </h3>
         <div className="border border-grey-light p-8 rounded-lg">
