@@ -248,66 +248,66 @@ const Home = () => (
       </div>
 
       <div className="milestone-count mb-16">
-        <h3 className="mb-2 text-xl">
-          Milestone Count
+        <h3 className="mb-4 text-2xl">
+          Milestones
         </h3>
-        <p className="text-gray-dark text-xs mb-4">
-          A brief overview of your business
-        </p>
+        <div className="border border-grey-light p-8 rounded-lg">
+          <p className="text-gray-dark text-base mb-4">
+            A brief overview of your business
+          </p>
+          <div className="flex py-4">
+            <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
+              <span className="inline-block mt-6">75%</span>
+            </div>
+            <div className="flex-1">
+              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Talk</h4>
+              <p className="text-gray-dark font-normal text-sm">Have you made first contact?</p>
+            </div>
+          </div>
+          <div className="flex py-4">
+            <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
+              <span className="inline-block mt-6">50%</span>
+            </div>
+            <div className="flex-1">
+              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Set</h4>
+              <p className="text-gray-dark font-normal text-sm">Have you scheduled a time to meet in-person?</p>
+            </div>
+          </div>
+          <div className="flex py-4">
+            <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
+              <span className="inline-block mt-6">25%</span>
+            </div>
+            <div className="flex-1">
+              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Met</h4>
+              <p className="text-gray-dark font-normal text-sm">Did you meet the referral in-person?</p>
+            </div>
+          </div>
 
-        <div className="">
-          <div className="flex py-4 border-b border-grey-light">
-            <div className="flex-1">
-              <h4 className="w-16 mb-1 pr-2 uppercase font-normal">Talk</h4>
-              <p className="text-gray-dark font-normal text-xs">Have you spoken to the client yet?</p>
+          <div className="flex py-4">
+            <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
+              <span className="inline-block mt-6">0%</span>
             </div>
-            <div className="text-xl">
-              <span>75%</span>
+            <div className="flex-1">
+              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Offer</h4>
+              <p className="text-gray-dark font-normal text-sm">Has your client made an offer on a home yet?</p>
             </div>
           </div>
-          <div className="flex py-4 border-b border-grey-light">
-            <div className="flex-1">
-              <h4 className="w-16 mb-1 pr-2 uppercase font-normal">Set</h4>
-              <p className="text-gray-dark font-normal text-xs">Have you scheduled a time to meet the client?</p>
+          <div className="flex py-4">
+            <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
+              <span className="inline-block mt-6">0%</span>
             </div>
-            <div className="text-xl">
-              <span>50%</span>
+            <div className="flex-1">
+              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Accept</h4>
+              <p className="text-gray-dark font-normal text-sm">Has the seller accepted your clients offer?</p>
             </div>
           </div>
-          <div className="flex py-4 border-b border-grey-light">
+          <div className="flex py-4">
+            <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
+              <span className="inline-block mt-6">0%</span>
+            </div>
             <div className="flex-1">
-              <h4 className="w-16 mb-1 pr-2 uppercase font-normal">Met</h4>
-              <p className="text-gray-dark font-normal text-xs">Did you end up meeting with the client?</p>
-            </div>
-            <div className="text-xl">
-              <span>25%</span>
-            </div>
-          </div>
-          <div className="flex py-4 border-b border-grey-light">
-            <div className="flex-1">
-              <h4 className="w-16 mb-1 pr-2 uppercase font-normal">Offer</h4>
-              <p className="text-gray-dark font-normal text-xs">Has the client made an offer on a home?</p>
-            </div>
-            <div className="text-xl">
-              <span>0%</span>
-            </div>
-          </div>
-          <div className="flex py-4 border-b border-grey-light">
-            <div className="flex-1">
-              <h4 className="w-16 mb-1 pr-2 uppercase font-normal mb-1">Accept</h4>
-              <p className="text-gray-dark font-normal text-xs">Has the seller accepted your clients offer?</p>
-            </div>
-            <div className="text-xl">
-              <span>0%</span>
-            </div>
-          </div>
-          <div className="flex py-4 border-b border-grey-light">
-            <div className="flex-1">
-              <h4 className="w-16 mb-1 pr-2 uppercase font-normal">Transact</h4>
-              <p className="text-gray-dark font-normal text-xs">Has your client closed on a new home?</p>
-            </div>
-            <div className="text-xl">
-              <span>0%</span>
+              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Transact</h4>
+              <p className="text-gray-dark font-normal text-sm">Has your client closed on a home?</p>
             </div>
           </div>
         </div>
