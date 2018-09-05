@@ -110,7 +110,8 @@ const Home = () => (
         <div className="float-left">
           <h3 className="mb-2">Referrals</h3>
           <p className="text-gray-dark font-normal text-xs">
-          Track &amp; maintain your OJO leads</p>
+            Track &amp; maintain your OJO referrals
+          </p>
         </div>
         <div className="weekly-check-ins">
           <small className="text-gray-dark weekly-check-ins_title">

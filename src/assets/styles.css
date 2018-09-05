@@ -1,3 +1,14 @@
+/* Import Sofia fonts */
+@font-face {
+  font-family: "Sofia Pro Regular";
+  src: url('./assets/fonts/Sofia/Sofia-Pro-Regular.otf');
+}
+@font-face {
+  font-family: "Sofia Pro Medium";
+  src: url('./assets/fonts/Sofia/Sofia-Pro-Medium.otf');
+}
+
+
 
 body {
  margin: 0;
