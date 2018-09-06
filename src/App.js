@@ -7,6 +7,7 @@ import {
 
 import Logo from './assets/images/ojo-logo.svg';
 import logoSilver from './assets/images/ojo-logo-silver.svg';
+import logoBlueCircle from './assets/images/logo-ojo-bg-blue.svg';
 import ojoHappy from './assets/images/avatars/ojo-face/happy.png';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
@@ -27,23 +28,78 @@ import weatherPartlySunny from './assets/images/weather/partly-sunny.svg';
 
 const SignIn = () => (
   <div className="app">
-    <header className="container mx-auto text-center px-6">
+    <header className="container mx-auto text-center">
         <Link className="block" to="/">
-          <img src={Logo} className="app-logo -ml-px" alt="logo" />
+          <img src={logoBlueCircle} className="mt-10" alt="logo" />
         </Link>
     </header>
-    <main className="container mx-auto px-6">
-      <div className="text-center mt-24">
-        <h2 className="mb-4 font-black text-3xl">Welcome to the OJO Referral Tracker!</h2>
-        <p className="mb-8 text-gray-dark">Sign in to manage your OJO referrals:</p>
-        <Link to="/loading" className="btn btn-social btn-fb m-auto mb-4">
-          <img src={logoFB} alt="Facebook logo" />
-          <span>Continue with Facebook</span>
+    <main className="container mx-auto px-6 sign-in">
+      <div className="text-center mt-10 m-auto">
+        <h2 className="mb-6">Welcome!</h2>
+        <p className="mb-4 font-black text-base">
+          Sign in to view your OJO referrals:
+        </p>
+        <form>
+          <input className="input mb-2" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Enter your mobile phone number" />
+          <Link to="/signin-verify" className="btn btn-green inline-block mb-4">
+            Next
+          </Link>
+        </form>
+
+        {/* BEGIN Hiding unused social buttons */}
+        <div className="hidden">
+          <Link to="/loading" className="btn btn-social btn-fb m-auto mb-4">
+            <img src={logoFB} alt="Facebook logo" />
+            <span>Continue with Facebook</span>
+          </Link>
+          <Link to="/loading" className="btn btn-social m-auto btn-google">
+            <img src={logoGoogle} alt="Google logo" />
+            <span>Continue with Google</span>
+          </Link>
+        </div>
+        {/* END Social buttons */}
+
+      </div>
+    </main>
+    <footer className="fixed pin-b pin-x">
+      <div className="text-center py-4 text-xs">
+        <a href="mailto:support@ojolabs.com" className="inline-block text-gray-dark">support@ojolabs.com</a>
+        <span className="mx-2 text-gray">|</span>
+        <a href="tel:15124568292" className="inline-block text-gray-dark">(512) 456-8292</a>
+        <span className="mx-2 text-gray">|</span>
+        <a href="https://content.ojo.me/privacy-policy.pdf" className="inline-block text-gray-dark">Privacy Policy</a></div>
+    </footer>
+  </div>
+)
+
+const AuthVerify = () => (
+  <div className="app">
+    <header className="container mx-auto text-center">
+        <Link className="block" to="/signin">
+          <img src={logoBlueCircle} className="mt-10" alt="logo" />
         </Link>
-        <Link to="/loading" className="btn btn-social m-auto btn-google">
-          <img src={logoGoogle} alt="Google logo" />
-          <span>Continue with Google</span>
-        </Link>
+    </header>
+    <main className="container mx-auto px-6 sign-in">
+      <div className="text-center mt-10 m-auto">
+        <h2 className="mb-6">2-Step Verifications - SMS</h2>
+        <p className="mb-4 font-black text-base">
+          Enter the 4-digit code sent to you:
+        </p>
+        <form>
+          <input className="input mb-2"
+                 type="number" id="verificationCode"
+                 name="verificationCode" required
+                 maxlength="4"
+                 placeholder="Verification Code" />
+          <Link to="/loading" className="btn btn-green inline-block mb-4">
+            Verify
+          </Link>
+        </form>
+        <div className="mt-8 leading-normal text-sm">
+          <p className="text-gray-dark">Resend code by: <a href="">SMS</a></p>
+          <p className="text-gray-dark">Having trouble? <Link to="/Help">Get help</Link></p>
+        </div>
+
       </div>
     </main>
     <footer className="fixed pin-b pin-x">
@@ -61,19 +117,9 @@ class Loading extends React.Component {
   render() {
     return (
       <div className="app">
-        <header className="container mx-auto text-center px-6">
-            <Link className="block" to="/">
-              <img src={logoSilver} className="app-logo -ml-px" alt="logo" />
-            </Link>
-            <div className="right-nav-placeholder"></div>
-        </header>
-        <main className="container mx-auto mt-32 text-center">
-          <div>
-            <img src={ojoHappy} alt="Happy OJO" className="h-16 w-16 mb-4" />
-          </div>
-          <h3 className="mb-8">Welcome!</h3>
-          <div className="relative mx-auto">
-            <div className="loader" id="loader"></div>
+        <main className="flex h-screen items-stretch">
+          <div className="self-center flex-1 text-center">
+            <img src={logoBlueCircle} className="" alt="logo" />
           </div>
         </main>
       </div>
@@ -604,6 +650,7 @@ class App extends Component {
           <Route path="/help" component={Help}/>
           <Route path="/clients" component={Clients}/>
           <Route path="/signin" component={SignIn}/>
+          <Route path="/signin-verify" component={AuthVerify}/>
           <Route path="/loading" component={Loading}/>
         </div>
       </Router>

@@ -154,6 +154,7 @@ a {
   min-height: 48px;
   border-radius: 4rem;
   font-size: 1.125rem;
+  line-height: 48px;
 }
 .btn-social {
   background: white;
@@ -173,6 +174,10 @@ a {
 }
 .btn-fb {
   color: #3B5899;
+}
+.btn-lg {
+  height: 3.5rem;
+  line-height: 3.5rem;
 }
 
 
@@ -325,7 +330,10 @@ select {
 }
 
 
-/* UTILITIES */
+/* SIGN IN */
+.sign-in {
+  max-width: 400px;
+}
 
 
 /* LOADING PAGE */
@@ -340,12 +348,12 @@ select {
 }
 
 .loader{
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 100%;
   position: absolute;
   top: 0; left: 50%;
-  margin: 1rem 0 0 -20px;
+  margin: 8rem 0 0 -16px;
 }
 
 /* LOADER */
