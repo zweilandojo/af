@@ -11,7 +11,7 @@ import ojoHappy from './assets/images/avatars/ojo-face/happy.png';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
 import iconClose from './assets/images/icon-close.svg';
-import iconChevronRight from './assets/images/icon-chevron-right.svg';
+// import iconChevronRight from './assets/images/icon-chevron-right.svg';
 import iconChevronRightGray from './assets/images/icon-chevron-right-gray.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
 // import iconCheckmark from './assets/images/icon-checkmark.svg';
@@ -115,29 +115,31 @@ const Home = () => (
           Referrals
         </h3>
         <div className="border border-grey-light p-8 rounded-lg">
-          <p className="text-gray-dark text-base mb-4">
-            Please review by Wed, Sept 5
-          </p>
+          <div className="clearfix">
+            <p className="text-gray-dark float-left text-base mb-4">
+              Please review by Wed, Sept 5
+            </p>
 
-          {/* Circular Chart Begin */}
-          <div className="circular-chart-wrapper">
-            <svg viewBox="0 0 36 36" className="circular-chart circular-chart-back">
-              <path className="circle"
-                strokeDasharray="100, 100"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-            </svg>
-            <svg viewBox="0 0 36 36" className="circular-chart">
-              <path className="circle"
-                strokeDasharray="25, 100"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-            </svg>
-            <span className="circular-chart-percentage">
-              25<sup className="percentage-sign">%</sup>
-            </span>
+            {/* Circular Chart Begin */}
+            <div className="circular-chart-wrapper">
+              <svg viewBox="0 0 36 36" className="circular-chart circular-chart-back">
+                <path className="circle"
+                  strokeDasharray="100, 100"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+              </svg>
+              <svg viewBox="0 0 36 36" className="circular-chart">
+                <path className="circle"
+                  strokeDasharray="25, 100"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+              </svg>
+              <span className="circular-chart-percentage">
+                25<sup className="percentage-sign">%</sup>
+              </span>
+            </div>
+            {/* Circular Chart End */}
           </div>
-          {/* Circular Chart End */}
 
         {/* REFERRAL TRACKING LIST */}
         <div className="clear">
@@ -161,8 +163,7 @@ const Home = () => (
             </div>
             <div className="flex-1 text-right">
               <div>
-                <span className="text-red text-sm mr-1">Needs Review</span>
-                <img src={iconChevronRight} alt="" />
+                <span className="text-red text-base mr-1">Review</span>
               </div>
             </div>
           </Link>
@@ -187,8 +188,7 @@ const Home = () => (
             </div>
             <div className="flex-1 text-right">
               <div>
-                <span className="text-red text-sm mr-1">Needs Review</span>
-                <img src={iconChevronRight} alt="" />
+                <span className="text-red text-base mr-1">Review</span>
               </div>
             </div>
           </Link>
