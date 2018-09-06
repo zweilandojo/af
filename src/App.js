@@ -8,6 +8,7 @@ import {
 import Logo from './assets/images/ojo-logo.svg';
 import logoSilver from './assets/images/ojo-logo-silver.svg';
 import logoBlueCircle from './assets/images/logo-ojo-bg-blue.svg';
+import logoOJOWhite from './assets/images/ojo-logo-white.svg';
 import ojoHappy from './assets/images/avatars/ojo-face/happy.png';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
@@ -119,7 +120,9 @@ class Loading extends React.Component {
       <div className="app">
         <main className="flex h-screen items-stretch">
           <div className="self-center flex-1 text-center">
-            <img src={logoBlueCircle} className="" alt="logo" />
+            <div className="ojo-loading">
+              <img src={logoOJOWhite} className="flex-1 self-center" alt="logo" />
+            </div>
           </div>
         </main>
       </div>
