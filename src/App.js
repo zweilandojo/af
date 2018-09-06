@@ -116,7 +116,7 @@ const Home = () => (
         </h3>
         <div className="border border-grey-light p-8 rounded-lg">
           <p className="text-gray-dark text-base mb-4">
-            Please review by Wed, Sept 5, 2018
+            Please review by Wed, Sept 5
           </p>
 
           {/* Circular Chart Begin */}
@@ -342,7 +342,7 @@ class Client extends Component {
           </div>
         </header>
 
-        <div className="app-banner text-center pt-8 pb-2 mb-8">
+        <div className="app-banner bg-gray-lightest text-center pt-8 pb-2 mb-8">
           <h2 className="mb-2">
             {/* {match.params.clientId} */}
             Gunny Celis
@@ -537,8 +537,8 @@ class Client extends Component {
 
 const Help = () => (
   <div className="app">
-    <header className="app-header flex">
-      <div className="w-1/3">
+    <header className="app-header flex flex-row-reverse">
+      <div className="w-1/3 text-right">
         <Link to="/" className="inline-block px-6 py-4">
           <img src={iconClose} className="icon icon-close" alt="close icon" />
         </Link>
