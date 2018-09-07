@@ -120,9 +120,9 @@ class Loading extends React.Component {
       <div className="app">
         <main className="flex h-screen items-stretch">
           <div className="self-center flex-1 text-center">
-            <div className="ojo-loading">
+            <Link to="/" className="ojo-loading">
               <img src={logoOJOWhite} className="flex-1 self-center" alt="logo" />
-            </div>
+            </Link>
           </div>
         </main>
       </div>
@@ -169,7 +169,7 @@ const Home = () => (
               Please review by Wed, Sept 5
             </p>
 
-            {/* Circular Chart Begin */}
+            {/* Circular Chart Begin
             <div className="circular-chart-wrapper">
               <svg viewBox="0 0 36 36" className="circular-chart circular-chart-back">
                 <path className="circle"
@@ -187,7 +187,7 @@ const Home = () => (
                 25<sup className="percentage-sign">%</sup>
               </span>
             </div>
-            {/* Circular Chart End */}
+             Circular Chart End */}
           </div>
 
         {/* REFERRAL TRACKING LIST */}
