@@ -165,7 +165,7 @@ const Home = () => (
         </h3>
         <div className="border border-grey-light p-8 rounded-lg">
           <div className="clearfix">
-            <p className="text-gray-dark float-left text-base mb-4">
+            <p className="text-gray-dark float-left text-base mb-6">
               Please review by Wed, Sept 5
             </p>
 
@@ -302,7 +302,7 @@ const Home = () => (
           Milestones
         </h3>
         <div className="border border-grey-light p-8 rounded-lg">
-          <p className="text-gray-dark text-base mb-4">
+          <p className="text-gray-dark text-base mb-6">
             A brief overview of your business
           </p>
           <div className="flex py-4">
@@ -606,7 +606,7 @@ const Help = () => (
           <img className="icon icon-phone float-right" src={iconPhone} alt="phone icon" />
         </a>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 text-right">
         <Link to="/signin">Sign out</Link>
       </div>
     </div>
