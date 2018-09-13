@@ -9,7 +9,7 @@ class Milestones extends React.Component {
         </h3>
         <div className="border border-grey-light p-8 rounded-lg">
           <p className="text-gray-dark text-base mb-6">
-            A overview of your referral progress
+            An overview of your referral progress
           </p>
           <div className="flex py-4">
             <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
