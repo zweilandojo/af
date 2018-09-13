@@ -11,7 +11,7 @@ import logoOJOWhite from './assets/images/ojo-logo-white.svg';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
 import iconClose from './assets/images/icon-close.svg';
-import iconPerson from './assets/images/icon-person.svg';
+// import iconPerson from './assets/images/icon-person.svg';
 // import iconChevronRight from './assets/images/icon-chevron-right.svg';
 import iconChevronRightGray from './assets/images/icon-chevron-right-gray.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
