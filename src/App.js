@@ -82,16 +82,16 @@ const AuthVerify = () => (
     </header>
     <main className="container mx-auto px-6 sign-in">
       <div className="text-center mt-10 m-auto">
-        <h2 className="mb-6">2-Step Verification - SMS</h2>
+        <h2 className="mb-6">SMS Verification</h2>
         <p className="mb-4 font-black text-base">
-          Enter the 4-digit code sent to you:
+          Enter the 6-digit code sent to you:
         </p>
         <form>
           <input className="input mb-2"
                  type="number" id="verificationCode"
                  name="verificationCode" required
                  maxlength="4"
-                 placeholder="Verification Code" />
+                 placeholder="Code" />
           <Link to="/loading" className="btn btn-green inline-block mb-4">
             Verify
           </Link>
