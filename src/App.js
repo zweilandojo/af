@@ -6,10 +6,8 @@ import {
 } from 'react-router-dom';
 
 import Logo from './assets/images/ojo-logo.svg';
-// import logoSilver from './assets/images/ojo-logo-silver.svg';
 import logoBlueCircle from './assets/images/logo-ojo-bg-blue.svg';
 import logoOJOWhite from './assets/images/ojo-logo-white.svg';
-// import ojoHappy from './assets/images/avatars/ojo-face/happy.png';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
 import iconClose from './assets/images/icon-close.svg';
