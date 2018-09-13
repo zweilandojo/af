@@ -92,7 +92,7 @@ const AuthVerify = () => (
           <input className="input mb-2 text-center text-2xl leading-none"
                  type="number" id="verificationCode"
                  name="verificationCode" required
-                 maxlength="4"
+                 maxLength="4"
                  placeholder="Code" />
           <Link to="/loading" className="btn btn-green inline-block mb-4">
             Verify
@@ -499,7 +499,8 @@ class Client extends Component {
 
         <div className="app-banner bg-gray-lightest text-center pt-8 pb-2 mb-8">
           <h2 className="mb-2">
-            {/* {match.params.clientId} */}
+            {/* {match.params.clientFullName} */}
+            {/* {match.params.phoneNumber} */}
             Gunny Celis
           </h2>
           <h4 className="font-normal text-gray-dark text-sm">
