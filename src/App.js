@@ -41,7 +41,11 @@ const SignIn = () => (
           Sign in to view your OJO referrals:
         </p>
         <form>
-          <input className="input mb-2" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Enter your mobile phone number" />
+          <input className="input mb-2"
+                 type="tel" id="phone" name="phone"
+                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                 required
+                 placeholder="Enter your mobile phone number" />
           <Link to="/signin-verify" className="btn btn-green inline-block mb-4">
             Next
           </Link>
@@ -87,7 +91,7 @@ const AuthVerify = () => (
           Enter the 6-digit code sent to you:
         </p>
         <form>
-          <input className="input mb-2"
+          <input className="input mb-2 text-center text-2xl leading-none"
                  type="number" id="verificationCode"
                  name="verificationCode" required
                  maxlength="4"
