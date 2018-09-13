@@ -13,6 +13,7 @@ import logoOJOWhite from './assets/images/ojo-logo-white.svg';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
 import iconClose from './assets/images/icon-close.svg';
+import iconPerson from './assets/images/icon-person.svg';
 // import iconChevronRight from './assets/images/icon-chevron-right.svg';
 import iconChevronRightGray from './assets/images/icon-chevron-right-gray.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
@@ -196,6 +197,66 @@ const Home = () => (
 
         {/* REFERRAL TRACKING LIST */}
         <div className="clear">
+
+          {/* BEGIN: REFERRAL LIST ZERO STATE */}
+          <p className="text-center text-base text-gray">No referrals assigned.</p>
+          <div to="/clients/client-1" className="py-4 border-b border-grey-light flex">
+            <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
+              {/* Nothing here */}
+            </div>
+            <div className="flex-initial ml-4 ">
+              <span className="h-3 w-24 rounded-full bg-gray-light block mb-2">
+                {/* Nothing here */}
+              </span>
+              <div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white"></div>
+              </div>
+            </div>
+          </div>
+          <div to="/clients/client-1" className="py-4 border-b border-grey-light flex">
+            <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
+              {/* Nothing here */}
+            </div>
+            <div className="flex-initial ml-4 ">
+              <span className="h-3 w-24 rounded-full bg-gray-light block mb-2">
+                {/* Nothing here */}
+              </span>
+              <div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white"></div>
+              </div>
+            </div>
+          </div>
+          <div to="/clients/client-1" className="py-4 border-b border-grey-light flex">
+            <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
+              {/* Nothing here */}
+            </div>
+            <div className="flex-initial ml-4 ">
+              <span className="h-3 w-24 rounded-full bg-gray-light block mb-2">
+                {/* Nothing here */}
+              </span>
+              <div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white"></div>
+              </div>
+            </div>
+          </div>
+          {/* END: REFERRAL LIST ZERO STATE */}
+
+
           <Link to="/clients/client-1" className="py-4 border-b border-grey-light flex">
             <div className="rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
               GC
