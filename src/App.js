@@ -5,13 +5,11 @@ import {
   Link
 } from 'react-router-dom';
 
-import Logo from './assets/images/ojo-logo.svg';
 import logoBlueCircle from './assets/images/logo-ojo-bg-blue.svg';
 import logoOJOWhite from './assets/images/ojo-logo-white.svg';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
 import iconClose from './assets/images/icon-close.svg';
-import iconPerson from './assets/images/icon-person.svg';
 // import iconChevronRight from './assets/images/icon-chevron-right.svg';
 import iconChevronRightGray from './assets/images/icon-chevron-right-gray.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
@@ -19,11 +17,15 @@ import iconChevronLeft from './assets/images/icon-chevron-left.svg';
 import iconCheckboxChecked from './assets/images/icon-checkmark-checked.svg';
 import iconCheckboxGray from './assets/images/icon-checkmark-checked-gray.svg';
 // import iconCheckmarkWhite from './assets/images/icon-checkmark-white.svg';
+import iconPerson from './assets/images/icon-person.svg';
 import iconPhoneCircle from './assets/images/icon-phone-circle.svg';
 import iconMessageCircle from './assets/images/icon-message-circle.svg';
 import logoGoogle from './assets/images/logo-google.svg';
 import logoFB from './assets/images/logo-fb.svg';
-import weatherPartlySunny from './assets/images/weather/partly-sunny.svg';
+
+import AppHeader from './components/AppHeader/index.js';
+import AgentHomeBanner from './components/AgentHomeBanner/index.js';
+import Milestones from './components/Milestones/index.js';
 
 const SignIn = () => (
   <div className="app">
@@ -92,7 +94,7 @@ const AuthVerify = () => (
           <input className="input mb-2 text-center text-2xl leading-none"
                  type="number" id="verificationCode"
                  name="verificationCode" required
-                 maxLength="4"
+                 maxLength="6"
                  placeholder="Code" />
           <Link to="/loading" className="btn btn-green inline-block mb-4">
             Verify
@@ -102,7 +104,6 @@ const AuthVerify = () => (
           <p className="text-gray-dark">Resend code by: <a href="">SMS</a></p>
           <p className="text-gray-dark">Having trouble? <Link to="/Help">Get help</Link></p>
         </div>
-
       </div>
     </main>
     <footer className="fixed pin-b pin-x">
@@ -135,29 +136,8 @@ class Loading extends React.Component {
 
 const Home = () => (
   <div className="app">
-    <header className="app-header flex content-start flex-wrap">
-      <div className="w-1/3">
-        {/* waiting for menu */}
-      </div>
-      <div className="w-1/3 text-center align-middle">
-        <Link className="block" to="/">
-          <img src={Logo} className="app-logo" alt="logo" />
-        </Link>
-      </div>
-      <div className="w-1/3 text-right align-middle app-header-ctas">
-        <Link className="inline-block" to="/help">
-          Help
-        </Link>
-      </div>
-    </header>
-
-    <div className="text-center pt-16 pb-10 mb-8">
-      <h2 className="mb-2 text-3xl">Morning, Matt!</h2>
-      <p className="text-gray-dark text-base flex items-start justify-center">
-        <img src={weatherPartlySunny} className="mr-2" alt="Partly Sunny" />
-        <span className="inline-block">Mostly Sunny 90° F</span>
-      </p>
-    </div>
+    <AppHeader />
+    <AgentHomeBanner />
 
     {/* BEGIN: REFERRAL LIST ZERO STATE */}
     <main className="container mx-auto px-2">
@@ -403,71 +383,7 @@ const Home = () => (
       </div>
       </div>
 
-      <div className="milestone-count mb-16">
-        <h3 className="mb-4 ml-6 text-2xl">
-          Milestones
-        </h3>
-        <div className="border border-grey-light p-8 rounded-lg">
-          <p className="text-gray-dark text-base mb-6">
-            A brief overview of your business
-          </p>
-          <div className="flex py-4">
-            <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
-              <span className="inline-block mt-6">75%</span>
-            </div>
-            <div className="flex-1">
-              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Talk</h4>
-              <p className="text-gray-dark font-normal text-sm">Have you made first contact?</p>
-            </div>
-          </div>
-          <div className="flex py-4">
-            <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
-              <span className="inline-block mt-6">50%</span>
-            </div>
-            <div className="flex-1">
-              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Set</h4>
-              <p className="text-gray-dark font-normal text-sm">Have you scheduled a time to meet in-person?</p>
-            </div>
-          </div>
-          <div className="flex py-4">
-            <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
-              <span className="inline-block mt-6">25%</span>
-            </div>
-            <div className="flex-1">
-              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Met</h4>
-              <p className="text-gray-dark font-normal text-sm">Did you meet the referral in-person?</p>
-            </div>
-          </div>
-
-          <div className="flex py-4">
-            <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
-              <span className="inline-block mt-6">0%</span>
-            </div>
-            <div className="flex-1">
-              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Offer</h4>
-              <p className="text-gray-dark font-normal text-sm">Has your client made an offer on a home yet?</p>
-            </div>
-          </div>
-          <div className="flex py-4">
-            <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
-              <span className="inline-block mt-6">0%</span>
-            </div>
-            <div className="flex-1">
-              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Accept</h4>
-              <p className="text-gray-dark font-normal text-sm">Has the seller accepted your clients offer?</p>
-            </div>
-          </div>
-          <div className="flex py-4">
-            <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
-              <span className="inline-block mt-6">0%</span>
-            </div>
-            <div className="flex-1">
-              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Transact</h4>
-              <p className="text-gray-dark font-normal text-sm">Has your client closed on a home?</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Milestones talk="83" set="66" met="33" offer="0" accept="0" transact="0" />
 
     </main>
   </div>
