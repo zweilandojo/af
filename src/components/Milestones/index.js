@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class Milestones extends React.Component {
   render() {
@@ -54,7 +54,7 @@ class Milestones extends React.Component {
             </div>
             <div className="flex-1">
               <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Accept</h4>
-              <p className="text-gray-dark font-normal text-sm">Has the seller accepted your client's offer?</p>
+              <p className="text-gray-dark font-normal text-sm">Has the seller accepted your client’s offer?</p>
             </div>
           </div>
           <div className="flex py-4">
