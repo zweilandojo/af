@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-arrow-down-circle</title>
+    <defs>
+        <path d="M24.536,12.88 L16.879,20.54 C16.639,20.78 16.311,20.85 16,20.79 C15.689,20.85 15.361,20.78 15.122,20.54 L7.464,12.88 C7.074,12.49 7.074,11.86 7.464,11.46 C7.855,11.07 8.488,11.07 8.879,11.46 L16,18.59 L23.121,11.46 C23.512,11.07 24.145,11.07 24.536,11.46 C24.926,11.86 24.926,12.49 24.536,12.88 L24.536,12.88 Z M16,0 C7.164,0 0,7.16 0,16 C0,24.84 7.164,32 16,32 C24.837,32 32,24.84 32,16 C32,7.16 24.837,0 16,0 L16,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Agent-Detail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Client-Profile-(Mobile)" transform="translate(-307.000000, -855.000000)">
+            <g id="Group-24" transform="translate(24.000000, 843.000000)">
+                <g id="icon/custom-arrow-down-circle" transform="translate(283.000000, 12.000000)">
+                    <rect id="Bounding-Box" x="0" y="0" width="32" height="32"></rect>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#00B0FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <g id="↳-🎨Color" stroke-width="1" fill-rule="evenodd" mask="url(#mask-2)" fill="#757575">
+                        <g id="fill/grey/3---slate">
+                            <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
