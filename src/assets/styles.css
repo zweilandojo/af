@@ -329,6 +329,17 @@ select {
   box-shadow: 0 -2px 16px rgba(0,0,0,.07);
 }
 
+.referral-list_needs-review .avatar-image {
+  opacity: .6;
+}
+.referral-list_reviewed .avatar-image {
+  opacity: .7;
+}
+.referral-list_dead .avatar-image {
+  opacity: 1;
+}
+
+
 
 /* SIGN IN */
 .sign-in {

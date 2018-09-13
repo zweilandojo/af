@@ -11,7 +11,7 @@ import logoOJOWhite from './assets/images/ojo-logo-white.svg';
 import iconEmail from './assets/images/icon-ios-email.svg';
 import iconPhone from './assets/images/icon-phone.svg';
 import iconClose from './assets/images/icon-close.svg';
-// import iconPerson from './assets/images/icon-person.svg';
+import iconPerson from './assets/images/icon-person.svg';
 // import iconChevronRight from './assets/images/icon-chevron-right.svg';
 import iconChevronRightGray from './assets/images/icon-chevron-right-gray.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
@@ -168,7 +168,7 @@ const Home = () => (
       </h3>
       <div className="border border-grey-light p-8 rounded-lg">
         <div className="clearfix">
-          <p className="text-base text-gray mb-6">No referrals assigned.</p>
+          <p className="text-base text-gray mb-6">No referrals assigned</p>
         </div>
         <div className="py-4 border-b border-grey-light flex">
           <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
@@ -238,15 +238,15 @@ const Home = () => (
         <div className="border border-grey-light p-8 rounded-lg">
           <div className="clearfix">
             <p className="text-gray-dark float-left text-base mb-6">
-              Please review by Wed, Sept 5
+              Please review by Wed, Sept 19
             </p>
           </div>
 
         {/* REFERRAL TRACKING LIST */}
         <div>
-          <Link to="/clients/client-1" className="py-4 border-b border-grey-light flex">
-            <div className="rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
-              GC
+          <Link to="/clients/client-1" className="py-4 border-b border-grey-light flex referral-list_needs-review">
+            <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
+              <div className="avatar-initials">GC</div>
             </div>
             <div className="flex-initial ml-4">
               <span className="text-lg block mb-1">
@@ -254,12 +254,12 @@ const Home = () => (
               </span>
               <div>
                 <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
-                <span className="ml-1 inline text-gray-dark text-xs">Talk</span>
+                <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <span className="ml-1 inline text-gray-dark text-xs">Met</span>
               </div>
             </div>
             <div className="flex-1 text-right">
@@ -269,21 +269,22 @@ const Home = () => (
             </div>
           </Link>
 
-          <Link to="/clients/client-2" className="py-4 border-b border-grey-light flex">
-            <div className="rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
-              SK
+          <Link to="/clients/client-2" className="py-4 border-b border-grey-light flex referral-list_needs-review">
+            <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
+              <img src={iconPerson} className="avatar-image" alt="avatar" />
+              <div className="avatar-initials"></div>
             </div>
             <div className="flex-initial ml-4">
               <span className="text-lg block mb-1">
-                Stephan Kiker
+                17153233415
               </span>
               <div>
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <span className="ml-1 inline text-gray-dark text-xs"></span>
               </div>
             </div>
@@ -295,8 +296,8 @@ const Home = () => (
           </Link>
 
           <Link to="/clients/client-2" className="py-4 border-b border-grey-light flex">
-            <div className="rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
-              JB
+            <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
+              <div className="avatar-initials">JB</div>
             </div>
             <div className="flex-initial ml-4">
               <span className="text-lg block mb-1">
@@ -305,10 +306,10 @@ const Home = () => (
               <div>
                 <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
                 <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <span className="ml-1 inline text-gray-dark text-xs">Set</span>
               </div>
             </div>
@@ -320,9 +321,36 @@ const Home = () => (
             </div>
           </Link>
 
-          <Link to="/clients/client-4" className="pt-4 flex">
-            <div className="rounded-full flex items-center justify-center h-10 w-10 bg-gray-light text-white">
-              DJ
+          <Link to="/clients/client-4" className="py-4 border-b border-grey-light flex referral-list_reviewed">
+            <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
+              <img src={iconPerson} className="avatar-image" alt="avatar image" />
+              <div className="avatar-initials"></div>
+            </div>
+            <div className="flex-initial ml-4">
+              <span className="text-lg block mb-1">
+                15125551234
+              </span>
+              <div>
+                <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <span className="ml-1 inline text-gray-dark text-xs">Set</span>
+              </div>
+            </div>
+            <div className="flex-1 text-right">
+              <div>
+                <span className="text-red text-sm mr-1"></span>
+                <img src={iconChevronRightGray} className="svg-gray" alt="" />
+              </div>
+            </div>
+          </Link>
+
+          <Link to="/clients/client-5" className="py-4 border-b border-grey-light flex referral-list_dead">
+            <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-gray-light text-white">
+              <div className="avatar-initials">DJ</div>
             </div>
             <div className="flex-initial ml-4">
               <span className="text-lg block mb-1">
@@ -332,10 +360,37 @@ const Home = () => (
                 <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
                 <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
                 <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxUnchecked} className="h-3 w-3 mr-1" alt="" />
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <span className="ml-1 inline text-gray-dark text-xs">Met</span>
+              </div>
+            </div>
+            <div className="flex-1 text-right">
+              <div>
+                <span className="text-red text-sm mr-1"></span>
+                <img src={iconChevronRightGray} className="svg-gray" alt="" />
+              </div>
+            </div>
+          </Link>
+
+          <Link to="/clients/client-5" className="pt-4 flex referral-list_dead">
+            <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-gray-light text-white">
+              <img src={iconPerson} className="avatar-image" alt="avatar image" />
+              <div className="avatar-initials"></div>
+            </div>
+            <div className="flex-initial ml-4">
+              <span className="text-lg block mb-1">
+                15128971234
+              </span>
+              <div>
+                <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+                <span className="ml-1 inline text-gray-dark text-xs">Talk</span>
               </div>
             </div>
             <div className="flex-1 text-right">
@@ -667,27 +722,6 @@ const Help = () => (
 
 const Clients = ({ match }) => (
   <div>
-    {/*
-    <h2>Clients</h2>
-    <ul>
-      <li>
-        <Link to={`${match.url}/client-1`}>
-          Gunny Celis
-        </Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/client-2`}>
-          Stephan Kiker
-        </Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/client-3`}>
-          Javier Benitiz
-        </Link>
-      </li>
-    </ul>
-    */}
-
     <Route path={`${match.path}/:clientId`} component={Client}/>
     <Route exact path={match.path} render={() => (
       <h3>Client List</h3>
