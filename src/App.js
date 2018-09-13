@@ -17,7 +17,6 @@ import iconChevronRightGray from './assets/images/icon-chevron-right-gray.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
 // import iconCheckmark from './assets/images/icon-checkmark.svg';
 import iconCheckboxChecked from './assets/images/icon-checkmark-checked.svg';
-import iconCheckboxUnchecked from './assets/images/icon-checkbox-unchecked.svg';
 import iconCheckboxGray from './assets/images/icon-checkmark-checked-gray.svg';
 // import iconCheckmarkWhite from './assets/images/icon-checkmark-white.svg';
 import iconPhoneCircle from './assets/images/icon-phone-circle.svg';
@@ -323,7 +322,7 @@ const Home = () => (
 
           <Link to="/clients/client-4" className="py-4 border-b border-grey-light flex referral-list_reviewed">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
-              <img src={iconPerson} className="avatar-image" alt="avatar image" />
+              <img src={iconPerson} className="avatar-image" alt="avatar" />
               <div className="avatar-initials"></div>
             </div>
             <div className="flex-initial ml-4">
@@ -376,7 +375,7 @@ const Home = () => (
 
           <Link to="/clients/client-5" className="pt-4 flex referral-list_dead">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-gray-light text-white">
-              <img src={iconPerson} className="avatar-image" alt="avatar image" />
+              <img src={iconPerson} className="avatar-image" alt="avatar" />
               <div className="avatar-initials"></div>
             </div>
             <div className="flex-initial ml-4">
@@ -504,7 +503,7 @@ class Client extends Component {
             Gunny Celis
           </h2>
           <h4 className="font-normal text-gray-dark text-sm">
-            Austin, TX
+            Referred: Aug 29, 2018
           </h4>
           <div className="flex justify-center">
             <a href="sms:15125551234" className="py-6 px-4 block text-center">
