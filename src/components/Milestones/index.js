@@ -11,7 +11,8 @@ class Milestones extends React.Component {
           <p className="text-gray-dark text-base mb-6">
             An overview of your referral progress
           </p>
-          <div className="flex py-4">
+          <div className
+          ="flex py-4">
             <div className="text-lg bg-gray-light rounded-full h-16 w-16 text-center mr-4">
               <span className="inline-block mt-6">{this.props.talk}%</span>
             </div>
