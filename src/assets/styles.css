@@ -1,3 +1,4 @@
+
 /* Import Sofia fonts */
 @font-face {
   font-family: "Sofia Pro Regular";
@@ -318,6 +319,12 @@ select {
 }
 
 
+/* Max Width */
+.max-w-400 {
+  max-width: 400px;
+}
+
+
 
 /* COMPONENTS */
 
@@ -342,13 +349,6 @@ select {
 }
 .referral-list_dead .avatar-image {
   opacity: 1;
-}
-
-
-
-/* SIGN IN */
-.sign-in {
-  max-width: 400px;
 }
 
 

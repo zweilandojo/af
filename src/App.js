@@ -34,7 +34,7 @@ const SignIn = () => (
           <img src={logoBlueCircle} className="mt-10" alt="logo" />
         </Link>
     </header>
-    <main className="container mx-auto px-6 sign-in">
+    <main className="container mx-auto px-6 mb-24 pb-8 max-w-400 relative z-10 bg-white">
       <div className="text-center mt-10 m-auto">
         <h2 className="mb-6">Welcome!</h2>
         <p className="mb-4 font-black text-base">
@@ -66,7 +66,7 @@ const SignIn = () => (
 
       </div>
     </main>
-    <footer className="fixed pin-b pin-x">
+    <footer className="fixed pin-b pin-x pt-16">
       <div className="text-center py-4 text-xs">
         <a href="mailto:support@ojolabs.com" className="inline-block text-gray-dark">support@ojolabs.com</a>
         <span className="mx-2 text-gray">|</span>
@@ -84,7 +84,7 @@ const AuthVerify = () => (
           <img src={logoBlueCircle} className="mt-10" alt="logo" />
         </Link>
     </header>
-    <main className="container mx-auto px-6 sign-in">
+    <main className="container mx-auto px-6 mb-24 pb-8 max-w-400 relative z-10 bg-white">
       <div className="text-center mt-10 m-auto">
         <h2 className="mb-6">SMS Verification</h2>
         <p className="mb-4 font-black text-base">
@@ -106,7 +106,7 @@ const AuthVerify = () => (
         </div>
       </div>
     </main>
-    <footer className="fixed pin-b pin-x">
+    <footer className="fixed pin-b pin-x pt-16">
       <div className="text-center py-4 text-xs">
         <a href="mailto:support@ojolabs.com" className="inline-block text-gray-dark">support@ojolabs.com</a>
         <span className="mx-2 text-gray">|</span>
