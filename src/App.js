@@ -447,7 +447,7 @@ class Client extends Component {
 
       </div>
 
-        <main className="container mx-auto px-6 pb-24">
+        <main className="container mx-auto px-6 pb-24 max-w-lg">
           <section className="pb-6 mb-6 border-b border-grey-lightest mt-8">
               <header className="mb-6">
                 <h3 className="mb-4 ml-6 text-2xl">
@@ -510,9 +510,10 @@ class Client extends Component {
                 <h3 className="mb-4 ml-6 text-2xl">
                   Likelihood of closing
                 </h3>
-                <p className="text-grey-dark text-xs">How are things working out?</p>
               </header>
-              <form className="">
+              <form className="border border-grey-light p-8 rounded-lg">
+                <p className="text-grey-dark text-base mb-8">How likely will this referral close with you?</p>
+
                 <div className="mb-2">
                   <label className="text-base input-radio-container">Dead
                     <input type="radio" className="input-radio mr-2" name="relationship" />
@@ -557,11 +558,10 @@ class Client extends Component {
                 <h3 className="mb-4 ml-6 text-2xl">
                   Projected close month
                 </h3>
-                <p className="text-grey-dark text-xs">
-                  When do you think they’ll close?
-                </p>
               </header>
-              <div>
+              <div className="border border-grey-light p-8 rounded-lg">
+                <p className="text-grey-dark text-base mb-8">When do you think they’ll close?</p>
+
                 <select className="input select" placeholder="Select a month...">
                   <option>Dead</option>
                   <option>September ’18</option>
@@ -591,18 +591,17 @@ class Client extends Component {
                 <h3 className="mb-4 ml-6 text-2xl">
                   Notes
                 </h3>
-                <p className="text-grey-dark text-xs">
-                  Anything special about this client?
-                </p>
               </header>
-              <div>
+              <div className="border border-grey-light p-8 rounded-lg">
+                <p className="text-grey-dark text-base mb-8">Anything special about this client?</p>
+
                 <textarea className="input textarea" placeholder="What's the situation?">
                 </textarea>
               </div>
             </section>
 
             <section className="fixed pin-b actions">
-              <div className="container flex items-center px-6 mx-auto">
+              <div className="container flex items-center px-6 mx-auto max-w-lg">
                 <span className="flex-1 text-xs text-grey-dark">Everything look good?</span>
                 <div className="flex-1">
                   <button className="btn btn-green">Save</button>
