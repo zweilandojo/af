@@ -139,7 +139,7 @@ const Home = () => (
     <AppHeader />
     <AgentHomeBanner />
 
-    <main className="container mx-auto px-2">
+    <main className="container mx-auto px-2 max-w-lg">
 
       <div className="referral-tracking clearfix mb-12">
         <h3 className="mb-4 ml-6 text-2xl">
@@ -633,7 +633,7 @@ const Help = () => (
         Contact Support
       </h4>
       */}
-      <div className="max-w-400 mx-auto">
+      <div className="max-w-sm mx-auto">
         <a href="mailto:support@ojolabs.com" className="clearfix mb-4 block py-4 px-4 shadow rounded-full">
           <div className="float-left mr-4 bg-blue rounded-full h-10 w-10 text-center">
             <img className="icon icon-email mt-3" src={iconEmailWhite} alt="email icon" />
