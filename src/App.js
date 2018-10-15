@@ -7,8 +7,6 @@ import {
 
 import logoBlueCircle from './assets/images/logo-ojo-bg-blue.svg';
 import logoOJOWhite from './assets/images/ojo-logo-white.svg';
-import iconEmailWhite from './assets/images/icon-ios-email-w.svg';
-import iconPhoneWhite from './assets/images/icon-phone-w.svg';
 // import iconClose from './assets/images/icon-close.svg';
 // import iconChevronRight from './assets/images/icon-chevron-right.svg';
 import iconChevronRightgrey from './assets/images/icon-chevron-right-gray.svg';
@@ -23,6 +21,9 @@ import iconPhoneCircle from './assets/images/icon-phone-circle.svg';
 import iconMessageCircle from './assets/images/icon-message-circle.svg';
 import logoGoogle from './assets/images/logo-google.svg';
 import logoFB from './assets/images/logo-fb.svg';
+import iconChatWhite from './assets/images/icon-chat-w.png';
+import iconPhoneWhite from './assets/images/icon-phone-w.png';
+import iconEmailWhite from './assets/images/icon-email-w.png';
 
 import AppHeader from './components/AppHeader/index.js';
 import AgentHomeBanner from './components/AgentHomeBanner/index.js';
@@ -417,6 +418,9 @@ class Client extends Component {
           </header>
 
           <div className="app-banner text-center pt-8 pb-2 mb-8">
+            <div className="avatar avatar-lg flex items-center">
+              <span className="block w-full text-center mt-2">G</span>
+            </div>
             <h2 className="mb-2 text-white">
               {/* {match.params.clientFullName} */}
               {/* {match.params.phoneNumber} */}
@@ -427,24 +431,50 @@ class Client extends Component {
             </h4>
             <div className="flex justify-center">
               <a href="sms:15125551234" className="py-6 px-4 block text-center">
-                <div>
-                  <img src={iconMessageCircle} className="h-12 w-12" alt="sms message" />
+                <div className="btn-contact-icon flex items-center">
+                  <div className="block w-full text-center">
+                    <img src={iconChatWhite} className="" alt="sms message" />
+                  </div>
                 </div>
                 <small className="block text-white">
                   message
                 </small>
               </a>
               <a href="tel:15125551234" className="py-6 px-4 block text-center">
-                <div>
-                  <img src={iconPhoneCircle} className="h-12 w-12" alt="" />
+                <div className="btn-contact-icon flex items-center">
+                  <div className="block w-full text-center">
+                    <img src={iconPhoneWhite} className="h-12 w-12" alt="" />
+                  </div>
                 </div>
                 <small className="block text-white">
                   call
                 </small>
               </a>
+              <a href="mailto:email@address.com" className="py-6 px-4 block text-center">
+                <div className="btn-contact-icon flex items-center">
+                  <div className="block w-full text-center">
+                    <img src={iconEmailWhite} className="h-12 w-12" alt="" />
+                  </div>
+                </div>
+                <small className="block text-white">
+                  email
+                </small>
+              </a>
             </div>
           </div>
 
+          <nav className="nav nav-tabs card-top">
+            <div className="tab">
+              <Link to="/clients/client-1">
+                Profile
+              </Link>
+            </div>
+            <div className="tab active">
+              <Link to="/clients/client-1/review">
+                Review
+              </Link>
+            </div>
+          </nav>
       </div>
 
         <main className="container mx-auto px-6 pb-24 max-w-lg">
