@@ -13,6 +13,7 @@ import iconPhoneWhite from './assets/images/icon-phone-w.svg';
 // import iconChevronRight from './assets/images/icon-chevron-right.svg';
 import iconChevronRightgrey from './assets/images/icon-chevron-right-gray.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
+import iconChevronLeftWhite from './assets/images/icon-chevron-left-w.svg';
 // import iconCheckmark from './assets/images/icon-checkmark.svg';
 import iconCheckboxChecked from './assets/images/icon-checkmark-checked.svg';
 import iconCheckboxgrey from './assets/images/icon-checkmark-checked-gray.svg';
@@ -38,7 +39,7 @@ const SignIn = () => (
       <div className="text-center mt-10 m-auto">
         <h2 className="mb-6">Welcome!</h2>
         <p className="mb-4 font-black text-base">
-          Sign in to view your OJO referrals:
+          Enter your mobile number to view your OJO Referrals
         </p>
         <form>
           <input className="input mb-2"
@@ -400,59 +401,66 @@ class Client extends Component {
   render() {
     return (
       <div className="app">
-        <header className="h-16 flex flex-wrap">
-          <div className="w-1/3 app-header-back-button">
-            <Link to="/" className="block">
-              <img src={iconChevronLeft} className="mr-1 float-left" alt="chevron left" />
-            </Link>
-          </div>
-          <div className="w-1/3 text-center align-middle">
-            <div className="">
+        <div className="review-status-wrapper">
+          <header className="h-16 flex flex-wrap">
+            <div className="w-1/3 app-header-back-button">
+              <Link to="/" className="block">
+                <img src={iconChevronLeftWhite} className="mr-1 float-left" alt="chevron left" />
+              </Link>
+            </div>
+            {/*
+            <div className="w-1/3 text-center align-middle">
+              <div className="">
+              </div>
+            </div>
+            */}
+          </header>
 
+          <div className="app-banner text-center pt-8 pb-2 mb-8">
+            <h2 className="mb-2 text-white">
+              {/* {match.params.clientFullName} */}
+              {/* {match.params.phoneNumber} */}
+              Gunny Celis
+            </h2>
+            <h4 className="font-normal text-white text-grey-dark text-sm">
+              Referred: Aug 29, 2018
+            </h4>
+            <div className="flex justify-center">
+              <a href="sms:15125551234" className="py-6 px-4 block text-center">
+                <div>
+                  <img src={iconMessageCircle} className="h-12 w-12" alt="sms message" />
+                </div>
+                <small className="block text-white">
+                  message
+                </small>
+              </a>
+              <a href="tel:15125551234" className="py-6 px-4 block text-center">
+                <div>
+                  <img src={iconPhoneCircle} className="h-12 w-12" alt="" />
+                </div>
+                <small className="block text-white">
+                  call
+                </small>
+              </a>
             </div>
           </div>
-        </header>
 
-        <div className="app-banner text-center pt-8 pb-2 mb-8">
-          <h2 className="mb-2">
-            {/* {match.params.clientFullName} */}
-            {/* {match.params.phoneNumber} */}
-            Gunny Celis
-          </h2>
-          <h4 className="font-normal text-grey-dark text-sm">
-            Referred: Aug 29, 2018
-          </h4>
-          <div className="flex justify-center">
-            <a href="sms:15125551234" className="py-6 px-4 block text-center">
-              <div>
-                <img src={iconMessageCircle} className="h-12 w-12" alt="sms message" />
-              </div>
-              <small className="block text-blue">
-                message
-              </small>
-            </a>
-            <a href="tel:15125551234" className="py-6 px-4 block text-center">
-              <div>
-                <img src={iconPhoneCircle} className="h-12 w-12" alt="" />
-              </div>
-              <small className="block text-blue">
-                call
-              </small>
-            </a>
-          </div>
-        </div>
+      </div>
 
         <main className="container mx-auto px-6 pb-24">
-          <section className="pb-6 mb-6 border-b border-grey-lightest">
+          <section className="pb-6 mb-6 border-b border-grey-lightest mt-8">
               <header className="mb-6">
-                <h3 className="mb-2">
+                <h3 className="mb-4 ml-6 text-2xl">
                   Progress
-                  <span className="ml-2 text-sm text-grey float-right">(0% complete)</span>
+                  {/*
+                    <span className="ml-2 text-sm text-grey float-right">(0% complete)</span>
+                  */}
                 </h3>
-                <p className="text-grey-dark text-xs">Which steps have you completed?</p>
               </header>
-              <div className="">
-                <ul className="list-reset text-center">
+              <div className="border border-grey-light p-8 rounded-lg">
+                <p className="text-grey-dark text-base mb-8">Which steps have you completed?</p>
+
+                <ul className="list-reset text-center block">
 
                   {/* BEGIN ACTIVE PROGRESS CHECKBOX */}
                   <li className="btn-stroked active mr-1 mb-3">
@@ -499,8 +507,8 @@ class Client extends Component {
 
             <section className="pb-6 mb-6 border-b border-grey-lightest">
               <header className="mb-4">
-                <h3 className="mb-2">
-                  Rate your relationship
+                <h3 className="mb-4 ml-6 text-2xl">
+                  Likelihood of closing
                 </h3>
                 <p className="text-grey-dark text-xs">How are things working out?</p>
               </header>
@@ -546,7 +554,7 @@ class Client extends Component {
 
             <section className="pb-6 mb-6 border-b border-grey-lightest">
               <header className="mb-4">
-                <h3 className="mb-2">
+                <h3 className="mb-4 ml-6 text-2xl">
                   Projected close month
                 </h3>
                 <p className="text-grey-dark text-xs">
@@ -580,7 +588,7 @@ class Client extends Component {
 
             <section className="pb-6 mb-6">
               <header className="mb-4">
-                <h3 className="mb-2">
+                <h3 className="mb-4 ml-6 text-2xl">
                   Notes
                 </h3>
                 <p className="text-grey-dark text-xs">
@@ -616,7 +624,7 @@ const Help = () => (
         </Link>
       </div>
       <div className="w-1/3 text-center">
-        <h6 className="text-base py-6 leading-normal">
+        <h6 className="text-base font-medium py-6 leading-normal">
           OJO Support
         </h6>
       </div>

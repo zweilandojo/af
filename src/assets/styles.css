@@ -430,3 +430,10 @@ select {
     transform: rotate(360deg);
   }
 }
+
+/* REFERRAL DETAIL */
+.review-status-wrapper {
+  width: 100%;
+  height: 368px;
+  background: linear-gradient(180deg, #3366FF 0%, #62F1AC 100%);
+}
