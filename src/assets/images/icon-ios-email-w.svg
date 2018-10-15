@@ -13,11 +13,11 @@
                     <mask id="mask-2" fill="white">
                         <use xlink:href="#path-1"></use>
                     </mask>
-                    <use id="Mask" fill="#BDBDBD" xlink:href="#path-1"></use>
+                    <use id="Mask" fill="#ffffff" xlink:href="#path-1"></use>
                     <g id="↳-🎨Color" mask="url(#mask-2)">
-                        <g transform="translate(-3.000000, -6.000000)" id="fill/grey/1---black">
+                        <g transform="translate(-3.000000, -6.000000)" id="fill/grey/7---white">
                             <g>
-                                <rect id="Rectangle" fill="#212121" x="0" y="0" width="24" height="24"></rect>
+                                <rect id="Rectangle" fill="#ffffff" x="0" y="0" width="24" height="24"></rect>
                             </g>
                         </g>
                     </g>

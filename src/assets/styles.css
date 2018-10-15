@@ -24,28 +24,17 @@ h1, h2, h3, h4 { font-family: "Sofia Pro Medium", sans-serif; font-weight: 500;}
 h1 { font-size: 1.5rem } /* 24px */
 
 .app-header {
-  background: white;
-  height: 48px;
-}
-
-.app-logo {
-  margin-top: 12px;
-  height: 1.5rem;
-}
-
-.app-header-ctas a, .app-header-title {
-  padding: 12px 1.5rem;
-  line-height: 24px;
+  height: 4rem; /* 64px */
 }
 
 .app-header-back-button {
-  height: 48px;
+  height: 64px;
   padding: 0;
 }
 .app-header-back-button a {
-  padding-top: 14px;
-  padding-left: 1rem;
-  height: 48px;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  height: 64px;
 }
 .app-header-back-button span {
   position: relative;
@@ -55,6 +44,8 @@ h1 { font-size: 1.5rem } /* 24px */
 
 
 /* COLORS */
+
+/* Text Color */
 .text-black { color: #212121; }
 .text-gray-darkest { color: #424242; }
 .text-gray-dark { color: #757575; }
@@ -66,6 +57,7 @@ h1 { font-size: 1.5rem } /* 24px */
 .text-blue { color: #3366FF; }
 .text-red { color: #EC1561; }
 
+/* Background Color */
 .bg-black { background-color: #212121; }
 .bg-gray-darkest { background-color: #424242; }
 .bg-gray-dark { background-color: #757575; }
@@ -74,7 +66,9 @@ h1 { font-size: 1.5rem } /* 24px */
 .bg-gray-lightest { background-color: #FAFAFA; }
 .bg-white { background-color: white; }
 
+.bg-blue { background-color: #3366FF; }
 .bg-red-light { background-color: #F68EB1; }
+.bg-green { background-color: #00CA4C; }
 .bg-green-light { background-color: #62F1AC; }
 
 .svg-gray {
@@ -181,7 +175,6 @@ a {
   line-height: 3.5rem;
 }
 
-
 .btn-stroked {
   border: 2px solid #EEEEEE;
   border-radius: 3rem;
@@ -214,6 +207,11 @@ a {
   border: 0;
 }
 
+/* SHADOWS */
+.shadow {
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.04),
+              0 0 16px 0 rgba(0,0,0,0.08);
+}
 
 .checkbox {
   -webkit-appearance: none;
@@ -318,12 +316,10 @@ select {
   background-size: 16px 15px;
 }
 
-
 /* Max Width */
 .max-w-400 {
   max-width: 400px;
 }
-
 
 
 /* COMPONENTS */

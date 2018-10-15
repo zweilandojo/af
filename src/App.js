@@ -7,9 +7,9 @@ import {
 
 import logoBlueCircle from './assets/images/logo-ojo-bg-blue.svg';
 import logoOJOWhite from './assets/images/ojo-logo-white.svg';
-import iconEmail from './assets/images/icon-ios-email.svg';
-import iconPhone from './assets/images/icon-phone.svg';
-import iconClose from './assets/images/icon-close.svg';
+import iconEmailWhite from './assets/images/icon-ios-email-w.svg';
+import iconPhoneWhite from './assets/images/icon-phone-w.svg';
+// import iconClose from './assets/images/icon-close.svg';
 // import iconChevronRight from './assets/images/icon-chevron-right.svg';
 import iconChevronRightGray from './assets/images/icon-chevron-right-gray.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
@@ -139,75 +139,6 @@ const Home = () => (
     <AppHeader />
     <AgentHomeBanner />
 
-    {/* BEGIN: REFERRAL LIST ZERO STATE */}
-    <main className="container mx-auto px-2">
-    <div className="referral-tracking clearfix mb-12">
-      <h3 className="mb-4 ml-6 text-2xl">
-        Referrals
-      </h3>
-      <div className="border border-grey-light p-8 rounded-lg">
-        <div className="clearfix">
-          <p className="text-base text-gray mb-6">No referrals assigned</p>
-        </div>
-        <div className="py-4 border-b border-grey-light flex">
-          <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
-            {/* Nothing here */}
-          </div>
-          <div className="flex-initial ml-4 ">
-            <span className="h-3 w-24 rounded-full bg-gray-light block mt-2 mb-2">
-              {/* Nothing here */}
-            </span>
-            <div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white"></div>
-            </div>
-          </div>
-        </div>
-        <div className="py-4 border-b border-grey-light flex">
-          <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
-            {/* Nothing here */}
-          </div>
-          <div className="flex-initial ml-4 ">
-            <span className="h-3 w-24 rounded-full bg-gray-light block mt-2 mb-2">
-              {/* Nothing here */}
-            </span>
-            <div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white"></div>
-            </div>
-          </div>
-        </div>
-        <div className="py-4 flex">
-          <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
-            {/* Nothing here */}
-          </div>
-          <div className="flex-initial ml-4">
-            <span className="h-3 w-24 rounded-full bg-gray-light block mt-2 mb-2">
-              {/* Nothing here */}
-            </span>
-            <div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white"></div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </main>
-    {/* END: REFERRAL LIST ZERO STATE */}
-
     <main className="container mx-auto px-2">
 
       <div className="referral-tracking clearfix mb-12">
@@ -225,7 +156,7 @@ const Home = () => (
         <div>
           <Link to="/clients/client-1" className="py-4 border-b border-grey-light flex referral-list_needs-review">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
-              <div className="avatar-initials">GC</div>
+              <div className="avatar-initials">G</div>
             </div>
             <div className="flex-initial ml-4">
               <span className="text-lg block mb-1">
@@ -384,8 +315,78 @@ const Home = () => (
       </div>
 
       <Milestones talk="83" set="66" met="33" offer="0" accept="0" transact="0" />
-
     </main>
+
+    {/* BEGIN: REFERRAL LIST ZERO STATE */}
+    <main className="container mx-auto px-2">
+      <div className="referral-tracking clearfix mb-12">
+      <h3 className="mb-4 ml-6 text-2xl">
+        Referrals
+      </h3>
+      <div className="border border-grey-light p-8 rounded-lg">
+        <div className="clearfix">
+          <p className="text-base text-gray mb-6">
+            No referrals assigned
+          </p>
+        </div>
+        <div className="py-4 border-b border-grey-light flex">
+          <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
+            {/* Nothing here */}
+          </div>
+          <div className="flex-initial ml-4 ">
+            <span className="h-3 w-24 rounded-full bg-gray-light block mt-2 mb-2">
+              {/* Nothing here */}
+            </span>
+            <div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white"></div>
+            </div>
+          </div>
+        </div>
+        <div className="py-4 border-b border-grey-light flex">
+          <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
+            {/* Nothing here */}
+          </div>
+          <div className="flex-initial ml-4 ">
+            <span className="h-3 w-24 rounded-full bg-gray-light block mt-2 mb-2">
+              {/* Nothing here */}
+            </span>
+            <div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white"></div>
+            </div>
+          </div>
+        </div>
+        <div className="py-4 flex">
+          <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
+            {/* Nothing here */}
+          </div>
+          <div className="flex-initial ml-4">
+            <span className="h-3 w-24 rounded-full bg-gray-light block mt-2 mb-2">
+              {/* Nothing here */}
+            </span>
+            <div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
+              <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white"></div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </main>
+    {/* END: REFERRAL LIST ZERO STATE */}
   </div>
 )
 
@@ -399,21 +400,20 @@ class Client extends Component {
   render() {
     return (
       <div className="app">
-        <header className="app-header flex flex-wrap">
+        <header className="h-16 flex flex-wrap">
           <div className="w-1/3 app-header-back-button">
             <Link to="/" className="block">
               <img src={iconChevronLeft} className="mr-1 float-left" alt="chevron left" />
-              <span>Home</span>
             </Link>
           </div>
           <div className="w-1/3 text-center align-middle">
-            <div className="app-header-title">
-              Referral
+            <div className="">
+
             </div>
           </div>
         </header>
 
-        <div className="app-banner bg-gray-lightest text-center pt-8 pb-2 mb-8">
+        <div className="app-banner text-center pt-8 pb-2 mb-8">
           <h2 className="mb-2">
             {/* {match.params.clientFullName} */}
             {/* {match.params.phoneNumber} */}
@@ -609,30 +609,59 @@ class Client extends Component {
 
 const Help = () => (
   <div className="app">
-    <header className="app-header flex flex-row-reverse">
-      <div className="w-1/3 text-right">
-        <Link to="/" className="inline-block px-6 py-4">
-          <img src={iconClose} className="icon icon-close" alt="close icon" />
+    <header className="app-header flex">
+      <div className="w-1/3 app-header-back-button">
+        <Link to="/" className="inline-block px-6 py-6">
+          <img src={iconChevronLeft} className="icon icon-chevron-left mr-1 float-left" alt="close icon" />
         </Link>
       </div>
-    </header>
-    <div className="container mx-auto px-6 mt-12">
-      <h1 className="mb-10">Help &amp; Feedback</h1>
-      <h4 className="mb-4">OJO Labs Contact Info</h4>
-      <div>
-        <a href="mailto:support@ojolabs.com" className="block py-4 border-t border-b border-grey-light">
-          <span>support@ojolabs.com</span>
-          <img src={iconEmail} className="icon icon-email float-right" alt="email icon" />
-        </a>
-        <a href="tel:18669731703" className="block py-4 border-b border-grey-light">
-          <span>+1 (866) 973-1703</span>
-          <img className="icon icon-phone float-right" src={iconPhone} alt="phone icon" />
-        </a>
+      <div className="w-1/3 text-center">
+        <h6 className="text-base py-6 leading-normal">
+          OJO Support
+        </h6>
       </div>
-      <div className="mt-16 text-right">
-        <Link to="/signin">Sign out</Link>
+      <div className="w-1/3 text-right">
+        {/* Nothing here */}
+      </div>
+    </header>
+    <div className="container mx-auto px-6 mt-8">
+      <h1 className="mb-8 text-center text-3xl">
+        What can we help<br />you with?
+      </h1>
+      {/*
+      <h4 className="mb-4 text-sm tracking-wide text-gray-dark uppercase">
+        Contact Support
+      </h4>
+      */}
+      <div>
+        <a href="mailto:support@ojolabs.com" className="clearfix mb-4 block py-4 px-4 shadow rounded-full">
+          <div className="float-left mr-4 bg-blue rounded-full h-10 w-10 text-center">
+            <img className="icon icon-email mt-3" src={iconEmailWhite} alt="email icon" />
+          </div>
+          <div className="float-left">
+            <span className="block text-lg text-black leading-normal">Email us</span>
+            <span className="block text-sm text-grey-dark">Typically responds within 24 hours</span>
+          </div>
+        </a>
+        <a href="tel:18669731703" className="clearfix block py-4 px-4 shadow rounded-full">
+          <div className="float-left mr-4 bg-green rounded-full h-10 w-10 text-center">
+            <img className="icon icon-phone mt-2 pt-1" src={iconPhoneWhite} alt="phone icon" />
+          </div>
+          <div className="float-left">
+            <span className="block text-lg text-black leading-normal">Call us</span>
+            <span className="block text-sm text-grey-dark">Mon-Fri, 9am-6pm CST</span>
+          </div>
+        </a>
       </div>
     </div>
+    <div className="text-center bg-white border-t border-b border-grey-light mt-32">
+      <Link to="/signin" className="block text-red text-lg py-6">Sign Out</Link>
+    </div>
+    {/*
+    <div className="text-center text-red py-4 mb-12">
+      <p className="text-black text-sm">Version 1.0.9</p>
+    </div>
+    */}
   </div>
 )
 
