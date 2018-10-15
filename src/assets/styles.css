@@ -47,11 +47,11 @@ h1 { font-size: 1.5rem } /* 24px */
 
 /* Text Color */
 .text-black { color: #212121; }
-.text-gray-darkest { color: #424242; }
-.text-gray-dark { color: #757575; }
-.text-gray { color: #BDBDBD; }
-.text-gray-light { color: #EEEEEE; }
-.text-gray-lightest { color: #FAFAFA; }
+.text-grey-darkest { color: #424242; }
+.text-grey-dark { color: #757575; }
+.text-grey { color: #BDBDBD; }
+.text-grey-light { color: #EEEEEE; }
+.text-grey-lightest { color: #FAFAFA; }
 .text-white { color: white; }
 
 .text-blue { color: #3366FF; }
@@ -59,11 +59,11 @@ h1 { font-size: 1.5rem } /* 24px */
 
 /* Background Color */
 .bg-black { background-color: #212121; }
-.bg-gray-darkest { background-color: #424242; }
-.bg-gray-dark { background-color: #757575; }
-.bg-gray { background-color: #BDBDBD; }
-.bg-gray-light { background-color: #EEEEEE; }
-.bg-gray-lightest { background-color: #FAFAFA; }
+.bg-grey-darkest { background-color: #424242; }
+.bg-grey-dark { background-color: #757575; }
+.bg-grey { background-color: #BDBDBD; }
+.bg-grey-light { background-color: #EEEEEE; }
+.bg-grey-lightest { background-color: #FAFAFA; }
 .bg-white { background-color: white; }
 
 .bg-blue { background-color: #3366FF; }
@@ -125,6 +125,11 @@ h1 { font-size: 1.5rem } /* 24px */
 .border-grey-light *, .border-grey-light ::after, .border-grey-light ::before {
   border-color: #EEEEEE !important;
 }
+
+.border-grey-light {
+  border-color: #EEEEEE;
+}
+
 .rounded-lg {
   border-radius: 0.875rem;
 }

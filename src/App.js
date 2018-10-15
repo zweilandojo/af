@@ -11,11 +11,11 @@ import iconEmailWhite from './assets/images/icon-ios-email-w.svg';
 import iconPhoneWhite from './assets/images/icon-phone-w.svg';
 // import iconClose from './assets/images/icon-close.svg';
 // import iconChevronRight from './assets/images/icon-chevron-right.svg';
-import iconChevronRightGray from './assets/images/icon-chevron-right-gray.svg';
+import iconChevronRightgrey from './assets/images/icon-chevron-right-gray.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
 // import iconCheckmark from './assets/images/icon-checkmark.svg';
 import iconCheckboxChecked from './assets/images/icon-checkmark-checked.svg';
-import iconCheckboxGray from './assets/images/icon-checkmark-checked-gray.svg';
+import iconCheckboxgrey from './assets/images/icon-checkmark-checked-gray.svg';
 // import iconCheckmarkWhite from './assets/images/icon-checkmark-white.svg';
 import iconPerson from './assets/images/icon-person.svg';
 import iconPhoneCircle from './assets/images/icon-phone-circle.svg';
@@ -68,11 +68,11 @@ const SignIn = () => (
     </main>
     <footer className="fixed pin-b pin-x pt-16">
       <div className="text-center py-4 text-xs">
-        <a href="mailto:support@ojolabs.com" className="inline-block text-gray-dark">support@ojolabs.com</a>
-        <span className="mx-2 text-gray">|</span>
-        <a href="tel:15124568292" className="inline-block text-gray-dark">(512) 456-8292</a>
-        <span className="mx-2 text-gray">|</span>
-        <a href="https://content.ojo.me/privacy-policy.pdf" className="inline-block text-gray-dark">Privacy Policy</a></div>
+        <a href="mailto:support@ojolabs.com" className="inline-block text-grey-dark">support@ojolabs.com</a>
+        <span className="mx-2 text-grey">|</span>
+        <a href="tel:15124568292" className="inline-block text-grey-dark">(512) 456-8292</a>
+        <span className="mx-2 text-grey">|</span>
+        <a href="https://content.ojo.me/privacy-policy.pdf" className="inline-block text-grey-dark">Privacy Policy</a></div>
     </footer>
   </div>
 )
@@ -101,18 +101,18 @@ const AuthVerify = () => (
           </Link>
         </form>
         <div className="mt-8 leading-normal text-sm">
-          <p className="text-gray-dark">Resend code by: <a href="">SMS</a></p>
-          <p className="text-gray-dark">Having trouble? <Link to="/Help">Get help</Link></p>
+          <p className="text-grey-dark">Resend code by: <a href="">SMS</a></p>
+          <p className="text-grey-dark">Having trouble? <Link to="/Help">Get help</Link></p>
         </div>
       </div>
     </main>
     <footer className="fixed pin-b pin-x pt-16">
       <div className="text-center py-4 text-xs">
-        <a href="mailto:support@ojolabs.com" className="inline-block text-gray-dark">support@ojolabs.com</a>
-        <span className="mx-2 text-gray">|</span>
-        <a href="tel:15124568292" className="inline-block text-gray-dark">(512) 456-8292</a>
-        <span className="mx-2 text-gray">|</span>
-        <a href="https://content.ojo.me/privacy-policy.pdf" className="inline-block text-gray-dark">Privacy Policy</a></div>
+        <a href="mailto:support@ojolabs.com" className="inline-block text-grey-dark">support@ojolabs.com</a>
+        <span className="mx-2 text-grey">|</span>
+        <a href="tel:15124568292" className="inline-block text-grey-dark">(512) 456-8292</a>
+        <span className="mx-2 text-grey">|</span>
+        <a href="https://content.ojo.me/privacy-policy.pdf" className="inline-block text-grey-dark">Privacy Policy</a></div>
     </footer>
   </div>
 )
@@ -147,7 +147,7 @@ const Home = () => (
         </h3>
         <div className="border border-grey-light p-8 rounded-lg">
           <div className="clearfix">
-            <p className="text-gray-dark float-left text-base mb-6">
+            <p className="text-grey-dark float-left text-base mb-6">
               Please review by Wed, Sept 19
             </p>
           </div>
@@ -169,7 +169,7 @@ const Home = () => (
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                <span className="ml-1 inline text-gray-dark text-xs">Met</span>
+                <span className="ml-1 inline text-grey-dark text-xs">Met</span>
               </div>
             </div>
             <div className="flex-1 text-right">
@@ -195,7 +195,7 @@ const Home = () => (
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                <span className="ml-1 inline text-gray-dark text-xs"></span>
+                <span className="ml-1 inline text-grey-dark text-xs"></span>
               </div>
             </div>
             <div className="flex-1 text-right">
@@ -207,7 +207,7 @@ const Home = () => (
 
           <Link to="/clients/client-2" className="py-4 border-b border-grey-light flex">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
-              <div className="avatar-initials">JB</div>
+              <div className="avatar-initials">J</div>
             </div>
             <div className="flex-initial ml-4">
               <span className="text-lg block mb-1">
@@ -220,13 +220,13 @@ const Home = () => (
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                <span className="ml-1 inline text-gray-dark text-xs">Set</span>
+                <span className="ml-1 inline text-grey-dark text-xs">Set</span>
               </div>
             </div>
             <div className="flex-1 text-right">
               <div>
                 <span className="text-red text-sm mr-1"></span>
-                <img src={iconChevronRightGray} className="svg-gray" alt="" />
+                <img src={iconChevronRightgrey} className="svg-grey" alt="" />
               </div>
             </div>
           </Link>
@@ -247,45 +247,45 @@ const Home = () => (
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                <span className="ml-1 inline text-gray-dark text-xs">Set</span>
+                <span className="ml-1 inline text-grey-dark text-xs">Set</span>
               </div>
             </div>
             <div className="flex-1 text-right">
               <div>
                 <span className="text-red text-sm mr-1"></span>
-                <img src={iconChevronRightGray} className="svg-gray" alt="" />
+                <img src={iconChevronRightgrey} className="svg-grey" alt="" />
               </div>
             </div>
           </Link>
 
           <Link to="/clients/client-5" className="py-4 border-b border-grey-light flex referral-list_dead">
-            <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-gray-light text-white">
-              <div className="avatar-initials">DJ</div>
+            <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-grey-light text-white">
+              <div className="avatar-initials">D</div>
             </div>
             <div className="flex-initial ml-4">
               <span className="text-lg block mb-1">
                 Deadicous Jones
               </span>
               <div>
-                <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
-                <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxgrey} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxgrey} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxgrey} className="h-3 w-3 mr-px" alt="" />
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                <span className="ml-1 inline text-gray-dark text-xs">Met</span>
+                <span className="ml-1 inline text-grey-dark text-xs">Met</span>
               </div>
             </div>
             <div className="flex-1 text-right">
               <div>
                 <span className="text-red text-sm mr-1"></span>
-                <img src={iconChevronRightGray} className="svg-gray" alt="" />
+                <img src={iconChevronRightgrey} className="svg-grey" alt="" />
               </div>
             </div>
           </Link>
 
           <Link to="/clients/client-5" className="pt-4 flex referral-list_dead">
-            <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-gray-light text-white">
+            <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-grey-light text-white">
               <img src={iconPerson} className="avatar-image" alt="avatar" />
               <div className="avatar-initials"></div>
             </div>
@@ -294,19 +294,19 @@ const Home = () => (
                 15128971234
               </span>
               <div>
-                <img src={iconCheckboxGray} className="h-3 w-3 mr-px" alt="" />
+                <img src={iconCheckboxgrey} className="h-3 w-3 mr-px" alt="" />
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                 <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                <span className="ml-1 inline text-gray-dark text-xs">Talk</span>
+                <span className="ml-1 inline text-grey-dark text-xs">Talk</span>
               </div>
             </div>
             <div className="flex-1 text-right">
               <div>
                 <span className="text-red text-sm mr-1"></span>
-                <img src={iconChevronRightGray} className="svg-gray" alt="" />
+                <img src={iconChevronRightgrey} className="svg-grey" alt="" />
               </div>
             </div>
           </Link>
@@ -325,16 +325,16 @@ const Home = () => (
       </h3>
       <div className="border border-grey-light p-8 rounded-lg">
         <div className="clearfix">
-          <p className="text-base text-gray mb-6">
+          <p className="text-base text-grey mb-6">
             No referrals assigned
           </p>
         </div>
         <div className="py-4 border-b border-grey-light flex">
-          <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
+          <div className="rounded-full flex justify-center h-10 w-10 bg-grey-light">
             {/* Nothing here */}
           </div>
           <div className="flex-initial ml-4 ">
-            <span className="h-3 w-24 rounded-full bg-gray-light block mt-2 mb-2">
+            <span className="h-3 w-24 rounded-full bg-grey-light block mt-2 mb-2">
               {/* Nothing here */}
             </span>
             <div>
@@ -348,11 +348,11 @@ const Home = () => (
           </div>
         </div>
         <div className="py-4 border-b border-grey-light flex">
-          <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
+          <div className="rounded-full flex justify-center h-10 w-10 bg-grey-light">
             {/* Nothing here */}
           </div>
           <div className="flex-initial ml-4 ">
-            <span className="h-3 w-24 rounded-full bg-gray-light block mt-2 mb-2">
+            <span className="h-3 w-24 rounded-full bg-grey-light block mt-2 mb-2">
               {/* Nothing here */}
             </span>
             <div>
@@ -366,11 +366,11 @@ const Home = () => (
           </div>
         </div>
         <div className="py-4 flex">
-          <div className="rounded-full flex justify-center h-10 w-10 bg-gray-light">
+          <div className="rounded-full flex justify-center h-10 w-10 bg-grey-light">
             {/* Nothing here */}
           </div>
           <div className="flex-initial ml-4">
-            <span className="h-3 w-24 rounded-full bg-gray-light block mt-2 mb-2">
+            <span className="h-3 w-24 rounded-full bg-grey-light block mt-2 mb-2">
               {/* Nothing here */}
             </span>
             <div>
@@ -419,7 +419,7 @@ class Client extends Component {
             {/* {match.params.phoneNumber} */}
             Gunny Celis
           </h2>
-          <h4 className="font-normal text-gray-dark text-sm">
+          <h4 className="font-normal text-grey-dark text-sm">
             Referred: Aug 29, 2018
           </h4>
           <div className="flex justify-center">
@@ -443,13 +443,13 @@ class Client extends Component {
         </div>
 
         <main className="container mx-auto px-6 pb-24">
-          <section className="pb-6 mb-6 border-b border-gray-lightest">
+          <section className="pb-6 mb-6 border-b border-grey-lightest">
               <header className="mb-6">
                 <h3 className="mb-2">
                   Progress
-                  <span className="ml-2 text-sm text-gray float-right">(0% complete)</span>
+                  <span className="ml-2 text-sm text-grey float-right">(0% complete)</span>
                 </h3>
-                <p className="text-gray-dark text-xs">Which steps have you completed?</p>
+                <p className="text-grey-dark text-xs">Which steps have you completed?</p>
               </header>
               <div className="">
                 <ul className="list-reset text-center">
@@ -497,12 +497,12 @@ class Client extends Component {
               </div>
             </section>
 
-            <section className="pb-6 mb-6 border-b border-gray-lightest">
+            <section className="pb-6 mb-6 border-b border-grey-lightest">
               <header className="mb-4">
                 <h3 className="mb-2">
                   Rate your relationship
                 </h3>
-                <p className="text-gray-dark text-xs">How are things working out?</p>
+                <p className="text-grey-dark text-xs">How are things working out?</p>
               </header>
               <form className="">
                 <div className="mb-2">
@@ -544,12 +544,12 @@ class Client extends Component {
               </form>
             </section>
 
-            <section className="pb-6 mb-6 border-b border-gray-lightest">
+            <section className="pb-6 mb-6 border-b border-grey-lightest">
               <header className="mb-4">
                 <h3 className="mb-2">
                   Projected close month
                 </h3>
-                <p className="text-gray-dark text-xs">
+                <p className="text-grey-dark text-xs">
                   When do you think they’ll close?
                 </p>
               </header>
@@ -583,7 +583,7 @@ class Client extends Component {
                 <h3 className="mb-2">
                   Notes
                 </h3>
-                <p className="text-gray-dark text-xs">
+                <p className="text-grey-dark text-xs">
                   Anything special about this client?
                 </p>
               </header>
@@ -595,7 +595,7 @@ class Client extends Component {
 
             <section className="fixed pin-b actions">
               <div className="container flex items-center px-6 mx-auto">
-                <span className="flex-1 text-xs text-gray-dark">Everything look good?</span>
+                <span className="flex-1 text-xs text-grey-dark">Everything look good?</span>
                 <div className="flex-1">
                   <button className="btn btn-green">Save</button>
                 </div>
@@ -629,11 +629,11 @@ const Help = () => (
         What can we help<br />you with?
       </h1>
       {/*
-      <h4 className="mb-4 text-sm tracking-wide text-gray-dark uppercase">
+      <h4 className="mb-4 text-sm tracking-wide text-grey-dark uppercase">
         Contact Support
       </h4>
       */}
-      <div>
+      <div className="max-w-400 mx-auto">
         <a href="mailto:support@ojolabs.com" className="clearfix mb-4 block py-4 px-4 shadow rounded-full">
           <div className="float-left mr-4 bg-blue rounded-full h-10 w-10 text-center">
             <img className="icon icon-email mt-3" src={iconEmailWhite} alt="email icon" />
@@ -658,8 +658,8 @@ const Help = () => (
       <Link to="/signin" className="block text-red text-lg py-6">Sign Out</Link>
     </div>
     {/*
-    <div className="text-center text-red py-4 mb-12">
-      <p className="text-black text-sm">Version 1.0.9</p>
+    <div className="text-center text-red py-4 mt-4">
+      <p className="text-grey-darker text-sm">v1.0.9</p>
     </div>
     */}
   </div>
