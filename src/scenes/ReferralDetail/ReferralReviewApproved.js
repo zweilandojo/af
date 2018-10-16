@@ -43,7 +43,7 @@ const ReferralReviewApproved = () => (
               </div>
             </div>
             <small className="block text-white">
-              message
+              sms
             </small>
           </a>
           <a href="tel:15125551234" className="py-6 px-4 block text-center">

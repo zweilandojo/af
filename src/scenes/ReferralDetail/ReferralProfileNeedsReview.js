@@ -41,7 +41,7 @@ const ReferralProfile = () => (
               </div>
             </div>
             <small className="block text-white">
-              message
+              sms
             </small>
           </a>
           <a href="tel:15125551234" className="py-6 px-4 block text-center">
@@ -126,7 +126,7 @@ const ReferralProfile = () => (
                   Home Type
                 </div>
                 <div className="w-1/2">
-                  Single Family Home
+                  Homes, Townhomes
                 </div>
               </li>
               <li className="border-b border-grey-light flex pt-3 pb-2">
@@ -142,7 +142,7 @@ const ReferralProfile = () => (
                   Financing
                 </div>
                 <div className="w-1/2">
-                  Has financing
+                  Has a lender
                 </div>
               </li>
             </ul>
@@ -152,7 +152,7 @@ const ReferralProfile = () => (
         <section className="pb-6 mb-6">
           <header className="mb-4">
             <h3 className="mb-4 ml-6 text-2xl">
-              Call notes
+              Handoff notes
             </h3>
           </header>
           <div className="border border-grey-light p-8 rounded-lg">
