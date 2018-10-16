@@ -28,12 +28,10 @@ const ReferralReviewApproved = () => (
           <span className="block w-full text-center mt-2">G</span>
         </div>
         <h2 className="mb-2 text-white">
-          {/* {match.params.clientFullName} */}
-          {/* {match.params.phoneNumber} */}
           Gunny Celis
         </h2>
         <h4 className="font-normal text-white text-grey-dark text-sm">
-          Referred: Aug 29, 2018
+          Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Aug 29, 2018
         </h4>
         <div className="flex justify-center">
           <a href="sms:15125551234" className="py-6 px-4 block text-center">

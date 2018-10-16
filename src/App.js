@@ -160,7 +160,7 @@ const Home = () => (
 
         {/* REFERRAL TRACKING LIST */}
         <div>
-          <Link to="/referral-review-needs-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
+          <Link to="/referral-profile-needs-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
               <div className="avatar-initials">A</div>
             </div>

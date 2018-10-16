@@ -31,7 +31,7 @@ const ReferralProfile = () => (
           Gunny Celis
         </h2>
         <h4 className="font-normal text-white text-grey-dark text-sm">
-          Referred: Aug 29, 2018
+          Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Aug 29, 2018
         </h4>
         <div className="flex justify-center">
           <a href="sms:15125551234" className="py-6 px-4 block text-center">
@@ -54,9 +54,7 @@ const ReferralProfile = () => (
               call
             </small>
           </a>
-
-          {/* Begin Missing Email State */}
-          <div className="py-6 px-4 block text-center opacity-50">
+          <a href="mailto:email@address.com" className="py-6 px-4 block text-center">
             <div className="btn-contact-icon flex items-center">
               <div className="block w-full flex items-center justify-center">
                 <img src={iconEmailWhite} className="w-5" alt="" />
@@ -65,9 +63,7 @@ const ReferralProfile = () => (
             <small className="block text-white">
               email
             </small>
-          </div>
-          {/* End Missing Email State */}
-
+          </a>
         </div>
       </div>
 
@@ -99,10 +95,10 @@ const ReferralProfile = () => (
             <ul className="text-base leading-normal list-reset">
               <li className="border-b border-grey-light flex pb-2">
                 <div className="w-1/2 text-grey-dark">
-                  Client Type
+                  Location
                 </div>
                 <div className="w-1/2">
-                  Buyer
+                  Austin, TX
                 </div>
               </li>
               <li className="border-b border-grey-light flex pt-3 pb-2">
@@ -115,15 +111,7 @@ const ReferralProfile = () => (
               </li>
               <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
-                  Timeline
-                </div>
-                <div className="w-1/2">
-                  Less than 3 months
-                </div>
-              </li>
-              <li className="border-b border-grey-light flex pt-3 pb-2">
-                <div className="w-1/2 text-grey-dark">
-                  Home Type
+                  Property Type
                 </div>
                 <div className="w-1/2">
                   Homes, Townhomes, Condo
@@ -131,18 +119,34 @@ const ReferralProfile = () => (
               </li>
               <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
-                  Bed / Bath
+                  Bed
                 </div>
                 <div className="w-1/2">
-                  2 Bed / 1.5 Bath
+                  2+
                 </div>
               </li>
-              <li className="flex pt-3">
+              <li className="border-b border-grey-light flex pt-3 pb-2">
+                <div className="w-1/2 text-grey-dark">
+                  Bath
+                </div>
+                <div className="w-1/2">
+                  1.5+
+                </div>
+              </li>
+              <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Financing
                 </div>
                 <div className="w-1/2">
                   Needs lender
+                </div>
+              </li>
+              <li className="flex pt-3">
+                <div className="w-1/2 text-grey-dark">
+                  Timeline
+                </div>
+                <div className="w-1/2">
+                  Less than 3 months
                 </div>
               </li>
             </ul>

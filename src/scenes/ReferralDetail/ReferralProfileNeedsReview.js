@@ -31,7 +31,7 @@ const ReferralProfile = () => (
           Arthur Belling
         </h2>
         <h4 className="font-normal text-white text-grey-dark text-sm">
-          Referred: Nov 1, 2018
+          Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Nov 1, 2018
         </h4>
         <div className="flex justify-center">
           <a href="sms:15125551234" className="py-6 px-4 block text-center">
@@ -99,10 +99,10 @@ const ReferralProfile = () => (
             <ul className="text-base leading-normal list-reset">
               <li className="border-b border-grey-light flex pb-2">
                 <div className="w-1/2 text-grey-dark">
-                  Client Type
+                  Location
                 </div>
                 <div className="w-1/2">
-                  Buyer
+                  Cedar Park, TX
                 </div>
               </li>
               <li className="border-b border-grey-light flex pt-3 pb-2">
@@ -115,15 +115,7 @@ const ReferralProfile = () => (
               </li>
               <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
-                  Timeline
-                </div>
-                <div className="w-1/2">
-                  Less than 6 months
-                </div>
-              </li>
-              <li className="border-b border-grey-light flex pt-3 pb-2">
-                <div className="w-1/2 text-grey-dark">
-                  Home Type
+                  Property Type
                 </div>
                 <div className="w-1/2">
                   Homes, Townhomes
@@ -131,18 +123,34 @@ const ReferralProfile = () => (
               </li>
               <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
-                  Bed / Bath
+                  Bed
                 </div>
                 <div className="w-1/2">
-                  2 Bed / 1.5 Bath
+                  3+
                 </div>
               </li>
-              <li className="flex pt-3">
+              <li className="border-b border-grey-light flex pt-3 pb-2">
+                <div className="w-1/2 text-grey-dark">
+                  Bath
+                </div>
+                <div className="w-1/2">
+                  2+
+                </div>
+              </li>
+              <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Financing
                 </div>
                 <div className="w-1/2">
                   Has a lender
+                </div>
+              </li>
+              <li className="flex pt-3">
+                <div className="w-1/2 text-grey-dark">
+                  Timeline
+                </div>
+                <div className="w-1/2">
+                  Less than 6 months
                 </div>
               </li>
             </ul>
