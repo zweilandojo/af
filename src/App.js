@@ -29,7 +29,7 @@ import Milestones from './components/Milestones/index.js';
 
 // Scenes
 import ReferralProfileApproved from './scenes/ReferralDetail/ReferralProfileApproved.js';
-import ReferralReviewApproved from './scenes/ReferralDetail/ReferralProfileApproved.js';
+import ReferralReviewApproved from './scenes/ReferralDetail/ReferralReviewApproved.js';
 import ReferralProfileNeedsReview from './scenes/ReferralDetail/ReferralProfileNeedsReview.js';
 import ReferralReviewNeedsReview from './scenes/ReferralDetail/ReferralReviewNeedsReview.js';
 

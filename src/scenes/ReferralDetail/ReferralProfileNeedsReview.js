@@ -138,14 +138,14 @@ const ReferralProfile = () => (
                   Financing
                 </div>
                 <div className="w-1/2">
-                  Has loan covered
+                  Has financing
                 </div>
               </li>
             </ul>
           </div>
         </section>
 
-        <section className="pb-6 mb-6 border-b border-grey-lightest">
+        <section className="pb-6 mb-6">
           <header className="mb-4">
             <h3 className="mb-4 ml-6 text-2xl">
               Call notes
@@ -167,7 +167,7 @@ const ReferralProfile = () => (
           </div>
         </section>
 
-        <section className="pb-6 mb-6 border-b border-grey-lightest">
+        <section className="pb-6 mb-6">
           <header className="mb-4">
             <h3 className="mb-4 ml-6 text-2xl">
               Arthur’s favorites
