@@ -417,7 +417,7 @@ class Client extends Component {
             */}
           </header>
 
-          <div className="app-banner text-center pt-8 pb-2 mb-8">
+          <div className="app-banner text-center mb-6">
             <div className="avatar avatar-lg flex items-center">
               <span className="block w-full text-center mt-2">G</span>
             </div>
@@ -432,8 +432,8 @@ class Client extends Component {
             <div className="flex justify-center">
               <a href="sms:15125551234" className="py-6 px-4 block text-center">
                 <div className="btn-contact-icon flex items-center">
-                  <div className="block w-full text-center">
-                    <img src={iconChatWhite} className="" alt="sms message" />
+                  <div className="block w-full flex items-center justify-center">
+                    <img src={iconChatWhite} className="w-5" alt="sms message" />
                   </div>
                 </div>
                 <small className="block text-white">
@@ -442,8 +442,8 @@ class Client extends Component {
               </a>
               <a href="tel:15125551234" className="py-6 px-4 block text-center">
                 <div className="btn-contact-icon flex items-center">
-                  <div className="block w-full text-center">
-                    <img src={iconPhoneWhite} className="h-12 w-12" alt="" />
+                  <div className="block w-full flex items-center justify-center">
+                    <img src={iconPhoneWhite} className="h-5" alt="" />
                   </div>
                 </div>
                 <small className="block text-white">
@@ -452,8 +452,8 @@ class Client extends Component {
               </a>
               <a href="mailto:email@address.com" className="py-6 px-4 block text-center">
                 <div className="btn-contact-icon flex items-center">
-                  <div className="block w-full text-center">
-                    <img src={iconEmailWhite} className="h-12 w-12" alt="" />
+                  <div className="block w-full flex items-center justify-center">
+                    <img src={iconEmailWhite} className="w-5" alt="" />
                   </div>
                 </div>
                 <small className="block text-white">
@@ -480,7 +480,7 @@ class Client extends Component {
 
       </div>
 
-        <main className="container mx-auto px-6 pb-24 max-w-lg">
+        <main className="container mx-auto px-2 pb-24 max-w-lg">
           <section className="pb-6 mb-6 border-b border-grey-lightest mt-8">
               <header className="mb-6">
                 <h3 className="mb-4 ml-6 text-2xl">
@@ -675,7 +675,7 @@ const Help = () => (
       */}
       <div className="max-w-sm mx-auto">
         <a href="mailto:support@ojolabs.com" className="clearfix mb-4 block py-4 px-4 shadow rounded-full">
-          <div className="float-left mr-4 bg-blue rounded-full h-10 w-10 flex items-center justify-center ">
+          <div className="float-left mr-4 bg-blue rounded-full h-10 w-10 flex items-center justify-center">
             <img className="icon icon-email w-5" src={iconEmailWhite} alt="email icon" />
           </div>
           <div className="float-left">

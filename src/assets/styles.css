@@ -128,7 +128,7 @@ h1 { font-size: 1.5rem } /* 24px */
 
 /* BORDERS */
 .border-grey-light *, .border-grey-light ::after, .border-grey-light ::before {
-  border-color: #EEEEEE !important;
+  border-color: #EEEEEE;
 }
 
 .border-grey-light {
@@ -510,11 +510,4 @@ select {
   text-align: center;
   vertical-align: middle;
   margin: 0 auto 4px;
-}
-.btn-contact-icon img {
-  width: 1.125rem;
-  height: 1.125rem;
-}
-.btn-contact-message {
-
 }
