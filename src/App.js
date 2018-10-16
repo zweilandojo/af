@@ -320,7 +320,7 @@ const Home = () => (
     </main>
 
     {/* BEGIN: REFERRAL LIST ZERO STATE */}
-    <main className="container mx-auto px-2">
+    <main className="container mx-auto px-2 max-w-lg">
       <div className="referral-tracking clearfix mb-12">
       <h3 className="mb-4 ml-6 text-2xl">
         Referrals
@@ -403,7 +403,7 @@ class Client extends Component {
     return (
       <div className="app">
         <div className="review-status-wrapper">
-          <header className="h-16 flex flex-wrap">
+          <header className="h-16 flex">
             <div className="w-1/3 app-header-back-button">
               <Link to="/" className="block">
                 <img src={iconChevronLeftWhite} className="mr-1 float-left" alt="chevron left" />
@@ -464,17 +464,20 @@ class Client extends Component {
           </div>
 
           <nav className="nav nav-tabs card-top">
-            <div className="tab">
-              <Link to="/clients/client-1">
-                Profile
-              </Link>
-            </div>
-            <div className="tab active">
-              <Link to="/clients/client-1/review">
-                Review
-              </Link>
+            <div className="max-w-lg mx-auto">
+              <div className="tab">
+                <Link to="/clients/client-1">
+                  Profile
+                </Link>
+              </div>
+              <div className="tab active">
+                <Link to="/clients/client-1/review">
+                  Review
+                </Link>
+              </div>
             </div>
           </nav>
+
       </div>
 
         <main className="container mx-auto px-6 pb-24 max-w-lg">
@@ -672,8 +675,8 @@ const Help = () => (
       */}
       <div className="max-w-sm mx-auto">
         <a href="mailto:support@ojolabs.com" className="clearfix mb-4 block py-4 px-4 shadow rounded-full">
-          <div className="float-left mr-4 bg-blue rounded-full h-10 w-10 text-center">
-            <img className="icon icon-email mt-3" src={iconEmailWhite} alt="email icon" />
+          <div className="float-left mr-4 bg-blue rounded-full h-10 w-10 flex items-center justify-center ">
+            <img className="icon icon-email w-5" src={iconEmailWhite} alt="email icon" />
           </div>
           <div className="float-left">
             <span className="block text-lg text-black leading-normal">Email us</span>
@@ -681,8 +684,8 @@ const Help = () => (
           </div>
         </a>
         <a href="tel:18669731703" className="clearfix block py-4 px-4 shadow rounded-full">
-          <div className="float-left mr-4 bg-green rounded-full h-10 w-10 text-center">
-            <img className="icon icon-phone mt-2 pt-1" src={iconPhoneWhite} alt="phone icon" />
+          <div className="float-left mr-4 bg-green rounded-full h-10 w-10 flex items-center justify-center">
+            <img className="icon icon-phone w-5" src={iconPhoneWhite} alt="phone icon" />
           </div>
           <div className="float-left">
             <span className="block text-lg text-black leading-normal">Call us</span>
