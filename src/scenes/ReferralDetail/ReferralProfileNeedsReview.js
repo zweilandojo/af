@@ -54,7 +54,9 @@ const ReferralProfile = () => (
               call
             </small>
           </a>
-          <a href="mailto:email@address.com" className="py-6 px-4 block text-center">
+
+          {/* Begin Missing Email State */}
+          <div className="py-6 px-4 block text-center opacity-50">
             <div className="btn-contact-icon flex items-center">
               <div className="block w-full flex items-center justify-center">
                 <img src={iconEmailWhite} className="w-5" alt="" />
@@ -63,7 +65,9 @@ const ReferralProfile = () => (
             <small className="block text-white">
               email
             </small>
-          </a>
+          </div>
+          {/* End Missing Email State */}
+
         </div>
       </div>
 
