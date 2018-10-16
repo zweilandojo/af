@@ -114,7 +114,7 @@ const ReferralProfile = () => (
                   Timeline
                 </div>
                 <div className="w-1/2">
-                  Less than 3 months
+                  Less than 6 months
                 </div>
               </li>
               <li className="border-b border-grey-light flex pt-3 pb-2">
@@ -122,7 +122,7 @@ const ReferralProfile = () => (
                   Home Type
                 </div>
                 <div className="w-1/2">
-                  Townhome, Condo
+                  Single Family Home
                 </div>
               </li>
               <li className="border-b border-grey-light flex pt-3 pb-2">

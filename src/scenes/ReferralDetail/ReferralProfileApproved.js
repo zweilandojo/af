@@ -94,9 +94,56 @@ const ReferralProfile = () => (
             </h3>
           </header>
           <div className="border border-grey-light p-8 rounded-lg">
-            <p className="text-grey-dark text-base mb-8">About this referral</p>
-
-
+            <ul className="text-base leading-normal list-reset">
+              <li className="border-b border-grey-light flex pb-2">
+                <div className="w-1/2 text-grey-dark">
+                  Client Type
+                </div>
+                <div className="w-1/2">
+                  Buyer
+                </div>
+              </li>
+              <li className="border-b border-grey-light flex pt-3 pb-2">
+                <div className="w-1/2 text-grey-dark">
+                  Budget
+                </div>
+                <div className="w-1/2">
+                  $350 - $750k
+                </div>
+              </li>
+              <li className="border-b border-grey-light flex pt-3 pb-2">
+                <div className="w-1/2 text-grey-dark">
+                  Timeline
+                </div>
+                <div className="w-1/2">
+                  Less than 3 months
+                </div>
+              </li>
+              <li className="border-b border-grey-light flex pt-3 pb-2">
+                <div className="w-1/2 text-grey-dark">
+                  Home Type
+                </div>
+                <div className="w-1/2">
+                  Townhome, Condo
+                </div>
+              </li>
+              <li className="border-b border-grey-light flex pt-3 pb-2">
+                <div className="w-1/2 text-grey-dark">
+                  Bed / Bath
+                </div>
+                <div className="w-1/2">
+                  2 Bed / 1.5 Bath
+                </div>
+              </li>
+              <li className="flex pt-3">
+                <div className="w-1/2 text-grey-dark">
+                  Financing
+                </div>
+                <div className="w-1/2">
+                  Has financing
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
 
