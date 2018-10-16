@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Assets
 import iconChatWhite from '../../assets/images/icon-chat-w.png';
 import iconPhoneWhite from '../../assets/images/icon-phone-w.png';
 import iconEmailWhite from '../../assets/images/icon-email-w.png';
 import iconChevronLeftWhite from '../../assets/images/icon-chevron-left-w.png';
+
+// Components
+import HomeListItem from '../../components/HomeListItem/index.js';
 
 const ReferralProfile = () => (
   <div className="app">
@@ -189,6 +193,11 @@ const ReferralProfile = () => (
             <p className="text-grey-dark text-base mb-8">
               A few homes Arthur really likes
             </p>
+            <div className="home-list w-full flex flex-wrap">
+              <HomeListItem />
+              <HomeListItem />
+              <HomeListItem />
+            </div>
           </div>
         </section>
     </main>
