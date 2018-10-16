@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logoBlueCircle from '../../assets/images/logo-ojo-bg-blue.svg';
+import logoBlueCircle from '../../assets/images/logo-ojo-bg-blue.png';
 
 const AppHeader = () => (
   <header className="app-header flex content-start flex-wrap">

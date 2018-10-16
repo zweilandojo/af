@@ -5,20 +5,18 @@ import {
   Link
 } from 'react-router-dom';
 
-import logoBlueCircle from './assets/images/logo-ojo-bg-blue.svg';
+import logoBlueCircle from './assets/images/logo-ojo-bg-blue.png';
 import logoOJOWhite from './assets/images/ojo-logo-white.svg';
 // import iconClose from './assets/images/icon-close.svg';
 // import iconChevronRight from './assets/images/icon-chevron-right.svg';
 import iconChevronRightgrey from './assets/images/icon-chevron-right-gray.svg';
 import iconChevronLeft from './assets/images/icon-chevron-left.svg';
-import iconChevronLeftWhite from './assets/images/icon-chevron-left-w.svg';
+import iconChevronLeftWhite from './assets/images/icon-chevron-left-w.png';
 // import iconCheckmark from './assets/images/icon-checkmark.svg';
 import iconCheckboxChecked from './assets/images/icon-checkmark-checked.svg';
 import iconCheckboxgrey from './assets/images/icon-checkmark-checked-gray.svg';
 // import iconCheckmarkWhite from './assets/images/icon-checkmark-white.svg';
 import iconPerson from './assets/images/icon-person.svg';
-import iconPhoneCircle from './assets/images/icon-phone-circle.svg';
-import iconMessageCircle from './assets/images/icon-message-circle.svg';
 import logoGoogle from './assets/images/logo-google.svg';
 import logoFB from './assets/images/logo-fb.svg';
 import iconChatWhite from './assets/images/icon-chat-w.png';
@@ -28,6 +26,12 @@ import iconEmailWhite from './assets/images/icon-email-w.png';
 import AppHeader from './components/AppHeader/index.js';
 import AgentHomeBanner from './components/AgentHomeBanner/index.js';
 import Milestones from './components/Milestones/index.js';
+
+// Scenes
+import ReferralProfileApproved from './scenes/ReferralDetail/ReferralProfileApproved.js';
+import ReferralReviewApproved from './scenes/ReferralDetail/ReferralProfileApproved.js';
+import ReferralProfileNeedsReview from './scenes/ReferralDetail/ReferralProfileNeedsReview.js';
+import ReferralReviewNeedsReview from './scenes/ReferralDetail/ReferralReviewNeedsReview.js';
 
 const SignIn = () => (
   <div className="app">
@@ -156,13 +160,13 @@ const Home = () => (
 
         {/* REFERRAL TRACKING LIST */}
         <div>
-          <Link to="/clients/client-1" className="py-4 border-b border-grey-light flex referral-list_needs-review">
+          <Link to="/referral-review-needs-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
-              <div className="avatar-initials">G</div>
+              <div className="avatar-initials">A</div>
             </div>
             <div className="flex-initial ml-4">
               <span className="text-lg block mb-1">
-                Gunny Celis
+                Arthur Belling
               </span>
               <div>
                 <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
@@ -207,13 +211,13 @@ const Home = () => (
             </div>
           </Link>
 
-          <Link to="/clients/client-2" className="py-4 border-b border-grey-light flex">
+          <Link to="/referral-profile-approved" className="py-4 border-b border-grey-light flex">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
-              <div className="avatar-initials">J</div>
+              <div className="avatar-initials">G</div>
             </div>
             <div className="flex-initial ml-4">
               <span className="text-lg block mb-1">
-                Javier Benitez
+                Gunny Celis
               </span>
               <div>
                 <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
@@ -406,7 +410,7 @@ class Client extends Component {
           <header className="h-16 flex">
             <div className="w-1/3 app-header-back-button">
               <Link to="/" className="block">
-                <img src={iconChevronLeftWhite} className="mr-1 float-left" alt="chevron left" />
+                <img src={iconChevronLeftWhite} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
               </Link>
             </div>
             {/*
@@ -422,8 +426,6 @@ class Client extends Component {
               <span className="block w-full text-center mt-2">G</span>
             </div>
             <h2 className="mb-2 text-white">
-              {/* {match.params.clientFullName} */}
-              {/* {match.params.phoneNumber} */}
               Gunny Celis
             </h2>
             <h4 className="font-normal text-white text-grey-dark text-sm">
@@ -466,18 +468,17 @@ class Client extends Component {
           <nav className="nav nav-tabs card-top">
             <div className="max-w-lg mx-auto">
               <div className="tab">
-                <Link to="/clients/client-1">
+                <Link to="/referral-profile-approved">
                   Profile
                 </Link>
               </div>
               <div className="tab active">
-                <Link to="/clients/client-1/review">
+                <Link to="/referral-review-approved">
                   Review
                 </Link>
               </div>
             </div>
           </nav>
-
       </div>
 
         <main className="container mx-auto px-2 pb-24 max-w-lg">
@@ -652,7 +653,7 @@ const Help = () => (
     <header className="app-header flex">
       <div className="w-1/3 app-header-back-button">
         <Link to="/" className="inline-block px-6 py-6">
-          <img src={iconChevronLeft} className="icon icon-chevron-left mr-1 float-left" alt="close icon" />
+          <img src={iconChevronLeft} className="icon icon-chevron-left mr-1 float-left" alt="back icon" />
         </Link>
       </div>
       <div className="w-1/3 text-center">
@@ -726,6 +727,11 @@ class App extends Component {
           <Route path="/signin" component={SignIn}/>
           <Route path="/signin-verify" component={AuthVerify}/>
           <Route path="/loading" component={Loading}/>
+
+          <Route path="/referral-profile-approved" component={ReferralProfileApproved}/>
+          <Route path="/referral-review-approved" component={ReferralReviewApproved}/>
+          <Route path="/referral-profile-needs-review" component={ReferralProfileNeedsReview}/>
+          <Route path="/referral-review-needs-review" component={ReferralReviewNeedsReview}/>
         </div>
       </Router>
     );
