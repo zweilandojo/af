@@ -8,17 +8,17 @@ const SignIn = () => (
   <div className="app">
     <header className="container mx-auto text-center">
         <Link className="block" to="/">
-          <img src={logoBlueCircleLg} className="mt-10 w-16 h-16" alt="logo" />
+          <img src={logoBlueCircleLg} className="mt-10 w-14 h-14" alt="logo" />
         </Link>
     </header>
     <main className="container mx-auto px-6 mb-24 pb-8 max-w-400 relative z-10 bg-white">
       <div className="text-center mt-10 m-auto">
         <h2 className="mb-4">Welcome!</h2>
-        <p className="mb-8 font-black text-base leading-normal">
+        <p className="mb-8 font-normal font-black text-base leading-normal">
           Enter your mobile number to<br/>view your OJO Referrals
         </p>
         <form>
-          <input className="input mb-2 text-center text-lg"
+          <input className="input mb-4 text-center text-lg"
                  type="tel" id="phone" name="phone"
                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                  required

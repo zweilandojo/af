@@ -8,28 +8,29 @@ const AuthVerify = () => (
   <div className="app">
     <header className="container mx-auto text-center">
         <Link className="block" to="/signin">
-          <img src={logoBlueCircleLg} className="mt-10 w-16 h-16" alt="logo" />
+          <img src={logoBlueCircleLg} className="mt-10 w-14 h-14" alt="logo" />
         </Link>
     </header>
     <main className="container mx-auto px-6 mb-24 pb-8 max-w-400 relative z-10 bg-white">
       <div className="text-center mt-10 m-auto">
-        <h2 className="mb-6">SMS Verification</h2>
-        <p className="mb-4 font-black text-base">
-          Enter the 6-digit code sent to you:
+        <h2 className="mb-4">SMS Verification</h2>
+        <p className="mb-8 font-normal font-black text-base leading-normal">
+          Enter the 6-digit code sent to you
         </p>
         <form>
-          <input className="input mb-2 text-center text-2xl leading-none"
+          <input className="input mb-4 text-center text-2xl leading-none"
                  type="number" id="verificationCode"
                  name="verificationCode" required
                  maxLength="6"
                  placeholder="Code" />
-          <Link to="/loading" className="btn btn-green inline-block mb-4">
-            Verify
-          </Link>
+           <Link to="/loading" className="text-xl block bg-white w-full h-16 text-blue py-2 px-4 rounded flex items-center justify-center">
+             <span>Verify</span>
+           </Link>
         </form>
-        <div className="mt-8 leading-normal text-sm">
-          <p className="text-grey-dark">Resend code by: <a href="">SMS</a></p>
-          <p className="text-grey-dark">Having trouble? <Link to="/Help">Get help</Link></p>
+        <div className="mt-12">
+          <a href="mailto:support@ojolabs.com" className="leading-normal text-base">
+            Help
+          </a>
         </div>
       </div>
     </main>
