@@ -39,6 +39,10 @@ h1 { font-size: 1.5rem } /* 24px */
   font-family: "Sofia Pro Regular", sans-serif;
   font-weight: 400;
 }
+.font-medium {
+  font-family: "Sofia Pro Medium", sans-serif;
+  font-weight: 500;
+}
 
 
 /*
