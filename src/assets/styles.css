@@ -275,6 +275,11 @@ a {
  ----------------------------
  ----------------------------
 */
+.input, .texarea, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .input {
   width: 100%;
   display: block;
@@ -286,9 +291,6 @@ a {
 .textarea {
   min-height: 8rem;
   padding-top: 0.75rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 select {
   background: white;
@@ -296,9 +298,6 @@ select {
   background-repeat: no-repeat;
   background-position: 96% 50%;
   border-radius: 56px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 .input-radio {
   background: #fff;
@@ -583,4 +582,5 @@ select {
   border-radius: 4px;
   position: absolute;
   top: 8px; left: 50%;
+  margin-left: -16px;
 }
