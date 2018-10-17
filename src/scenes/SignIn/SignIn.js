@@ -7,7 +7,7 @@ import logoBlueCircleLg from '../../assets/images/logo-ojo-bg-blue-lg.png';
 const SignIn = () => (
   <div className="app">
     <header className="container mx-auto text-center">
-        <Link className="block" to="/">
+        <Link className="block" to="/signin">
           <img src={logoBlueCircleLg} className="mt-10 w-14 h-14" alt="logo" />
         </Link>
     </header>
