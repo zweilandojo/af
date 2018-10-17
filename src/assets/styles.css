@@ -10,7 +10,6 @@
 }
 
 
-
 body {
  margin: 0;
  padding: 0;
@@ -19,36 +18,34 @@ body {
  color: #212121;
 }
 
-/* Typography */
+/*
+ :: TYPOGRAPHY
+ ----------------------------
+ ----------------------------
+*/
 h1, h2, h3, h4 { font-family: "Sofia Pro Medium", sans-serif; font-weight: 500;}
 h1 { font-size: 1.5rem } /* 24px */
 
+.text-xl {
+  font-size: 1.3125rem;
+}
 .text-3xl {
   font-size: 1.75rem;
   font-family: "Sofia Pro Regular", sans-serif;
 }
 
-.app-header {
-  height: 4rem; /* 64px */
-}
-
-.app-header-back-button {
-  height: 64px;
-  padding: 0;
-}
-.app-header-back-button a {
-  padding-top: 1.5rem;
-  padding-left: 1.5rem;
-  height: 64px;
-}
-.app-header-back-button span {
-  position: relative;
-  top: 3px;
+/* Font Weight */
+.font-normal {
+  font-family: "Sofia Pro Regular", sans-serif;
+  font-weight: 400;
 }
 
 
-
-/* COLORS */
+/*
+ :: COLOR
+ ----------------------------
+ ----------------------------
+*/
 
 /* Text Color */
 .text-black { color: #212121; }
@@ -130,7 +127,11 @@ h1 { font-size: 1.5rem } /* 24px */
 */
 
 
-/* BORDERS */
+/*
+ :: BORDERS
+ ----------------------------
+ ----------------------------
+*/
 .border-grey-light *, .border-grey-light ::after, .border-grey-light ::before {
   border-color: #EEEEEE;
 }
@@ -144,13 +145,22 @@ h1 { font-size: 1.5rem } /* 24px */
 }
 
 
-/* LINKS */
+/*
+ :: LINKS
+ ----------------------------
+ ----------------------------
+*/
 a {
   color: #3366FF;
   text-decoration: none;
 }
 
-/* AVATAR */
+
+/*
+ :: AVATARS
+ ----------------------------
+ ----------------------------
+*/
 .avatar-lg {
   width: 5.5rem;
   height: 5.5rem;
@@ -161,11 +171,20 @@ a {
   margin: 0 auto 1rem;
 }
 
-/* ICONS */
+
+/*
+ :: ICONS
+ ----------------------------
+ ----------------------------
+*/
 .icon-chevron-left { width: 10px; height: 18px; }
 
 
-/* BUTTONS */
+/*
+ :: BUTTONS
+ ----------------------------
+ ----------------------------
+*/
 .btn {
   display: block;
   width: 100%;
@@ -190,19 +209,12 @@ a {
   line-height: 56px;
   max-width: 24rem;
 }
-.btn-social img {
-  position: relative;
-  top: 7px;
-  margin-right: 8px;
-}
-.btn-fb {
-  color: #3B5899;
-}
 .btn-lg {
   height: 3.5rem;
   line-height: 3.5rem;
 }
 
+/* Stroked Buttons */
 .btn-stroked {
   border: 2px solid #EEEEEE;
   border-radius: 3rem;
@@ -235,26 +247,34 @@ a {
   border: 0;
 }
 
-/* SHADOWS */
+/* Contact Buttons */
+.btn-contact-icon {
+  border: 1px solid white;
+  border-radius: 100%;
+  width: 40px; height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto 4px;
+}
+
+
+
+/*
+ :: SHADOWS
+ ----------------------------
+ ----------------------------
+*/
 .shadow {
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.04),
               0 0 16px 0 rgba(0,0,0,0.08);
 }
 
-.checkbox {
-  -webkit-appearance: none;
-  border: 2px solid #EEEEEE;
-  border-radius: 98px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 15px;
-  height: 24px;
-  line-height: 24px;
-  width: 24px;
-}
 
-
-/* FORMS */
+/*
+ :: FORMS
+ ----------------------------
+ ----------------------------
+*/
 .input {
   width: 100%;
   display: block;
@@ -347,19 +367,68 @@ select {
   background-size: 16px 15px;
 }
 
-/* Max Width */
-.max-w-400 {
-  max-width: 400px;
+/* Checkboxes */
+.checkbox {
+  -webkit-appearance: none;
+  border: 2px solid #EEEEEE;
+  border-radius: 98px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  height: 24px;
+  line-height: 24px;
+  width: 24px;
 }
 
-
-/* COMPONENTS */
-
+/* Radio Buttons */
 .img-radio {
   width: 32px;
   height: 32px;
 }
 
+
+/*
+ :: WIDTH
+ ----------------------------
+ ----------------------------
+*/
+.w-14 {
+  width: 3.5rem;
+}
+.max-w-400 {
+  max-width: 400px;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/*
+ :: COMPONENT SPECIFIC
+ ----------------------------
+ ----------------------------
+*/
+
+/* App Header */
+.app-header {
+  height: 4rem; /* 64px */
+}
+
+.app-header-back-button {
+  height: 64px;
+  padding: 0;
+}
+.app-header-back-button a {
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  height: 64px;
+}
+.app-header-back-button span {
+  position: relative;
+  top: 3px;
+}
+
+/* Actions */
 .actions {
   background: white;
   left: 0;
@@ -368,6 +437,7 @@ select {
   box-shadow: 0 -2px 16px rgba(0,0,0,.07);
 }
 
+/* Referral List */
 .referral-list_needs-review .avatar-image {
   opacity: .6;
 }
@@ -379,7 +449,7 @@ select {
 }
 
 
-/* LOADING PAGE */
+/* Loading Page */
 .right-nav-placeholder {
   background: #eee;
   width: 2rem;
@@ -389,7 +459,6 @@ select {
   right: 1.5rem;
   border-radius: 16px;
 }
-
 .loader{
   width: 32px;
   height: 32px;
@@ -398,9 +467,6 @@ select {
   top: 0; left: 50%;
   margin: 8rem 0 0 -16px;
 }
-
-/* LOADER */
-
 .ojo-loading {
   text-align: center;
   width: 56px;
@@ -419,7 +485,6 @@ select {
     background-position: 200% center;
   }
 }
-
 #loader:before, #loader-1:after{
   content: "";
   position: absolute;
@@ -431,16 +496,13 @@ select {
   border: 4px solid transparent;
   border-top-color: #BDBDBD;
 }
-
 #loader:before{
   z-index: 100;
   animation: spin .5s infinite;
 }
-
 #loader:after{
   border: 4px solid white;
 }
-
 @keyframes spin{
   0%{
     -webkit-transform: rotate(0deg);
@@ -457,7 +519,11 @@ select {
   }
 }
 
-/* REFERRAL DETAIL */
+/*
+ :: PAGE: Referral Detail
+ ----------------------------
+ ----------------------------
+*/
 .review-status-wrapper {
   width: 100%;
   height: auto;
@@ -517,14 +583,4 @@ select {
   border-radius: 4px;
   position: absolute;
   top: 8px; left: 50%;
-}
-
-/* Contact Buttons */
-.btn-contact-icon {
-  border: 1px solid white;
-  border-radius: 100%;
-  width: 40px; height: 40px;
-  text-align: center;
-  vertical-align: middle;
-  margin: 0 auto 4px;
 }

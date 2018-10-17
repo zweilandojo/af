@@ -157,7 +157,7 @@ const ReferralProfile = () => (
           </div>
         </section>
 
-        <section className="pb-6 mb-6">
+        <section className="mb-8">
           <header className="mb-4">
             <h3 className="mb-4 ml-6 text-2xl">
               Handoff notes

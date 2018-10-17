@@ -5,8 +5,6 @@ import {
   Link
 } from 'react-router-dom';
 
-import logoBlueCircle from './assets/images/logo-ojo-bg-blue.png';
-import logoOJOWhite from './assets/images/ojo-logo-white.svg';
 // import iconClose from './assets/images/icon-close.svg';
 // import iconChevronRight from './assets/images/icon-chevron-right.svg';
 import iconChevronRightgrey from './assets/images/icon-chevron-right-gray.svg';
@@ -17,8 +15,6 @@ import iconCheckboxChecked from './assets/images/icon-checkmark-checked.svg';
 import iconCheckboxgrey from './assets/images/icon-checkmark-checked-gray.svg';
 // import iconCheckmarkWhite from './assets/images/icon-checkmark-white.svg';
 import iconPerson from './assets/images/icon-person.svg';
-import logoGoogle from './assets/images/logo-google.svg';
-import logoFB from './assets/images/logo-fb.svg';
 import iconChatWhite from './assets/images/icon-chat-w.png';
 import iconPhoneWhite from './assets/images/icon-phone-w.png';
 import iconEmailWhite from './assets/images/icon-email-w.png';
@@ -28,117 +24,13 @@ import AgentHomeBanner from './components/AgentHomeBanner/index.js';
 import Milestones from './components/Milestones/index.js';
 
 // Scenes
+import SignIn from './scenes/SignIn/SignIn.js';
+import AuthVerify from './scenes/SignIn/AuthVerify.js';
+import Loading from './scenes/SignIn/Loading.js';
 import ReferralProfileApproved from './scenes/ReferralDetail/ReferralProfileApproved.js';
 import ReferralReviewApproved from './scenes/ReferralDetail/ReferralReviewApproved.js';
 import ReferralProfileNeedsReview from './scenes/ReferralDetail/ReferralProfileNeedsReview.js';
 import ReferralReviewNeedsReview from './scenes/ReferralDetail/ReferralReviewNeedsReview.js';
-
-const SignIn = () => (
-  <div className="app">
-    <header className="container mx-auto text-center">
-        <Link className="block" to="/">
-          <img src={logoBlueCircle} className="mt-10" alt="logo" />
-        </Link>
-    </header>
-    <main className="container mx-auto px-6 mb-24 pb-8 max-w-400 relative z-10 bg-white">
-      <div className="text-center mt-10 m-auto">
-        <h2 className="mb-6">Welcome!</h2>
-        <p className="mb-4 font-black text-base">
-          Enter your mobile number to view your OJO Referrals
-        </p>
-        <form>
-          <input className="input mb-2"
-                 type="tel" id="phone" name="phone"
-                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                 required
-                 placeholder="Enter your mobile phone number" />
-          <Link to="/signin-verify" className="btn btn-green inline-block mb-4">
-            Next
-          </Link>
-        </form>
-
-        {/* BEGIN Hiding unused social buttons */}
-        <div className="hidden">
-          <Link to="/loading" className="btn btn-social btn-fb m-auto mb-4">
-            <img src={logoFB} alt="Facebook logo" />
-            <span>Continue with Facebook</span>
-          </Link>
-          <Link to="/loading" className="btn btn-social m-auto btn-google">
-            <img src={logoGoogle} alt="Google logo" />
-            <span>Continue with Google</span>
-          </Link>
-        </div>
-        {/* END Social buttons */}
-
-      </div>
-    </main>
-    <footer className="fixed pin-b pin-x pt-16">
-      <div className="text-center py-4 text-xs">
-        <a href="mailto:support@ojolabs.com" className="inline-block text-grey-dark">support@ojolabs.com</a>
-        <span className="mx-2 text-grey">|</span>
-        <a href="tel:15124568292" className="inline-block text-grey-dark">(512) 456-8292</a>
-        <span className="mx-2 text-grey">|</span>
-        <a href="https://content.ojo.me/privacy-policy.pdf" className="inline-block text-grey-dark">Privacy Policy</a></div>
-    </footer>
-  </div>
-)
-
-const AuthVerify = () => (
-  <div className="app">
-    <header className="container mx-auto text-center">
-        <Link className="block" to="/signin">
-          <img src={logoBlueCircle} className="mt-10" alt="logo" />
-        </Link>
-    </header>
-    <main className="container mx-auto px-6 mb-24 pb-8 max-w-400 relative z-10 bg-white">
-      <div className="text-center mt-10 m-auto">
-        <h2 className="mb-6">SMS Verification</h2>
-        <p className="mb-4 font-black text-base">
-          Enter the 6-digit code sent to you:
-        </p>
-        <form>
-          <input className="input mb-2 text-center text-2xl leading-none"
-                 type="number" id="verificationCode"
-                 name="verificationCode" required
-                 maxLength="6"
-                 placeholder="Code" />
-          <Link to="/loading" className="btn btn-green inline-block mb-4">
-            Verify
-          </Link>
-        </form>
-        <div className="mt-8 leading-normal text-sm">
-          <p className="text-grey-dark">Resend code by: <a href="">SMS</a></p>
-          <p className="text-grey-dark">Having trouble? <Link to="/Help">Get help</Link></p>
-        </div>
-      </div>
-    </main>
-    <footer className="fixed pin-b pin-x pt-16">
-      <div className="text-center py-4 text-xs">
-        <a href="mailto:support@ojolabs.com" className="inline-block text-grey-dark">support@ojolabs.com</a>
-        <span className="mx-2 text-grey">|</span>
-        <a href="tel:15124568292" className="inline-block text-grey-dark">(512) 456-8292</a>
-        <span className="mx-2 text-grey">|</span>
-        <a href="https://content.ojo.me/privacy-policy.pdf" className="inline-block text-grey-dark">Privacy Policy</a></div>
-    </footer>
-  </div>
-)
-
-class Loading extends React.Component {
-  render() {
-    return (
-      <div className="app">
-        <main className="flex h-screen items-stretch">
-          <div className="self-center flex-1 text-center">
-            <Link to="/" className="ojo-loading">
-              <img src={logoOJOWhite} className="flex-1 self-center" alt="logo" />
-            </Link>
-          </div>
-        </main>
-      </div>
-    )
-  }
-}
-
 
 const Home = () => (
   <div className="app">
