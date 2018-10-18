@@ -189,7 +189,7 @@ const ReferralProfile = () => (
             <p className="text-grey-dark text-base mb-8">
               A few homes Gunny really likes
             </p>
-            <div className="home-list flex flex-wrap justify-between">
+            <div className="home-list flex flex-wrap -mx-2">
               <HomeListItem />
               <HomeListItem />
               <HomeListItem />

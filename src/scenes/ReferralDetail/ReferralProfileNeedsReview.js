@@ -193,7 +193,7 @@ const ReferralProfile = () => (
             <p className="text-grey-dark text-base mb-8">
               A few homes Arthur really likes
             </p>
-            <div className="home-list w-full flex flex-wrap">
+            <div className="home-list flex flex-wrap -mx-2">
               <HomeListItem />
               <HomeListItem />
               <HomeListItem />
