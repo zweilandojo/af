@@ -73,11 +73,13 @@ class Loading extends React.Component {
        <div className="app">
          <main className="flex h-screen items-stretch">
            <div className="self-center flex-1 text-center">
-             <Link to="/" className="ojo-loading">
-               <img src={logoOJOWhite} className="flex-1 self-center" alt="logo" />
-             </Link>
-             <div className="">
-              {this.state.data}
+             <div className="flex items-stretch">
+               <Link to="/" className="ojo-loading">
+                 <img src={logoOJOWhite} className="flex-1 self-center" alt="logo" />
+               </Link>
+               <div className="hi flex-1">
+                {this.state.data}
+               </div>
              </div>
            </div>
          </main>
