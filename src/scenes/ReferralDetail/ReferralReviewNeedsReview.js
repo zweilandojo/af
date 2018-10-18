@@ -205,11 +205,10 @@ const ReferralProfile = () => (
 
             <select className="input select" placeholder="Select a month...">
               <option>Dead</option>
-              <option>September ’18</option>
               <option>October ’18</option>
               <option>November ’18</option>
               <option>December ’18</option>
-              <option selected>January ’19</option>
+              <option defaultValue>January ’19</option>
               <option>February ’19</option>
               <option>March ’19</option>
               <option>April ’19</option>

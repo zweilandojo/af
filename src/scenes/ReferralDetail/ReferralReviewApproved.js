@@ -201,10 +201,9 @@ const ReferralReviewApproved = () => (
 
           <select className="input select" placeholder="Select a month...">
             <option>Dead</option>
-            <option>September ’18</option>
             <option>October ’18</option>
             <option>November ’18</option>
-            <option>December ’18</option>
+            <option defaultValue>December ’18</option>
             <option>January ’19</option>
             <option>February ’19</option>
             <option>March ’19</option>
