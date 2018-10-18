@@ -28,9 +28,9 @@ const AuthVerify = () => (
            </Link>
         </form>
         <div className="mt-16">
-          <a href="mailto:support@ojolabs.com" className="text-grey-dark font-normal leading-normal text-base">
-            Help
-          </a>
+          <p className="text-grey-dark font-normal leading-normal text-sm">
+            Having trouble? <a href="mailto:support@ojolabs.com">Get help</a>
+          </p>
         </div>
       </div>
     </main>

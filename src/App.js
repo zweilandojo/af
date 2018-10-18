@@ -52,7 +52,7 @@ const Home = () => (
 
         {/* REFERRAL TRACKING LIST */}
         <div>
-          <Link to="/referral-profile-needs-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
+          <Link to="/referral-review-needs-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
               <div className="avatar-initials">A</div>
             </div>
@@ -77,7 +77,7 @@ const Home = () => (
             </div>
           </Link>
 
-          <Link to="/clients/client-2" className="py-4 border-b border-grey-light flex referral-list_needs-review">
+          <Link to="/referral-review-needs-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
               <img src={iconPerson} className="avatar-image" alt="avatar" />
               <div className="avatar-initials"></div>
@@ -103,7 +103,7 @@ const Home = () => (
             </div>
           </Link>
 
-          <Link to="/referral-profile-approved" className="py-4 border-b border-grey-light flex">
+          <Link to="/referral-review-approved" className="py-4 border-b border-grey-light flex">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
               <div className="avatar-initials">G</div>
             </div>
@@ -129,7 +129,7 @@ const Home = () => (
             </div>
           </Link>
 
-          <Link to="/clients/client-4" className="py-4 border-b border-grey-light flex referral-list_reviewed">
+          <Link to="/referral-review-approved" className="py-4 border-b border-grey-light flex referral-list_reviewed">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
               <img src={iconPerson} className="avatar-image" alt="avatar" />
               <div className="avatar-initials"></div>
@@ -156,7 +156,7 @@ const Home = () => (
             </div>
           </Link>
 
-          <Link to="/clients/client-5" className="py-4 border-b border-grey-light flex referral-list_dead">
+          <Link to="/referral-review-approved" className="py-4 border-b border-grey-light flex referral-list_dead">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-grey-light text-white">
               <div className="avatar-initials">D</div>
             </div>
@@ -182,7 +182,7 @@ const Home = () => (
             </div>
           </Link>
 
-          <Link to="/clients/client-5" className="pt-4 flex referral-list_dead">
+          <Link to="/referral-review-approved" className="pt-4 flex referral-list_dead">
             <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-grey-light text-white">
               <img src={iconPerson} className="avatar-image" alt="avatar" />
               <div className="avatar-initials"></div>
