@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "invariant": "^2.2.4",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-input-mask": "^2.0.4",
+    "react-phone-number-input": "^2.2.14",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5",
+    "react-text-mask": "^5.4.3",
     "storybook-react": "^3.2.16",
-    "tailwindcss": "^0.6.5"
+    "tailwindcss": "^0.6.5",
+    "warning": "^4.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MaskedInput from 'react-text-mask'
+
 
 // Assets
 import logoBlueCircleLg from '../../assets/images/logo-ojo-bg-blue-lg.png';
+
 
 class SignIn extends React.Component {
   render() {
@@ -20,11 +23,26 @@ class SignIn extends React.Component {
               Enter your mobile number to<br/>view your OJO Referrals
             </p>
             <form>
+
+              <MaskedInput
+                mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+                type="tel"
+                name="phone"
+                className="input mb-4 text-center text-lg"
+                placeholder="Phone"
+                guide={false}
+                id="phone"
+                onBlur={() => {}}
+                onChange={() => {}}
+              />
+
+              {/*
               <input className="input mb-4 text-center text-lg"
                      type="tel" id="phone" name="phone"
                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                      required
-                     placeholder="Phone" />
+                     placeholder="Phone" />*/}
+
               <Link to="/signin-verify" className="text-xl block bg-white w-full h-16 text-blue py-2 px-4 rounded flex items-center justify-center">
                 <span>Next</span>
               </Link>
