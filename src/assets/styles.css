@@ -480,16 +480,11 @@ select {
   margin: 8rem 0 0 -16px;
 }
 .ojo-loading {
-  text-align: center;
   width: 56px;
   height: 56px;
   border-radius: 100%;
-  display: flex;
-  margin: auto;
-
   background: linear-gradient(to right, #3366FF 10%, #00D7F3 25%, #3366FF 85%);
   background-size: 200% auto;
-
   animation: shine .5s linear infinite;
 }
 @keyframes shine {
