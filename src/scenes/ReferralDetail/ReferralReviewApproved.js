@@ -234,57 +234,58 @@ const ReferralReviewApproved = () => (
           <textarea className="input textarea" placeholder="What's the situation?">
           </textarea>
 
-          <div className="notes-activity text-grey-dark text-sm">
-            <div className="flex border-b border-grey-light py-8">
-              <span className="w-1/4">
-                10.18.2018
-              </span>
-              <p className="w-3/4">
-                Not sure what he plans to do spoke with him several times and he said when he gets back in Atl. we will meet this week.
-              </p>
-            </div>
-            <div className="flex border-b border-grey-light py-8">
-              <span className="w-1/4">
-                10.18.2018
-              </span>
-              <p className="w-3/4">
-                Not sure what he plans to do spoke with him several times and he said when he gets back in Atl. we will meet this week.
-              </p>
-            </div>
-            <div className="flex border-b border-grey-light py-8">
-              <span className="w-1/4">
-                10.18.2018
-              </span>
-              <p className="w-3/4">
-                Not sure what he plans to do spoke with him several times and he said when he gets back in Atl. we will meet this week.
-              </p>
-            </div>
-            <div className="flex border-b border-grey-light py-8">
-              <span className="w-1/4">
-                10.18.2018
-              </span>
-              <p className="w-3/4">
-                He was super cool, we are now best friends
-              </p>
-            </div>
-            <div className="flex border-b border-grey-light py-8">
-              <span className="w-1/4">
-                10.18.2018
-              </span>
-              <p className="w-3/4">
-                He was super cool, we are now best friends
-              </p>
-            </div>
-            <div className="flex border-b border-grey-light py-8">
-              <span className="w-1/4">
-                10.18.2018
-              </span>
-              <p className="w-3/4">
-                Not sure what he plans to do spoke with him several times and he said when he gets back in Atl. we will meet this week.
-              </p>
-            </div>
-            <div className="flex -mb-8">
-                <button className="py-6 text-blue block text-base w-full text-center">Show all</button>
+          <div className="notes-activity">
+            {/*
+            <header className="mt-12">
+              <h4 className="tracking-wide border-b border-grey-light uppercase text-sm pb-4">
+                Note history
+              </h4>
+            </header>
+            */}
+            <div className="note-activity_list text-grey-dark text-sm">
+              <div className="flex border-b border-grey-light py-8">
+                <span className="w-1/4">
+                  9 days ago
+                </span>
+                <p className="w-3/4">
+                  Not sure what he plans to do spoke with him several times and he said when he gets back in Atl. we will meet this week.
+                </p>
+              </div>
+              <div className="flex border-b border-grey-light py-8">
+                <span className="w-1/4">
+                  15 days ago
+                </span>
+                <p className="w-3/4">
+                  Not sure what he plans to do spoke with him several times and he said when he gets back in Atl. we will meet this week.
+                </p>
+              </div>
+              <div className="flex border-b border-grey-light py-8">
+                <span className="w-1/4">
+                  22 days ago
+                </span>
+                <p className="w-3/4">
+                  Not sure what he plans to do spoke with him several times and he said when he gets back in Atl. we will meet this week.
+                </p>
+              </div>
+              <div className="flex border-b border-grey-light py-8">
+                <span className="w-1/4">
+                  1 month ago
+                </span>
+                <p className="w-3/4">
+                  He was super cool, we are now best friends
+                </p>
+              </div>
+              <div className="flex border-b border-grey-light py-8">
+                <span className="w-1/4">
+                  1 month ago
+                </span>
+                <p className="w-3/4">
+                  He was super cool, we are now best friends
+                </p>
+              </div>
+              <div className="flex -mb-8">
+                  <button className="py-6 text-blue block text-base w-full text-center">Show more</button>
+              </div>
             </div>
           </div>
         </div>
