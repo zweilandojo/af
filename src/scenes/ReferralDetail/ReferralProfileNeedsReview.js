@@ -103,6 +103,14 @@ const ReferralProfile = () => (
             <ul className="text-base leading-normal list-reset">
               <li className="border-b border-grey-light flex pb-2">
                 <div className="w-1/2 text-grey-dark">
+                  Phone
+                </div>
+                <div className="w-1/2">
+                  (555) 512-1234
+                </div>
+              </li>
+              <li className="border-b border-grey-light flex pt-3 pb-2">
+                <div className="w-1/2 text-grey-dark">
                   Location
                 </div>
                 <div className="w-1/2">
@@ -149,12 +157,20 @@ const ReferralProfile = () => (
                   Has a lender
                 </div>
               </li>
-              <li className="flex pt-3">
+              <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Timeline
                 </div>
                 <div className="w-1/2">
                   Less than 6 months
+                </div>
+              </li>
+              <li className="flex pt-3">
+                <div className="w-1/2 text-grey-dark">
+                  Lead Source
+                </div>
+                <div className="w-1/2">
+                  Facebook or SmartZip
                 </div>
               </li>
             </ul>

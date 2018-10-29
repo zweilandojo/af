@@ -233,6 +233,60 @@ const ReferralReviewApproved = () => (
 
           <textarea className="input textarea" placeholder="What's the situation?">
           </textarea>
+
+          <div className="notes-activity text-grey-dark text-sm">
+            <div className="flex border-b border-grey-light py-8">
+              <span className="w-1/4">
+                10.18.2018
+              </span>
+              <p className="w-3/4">
+                Not sure what he plans to do spoke with him several times and he said when he gets back in Atl. we will meet this week.
+              </p>
+            </div>
+            <div className="flex border-b border-grey-light py-8">
+              <span className="w-1/4">
+                10.18.2018
+              </span>
+              <p className="w-3/4">
+                Not sure what he plans to do spoke with him several times and he said when he gets back in Atl. we will meet this week.
+              </p>
+            </div>
+            <div className="flex border-b border-grey-light py-8">
+              <span className="w-1/4">
+                10.18.2018
+              </span>
+              <p className="w-3/4">
+                Not sure what he plans to do spoke with him several times and he said when he gets back in Atl. we will meet this week.
+              </p>
+            </div>
+            <div className="flex border-b border-grey-light py-8">
+              <span className="w-1/4">
+                10.18.2018
+              </span>
+              <p className="w-3/4">
+                He was super cool, we are now best friends
+              </p>
+            </div>
+            <div className="flex border-b border-grey-light py-8">
+              <span className="w-1/4">
+                10.18.2018
+              </span>
+              <p className="w-3/4">
+                He was super cool, we are now best friends
+              </p>
+            </div>
+            <div className="flex border-b border-grey-light py-8">
+              <span className="w-1/4">
+                10.18.2018
+              </span>
+              <p className="w-3/4">
+                Not sure what he plans to do spoke with him several times and he said when he gets back in Atl. we will meet this week.
+              </p>
+            </div>
+            <div className="flex -mb-8">
+                <button className="py-8 text-blue block text-base w-full text-center">Show all</button>
+            </div>
+          </div>
         </div>
       </section>
 

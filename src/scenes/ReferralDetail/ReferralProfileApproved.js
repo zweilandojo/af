@@ -99,13 +99,21 @@ const ReferralProfile = () => (
             <ul className="text-base leading-normal list-reset">
               <li className="border-b border-grey-light flex pb-2">
                 <div className="w-1/2 text-grey-dark">
+                  Phone
+                </div>
+                <div className="w-1/2">
+                  (555) 512-1234
+                </div>
+              </li>
+              <li className="flex border-b border-grey-light pt-3 pb-2">
+                <div className="w-1/2 text-grey-dark">
                   Location
                 </div>
                 <div className="w-1/2">
                   Austin, TX
                 </div>
               </li>
-              <li className="border-b border-grey-light flex pt-3 pb-2">
+              <li className="flex border-b border-grey-light pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Budget
                 </div>
@@ -113,7 +121,7 @@ const ReferralProfile = () => (
                   $350 - $750k
                 </div>
               </li>
-              <li className="border-b border-grey-light flex pt-3 pb-2">
+              <li className="flex border-b border-grey-light pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Property Type
                 </div>
@@ -121,7 +129,7 @@ const ReferralProfile = () => (
                   Homes, Townhomes, Condo
                 </div>
               </li>
-              <li className="border-b border-grey-light flex pt-3 pb-2">
+              <li className="flex border-b border-grey-light pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Bed
                 </div>
@@ -129,7 +137,7 @@ const ReferralProfile = () => (
                   2+
                 </div>
               </li>
-              <li className="border-b border-grey-light flex pt-3 pb-2">
+              <li className="flex border-b border-grey-light pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Bath
                 </div>
@@ -137,7 +145,7 @@ const ReferralProfile = () => (
                   1.5+
                 </div>
               </li>
-              <li className="border-b border-grey-light flex pt-3 pb-2">
+              <li className="flex border-b border-grey-light pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Financing
                 </div>
@@ -145,12 +153,20 @@ const ReferralProfile = () => (
                   Needs lender
                 </div>
               </li>
-              <li className="flex pt-3">
+              <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Timeline
                 </div>
                 <div className="w-1/2">
                   Less than 3 months
+                </div>
+              </li>
+              <li className="flex pt-3">
+                <div className="w-1/2 text-grey-dark">
+                  Lead Source
+                </div>
+                <div className="w-1/2">
+                  Facebook or SmartZip
                 </div>
               </li>
             </ul>
