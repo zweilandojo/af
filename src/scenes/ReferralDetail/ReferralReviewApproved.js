@@ -284,7 +284,7 @@ const ReferralReviewApproved = () => (
               </p>
             </div>
             <div className="flex -mb-8">
-                <button className="py-8 text-blue block text-base w-full text-center">Show all</button>
+                <button className="py-6 text-blue block text-base w-full text-center">Show all</button>
             </div>
           </div>
         </div>
