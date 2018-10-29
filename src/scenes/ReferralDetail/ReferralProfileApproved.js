@@ -166,7 +166,7 @@ const ReferralProfile = () => (
                   Lead Source
                 </div>
                 <div className="w-1/2">
-                  Facebook or SmartZip
+                  Facebook|SmartZip|Cold
                 </div>
               </li>
             </ul>
