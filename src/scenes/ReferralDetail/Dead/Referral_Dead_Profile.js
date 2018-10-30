@@ -2,17 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Assets
-import iconChatWhite from '../../assets/images/icon-chat-w.png';
-import iconPhoneWhite from '../../assets/images/icon-phone-w.png';
-import iconEmailWhite from '../../assets/images/icon-email-w.png';
-import iconChevronLeftWhite from '../../assets/images/icon-chevron-left-w.png';
+import iconPerson from '../../../assets/images/icon-person.svg';
+import iconChatWhite from '../../../assets/images/icon-chat-w.png';
+import iconPhoneWhite from '../../../assets/images/icon-phone-w.png';
+import iconEmailWhite from '../../../assets/images/icon-email-w.png';
+import iconChevronLeftWhite from '../../../assets/images/icon-chevron-left-w.png';
 
 // Components
-import HomeListItem from '../../components/HomeListItem/index.js';
+// ...nothing yet...
 
 const ReferralProfile = () => (
   <div className="app">
-    <div className="review-status-wrapper">
+    <div className="review-status-wrapper review-status_dead">
       <header className="h-16 flex">
         <div className="w-1/3 app-header-back-button">
           <Link to="/" className="block">
@@ -29,13 +30,15 @@ const ReferralProfile = () => (
 
       <div className="app-banner text-center mb-6">
         <div className="avatar avatar-lg flex items-center">
-          <span className="block w-full text-center mt-2">G</span>
+          <span className="block w-full text-center mt-2">
+            <img src={iconPerson} className="avatar-image" alt="avatar" />
+          </span>
         </div>
         <h2 className="mb-2 text-white">
-          Gunny Celis
+          +1 (512) 897-1234
         </h2>
         <h4 className="font-normal text-white text-grey-dark text-sm">
-          Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Aug 29, 2018
+          Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Oct 5, 2018
         </h4>
         <div className="flex justify-center">
           <a href="sms:15125551234" className="py-6 px-4 block text-center">
@@ -58,7 +61,9 @@ const ReferralProfile = () => (
               call
             </small>
           </a>
-          <a href="mailto:email@address.com" className="py-6 px-4 block text-center">
+
+          {/* Begin Missing Email State */}
+          <div className="py-6 px-4 block text-center opacity-50">
             <div className="btn-contact-icon flex items-center">
               <div className="block w-full flex items-center justify-center">
                 <img src={iconEmailWhite} className="w-5" alt="" />
@@ -67,19 +72,21 @@ const ReferralProfile = () => (
             <small className="block text-white">
               email
             </small>
-          </a>
+          </div>
+          {/* End Missing Email State */}
+
         </div>
       </div>
 
       <nav className="nav nav-tabs card-top">
         <div className="max-w-lg mx-auto">
           <div className="tab active">
-            <Link to="/referral-profile-approved">
+            <Link to="/referral-dead-profile">
               Profile
             </Link>
           </div>
           <div className="tab">
-            <Link to="/referral-review-approved">
+            <Link to="/referral-dead-review">
               Review
             </Link>
           </div>
@@ -90,8 +97,8 @@ const ReferralProfile = () => (
 
     <main className="container mx-auto px-2 pb-24 max-w-lg">
       <section className="pb-6 mb-6 mt-8">
-          <header className="mb-6">
-            <h3 className="mb-4 ml-6 text-2xl">
+          <header className="mb-4">
+            <h3 className="ml-6 text-2xl">
               About
             </h3>
           </header>
@@ -102,55 +109,55 @@ const ReferralProfile = () => (
                   Phone
                 </div>
                 <div className="w-1/2">
-                  (555) 512-1234
+                  +1 (555) 897-1234
                 </div>
               </li>
-              <li className="flex border-b border-grey-light pt-3 pb-2">
+              <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Location
                 </div>
                 <div className="w-1/2">
-                  Austin, TX
+                  <span className="text-grey">Unknown</span>
                 </div>
               </li>
-              <li className="flex border-b border-grey-light pt-3 pb-2">
+              <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Budget
                 </div>
                 <div className="w-1/2">
-                  $350 - $750k
+                  <span className="text-grey">Unknown</span>
                 </div>
               </li>
-              <li className="flex border-b border-grey-light pt-3 pb-2">
+              <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Property Type
                 </div>
                 <div className="w-1/2">
-                  Homes, Townhomes, Condo
+                  Homes
                 </div>
               </li>
-              <li className="flex border-b border-grey-light pt-3 pb-2">
+              <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Bed
                 </div>
                 <div className="w-1/2">
-                  2+
+                  <span className="text-grey">Unknown</span>
                 </div>
               </li>
-              <li className="flex border-b border-grey-light pt-3 pb-2">
+              <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Bath
                 </div>
                 <div className="w-1/2">
-                  1.5+
+                  <span className="text-grey">Unknown</span>
                 </div>
               </li>
-              <li className="flex border-b border-grey-light pt-3 pb-2">
+              <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
                   Financing
                 </div>
                 <div className="w-1/2">
-                  Needs lender
+                  <span className="text-grey">Unknown</span>
                 </div>
               </li>
               <li className="border-b border-grey-light flex pt-3 pb-2">
@@ -158,7 +165,7 @@ const ReferralProfile = () => (
                   Timeline
                 </div>
                 <div className="w-1/2">
-                  Less than 3 months
+                  Less than a year
                 </div>
               </li>
               <li className="flex pt-3">
@@ -166,14 +173,14 @@ const ReferralProfile = () => (
                   Lead Source
                 </div>
                 <div className="w-1/2">
-                  Facebook|SmartZip|Cold
+                  Facebook
                 </div>
               </li>
             </ul>
           </div>
         </section>
 
-        <section className="mb-8">
+        <section className="pb-6 mb-6">
           <header className="mb-4">
             <h3 className="mb-4 ml-6 text-2xl">
               Handoff notes
@@ -181,16 +188,10 @@ const ReferralProfile = () => (
           </header>
           <div className="border border-grey-light p-8 rounded-lg">
             <p className="text-grey-dark text-base mb-8">
-              Last updated Oct 16, 2018 6:45 PM
+              Last updated Oct 30, 2018 5:15 PM
             </p>
             <p className="text-black text-base leading-normal">
-              Gunny would like to speak about a home purchase.<br/>
-              Best time to contact: Evening (6-9 pm)<br/>
-              Area: Hyde Park, East Side<br/>
-              First Time Buyer: Y<br/>
-              Property Inquired:<br/>
-              200 Bullock Dr.<br/>
-              Austin, TX 78774
+              They would like to speak about a home purchase.<br/>
             </p>
           </div>
         </section>
@@ -198,20 +199,13 @@ const ReferralProfile = () => (
         <section className="pb-6 mb-6">
           <header className="mb-4">
             <h3 className="mb-4 ml-6 text-2xl">
-              Gunny’s favorites
+              Favorites
             </h3>
           </header>
           <div className="border border-grey-light p-8 rounded-lg">
-            <p className="text-grey-dark text-base mb-8">
-              A few homes Gunny really likes
+            <p className="text-grey-dark text-base">
+              This referral hasn’t favorited any homes yet
             </p>
-            <div className="home-list flex flex-wrap -mx-2">
-              <HomeListItem />
-              <HomeListItem />
-              <HomeListItem />
-              <HomeListItem />
-              <HomeListItem />
-            </div>
           </div>
         </section>
     </main>

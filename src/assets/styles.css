@@ -411,6 +411,12 @@ select {
   max-width: 400px;
 }
 
+/*
+ :: HEIGHT
+ ----------------------------
+ ----------------------------
+*/
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -543,7 +549,10 @@ select {
   background-color: #F68EB1;
 }
 .review-status_dead {
-  background: linear-gradient(180deg, #757575 0%, #FAFAFA 100%);
+  background: linear-gradient(180deg, #757575 0%, #BDBDBD 100%);
+}
+.review-status_dead .avatar {
+  background-color: #757575;
 }
 
 /* Tabs */

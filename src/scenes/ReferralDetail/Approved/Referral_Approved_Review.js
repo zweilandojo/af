@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import iconChatWhite from '../../assets/images/icon-chat-w.png';
-import iconPhoneWhite from '../../assets/images/icon-phone-w.png';
-import iconEmailWhite from '../../assets/images/icon-email-w.png';
-import iconChevronLeftWhite from '../../assets/images/icon-chevron-left-w.png';
+import iconChatWhite from '../../../assets/images/icon-chat-w.png';
+import iconPhoneWhite from '../../../assets/images/icon-phone-w.png';
+import iconEmailWhite from '../../../assets/images/icon-email-w.png';
+import iconChevronLeftWhite from '../../../assets/images/icon-chevron-left-w.png';
 
 const ReferralReviewApproved = () => (
   <div className="app">

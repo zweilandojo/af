@@ -1,14 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import iconChatWhite from '../../assets/images/icon-chat-w.png';
-import iconPhoneWhite from '../../assets/images/icon-phone-w.png';
-import iconEmailWhite from '../../assets/images/icon-email-w.png';
-import iconChevronLeftWhite from '../../assets/images/icon-chevron-left-w.png';
+// Assets
+import iconPerson from '../../../assets/images/icon-person.svg';
+import iconChatWhite from '../../../assets/images/icon-chat-w.png';
+import iconPhoneWhite from '../../../assets/images/icon-phone-w.png';
+import iconEmailWhite from '../../../assets/images/icon-email-w.png';
+import iconChevronLeftWhite from '../../../assets/images/icon-chevron-left-w.png';
+
+// Components
+// ...nothing yet...
 
 const ReferralProfile = () => (
   <div className="app">
-    <div className="review-status-wrapper review-status_needs-review">
+    <div className="review-status-wrapper review-status_dead">
       <header className="h-16 flex">
         <div className="w-1/3 app-header-back-button">
           <Link to="/" className="block">
@@ -25,13 +30,15 @@ const ReferralProfile = () => (
 
       <div className="app-banner text-center mb-6">
         <div className="avatar avatar-lg flex items-center">
-          <span className="block w-full text-center mt-2">A</span>
+          <span className="block w-full text-center mt-2">
+            <img src={iconPerson} className="avatar-image" alt="avatar" />
+          </span>
         </div>
         <h2 className="mb-2 text-white">
-          Arthur Belling
+          +1 (512) 897-1234
         </h2>
         <h4 className="font-normal text-white text-grey-dark text-sm">
-          Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Nov 1, 2018
+          Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Oct 5, 2018
         </h4>
         <div className="flex justify-center">
           <a href="sms:15125551234" className="py-6 px-4 block text-center">
@@ -74,12 +81,12 @@ const ReferralProfile = () => (
       <nav className="nav nav-tabs card-top">
         <div className="max-w-lg mx-auto">
           <div className="tab">
-            <Link to="/referral-profile-needs-review">
+            <Link to="/referral-dead-profile">
               Profile
             </Link>
           </div>
           <div className="tab active">
-            <Link to="/referral-review-needs-review">
+            <Link to="/referral-dead-review">
               Review
             </Link>
           </div>
