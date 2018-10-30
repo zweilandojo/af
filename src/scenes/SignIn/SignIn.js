@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MaskedInput from 'react-text-mask'
+import SMSForm from '../../components/SMSForm/SMSForm.js';
 
 
 // Assets
@@ -36,19 +37,21 @@ class SignIn extends React.Component {
                 onChange={() => {}}
               />
 
-              {/*
-              <input className="input mb-4 text-center text-lg"
-                     type="tel" id="phone" name="phone"
-                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                     required
-                     placeholder="Phone" />*/}
-
               <Link to="/signin-verify" className="text-xl block bg-white w-full h-16 text-blue py-2 px-4 rounded flex items-center justify-center">
                 <span>Next</span>
               </Link>
             </form>
           </div>
         </main>
+
+
+        <main className="container mx-auto px-6 mb-24 pb-8 max-w-400 relative z-10 bg-white">
+          <div className="text-center mt-10 m-auto">
+            <SMSForm />
+          </div>
+        </main>
+
+
         <footer className="fixed pin-b pin-x pt-16">
           <div className="text-center py-4 text-xs">
             <a href="mailto:support@ojolabs.com" className="inline-block text-grey-dark">support@ojolabs.com</a>
