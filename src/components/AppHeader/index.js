@@ -14,7 +14,7 @@ const AppHeader = () => (
       </Link>
     </div>
     <div className="w-1/3 text-right align-middle app-header-ctas">
-      <Link className="inline-block p-6" to="/help">
+      <Link className="inline-block p-6" to="/support">
         Help
       </Link>
     </div>

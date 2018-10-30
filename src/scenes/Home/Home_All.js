@@ -17,7 +17,7 @@ class HomeNeedsReview extends React.Component {
     return (
       <div className="app">
         <AppHeader />
-        <AgentHomeBanner firstName="Sandra" temperature="90" />
+        <AgentHomeBanner firstName="Sandra" temperature="64" />
 
         <main className="container mx-auto px-2 max-w-lg">
 
@@ -28,7 +28,7 @@ class HomeNeedsReview extends React.Component {
             <div className="border border-grey-light p-8 rounded-lg">
               <div className="clearfix">
                 <p className="text-grey-dark float-left text-base mb-6">
-                  Please review by Wed, Sept 19
+                  Please review by Wed, Nov 7
                 </p>
               </div>
 
@@ -66,7 +66,7 @@ class HomeNeedsReview extends React.Component {
                 </div>
                 <div className="flex-initial ml-4">
                   <span className="text-lg block mb-1">
-                    17153233415
+                    15125551234
                   </span>
                   <div>
                     <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
