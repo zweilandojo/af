@@ -1,22 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Assets
-import iconPerson from '../../../assets/images/icon-person.svg';
 import iconChatWhite from '../../../assets/images/icon-chat-w.png';
 import iconPhoneWhite from '../../../assets/images/icon-phone-w.png';
 import iconEmailWhite from '../../../assets/images/icon-email-w.png';
 import iconChevronLeftWhite from '../../../assets/images/icon-chevron-left-w.png';
 
-// Components
-// ...nothing yet...
-
 const ReferralProfile = () => (
   <div className="app">
-    <div className="review-status-wrapper review-status_dead">
+    <div className="review-status-wrapper review-status_approved">
       <header className="h-16 flex">
         <div className="w-1/3 app-header-back-button">
-          <Link to="/" className="block">
+          <Link to="/home-approved-arthur" className="block">
             <img src={iconChevronLeftWhite} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
           </Link>
         </div>
@@ -30,15 +25,13 @@ const ReferralProfile = () => (
 
       <div className="app-banner text-center mb-6">
         <div className="avatar avatar-lg flex items-center">
-          <span className="block w-full text-center mt-2">
-            <img src={iconPerson} className="avatar-image" alt="avatar" />
-          </span>
+          <span className="block w-full text-center mt-2">A</span>
         </div>
         <h2 className="mb-2 text-white">
-          +1 (512) 897-1234
+          Arthur Belling
         </h2>
         <h4 className="font-normal text-white text-grey-dark text-sm">
-          Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Oct 5, 2018
+          Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Nov 1, 2018
         </h4>
         <div className="flex justify-center">
           <a href="sms:15125551234" className="py-6 px-4 block text-center">
@@ -81,12 +74,12 @@ const ReferralProfile = () => (
       <nav className="nav nav-tabs card-top">
         <div className="max-w-lg mx-auto">
           <div className="tab">
-            <Link to="/referral-dead-profile">
+            <Link to="/referral-approved-arthur-profile">
               Profile
             </Link>
           </div>
           <div className="tab active">
-            <Link to="/referral-dead-review">
+            <Link to="/referral-approved-arthur-review">
               Review
             </Link>
           </div>
@@ -119,7 +112,7 @@ const ReferralProfile = () => (
               </li>
               {/* END ACTIVE PROGRESS CHECKBOX */}
 
-              <li className="btn-stroked mr-1 mb-3">
+              <li className="btn-stroked active mr-1 mb-3">
                 <label className="">
                   <input type="checkbox" value="Set" className="checkbox float-left _8X2Bp _3TFgA" />
                   Set
@@ -164,7 +157,7 @@ const ReferralProfile = () => (
 
             <div className="mb-2">
               <label className="text-base input-radio-container">Dead
-                <input type="radio" checked className="input-radio mr-2" name="relationship" />
+                <input type="radio" className="input-radio mr-2" name="relationship" />
                 <span className="checkmark"></span>
               </label>
             </div>
@@ -182,7 +175,7 @@ const ReferralProfile = () => (
             </div>
             <div className="mb-2">
               <label className="text-base input-radio-container">Average
-                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <input type="radio" checked className="input-radio mr-2" name="relationship" />
                 <span className="checkmark"></span>
               </label>
             </div>
@@ -211,11 +204,12 @@ const ReferralProfile = () => (
             <p className="text-grey-dark text-base mb-8">When do you think they’ll close?</p>
 
             <select className="input select" placeholder="Select a month...">
+              <option>Select a month...</option>
               <option>Dead</option>
               <option>October ’18</option>
               <option>November ’18</option>
               <option>December ’18</option>
-              <option>January ’19</option>
+              <option selected>January ’19</option>
               <option>February ’19</option>
               <option>March ’19</option>
               <option>April ’19</option>
@@ -257,10 +251,10 @@ const ReferralProfile = () => (
               <div className="note-activity_list text-grey-dark text-sm">
                 <div className="flex pt-8">
                   <span className="w-1/4">
-                    20 days ago
+                    1 min ago
                   </span>
                   <p className="w-3/4">
-                     Bad credit referral. Below 500. Please reassign.
+                    Talked to Arthur today. Feels like a strong referral. Meeting next week Thursday.
                   </p>
                 </div>
               </div>
@@ -274,7 +268,7 @@ const ReferralProfile = () => (
           <div className="container flex items-center px-6 mx-auto max-w-lg">
             <span className="flex-1 text-xs text-grey-dark">Everything look good?</span>
             <div className="flex-1">
-              <button className="btn btn-green">Save</button>
+              <Link to="/home-approved-arthur" className="btn btn-green block text-center text-lg">Save</Link>
             </div>
           </div>
         </section>

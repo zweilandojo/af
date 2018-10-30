@@ -200,13 +200,14 @@ const ReferralReviewApproved = () => (
           <p className="text-grey-dark text-base mb-8">When do you think they’ll close?</p>
 
           <select className="input select" placeholder="Select a month...">
+            <option>Select a month...</option>
             <option>Dead</option>
             <option>October ’18</option>
             <option>November ’18</option>
-            <option defaultValue>December ’18</option>
+            <option>December ’18</option>
             <option>January ’19</option>
             <option>February ’19</option>
-            <option>March ’19</option>
+            <option selected>March ’19</option>
             <option>April ’19</option>
             <option>May ’19</option>
             <option>June ’19</option>
@@ -234,6 +235,7 @@ const ReferralReviewApproved = () => (
           <textarea className="input textarea" placeholder="What's the situation?">
           </textarea>
 
+          {/* BEGIN NOTE HISTORY */}
           <div className="notes-activity">
             {/*
             <header className="mt-12">
@@ -288,6 +290,8 @@ const ReferralReviewApproved = () => (
               </div>
             </div>
           </div>
+          {/* END NOTE HISTORY */}
+          
         </div>
       </section>
 

@@ -204,6 +204,7 @@ const ReferralProfile = () => (
             <p className="text-grey-dark text-base mb-8">When do you think they’ll close?</p>
 
             <select className="input select" placeholder="Select a month...">
+              <option selected>Select a month...</option>
               <option>Dead</option>
               <option>October ’18</option>
               <option>November ’18</option>
@@ -244,7 +245,7 @@ const ReferralProfile = () => (
           <div className="container flex items-center px-6 mx-auto max-w-lg">
             <span className="flex-1 text-xs text-grey-dark">Everything look good?</span>
             <div className="flex-1">
-              <button className="btn btn-green">Save</button>
+              <Link to="/home-approved-arthur" className="btn btn-green block text-center text-lg">Save</Link>
             </div>
           </div>
         </section>
