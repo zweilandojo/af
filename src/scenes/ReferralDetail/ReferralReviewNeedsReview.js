@@ -112,13 +112,13 @@ const ReferralProfile = () => (
               </li>
               {/* END ACTIVE PROGRESS CHECKBOX */}
 
-              <li className="btn-stroked active mr-1 mb-3">
+              <li className="btn-stroked mr-1 mb-3">
                 <label className="">
                   <input type="checkbox" value="Set" className="checkbox float-left _8X2Bp _3TFgA" />
                   Set
                 </label>
               </li>
-              <li className="btn-stroked active mr-1 mb-3">
+              <li className="btn-stroked mr-1 mb-3">
                 <label className="">
                   <input type="checkbox" value="Met" className="checkbox float-left _8X2Bp _3TFgA" />
                   Met
@@ -208,7 +208,7 @@ const ReferralProfile = () => (
               <option>October ’18</option>
               <option>November ’18</option>
               <option>December ’18</option>
-              <option defaultValue>January ’19</option>
+              <option>January ’19</option>
               <option>February ’19</option>
               <option>March ’19</option>
               <option>April ’19</option>

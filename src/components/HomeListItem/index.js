@@ -3,16 +3,19 @@ import React from 'react';
 class HomeListItem extends React.Component {
   render() {
     return (
-      <div className="w-1/2 leading-normal mb-8 px-2">
-        <img src="https://placehold.it/400x300" alt="home" />
-        <h4 className="text-base">$246,000</h4>
-        <p className="text-xs">
-          2 Bed<span className="mx-1 text-grey">|</span>
-          2 Bath<span className="mx-1 text-grey">|</span>
-          1030 Sq Ft
+      <div className="w-full md:w-1/2 leading-normal mb-8 px-2">
+        <img src={this.props.imgUrl} alt="home" />
+        <h4 className="text-lg font-bold">
+          <span className="mr-2">{this.props.address}</span>
+          <span className="text-green">${this.props.price}</span>
+        </h4>
+        <p className="text-base">
+          {this.props.neighborhood} - {this.props.cityStateZip}
         </p>
-        <div className="text-xs text-grey mb-1">
-          1301 Chicon St, Austin, TX
+        <div className="text-base text-grey mb-1">
+          <span className="mr-2">{this.props.bed}bd</span>
+          <span className="mr-2">{this.props.bath}ba</span>
+          {this.props.sqft}sf
         </div>
       </div>
     )

@@ -170,7 +170,7 @@ const ReferralProfile = () => (
                   Lead Source
                 </div>
                 <div className="w-1/2">
-                  Facebook or SmartZip
+                  Facebook
                 </div>
               </li>
             </ul>
@@ -210,9 +210,36 @@ const ReferralProfile = () => (
               A few homes Arthur really likes
             </p>
             <div className="home-list flex flex-wrap -mx-2">
-              <HomeListItem />
-              <HomeListItem />
-              <HomeListItem />
+              <HomeListItem
+                imgUrl="https://s3st2.openlistings.com/images/properties/v2/5bceee7d71a60943848ec8e2/1280/794/5bceefd080d4b12ee930b036.jpg"
+                address="1310 E M Franklin Ave #4"
+                price="430,000"
+                neighborhood="MLK"
+                cityStateZip="Austin, TX 78721"
+                bed="4"
+                bath="3"
+                sqft="1,399"
+              />
+              <HomeListItem
+                imgUrl="https://s3st2.openlistings.com/images/properties/v2/5bd4bd8c80d4b12f44c93961/1280/794/5bd4bdc880d4b12f44c93cb6.jpg"
+                address="908 E 15th St"
+                price="378,000"
+                neighborhood="Central East Austin"
+                cityStateZip="Austin, TX 78702"
+                bed="3"
+                bath="3"
+                sqft="2,314"
+              />
+              <HomeListItem
+                imgUrl="https://s3st3.openlistings.com/images/properties/v2/5bd82b4971a60975ec56c2be/1280/794/5bd82bfe71a60975ec56c5ff.jpg"
+                address="3100 White Rock Dr"
+                price="456,000"
+                neighborhood="Allandale"
+                cityStateZip="Austin, TX 78757"
+                bed="3"
+                bath="2"
+                sqft="1,550"
+              />
             </div>
           </div>
         </section>
