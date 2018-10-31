@@ -229,10 +229,8 @@ a {
 
 /* Stroked Buttons */
 .btn-stroked {
-  border: 2px solid #EEEEEE;
-  border-radius: 3rem;
+  background-color: white;
   display: inline-block;
-  box-sizing: border-box;
 }
 .btn-stroked label {
   cursor: pointer;
@@ -240,21 +238,67 @@ a {
   line-height: 24px;
   padding: .5rem .75rem;
   display: inline-block;
+  position: relative;
+  height: 40px;
 }
-.btn-stroked input {
+.btn-stroked.active .checkbox,
+.btn-stroked input[type=checkbox]:checked {
+  background: white url('./images/icon-checkmark-checked.svg') 0 0 no-repeat;
+  background-size: 24px 24px;
+  border: 0;
+}
+.btn-stroked label .text {
+  z-index: 100;
+  position: relative;
+  top: 1px;
+  left: 0;
+  margin-right: 2px;
+}
+.btn-stroked input[type=checkbox] {
   margin-right: .5rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
-.btn-stroked:hover {
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  border: 2px solid #eee;
+  -webkit-transition: .1s;
+  transition: .1s;
+  border-radius: 3rem;
+  z-index: 0;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 8px;
+  top: 6px;
+  background-color: white;
+  border: 2px solid #eee;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+.slider:before:hover {
   background: #fafafa;
 }
-.btn-stroked.active {
+input:checked + .slider {
+  background-color: #E6FDF2;
   border-color: #E6FDF2;
-  background-color: #E6FDF2; /* rgba(98, 241, 172, .1);  #62F1AC */
 }
-.btn-stroked.active .checkbox {
+input:focus + .slider {
+
+}
+input:checked + .slider:before {
   background: white url('./images/icon-checkmark-checked.svg') 0 0 no-repeat;
   background-size: 24px 24px;
   border: 0;
@@ -535,22 +579,21 @@ select {
 
 /* Snackbar */
 #snackbar {
-  visibility: hidden; /* Hidden by default. Visible on click */
-  min-width: 250px; /* Set a default minimum width */
+  visibility: hidden;
+  min-width: 250px;
   /* margin-left: -125px; Divide value of min-width by 2 */
-  background-color: rgba(0,0,0,.8); /* Black background color */
-  color: #fff; /* White text color */
-  text-align: center; /* Centered text */
-  border-radius: 0.4375rem; /* Rounded borders */
-  padding: 1rem; /* Padding */
-  position: fixed; /* Sit on top of the screen */
-  z-index: 1; /* Add a z-index if needed */
-  left: 1rem; /* Center the snackbar */
-  bottom: 30px; /* 30px from the bottom */
+  background-color: rgba(0,0,0,.75);
+  color: #fff;
+  text-align: center;
+  border-radius: 0.4375rem;
+  padding: 1rem;
+  position: fixed;
+  z-index: 1;
+  left: 1rem;
+  bottom: 30px;
 }
-/* Show the snackbar when clicking on a button (class added with JavaScript) */
 #snackbar.show {
-  visibility: visible; /* Show the snackbar */
+  visibility: visible;
   /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
  However, delay the fade out process for 2.5 seconds */
  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;

@@ -9,6 +9,9 @@ import AgentHomeBanner from '../../components/AgentHomeBanner/index.js';
 import Milestones from '../../components/Milestones/index.js';
 
 class Home_ZeroState extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="app">

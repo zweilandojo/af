@@ -13,6 +13,9 @@ import iconCheckboxgrey from '../../assets/images/icon-checkmark-checked-gray.sv
 import iconChevronRightgrey from '../../assets/images/icon-chevron-right-gray.svg';
 
 class HomeNeedsReview extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="app">
