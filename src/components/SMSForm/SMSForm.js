@@ -5,12 +5,18 @@ import MaskedInput from 'react-text-mask';
 class SMSForm extends Component {
   constructor(props) {
     super(props);
+
+    var x = Math.floor((Math.random() * 9) + 1);
+    var x2 = Math.floor((Math.random() * 9) + 1);
+    var x3 = Math.floor((Math.random() * 9) + 1);
+    var x4 = Math.floor((Math.random() * 9) + 1);
+
     this.state = {
       message: {
         to: '',
-        body: 'Your Ojo authentication code is 123-456'
+        body: 'Your Ojo authentication code is ' + x + x2 + x3 + '-' + x4 + x + x2
       },
-      fireRedirect: false,
+      redirectToReferrer: false,
       submitting: false,
       error: false
     }
@@ -18,17 +24,17 @@ class SMSForm extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+
   onHandleChange(event) {
     const name = event.target.getAttribute('name');
     this.setState({
       message: { ...this.state.message, [name]: event.target.value }
     })
   }
-  onSubmit(event) {
-    event.preventDefault();
+  onSubmit(e) {
+    e.preventDefault();
     this.setState({
-      submitting: true,
-      fireRedirect: true
+      submitting: true
     });
 
     fetch('/api/messages', {
@@ -44,12 +50,12 @@ class SMSForm extends Component {
           this.setState({
             error: false,
             submitting: false,
+            redirectToReferrer: true,
             message: {
               to: '',
               body: ''
             }
           });
-          return <Redirect to='/signin-verify' />;
         } else {
           this.setState({
             error: true,
@@ -59,10 +65,10 @@ class SMSForm extends Component {
       });
   }
   render() {
-    // const { from } = this.props.location.state || '/'
-    // const { fireRedirect } = this.state
-
-    // {fireRedirect && (<Redirect to={from || '/signin-verify'}/>)}
+    const redirectToReferrer = this.state.redirectToReferrer;
+        if (redirectToReferrer === true) {
+            return <Redirect to="/signin-verify" />
+        }
 
     return (
       <form

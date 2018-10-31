@@ -583,7 +583,7 @@ select {
   visibility: hidden;
   min-width: 250px;
   /* margin-left: -125px; Divide value of min-width by 2 */
-  background-color: rgba(0,0,0,.75);
+  background-color: rgba(33,33,33,.9);
   color: #fff;
   text-align: center;
   border-radius: 0.4375rem;
@@ -591,7 +591,9 @@ select {
   position: fixed;
   z-index: 1;
   left: 1rem;
-  bottom: 30px;
+  bottom: 2.5rem;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.04),
+              0 0 16px 0 rgba(0,0,0,0.08);
 }
 #snackbar.show {
   visibility: visible;
@@ -603,18 +605,18 @@ select {
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
   from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  to {bottom: 2.5rem; opacity: 1;}
 }
 @keyframes fadein {
   from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  to {bottom: 2.5rem; opacity: 1;}
 }
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
+  from {bottom: 32px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
+  from {bottom: 2.5rem; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
 // Assets
@@ -12,7 +13,8 @@ class Loading extends React.Component {
 
     this.state = {
       loading: 'initial',
-      data: ''
+      data: '',
+      redirectToReferrer: false
     };
 
   }
@@ -40,7 +42,8 @@ class Loading extends React.Component {
       console.log('This happens 7th.');
       this.setState({
         data: data,
-        loading: 'false'
+        loading: 'false',
+        redirectToReferrer: true,
       });
     });
   }
@@ -51,7 +54,6 @@ class Loading extends React.Component {
       console.log('This happens 2nd - after the class is constructed. You will not see this element because React is still computing changes to the DOM.');
       return <h2>Intializing...</h2>;
     }
-
 
     if (this.state.loading === 'true') {
       console.log('This happens 5th - when waiting for data.');
@@ -67,6 +69,11 @@ class Loading extends React.Component {
         </div>
       )
     }
+
+    const redirectToReferrer = this.state.redirectToReferrer;
+        if (redirectToReferrer === true) {
+            return <Redirect to="/" />
+        }
 
     console.log('This happens 8th - after I get data.');
     return (

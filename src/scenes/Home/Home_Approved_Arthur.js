@@ -136,7 +136,10 @@ class HomeNeedsReview extends React.Component {
           <Milestones talk="100" set="33" met="0" offer="0" accept="0" transact="0" />
         </main>
 
-        <div id="snackbar"><span className="inline-block mr-2" aria-label="thumbsup" role="img">👍</span> Arthur has been updated</div>
+        <div id="snackbar" className="shadow">
+          <span className="inline-block mr-2" aria-label="thumbsup" role="img">👍</span>
+          Arthur has been updated
+        </div>
       </div>
     )
   }
