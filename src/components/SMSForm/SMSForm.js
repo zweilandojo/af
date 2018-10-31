@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom'
 import MaskedInput from 'react-text-mask';
 
 class SMSForm extends Component {
@@ -23,7 +23,6 @@ class SMSForm extends Component {
     this.onHandleChange = this.onHandleChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
-
 
   onHandleChange(event) {
     const name = event.target.getAttribute('name');
@@ -101,7 +100,7 @@ class SMSForm extends Component {
             onChange={this.onHandleChange}
           />
         </div>
-        */}
+
           <button
             type="submit"
             disabled={this.state.submitting}
@@ -109,6 +108,14 @@ class SMSForm extends Component {
           >
             Next
           </button>
+          */}
+
+            <Link
+              to="signin-verify"
+              className="text-xl block bg-white w-full h-16 text-blue py-2 px-4 rounded flex items-center justify-center"
+            >
+              Next
+            </Link>
         </form>
     );
   }
