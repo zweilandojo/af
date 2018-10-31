@@ -1,1 +1,1 @@
-web: run-p server start
+web: npm run start
