@@ -13,6 +13,18 @@ import iconCheckboxgrey from '../../assets/images/icon-checkmark-checked-gray.sv
 import iconChevronRightgrey from '../../assets/images/icon-chevron-right-gray.svg';
 
 class HomeNeedsReview extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
   render() {
     return (
       <div className="app">
@@ -22,6 +34,9 @@ class HomeNeedsReview extends React.Component {
         <main className="container mx-auto px-2 max-w-lg">
 
           <div className="referral-tracking clearfix mb-12">
+
+            {/* <button onClick={this.myFunction}>Toaster</button> */}
+
             <h3 className="mb-4 ml-6 text-2xl">
               Referrals
             </h3>
@@ -120,6 +135,8 @@ class HomeNeedsReview extends React.Component {
 
           <Milestones talk="100" set="33" met="0" offer="0" accept="0" transact="0" />
         </main>
+
+        <div id="snackbar">Arthur has been updated</div>
       </div>
     )
   }

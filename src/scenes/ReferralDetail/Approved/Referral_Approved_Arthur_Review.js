@@ -11,7 +11,7 @@ const ReferralProfile = () => (
     <div className="review-status-wrapper review-status_approved">
       <header className="h-16 flex">
         <div className="w-1/3 app-header-back-button">
-          <Link to="/home-approved-arthur" className="block">
+          <Link to="/" className="block">
             <img src={iconChevronLeftWhite} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
           </Link>
         </div>

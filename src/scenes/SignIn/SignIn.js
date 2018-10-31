@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import MaskedInput from 'react-text-mask'
 import SMSForm from '../../components/SMSForm/SMSForm.js';
-
 
 // Assets
 import logoBlueCircleLg from '../../assets/images/logo-ojo-bg-blue-lg.png';
-
 
 class SignIn extends React.Component {
   render() {
@@ -23,34 +20,16 @@ class SignIn extends React.Component {
             <p className="mb-8 font-normal font-black text-base leading-normal">
               Enter your mobile number to<br/>view your OJO Referrals
             </p>
+            <SMSForm />
+            {/*
             <form>
-
-              <MaskedInput
-                mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
-                type="tel"
-                name="phone"
-                className="input mb-4 text-center text-lg"
-                placeholder="Phone"
-                guide={false}
-                id="phone"
-                onBlur={() => {}}
-                onChange={() => {}}
-              />
-
               <Link to="/signin-verify" className="text-xl block bg-white w-full h-16 text-blue py-2 px-4 rounded flex items-center justify-center">
                 <span>Next</span>
               </Link>
             </form>
+            */}
           </div>
         </main>
-
-
-        <main className="container mx-auto px-6 mb-24 pb-8 max-w-400 relative z-10 bg-white">
-          <div className="text-center mt-10 m-auto">
-            <SMSForm />
-          </div>
-        </main>
-
 
         <footer className="fixed pin-b pin-x pt-16">
           <div className="text-center py-4 text-xs">
