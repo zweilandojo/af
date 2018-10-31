@@ -156,37 +156,25 @@ const ReferralProfile = () => (
             <p className="text-grey-dark text-base mb-8">How likely will this referral close with you?</p>
 
             <div className="mb-2">
+              <label className="text-base input-radio-container">Likely
+                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <span className="checkmark"></span>
+              </label>
+            </div>
+            <div className="mb-2">
+              <label className="text-base input-radio-container">50/50
+                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <span className="checkmark"></span>
+              </label>
+            </div>
+            <div className="mb-2">
+              <label className="text-base input-radio-container">Not Likely
+                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <span className="checkmark"></span>
+              </label>
+            </div>
+            <div className="mb-2">
               <label className="text-base input-radio-container">Dead
-                <input type="radio" className="input-radio mr-2" name="relationship" />
-                <span className="checkmark"></span>
-              </label>
-            </div>
-            <div className="mb-2">
-              <label className="text-base input-radio-container">Very Weak
-                <input type="radio" className="input-radio mr-2" name="relationship" />
-                <span className="checkmark"></span>
-              </label>
-            </div>
-            <div className="mb-2">
-              <label className="text-base input-radio-container">Weak
-                <input type="radio" className="input-radio mr-2" name="relationship" />
-                <span className="checkmark"></span>
-              </label>
-            </div>
-            <div className="mb-2">
-              <label className="text-base input-radio-container">Average
-                <input type="radio" className="input-radio mr-2" name="relationship" />
-                <span className="checkmark"></span>
-              </label>
-            </div>
-            <div className="mb-2">
-              <label className="text-base input-radio-container">Strong
-                <input type="radio" className="input-radio mr-2" name="relationship" />
-                <span className="checkmark"></span>
-              </label>
-            </div>
-            <div className="mb-2">
-              <label className="text-base input-radio-container">Very Strong
                 <input type="radio" className="input-radio mr-2" name="relationship" />
                 <span className="checkmark"></span>
               </label>

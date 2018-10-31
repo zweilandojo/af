@@ -156,38 +156,26 @@ const ReferralProfile = () => (
             <p className="text-grey-dark text-base mb-8">How likely will this referral close with you?</p>
 
             <div className="mb-2">
+              <label className="text-base input-radio-container">Likely
+                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <span className="checkmark"></span>
+              </label>
+            </div>
+            <div className="mb-2">
+              <label className="text-base input-radio-container">50/50
+                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <span className="checkmark"></span>
+              </label>
+            </div>
+            <div className="mb-2">
+              <label className="text-base input-radio-container">Not Likely
+                <input type="radio" className="input-radio mr-2" name="relationship" />
+                <span className="checkmark"></span>
+              </label>
+            </div>
+            <div className="mb-2">
               <label className="text-base input-radio-container">Dead
-                <input type="radio" className="input-radio mr-2" name="relationship" />
-                <span className="checkmark"></span>
-              </label>
-            </div>
-            <div className="mb-2">
-              <label className="text-base input-radio-container">Very Weak
-                <input type="radio" className="input-radio mr-2" name="relationship" />
-                <span className="checkmark"></span>
-              </label>
-            </div>
-            <div className="mb-2">
-              <label className="text-base input-radio-container">Weak
-                <input type="radio" className="input-radio mr-2" name="relationship" />
-                <span className="checkmark"></span>
-              </label>
-            </div>
-            <div className="mb-2">
-              <label className="text-base input-radio-container">Average
                 <input type="radio" checked className="input-radio mr-2" name="relationship" />
-                <span className="checkmark"></span>
-              </label>
-            </div>
-            <div className="mb-2">
-              <label className="text-base input-radio-container">Strong
-                <input type="radio" className="input-radio mr-2" name="relationship" />
-                <span className="checkmark"></span>
-              </label>
-            </div>
-            <div className="mb-2">
-              <label className="text-base input-radio-container">Very Strong
-                <input type="radio" className="input-radio mr-2" name="relationship" />
                 <span className="checkmark"></span>
               </label>
             </div>
@@ -248,9 +236,9 @@ const ReferralProfile = () => (
                 </h4>
               </header>
               */}
-              <div className="note-activity_list text-grey-dark text-sm">
+              <div className="note-activity_list text-grey-dark text-sm leading-normal">
                 <div className="flex pt-8">
-                  <span className="w-1/4">
+                  <span className="w-1/4 text-grey">
                     1 min ago
                   </span>
                   <p className="w-3/4">

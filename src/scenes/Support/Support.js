@@ -10,7 +10,7 @@ const Support = () => (
   <div className="app">
     <header className="app-header flex">
       <div className="w-1/3 app-header-back-button">
-        <Link to="/" className="inline-block px-6 py-6">
+        <Link to="/" className="block">
           <img src={iconChevronLeft} className="icon icon-chevron-left mr-1 float-left" alt="back icon" />
         </Link>
       </div>
