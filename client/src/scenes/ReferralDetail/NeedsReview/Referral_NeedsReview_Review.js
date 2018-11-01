@@ -247,7 +247,7 @@ class ReferralProfile extends React.Component {
                   <option>December ’18</option>
                   <option>January ’19</option>
                   <option>February ’19</option>
-                  <option selected>March ’19</option>
+                  <option defaultValue>March ’19</option>
                   <option>April ’19</option>
                   <option>May ’19</option>
                   <option>June ’19</option>

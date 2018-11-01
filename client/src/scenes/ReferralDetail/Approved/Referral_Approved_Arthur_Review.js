@@ -8,7 +8,7 @@ import iconChevronLeftWhite from '../../../assets/images/icon-chevron-left-w.png
 
 class ReferralProfile extends React.Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    //window.scrollTo(0, 0);
   }
   constructor(props) {
     super(props);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 class HomeListItem extends React.Component {
   render() {
@@ -7,6 +6,7 @@ class HomeListItem extends React.Component {
       <div className="w-full md:w-1/2 leading-normal mb-8 px-2">
         <a href={this.props.homeUrl}
            target="_blank"
+           rel="noopener noreferrer"
            className="home-list_img-wrap bg-grey w-full mb-2"
         >
           <img src={this.props.imgUrl} height="218" alt="home" className="block" />
