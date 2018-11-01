@@ -1,71 +1,46 @@
-// const express = require('express');
-// const bodyParser = require('body-parser');
-// const pino = require('express-pino-logger')();
-// const client = require('twilio')(
-//   process.env.TWILIO_ACCOUNT_SID,
-//   process.env.TWILIO_AUTH_TOKEN
-// );
-//
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
-// app.use(pino);
-//
-// app.get('/api/greeting', (req, res) => {
-//   const name = req.query.name || 'World';
-//   res.setHeader('Content-Type', 'application/json');
-//   res.send(JSON.stringify({ greeting: `Hello ${name}!` }));
-// });
-//
-// app.post('/api/messages', (req, res) => {
-//   res.header('Content-Type', 'application/json');
-//   client.messages
-//     .create({
-//       from: process.env.TWILIO_PHONE_NUMBER,
-//       to: req.body.to,
-//       body: req.body.body
-//     })
-//     .then(() => {
-//       res.send(JSON.stringify({ success: true }));
-//     })
-//     .catch(err => {
-//       console.log(err);
-//       res.send(JSON.stringify({ success: false }));
-//     });
-// });
-//
-// app.listen(port, () =>
-//   console.log('Express server is running on localhost:3001')
-// );
-
-
+const dotenv = require('dotenv').load();
 const path = require('path')
 const express = require('express')
-const cowsay = require('cowsay')
-const cors = require('cors')
+
+const bodyParser = require('body-parser')
+const pino = require('express-pino-logger')()
+const client = require('twilio')(
+  process.env.TWILIO_ACCOUNT_SID,
+  process.env.TWILIO_AUTH_TOKEN,
+  process.env.TWILIO_USERNAME
+)
 
 // Create the server
 const app = express()
 
-// Serve our api route /cow that returns a custom talking text cow
-app.get('/api/cow/:say', cors(), async (req, res, next) => {
-  try {
-    const text = req.params.say
-    const moo = cowsay.say({ text })
-    res.json({ moo })
-  } catch (err) {
-    next(err)
-  }
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+app.use(pino)
+
+// Serve our api route /greeing that returns a custom Hello World
+app.get('/api/greeting', (req, res) => {
+  const name = req.query.name || 'World';
+  res.setHeader('Content-Type', 'application/json');
+  res.send(JSON.stringify({ greeting: `Hello ${name}!` }));
 })
 
-// Serve our base route that returns a Hello World cow
-app.get('/api/cow/', cors(), async (req, res, next) => {
-  try {
-    const moo = cowsay.say({ text: 'Hello World!' })
-    res.json({ moo })
-  } catch (err) {
-    next(err)
-  }
-})
+// Post our message through to Twilio which SMS' phone number
+app.post('/api/messages', (req, res) => {
+  res.header('Content-Type', 'application/json');
+  client.messages
+    .create({
+      from: process.env.TWILIO_PHONE_NUMBER,
+      to: req.body.to,
+      body: req.body.body
+    })
+    .then(() => {
+      res.send(JSON.stringify({ success: true }));
+    })
+    .catch(err => {
+      console.log(err);
+      res.send(JSON.stringify({ success: false }));
+    });
+});
 
 
 // Serve static files from the
