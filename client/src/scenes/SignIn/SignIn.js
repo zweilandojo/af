@@ -37,7 +37,7 @@ class SignIn extends React.Component {
             <span className="mx-2 text-grey">|</span>
             <a href="tel:15124568292" className="inline-block text-grey-dark">(512) 456-8292</a>
             <span className="mx-2 text-grey">|</span>
-            <a href="https://content.ojo.me/privacy-policy.pdf" className="inline-block text-grey-dark">Privacy Policy</a></div>
+            <a href="https://landing.ojo.me/legal" className="inline-block text-grey-dark">Privacy Policy</a></div>
         </footer>
       </div>
     )
