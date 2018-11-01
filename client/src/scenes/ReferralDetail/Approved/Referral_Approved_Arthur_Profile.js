@@ -229,6 +229,7 @@ class ReferralProfile extends React.Component {
                 </p>
                 <div className="referral-notes">
                   <div className="referral-notes_list leading-normal">
+                  {/*
                     <div className="referral-notes_list_item flex py-4 border-b border-color-light">
                       <div className="referral-notes_list_icon flex-initial mr-4">
                         <img src={iconNote} className="w-8" alt="" />
@@ -242,13 +243,14 @@ class ReferralProfile extends React.Component {
                         </span>
                       </div>
                     </div>
+                    */}
                     <div className="referral-notes_list_item flex py-4 border-b border-color-light">
                       <div className="referral-notes_list_icon flex-initial mr-4">
                         <img src={iconNote} className="w-8" alt="" />
                       </div>
                       <div className="referral-notes_list_item_content">
                         <p className="w-full text-black text-base">
-                          Talked to Arthur today. Feels like a strong referral. Meeting next week Thursday.
+                          Arthur is searching with his wife
                         </p>
                         <span className="w-full text-sm text-grey-dark">
                           Nov 1, 2018 11:00 AM
