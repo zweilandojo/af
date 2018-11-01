@@ -188,9 +188,8 @@ const ReferralReviewApproved = () => (
           <p className="text-grey-dark text-base mb-8">When do you think they’ll close?</p>
 
           <select className="input select" placeholder="Select a month...">
-            <option>Select a month...</option>
-            <option>Dead</option>
-            <option>October ’18</option>
+            <option defaultValue>Select a month...</option>
+            <option>I don’t know</option>
             <option>November ’18</option>
             <option>December ’18</option>
             <option>January ’19</option>
@@ -205,8 +204,6 @@ const ReferralReviewApproved = () => (
             <option>October ’19</option>
             <option>November ’19</option>
             <option>December ’19</option>
-            <option>n/a</option>
-            <option>Other</option>
           </select>
         </div>
       </section>

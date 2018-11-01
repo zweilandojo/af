@@ -687,3 +687,10 @@ select {
   top: 8px; left: 50%;
   margin-left: -16px;
 }
+
+/* Home List */
+.home-list_img-wrap {
+  max-height: 218px;
+  overflow: hidden;
+  display: block;
+}

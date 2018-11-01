@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Assets
 // ...nothing yet...
@@ -89,7 +90,17 @@ class Home_ZeroState extends React.Component {
             {/* END: REFERRAL LIST ZERO STATE */}
 
           </div>
+
           <Milestones talk="0" set="0" met="0" offer="0" accept="0" transact="0" />
+
+          <div className="mb-12 flex">
+            <Link to="/support" className="w-1/2 md:w-1/2 text-center mr-4 inline-block py-6 px-4 border border-grey-light rounded-full text-lg">
+              Support
+            </Link>
+            <Link to="/" className="w-1/2 md:w-1/2 text-center inline-block py-6 px-4 border border-grey-light rounded-full text-lg">
+              Send Feedback
+            </Link>
+          </div>
         </main>
       </div>
     )

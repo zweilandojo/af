@@ -22,8 +22,8 @@ import Referral_Approved_Arthur_Profile from './scenes/ReferralDetail/Approved/R
 import Referral_Approved_Arthur_Review from './scenes/ReferralDetail/Approved/Referral_Approved_Arthur_Review.js';
 import Referral_NeedsReview_Profile from './scenes/ReferralDetail/NeedsReview/Referral_NeedsReview_Profile.js';
 import Referral_NeedsReview_Review from './scenes/ReferralDetail/NeedsReview/Referral_NeedsReview_Review.js';
-import Referral_NoName_NeedsReview_Profile from './scenes/ReferralDetail/NoName/Referral_NoName_NeedsReview_Profile.js';
-import Referral_NoName_NeedsReview_Review from './scenes/ReferralDetail/NoName/Referral_NoName_NeedsReview_Review.js';
+import Referral_Barebones_NeedsReview_Profile from './scenes/ReferralDetail/Barebones/Referral_NoName_NeedsReview_Profile.js';
+import Referral_Barebones_NeedsReview_Review from './scenes/ReferralDetail/Barebones/Referral_NoName_NeedsReview_Review.js';
 import Referral_Dead_Profile from './scenes/ReferralDetail/Dead/Referral_Dead_Profile.js';
 import Referral_Dead_Review from './scenes/ReferralDetail/Dead/Referral_Dead_Review.js';
 
@@ -54,8 +54,8 @@ class App extends Component {
 
           <Route path="/referral-needsReview-profile" component={Referral_NeedsReview_Profile}/>
           <Route path="/referral-needsReview-review" component={Referral_NeedsReview_Review}/>
-          <Route path="/referral-noName-needsReview-profile" component={Referral_NoName_NeedsReview_Profile}/>
-          <Route path="/referral-noName-needsReview-review" component={Referral_NoName_NeedsReview_Review}/>
+          <Route path="/referral-barebones-needsReview-profile" component={Referral_Barebones_NeedsReview_Profile}/>
+          <Route path="/referral-barebones-needsReview-review" component={Referral_Barebones_NeedsReview_Review}/>
           <Route path="/referral-dead-profile" component={Referral_Dead_Profile}/>
           <Route path="/referral-dead-review" component={Referral_Dead_Review}/>
 

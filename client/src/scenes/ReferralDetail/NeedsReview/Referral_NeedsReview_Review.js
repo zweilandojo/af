@@ -8,7 +8,7 @@ import iconChevronLeftWhite from '../../../assets/images/icon-chevron-left-w.png
 
 class ReferralProfile extends React.Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    //window.scrollTo(0, 0);
   }
   constructor(props) {
     super(props);
@@ -242,13 +242,12 @@ class ReferralProfile extends React.Component {
 
                 <select className="input select" placeholder="Select a month...">
                   <option defaultValue>Select a month...</option>
-                  <option>Dead</option>
-                  <option>October ’18</option>
+                  <option>I don’t know</option>
                   <option>November ’18</option>
                   <option>December ’18</option>
                   <option>January ’19</option>
                   <option>February ’19</option>
-                  <option>March ’19</option>
+                  <option selected>March ’19</option>
                   <option>April ’19</option>
                   <option>May ’19</option>
                   <option>June ’19</option>
@@ -258,8 +257,6 @@ class ReferralProfile extends React.Component {
                   <option>October ’19</option>
                   <option>November ’19</option>
                   <option>December ’19</option>
-                  <option>n/a</option>
-                  <option>Other</option>
                 </select>
               </div>
             </section>

@@ -3,7 +3,7 @@ import React from 'react';
 class Milestones extends React.Component {
   render() {
     return (
-      <div className="milestone-count mb-16">
+      <div className="milestone-count mb-12">
         <h3 className="mb-4 ml-6 text-2xl">
           Milestones
         </h3>

@@ -86,12 +86,12 @@ class ReferralProfile extends React.Component {
           <nav className="nav nav-tabs card-top">
             <div className="max-w-lg mx-auto">
               <div className="tab active">
-                <Link to="/referral-noName-needsReview-profile">
+                <Link to="/referral-barebones-needsReview-profile">
                   Profile
                 </Link>
               </div>
               <div className="tab">
-                <Link to="/referral-noName-needsReview-review">
+                <Link to="/referral-barebones-needsReview-review">
                   Review
                 </Link>
               </div>
@@ -188,7 +188,7 @@ class ReferralProfile extends React.Component {
             <section className="pb-6 mb-6">
               <header className="mb-4">
                 <h3 className="mb-4 ml-6 text-2xl">
-                  Handoff notes
+                  OJO notes
                 </h3>
               </header>
               <div className="border border-grey-light p-8 rounded-lg">

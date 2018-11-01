@@ -243,11 +243,10 @@ class ReferralProfile extends React.Component {
 
                 <select className="input select" placeholder="Select a month...">
                   <option>Select a month...</option>
-                  <option>Dead</option>
-                  <option>October ’18</option>
+                  <option>I don’t know</option>
                   <option>November ’18</option>
                   <option>December ’18</option>
-                  <option selected>January ’19</option>
+                  <option defaultValue>January ’19</option>
                   <option>February ’19</option>
                   <option>March ’19</option>
                   <option>April ’19</option>
@@ -259,13 +258,11 @@ class ReferralProfile extends React.Component {
                   <option>October ’19</option>
                   <option>November ’19</option>
                   <option>December ’19</option>
-                  <option>n/a</option>
-                  <option>Other</option>
                 </select>
               </div>
             </section>
 
-            <section className="pb-6 mb-6">
+            <section className="pb-6 mb-6" id="referral-form-notes">
               <header className="mb-4">
                 <h3 className="mb-4 ml-6 text-2xl">
                   Notes
@@ -273,32 +270,8 @@ class ReferralProfile extends React.Component {
               </header>
               <div className="border border-grey-light p-8 rounded-lg">
                 <p className="text-grey-dark text-base mb-8">Anything special about this client?</p>
-
                 <textarea className="input textarea" placeholder="What's the situation?">
                 </textarea>
-
-                {/* BEGIN NOTE HISTORY */}
-                <div className="notes-activity">
-                  {/*
-                  <header className="mt-12">
-                    <h4 className="tracking-wide border-b border-grey-light uppercase text-sm pb-4">
-                      Note history
-                    </h4>
-                  </header>
-                  */}
-                  <div className="note-activity_list text-grey-dark text-sm leading-normal">
-                    <div className="flex pt-8">
-                      <span className="w-1/4 text-grey">
-                        1 min ago
-                      </span>
-                      <p className="w-3/4">
-                        Talked to Arthur today. Feels like a strong referral. Meeting next week Thursday.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                {/* END NOTE HISTORY */}
-
               </div>
             </section>
 

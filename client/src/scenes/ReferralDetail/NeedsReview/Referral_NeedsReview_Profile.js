@@ -185,7 +185,7 @@ class ReferralProfile extends React.Component {
             <section className="pb-6 mb-6">
               <header className="mb-4">
                 <h3 className="mb-4 ml-6 text-2xl">
-                  Handoff notes
+                  OJO notes
                 </h3>
               </header>
               <div className="border border-grey-light p-8 rounded-lg">
@@ -215,36 +215,39 @@ class ReferralProfile extends React.Component {
                   A few homes Arthur really likes
                 </p>
                 <div className="home-list flex flex-wrap -mx-2">
-                  <HomeListItem
-                    imgUrl="https://s3st2.openlistings.com/images/properties/v2/5bceee7d71a60943848ec8e2/1280/794/5bceefd080d4b12ee930b036.jpg"
-                    address="1310 E M Franklin Ave #4"
-                    price="430,000"
-                    neighborhood="MLK"
-                    cityStateZip="Austin, TX 78721"
-                    bed="4"
-                    bath="3"
-                    sqft="1,399"
-                  />
-                  <HomeListItem
-                    imgUrl="https://s3st2.openlistings.com/images/properties/v2/5bd4bd8c80d4b12f44c93961/1280/794/5bd4bdc880d4b12f44c93cb6.jpg"
-                    address="908 E 15th St"
-                    price="378,000"
-                    neighborhood="Central East Austin"
-                    cityStateZip="Austin, TX 78702"
-                    bed="3"
-                    bath="3"
-                    sqft="2,314"
-                  />
-                  <HomeListItem
-                    imgUrl="https://s3st3.openlistings.com/images/properties/v2/5bd82b4971a60975ec56c2be/1280/794/5bd82bfe71a60975ec56c5ff.jpg"
-                    address="3100 White Rock Dr"
-                    price="456,000"
-                    neighborhood="Allandale"
-                    cityStateZip="Austin, TX 78757"
-                    bed="3"
-                    bath="2"
-                    sqft="1,550"
-                  />
+                <HomeListItem
+                  homeUrl="https://consumer.agent.ojo.me/listings/fa6010b1f2e6d48ed1e8fc323e00c60f"
+                  imgUrl="http://tx-actris.photos.mlsfinder.com/photos/1/1/9/7/8/5/8/1197858-1.jpg"
+                  address="10316 Yellowstone Dr"
+                  price="329,900"
+                  neighborhood="Southeast Austin"
+                  cityStateZip="Austin, TX 78747"
+                  bed="3"
+                  bath="2"
+                  sqft="1609"
+                />
+                <HomeListItem
+                  homeUrl="https://consumer.agent.ojo.me/homefit/area/0f151ae15cf6c1050d97e3f479c3ab00"
+                  imgUrl="http://tx-actris.photos.mlsfinder.com/photos/7/0/9/9/6/6/0/7099660-1.jpg"
+                  address="1106 Olive St"
+                  price="565,000"
+                  neighborhood="Central East Austin"
+                  cityStateZip="Austin, TX 78702"
+                  bed="3"
+                  bath="2"
+                  sqft="1373"
+                />
+                <HomeListItem
+                  homeUrl="https://consumer.agent.ojo.me/listings/52a7bb17e365c3e95cfeb70521721400"
+                  imgUrl="http://tx-actris.photos.mlsfinder.com/photos/9/1/7/1/8/3/9/9171839-1.jpg"
+                  address="1600 Haskell St"
+                  price="685,000"
+                  neighborhood="Central East Austin"
+                  cityStateZip="Austin, TX 78702"
+                  bed="4"
+                  bath="2.5"
+                  sqft="1,971"
+                />
                 </div>
               </div>
             </section>

@@ -97,12 +97,12 @@ class ReferralProfile extends React.Component {
           <nav className="nav nav-tabs card-top">
             <div className="max-w-lg mx-auto">
               <div className="tab">
-                <Link to="/referral-noName-needsReview-profile">
+                <Link to="/referral-barebones-needsReview-profile">
                   Profile
                 </Link>
               </div>
               <div className="tab active">
-                <Link to="/referral-noName-needsReview-review">
+                <Link to="/referral-barebones-needsReview-review">
                   Review
                 </Link>
               </div>
@@ -251,9 +251,8 @@ class ReferralProfile extends React.Component {
                 <p className="text-grey-dark text-base mb-8">When do you think they’ll close?</p>
 
                 <select className="input select" placeholder="Select a month...">
-                  <option selected>Select a month...</option>
-                  <option>Dead</option>
-                  <option>October ’18</option>
+                  <option defaultValue>Select a month...</option>
+                  <option>I don’t know</option>
                   <option>November ’18</option>
                   <option>December ’18</option>
                   <option>January ’19</option>
@@ -268,8 +267,6 @@ class ReferralProfile extends React.Component {
                   <option>October ’19</option>
                   <option>November ’19</option>
                   <option>December ’19</option>
-                  <option>n/a</option>
-                  <option>Other</option>
                 </select>
               </div>
             </section>

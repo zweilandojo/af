@@ -15,7 +15,7 @@ const AppHeader = () => (
     </div>
     <div className="w-1/3 text-right align-middle app-header-ctas">
       <Link className="block p-6" to="/support">
-        Help
+        Support
       </Link>
     </div>
   </header>
