@@ -15,7 +15,7 @@ import iconChevronRightgrey from '../../assets/images/icon-chevron-right-gray.sv
 class HomeNeedsReview extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
-  }  
+  }
   render() {
     return (
       <div className="app">
@@ -37,7 +37,7 @@ class HomeNeedsReview extends React.Component {
 
             {/* REFERRAL TRACKING LIST */}
             <div>
-              <Link to="/referral-review-needs-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
+              <Link to="/referral-needsReview-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
                   <div className="avatar-initials">A</div>
                 </div>
@@ -62,7 +62,7 @@ class HomeNeedsReview extends React.Component {
                 </div>
               </Link>
 
-              <Link to="/referral-review-needs-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
+              <Link to="/referral-noName-needsReview-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
                   <img src={iconPerson} className="avatar-image" alt="avatar" />
                   <div className="avatar-initials"></div>
@@ -88,7 +88,7 @@ class HomeNeedsReview extends React.Component {
                 </div>
               </Link>
 
-              <Link to="/referral-review-approved" className="py-4 border-b border-grey-light flex">
+              <Link to="/referral-approved-arthur-review" className="py-4 border-b border-grey-light flex">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
                   <div className="avatar-initials">G</div>
                 </div>
@@ -114,7 +114,7 @@ class HomeNeedsReview extends React.Component {
                 </div>
               </Link>
 
-              <Link to="/referral-review-approved" className="py-4 border-b border-grey-light flex referral-list_reviewed">
+              <Link to="/referral-approved-arthur-review" className="py-4 border-b border-grey-light flex referral-list_reviewed">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
                   <img src={iconPerson} className="avatar-image" alt="avatar" />
                   <div className="avatar-initials"></div>
@@ -141,7 +141,7 @@ class HomeNeedsReview extends React.Component {
                 </div>
               </Link>
 
-              <Link to="/referral-review-approved" className="py-4 border-b border-grey-light flex referral-list_dead">
+              <Link to="/referral-dead-review" className="py-4 border-b border-grey-light flex referral-list_dead">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-grey-light text-white">
                   <div className="avatar-initials">D</div>
                 </div>
@@ -167,7 +167,7 @@ class HomeNeedsReview extends React.Component {
                 </div>
               </Link>
 
-              <Link to="/referral-review-approved" className="pt-4 flex referral-list_dead">
+              <Link to="//referral-dead-review" className="pt-4 flex referral-list_dead">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-grey-light text-white">
                   <img src={iconPerson} className="avatar-image" alt="avatar" />
                   <div className="avatar-initials"></div>
