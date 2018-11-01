@@ -7,16 +7,16 @@ class HomeListItem extends React.Component {
         <div className="bg-grey w-full mb-2"> {/* 1280x794 */}
           <img src={this.props.imgUrl} height="218" alt="home" className="block" />
         </div>
-        <h4 className="text-lg font-bold">
+        <h4 className="text-base font-medium">
           <span className="mr-2">{this.props.address}</span>
           <span className="text-green">${this.props.price}</span>
         </h4>
-        <p className="text-base">
+        <p className="text-sm">
           {this.props.neighborhood} - {this.props.cityStateZip}
         </p>
-        <div className="text-base text-grey mb-1">
-          <span className="mr-2">{this.props.bed}bd</span>
-          <span className="mr-2">{this.props.bath}ba</span>
+        <div className="text-sm text-grey mb-1">
+          <span className="mr-3">{this.props.bed}bd</span>
+          <span className="mr-3">{this.props.bath}ba</span>
           {this.props.sqft}sf
         </div>
       </div>
