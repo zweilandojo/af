@@ -5,11 +5,16 @@ import MaskedInput from 'react-text-mask';
 class SMSForm extends Component {
   constructor(props) {
     super(props);
-    
+
+    var x = Math.floor((Math.random() * 9) + 1);
+    var x2 = Math.floor((Math.random() * 9) + 1);
+    var x3 = Math.floor((Math.random() * 9) + 1);
+    var x4 = Math.floor((Math.random() * 9) + 1);
+
     this.state = {
       message: {
         to: '',
-        body: 'Your Ojo authentication code is 123-456'
+        body: 'Your Ojo authentication code is ' + x + x2 + x3 + '-' + x4 + x + x2
       },
       redirectToReferrer: false,
       submitting: false,
