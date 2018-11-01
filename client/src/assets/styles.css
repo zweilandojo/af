@@ -270,8 +270,6 @@ a {
   bottom: 0;
   background-color: white;
   border: 2px solid #eee;
-  -webkit-transition: .1s;
-  transition: .1s;
   border-radius: 3rem;
   z-index: 0;
 }
@@ -284,8 +282,6 @@ a {
   top: 6px;
   background-color: white;
   border: 2px solid #eee;
-  -webkit-transition: .4s;
-  transition: .4s;
   border-radius: 50%;
 }
 .slider:before:hover {
