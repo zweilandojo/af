@@ -128,10 +128,18 @@ class ReferralProfile extends React.Component {
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
                     <div className="w-1/2 text-grey-dark">
-                      Location
+                      Lives
                     </div>
                     <div className="w-1/2">
                       Cedar Park, TX
+                    </div>
+                  </li>
+                  <li className="border-b border-grey-light flex pt-3 pb-2">
+                    <div className="w-1/2 text-grey-dark">
+                      Desired Location
+                    </div>
+                    <div className="w-1/2">
+                      Hyde Park, Central Austin
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">

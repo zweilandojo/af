@@ -272,6 +272,7 @@ class ReferralProfile extends React.Component {
                 <p className="text-grey-dark text-base mb-8">Anything special about this client?</p>
                 <textarea className="input textarea" placeholder="What's the situation?">
                 </textarea>
+                <button>Note History</button>
               </div>
             </section>
 
