@@ -149,7 +149,8 @@ class ReferralProfile extends React.Component {
                       <input
                         type="checkbox"
                         className="checkbox float-left"
-                        value={this.state.isChecked}
+                        value={this.handleChange}
+                        checked="true"
                         onChange={this.handleChange}
                       />
                       <span className="slider"></span>
@@ -272,7 +273,7 @@ class ReferralProfile extends React.Component {
                 <p className="text-grey-dark text-base mb-8">Anything special about this client?</p>
                 <textarea className="input textarea" placeholder="What's the situation?">
                 </textarea>
-                <button>Note History</button>
+                {/* <button>Note History</button> */}
               </div>
             </section>
 

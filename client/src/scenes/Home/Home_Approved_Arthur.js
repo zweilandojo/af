@@ -29,7 +29,7 @@ class HomeNeedsReview extends React.Component {
     return (
       <div className="app">
         <AppHeader />
-        <AgentHomeBanner firstName="Linda" temperature="74" />
+        <AgentHomeBanner firstName="Kristi" temperature="74" />
 
         <main className="container mx-auto px-2 max-w-lg">
 
@@ -60,11 +60,11 @@ class HomeNeedsReview extends React.Component {
                   <div>
                     <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
                     <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
+                    <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
                     <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                     <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                     <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <span className="ml-1 inline text-grey-dark text-xs">Set</span>
+                    <span className="ml-1 inline text-grey-dark text-xs">Met</span>
                   </div>
                 </div>
                 <div className="flex-1 text-right">
