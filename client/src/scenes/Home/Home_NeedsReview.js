@@ -20,7 +20,7 @@ class HomeNeedsReview extends React.Component {
     return (
       <div className="app">
         <AppHeader />
-        <AgentHomeBanner firstName="Jacqueline" temperature="74" />
+        <AgentHomeBanner firstName="Jackie" temperature="74" />
 
         <main className="container mx-auto px-2 max-w-lg">
 
