@@ -273,7 +273,28 @@ class ReferralProfile extends React.Component {
                 <p className="text-grey-dark text-base mb-8">Anything special about this client?</p>
                 <textarea className="input textarea" placeholder="What's the situation?">
                 </textarea>
-                {/* <button>Note History</button> */}
+                {/* BEGIN Simple notes history */}
+                <div className="referral-notes_list_item flex py-4 mt-4">
+                  <div className="referral-notes_list_item_content flex w-full">
+                    <span className="w-1/4 text-sm text-grey-dark">
+                      Nov 6, 2018 1:00 PM
+                    </span>
+                    <p className="w-3/4 text-black text-sm">
+                      Arthur is searching with his wife
+                    </p>
+                  </div>
+                </div>
+                <div className="referral-notes_list_item flex py-4">
+                  <div className="referral-notes_list_item_content flex w-full">
+                    <span className="w-1/4 text-sm text-grey-dark">
+                      Nov 2, 2018 11:21 AM
+                    </span>
+                    <p className="w-3/4 text-black text-sm">
+                      Talked with Arthur. Planning to meet next Tuesday.
+                    </p>
+                  </div>
+                </div>
+                {/* END Simple notes history */}
               </div>
             </section>
 

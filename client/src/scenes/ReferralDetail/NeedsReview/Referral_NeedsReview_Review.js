@@ -272,6 +272,20 @@ class ReferralProfile extends React.Component {
 
                 <textarea className="input textarea" placeholder="What's the situation?">
                 </textarea>
+
+                {/* BEGIN Simple notes history */}
+                <div className="referral-notes_list_item flex py-4 mt-4">
+                  <div className="referral-notes_list_item_content flex w-full">
+                    <span className="w-1/4 text-sm text-grey-dark">
+                      Nov 2, 2018 11:21 AM
+                    </span>
+                    <p className="w-3/4 text-black text-sm">
+                      Talked with Arthur. Planning to meet next Tuesday.
+                    </p>
+                  </div>
+                </div>
+                {/* END Simple notes history */}
+
               </div>
             </section>
 

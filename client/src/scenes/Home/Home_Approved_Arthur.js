@@ -29,7 +29,7 @@ class HomeNeedsReview extends React.Component {
     return (
       <div className="app">
         <AppHeader />
-        <AgentHomeBanner firstName="Sophia" temperature="74" />
+        <AgentHomeBanner firstName="Marty" temperature="74" />
 
         <main className="container mx-auto px-2 max-w-lg">
 
@@ -49,7 +49,7 @@ class HomeNeedsReview extends React.Component {
 
             {/* REFERRAL TRACKING LIST */}
             <div>
-              <Link to="/referral-approved-arthur-review" className="py-4 border-b border-grey-light flex">
+              <Link to="/referral-approved-arthur-profile" className="py-4 border-b border-grey-light flex">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
                   <div className="avatar-initials">A</div>
                 </div>

@@ -202,28 +202,6 @@ class ReferralProfile extends React.Component {
               </div>
             </section>
 
-            <section className="pb-6 mb-6">
-              <header className="mb-4">
-                <h3 className="mb-4 ml-6 text-2xl">
-                  OJO handoff notes
-                </h3>
-              </header>
-              <div className="border border-grey-light p-8 rounded-lg">
-                <p className="text-grey-dark text-base mb-8">
-                  Last updated Nov 1, 2018 2:15 PM
-                </p>
-                <p className="text-black text-base leading-normal">
-                  Arthur would like to speak about a home purchase.<br/>
-                  Best time to contact: Evening (6-9 pm)<br/>
-                  Area: Hyde Park, East Side<br/>
-                  First Time Buyer: Y<br/>
-                  Property Inquired:<br/>
-                  200 Bullock Dr.<br/>
-                  Austin, TX 78774
-                </p>
-              </div>
-            </section>
-
             {/* BEGIN NOTE HISTORY */}
             <section className="pb-6 mb-6">
               <header className="mb-4">
@@ -252,19 +230,32 @@ class ReferralProfile extends React.Component {
                       </div>
                     </div>
                     */}
-                    <div className="referral-notes_list_item flex py-4 border-b border-color-light">
-                      <div className="referral-notes_list_icon flex-initial mr-4">
-                        <img src={iconNote} className="w-8" alt="" />
+                      <div className="referral-notes_list_item flex py-4 border-b border-color-light">
+                        <div className="referral-notes_list_icon flex-initial mr-4">
+                          <img src={iconNote} className="w-8" alt="" />
+                        </div>
+                        <div className="referral-notes_list_item_content">
+                          <p className="w-full text-black text-base">
+                            Arthur is searching with his wife
+                          </p>
+                          <span className="w-full text-sm text-grey-dark">
+                            Nov 6, 2018 1:00 PM
+                          </span>
+                        </div>
                       </div>
-                      <div className="referral-notes_list_item_content">
-                        <p className="w-full text-black text-base">
-                          Arthur is searching with his wife
-                        </p>
-                        <span className="w-full text-sm text-grey-dark">
-                          Nov 1, 2018 11:00 AM
-                        </span>
+                      <div className="referral-notes_list_item flex py-4 border-b border-color-light">
+                        <div className="referral-notes_list_icon flex-initial mr-4">
+                          <img src={iconNote} className="w-8" alt="" />
+                        </div>
+                        <div className="referral-notes_list_item_content">
+                          <p className="w-full text-black text-base">
+                            Talked with Arthur. Planning to meet next Tuesday.
+                          </p>
+                          <span className="w-full text-sm text-grey-dark">
+                            Nov 2, 2018 11:21 AM
+                          </span>
+                        </div>
                       </div>
-                    </div>
                     <div>
                     <Link to="/referral-approved-arthur-review#referral-form-notes" className="block pt-4 text-grey">
                       + NEW
@@ -275,6 +266,28 @@ class ReferralProfile extends React.Component {
               </div>
             </section>
             {/* END NOTE HISTORY */}
+
+            <section className="pb-6 mb-6">
+              <header className="mb-4">
+                <h3 className="mb-4 ml-6 text-2xl">
+                  OJO handoff notes
+                </h3>
+              </header>
+              <div className="border border-grey-light p-8 rounded-lg">
+                <p className="text-grey-dark text-base mb-8">
+                  Last updated Nov 1, 2018 2:15 PM
+                </p>
+                <p className="text-black text-base leading-normal">
+                  Arthur would like to speak about a home purchase.<br/>
+                  Best time to contact: Evening (6-9 pm)<br/>
+                  Area: Hyde Park, East Side<br/>
+                  First Time Buyer: Y<br/>
+                  Property Inquired:<br/>
+                  200 Bullock Dr.<br/>
+                  Austin, TX 78774
+                </p>
+              </div>
+            </section>
 
             <section className="pb-6 mb-6">
               <header className="mb-4">
