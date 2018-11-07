@@ -17,7 +17,7 @@ class Home_ZeroState extends React.Component {
     return (
       <div className="app">
         <AppHeader />
-        <AgentHomeBanner firstName="Sandra" temperature="64" />
+        <AgentHomeBanner firstName="Gail" temperature="64" />
 
         <main className="container mx-auto px-2 max-w-lg">
 
