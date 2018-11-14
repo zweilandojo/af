@@ -18,11 +18,15 @@ class HomeListItem extends React.Component {
         <p className="text-sm">
           {this.props.neighborhood} - {this.props.cityStateZip}
         </p>
-        <div className="text-sm text-grey mb-1">
+        <div className="text-sm text-grey-dark">
           <span className="mr-3">{this.props.bed}bd</span>
           <span className="mr-3">{this.props.bath}ba</span>
           {this.props.sqft}sf
         </div>
+        <div className="text-sm text-grey mb-1">
+          MLS #{this.props.mlsID}
+        </div>
+
       </div>
     )
   }

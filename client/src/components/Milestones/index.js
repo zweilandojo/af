@@ -5,11 +5,11 @@ class Milestones extends React.Component {
     return (
       <div className="milestone-count mb-12">
         <h3 className="mb-4 ml-6 text-2xl">
-          Milestones
+          Your Stats
         </h3>
         <div className="border border-grey-light p-8 rounded-lg">
           <p className="text-grey-dark text-base mb-6">
-            An overview of your referral progress
+            An overview of your progress
           </p>
           <div className
           ="flex py-4">
