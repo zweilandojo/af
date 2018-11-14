@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 // Assets
 import iconClose from '../../assets/images/icon-close.png';
+import illustrationProfile from '../../assets/images/illustrations/announcement-profiles.png';
+//import illustrationProfile from '../../assets/images/illustrations/announcement-profiles.png';
 
 // Components
 
@@ -29,8 +31,8 @@ class Announcement extends React.Component {
           <div className="border border-grey-light p-8 rounded-lg">
 
             <div className="py-4 flex">
-              <div className="w-16 h-16 bg-grey-light flex-no-shrink rounded-full flex items-center justify-center">
-
+              <div className="w-16 h-16 flex-no-shrink rounded-full flex items-center justify-center">
+                <img src={illustrationProfile} className="w-12" alt="illustration" />
               </div>
               <div className="flex-1 ml-4">
                 <span className="text-lg leading-normal block mb-3">Referral Profiles, now in OJO</span>
