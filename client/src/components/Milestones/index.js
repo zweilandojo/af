@@ -14,56 +14,56 @@ class Milestones extends React.Component {
 
           <div className="flex justify-between flex-wrap">
             <div className="py-4 text-center">
-              <div className="text-2xl bg-grey-light rounded-full h-16 w-16 text-center mr-4">
+              <div className="text-2xl bg-white border border-color-light rounded-full h-16 w-16 text-center mr-4">
                 <span className="inline-block mt-5">{this.props.talk}</span>
               </div>
               <div className="mt-4">
-                <h4 className="w-16 mb-2 pr-2 font-lg">Talk</h4>
+                <h4 className="w-16 mb-2 font-lg">Talk</h4>
                 {/* <p className="text-grey-dark font-normal text-sm">Have you made first contact?</p> */}
               </div>
             </div>
             <div className="py-4 text-center">
-              <div className="text-2xl bg-grey-light rounded-full h-16 w-16 text-center mr-4">
+              <div className="text-2xl bg-white border border-color-light rounded-full h-16 w-16 text-center mr-4">
                 <span className="inline-block mt-5">{this.props.set}</span>
               </div>
               <div className="mt-4">
-                <h4 className="w-16 mb-2 pr-2 font-lg">Set</h4>
+                <h4 className="w-16 mb-2 font-lg">Set</h4>
                 {/* <p className="text-grey-dark font-normal text-sm">Have you scheduled a time to meet in-person?</p> */}
               </div>
             </div>
             <div className="py-4 text-center">
-              <div className="text-2xl bg-grey-light rounded-full h-16 w-16 text-center mr-4">
+              <div className="text-2xl bg-white border border-color-light rounded-full h-16 w-16 text-center mr-4">
                 <span className="inline-block mt-5">{this.props.met}</span>
               </div>
               <div className="mt-4">
-                <h4 className="w-16 mb-2 pr-2 font-lg">Met</h4>
+                <h4 className="w-16 mb-2 font-lg">Met</h4>
                 {/* <p className="text-grey-dark font-normal text-sm">Did you meet the referral in-person?</p> */}
               </div>
             </div>
             <div className="py-4 text-center">
-              <div className="text-2xl bg-grey-light rounded-full h-16 w-16 text-center mr-4">
+              <div className="text-2xl bg-white border border-color-light rounded-full h-16 w-16 text-center mr-4">
                 <span className="inline-block mt-5">{this.props.offer}</span>
               </div>
               <div className="mt-4">
-                <h4 className="w-16 mb-2 pr-2 font-lg">Offer</h4>
+                <h4 className="w-16 mb-2 font-lg">Offer</h4>
                 {/* <p className="text-grey-dark font-normal text-sm">Has your client made an offer on a home yet?</p> */}
               </div>
             </div>
             <div className="py-4 text-center">
-              <div className="text-2xl bg-grey-light rounded-full h-16 w-16 text-center mr-4">
+              <div className="text-2xl bg-white border border-color-light rounded-full h-16 w-16 text-center mr-4">
                 <span className="inline-block mt-5">{this.props.accept}</span>
               </div>
               <div className="mt-4">
-                <h4 className="w-16 mb-2 pr-2 font-lg">Accept</h4>
+                <h4 className="w-16 mb-2 font-lg">Accept</h4>
                 {/* <p className="text-grey-dark font-normal text-sm">Has the seller accepted your client’s offer?</p> */}
               </div>
             </div>
             <div className="py-4 text-center">
-              <div className="text-2xl bg-grey-light rounded-full h-16 w-16 text-center mr-4">
+              <div className="text-2xl bg-white border border-color-light rounded-full h-16 w-16 text-center mr-4">
                 <span className="inline-block mt-5">{this.props.transact}</span>
               </div>
               <div className="mt-4">
-                <h4 className="w-16 mb-2 pr-2 font-lg">Closed</h4>
+                <h4 className="w-16 mb-2 font-lg">Closed</h4>
                 {/* <p className="text-grey-dark font-normal text-sm">Has your client closed on a home?</p> */}
               </div>
             </div>
