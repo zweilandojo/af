@@ -23,18 +23,20 @@ class Announcement extends React.Component {
         <div className="text-center my-8">
           <h2 className="mb-2 text-3xl font-medium">What’s new?</h2>
           <p className="text-grey-dark text-base flex items-start justify-center">
-            <span className="inline-block px-8 leading-normal">We’ve spruced up the place since you were last here. Take a look.</span>
+            <span className="inline-block px-8 leading-normal max-w-sm">
+              We’ve spruced up the place since you were last here. Take a look.
+            </span>
           </p>
         </div>
 
         <main className="container mx-auto px-2 max-w-lg">
           <div className="border border-grey-light p-8 rounded-lg">
 
-            <div className="py-4 flex">
-              <div className="w-16 h-16 flex-no-shrink rounded-full flex items-center justify-center">
+            <div className="py-2 text-center">
+              <div className="mx-auto w-16 h-16 mb-8 flex-no-shrink rounded-full flex items-center justify-center">
                 <img src={illustrationProfile} className="w-12" alt="illustration" />
               </div>
-              <div className="flex-1 ml-4">
+              <div className="max-w-xs mx-auto">
                 <span className="text-lg leading-normal block mb-3">Referral Profiles, now in OJO</span>
                 <span className="text-base leading-normal text-grey-dark">View your OJO referral’s contact info, their buying preferences, and favorite homes.</span>
               </div>
