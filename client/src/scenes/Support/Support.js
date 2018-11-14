@@ -8,7 +8,7 @@ import iconEmailWhite from '../../assets/images/icon-email-w.png';
 
 const Support = () => (
   <div className="app">
-    <header className="app-header flex">
+    <header className="app-header fixed pin-t w-full bg-white  flex">
       <div className="w-1/3 app-header-back-button">
         <Link to="/" className="block">
           <img src={iconChevronLeft} className="icon icon-chevron-left mr-1 float-left" alt="back icon" />
@@ -23,7 +23,7 @@ const Support = () => (
         {/* Nothing here */}
       </div>
     </header>
-    <div className="container mx-auto px-6 mt-8">
+    <div className="container mx-auto px-6 mt-24">
       <h1 className="mb-8 text-center text-3xl">
         What can we help<br />you with?
       </h1>
