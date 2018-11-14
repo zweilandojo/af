@@ -111,12 +111,20 @@ class ReferralProfile extends React.Component {
                       Phone
                     </div>
                     <div className="w-1/2">
-                      (555) 512-1234
+                      <a href="tel:15555121234">+1 (555) 512-1234</a>
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
                     <div className="w-1/2 text-grey-dark">
-                      Location
+                      Email
+                    </div>
+                    <div className="w-1/2">
+                      <span className="text-grey">Missing</span>
+                    </div>
+                  </li>
+                  <li className="border-b border-grey-light flex pt-3 pb-2">
+                    <div className="w-1/2 text-grey-dark">
+                      Current Location
                     </div>
                     <div className="w-1/2">
                       Cedar Park, TX
@@ -124,10 +132,18 @@ class ReferralProfile extends React.Component {
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
                     <div className="w-1/2 text-grey-dark">
+                      Desired Location
+                    </div>
+                    <div className="w-1/2">
+                      Hyde Park, Central East Austin, Southeast Austin
+                    </div>
+                  </li>
+                  <li className="border-b border-grey-light flex pt-3 pb-2">
+                    <div className="w-1/2 text-grey-dark">
                       Budget
                     </div>
                     <div className="w-1/2">
-                      $250 - $450k
+                      $300 - $500k
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
@@ -195,11 +211,11 @@ class ReferralProfile extends React.Component {
                 <p className="text-black text-base leading-normal">
                   Arthur would like to speak about a home purchase.<br/>
                   Best time to contact: Evening (6-9 pm)<br/>
-                  Area: Hyde Park, East Side<br/>
+                  Area: Hyde Park, Central East Side, Southeast Austin<br/>
                   First Time Buyer: Y<br/>
                   Property Inquired:<br/>
-                  200 Bullock Dr.<br/>
-                  Austin, TX 78774
+                  1158 Ridgeway Dr #A<br/>
+                  Austin, TX 78702
                 </p>
               </div>
             </section>

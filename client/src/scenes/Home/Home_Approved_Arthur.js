@@ -133,7 +133,7 @@ class HomeNeedsReview extends React.Component {
           </div>
           </div>
 
-          <Milestones talk="100" set="33" met="0" offer="0" accept="0" transact="0" />
+          <Milestones talk="3" set="1" met="0" offer="0" accept="0" transact="0" />
 
           <footer className="mb-12 flex">
             <Link to="/support" className="w-1/2 md:w-1/2 text-center mr-4 inline-block py-6 px-4 border border-grey-light rounded-full text-lg">

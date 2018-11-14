@@ -188,7 +188,7 @@ class ReferralProfile extends React.Component {
                         onChange={this.handleChange}
                       />
                       <span className="slider"></span>
-                      <span className="text">Transact</span>
+                      <span className="text">Closed</span>
                     </label>
                   </li>
                 </ul>
@@ -268,9 +268,8 @@ class ReferralProfile extends React.Component {
                 </h3>
               </header>
               <div className="border border-grey-light p-8 rounded-lg">
-                <p className="text-grey-dark text-base mb-8">Anything special about this client?</p>
 
-                <textarea className="input textarea" placeholder="What's the situation?">
+                <textarea className="input textarea" placeholder="Add a note...">
                 </textarea>
 
                 {/* BEGIN Simple notes history */}

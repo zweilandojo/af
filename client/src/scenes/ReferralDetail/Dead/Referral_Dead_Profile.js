@@ -109,12 +109,28 @@ const ReferralProfile = () => (
                   Phone
                 </div>
                 <div className="w-1/2">
-                  +1 (555) 897-1234
+                  <a href="tel:15558791234">+1 (555) 897-1234</a>
                 </div>
               </li>
               <li className="border-b border-grey-light flex pt-3 pb-2">
                 <div className="w-1/2 text-grey-dark">
-                  Location
+                  Email
+                </div>
+                <div className="w-1/2">
+                  <span className="text-grey">Missing</span>
+                </div>
+              </li>
+              <li className="border-b border-grey-light flex pt-3 pb-2">
+                <div className="w-1/2 text-grey-dark">
+                  Current Location
+                </div>
+                <div className="w-1/2">
+                  <span className="text-grey">Unknown</span>
+                </div>
+              </li>
+              <li className="border-b border-grey-light flex pt-3 pb-2">
+                <div className="w-1/2 text-grey-dark">
+                  Desired Location
                 </div>
                 <div className="w-1/2">
                   <span className="text-grey">Unknown</span>
@@ -173,7 +189,7 @@ const ReferralProfile = () => (
                   Lead Source
                 </div>
                 <div className="w-1/2">
-                  Facebook
+                  SmartZip
                 </div>
               </li>
             </ul>
@@ -204,7 +220,7 @@ const ReferralProfile = () => (
           </header>
           <div className="border border-grey-light p-8 rounded-lg">
             <p className="text-grey-dark text-base">
-              This referral hasn’t favorited any homes yet
+              This referral hasn’t favorited any homes yet...
             </p>
           </div>
         </section>

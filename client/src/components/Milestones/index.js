@@ -9,62 +9,63 @@ class Milestones extends React.Component {
         </h3>
         <div className="border border-grey-light p-8 rounded-lg">
           <p className="text-grey-dark text-base mb-6">
-            An overview of your progress
+            An overview of your progress with OJO referrals
           </p>
-          <div className
-          ="flex py-4">
-            <div className="text-lg bg-grey-light rounded-full h-16 w-16 text-center mr-4">
-              <span className="inline-block mt-6">{this.props.talk}%</span>
-            </div>
-            <div className="flex-1">
-              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Talk</h4>
-              <p className="text-grey-dark font-normal text-sm">Have you made first contact?</p>
-            </div>
-          </div>
-          <div className="flex py-4">
-            <div className="text-lg bg-grey-light rounded-full h-16 w-16 text-center mr-4">
-              <span className="inline-block mt-6">{this.props.set}%</span>
-            </div>
-            <div className="flex-1">
-              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Set</h4>
-              <p className="text-grey-dark font-normal text-sm">Have you scheduled a time to meet in-person?</p>
-            </div>
-          </div>
-          <div className="flex py-4">
-            <div className="text-lg bg-grey-light rounded-full h-16 w-16 text-center mr-4">
-              <span className="inline-block mt-6">{this.props.met}%</span>
-            </div>
-            <div className="flex-1">
-              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Met</h4>
-              <p className="text-grey-dark font-normal text-sm">Did you meet the referral in-person?</p>
-            </div>
-          </div>
 
-          <div className="flex py-4">
-            <div className="text-lg bg-grey-light rounded-full h-16 w-16 text-center mr-4">
-              <span className="inline-block mt-6">{this.props.offer}%</span>
+          <div className="flex justify-between">
+            <div className="py-4 text-center">
+              <div className="text-lg bg-grey-light rounded-full h-16 w-16 text-center mr-4">
+                <span className="inline-block mt-6">{this.props.talk}</span>
+              </div>
+              <div className="mt-4">
+                <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Talk</h4>
+                {/* <p className="text-grey-dark font-normal text-sm">Have you made first contact?</p> */}
+              </div>
             </div>
-            <div className="flex-1">
-              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Offer</h4>
-              <p className="text-grey-dark font-normal text-sm">Has your client made an offer on a home yet?</p>
+            <div className="py-4 text-center">
+              <div className="text-lg bg-grey-light rounded-full h-16 w-16 text-center mr-4">
+                <span className="inline-block mt-6">{this.props.set}</span>
+              </div>
+              <div className="mt-4">
+                <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Set</h4>
+                {/* <p className="text-grey-dark font-normal text-sm">Have you scheduled a time to meet in-person?</p> */}
+              </div>
             </div>
-          </div>
-          <div className="flex py-4">
-            <div className="text-lg bg-grey-light rounded-full h-16 w-16 text-center mr-4">
-              <span className="inline-block mt-6">{this.props.accept}%</span>
+            <div className="py-4 text-center">
+              <div className="text-lg bg-grey-light rounded-full h-16 w-16 text-center mr-4">
+                <span className="inline-block mt-6">{this.props.met}</span>
+              </div>
+              <div className="mt-4">
+                <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Met</h4>
+                {/* <p className="text-grey-dark font-normal text-sm">Did you meet the referral in-person?</p> */}
+              </div>
             </div>
-            <div className="flex-1">
-              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Accept</h4>
-              <p className="text-grey-dark font-normal text-sm">Has the seller accepted your client’s offer?</p>
+            <div className="py-4 text-center">
+              <div className="text-lg bg-grey-light rounded-full h-16 w-16 text-center mr-4">
+                <span className="inline-block mt-6">{this.props.offer}</span>
+              </div>
+              <div className="mt-4">
+                <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Offer</h4>
+                {/* <p className="text-grey-dark font-normal text-sm">Has your client made an offer on a home yet?</p> */}
+              </div>
             </div>
-          </div>
-          <div className="flex py-4">
-            <div className="text-lg bg-grey-light rounded-full h-16 w-16 text-center mr-4">
-              <span className="inline-block mt-6">{this.props.transact}%</span>
+            <div className="py-4 text-center">
+              <div className="text-lg bg-grey-light rounded-full h-16 w-16 text-center mr-4">
+                <span className="inline-block mt-6">{this.props.accept}</span>
+              </div>
+              <div className="mt-4">
+                <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Accept</h4>
+                {/* <p className="text-grey-dark font-normal text-sm">Has the seller accepted your client’s offer?</p> */}
+              </div>
             </div>
-            <div className="flex-1">
-              <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Transact</h4>
-              <p className="text-grey-dark font-normal text-sm">Has your client closed on a home?</p>
+            <div className="py-4 text-center">
+              <div className="text-lg bg-grey-light rounded-full h-16 w-16 text-center mr-4">
+                <span className="inline-block mt-6">{this.props.transact}</span>
+              </div>
+              <div className="mt-4">
+                <h4 className="w-16 mb-2 pr-2 uppercase font-lg">Closed</h4>
+                {/* <p className="text-grey-dark font-normal text-sm">Has your client closed on a home?</p> */}
+              </div>
             </div>
           </div>
         </div>

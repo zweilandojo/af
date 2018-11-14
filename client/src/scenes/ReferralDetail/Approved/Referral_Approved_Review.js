@@ -134,8 +134,8 @@ const ReferralReviewApproved = () => (
             </li>
             <li className="btn-stroked mb-3">
               <label className="">
-                <input type="checkbox" value="Transact" className="checkbox float-left _8X2Bp _3TFgA" />
-                Transact
+                <input type="checkbox" value="Closed" className="checkbox float-left _8X2Bp _3TFgA" />
+                Closed
               </label>
             </li>
           </ul>
@@ -215,9 +215,8 @@ const ReferralReviewApproved = () => (
           </h3>
         </header>
         <div className="border border-grey-light p-8 rounded-lg">
-          <p className="text-grey-dark text-base mb-8">Anything special about this client?</p>
 
-          <textarea className="input textarea" placeholder="What's the situation?">
+          <textarea className="input textarea" placeholder="Add a note...">
           </textarea>
 
           {/* BEGIN NOTE HISTORY */}

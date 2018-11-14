@@ -17,7 +17,7 @@ function Greeting(props) {
 class AgentHomeBanner extends React.Component {
   render() {
     return (
-      <div className="text-center pt-16 pb-10 mb-8">
+      <div className="text-center mt-16 pt-16 pb-10 mb-8">
         <h2 className="mb-2 text-3xl font-medium"><Greeting />, {this.props.firstName}!</h2>
         <p className="text-grey-dark text-base flex items-start justify-center">
           <img src={weatherPartlySunny} className="mr-2 w-5" alt="Partly Sunny" />

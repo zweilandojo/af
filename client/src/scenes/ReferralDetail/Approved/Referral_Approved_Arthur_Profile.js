@@ -123,12 +123,20 @@ class ReferralProfile extends React.Component {
                       Phone
                     </div>
                     <div className="w-1/2">
-                      (555) 512-1234
+                      <a href="tel:15555121234">+1 (555) 512-1234</a>
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
                     <div className="w-1/2 text-grey-dark">
-                      Lives
+                      Email
+                    </div>
+                    <div className="w-1/2">
+                      <span className="text-grey">Missing</span>
+                    </div>
+                  </li>
+                  <li className="border-b border-grey-light flex pt-3 pb-2">
+                    <div className="w-1/2 text-grey-dark">
+                      Current Location
                     </div>
                     <div className="w-1/2">
                       Cedar Park, TX
@@ -139,7 +147,7 @@ class ReferralProfile extends React.Component {
                       Desired Location
                     </div>
                     <div className="w-1/2">
-                      Hyde Park, Central Austin
+                      Hyde Park, Central East Austin, Southeast Austin
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
@@ -147,7 +155,7 @@ class ReferralProfile extends React.Component {
                       Budget
                     </div>
                     <div className="w-1/2">
-                      $250 - $450k
+                      $300 - $500k
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
@@ -280,11 +288,11 @@ class ReferralProfile extends React.Component {
                 <p className="text-black text-base leading-normal">
                   Arthur would like to speak about a home purchase.<br/>
                   Best time to contact: Evening (6-9 pm)<br/>
-                  Area: Hyde Park, East Side<br/>
+                  Area: Hyde Park, Central East Side, Southeast Austin<br/>
                   First Time Buyer: Y<br/>
                   Property Inquired:<br/>
-                  200 Bullock Dr.<br/>
-                  Austin, TX 78774
+                  1158 Ridgeway Dr #A<br/>
+                  Austin, TX 78702
                 </p>
               </div>
             </section>
@@ -300,39 +308,42 @@ class ReferralProfile extends React.Component {
                   A few homes Arthur really likes
                 </p>
                 <div className="home-list flex flex-wrap -mx-2">
-                  <HomeListItem
-                    homeUrl="https://consumer.agent.ojo.me/listings/fa6010b1f2e6d48ed1e8fc323e00c60f"
-                    imgUrl="http://tx-actris.photos.mlsfinder.com/photos/1/1/9/7/8/5/8/1197858-1.jpg"
-                    address="10316 Yellowstone Dr"
-                    price="329,900"
-                    neighborhood="Southeast Austin"
-                    cityStateZip="Austin, TX 78747"
-                    bed="3"
-                    bath="2"
-                    sqft="1609"
-                  />
-                  <HomeListItem
-                    homeUrl="https://consumer.agent.ojo.me/homefit/area/0f151ae15cf6c1050d97e3f479c3ab00"
-                    imgUrl="http://tx-actris.photos.mlsfinder.com/photos/7/0/9/9/6/6/0/7099660-1.jpg"
-                    address="1106 Olive St"
-                    price="565,000"
-                    neighborhood="Central East Austin"
-                    cityStateZip="Austin, TX 78702"
-                    bed="3"
-                    bath="2"
-                    sqft="1373"
-                  />
-                  <HomeListItem
-                    homeUrl="https://consumer.agent.ojo.me/listings/52a7bb17e365c3e95cfeb70521721400"
-                    imgUrl="http://tx-actris.photos.mlsfinder.com/photos/9/1/7/1/8/3/9/9171839-1.jpg"
-                    address="1600 Haskell St"
-                    price="685,000"
-                    neighborhood="Central East Austin"
-                    cityStateZip="Austin, TX 78702"
-                    bed="4"
-                    bath="2.5"
-                    sqft="1,971"
-                  />
+                <HomeListItem
+                  homeUrl="https://consumer.agent.ojo.me/listings/fa6010b1f2e6d48ed1e8fc323e00c60f"
+                  imgUrl="http://tx-actris.photos.mlsfinder.com/photos/1/1/9/7/8/5/8/1197858-1.jpg"
+                  address="10316 Yellowstone Dr"
+                  price="329,900"
+                  neighborhood="Southeast Austin"
+                  cityStateZip="Austin, TX 78747"
+                  bed="3"
+                  bath="2"
+                  sqft="1609"
+                  mlsID="1197858"
+                />
+                <HomeListItem
+                  homeUrl="https://consumer.agent.ojo.me/listings/78e68f4fbdbf5a3efec39d98013e0f7d"
+                  imgUrl="http://tx-actris.photos.mlsfinder.com/photos/4/3/2/8/8/3/2/_/3/4328832_3-1.jpg"
+                  address="2403 E 14th St #2"
+                  price="479,900"
+                  neighborhood="Central East Austin"
+                  cityStateZip="Austin, TX 78702"
+                  bed="3"
+                  bath="2"
+                  sqft="1100"
+                  mlsID="4328832"
+                />
+                <HomeListItem
+                  homeUrl="https://consumer.agent.ojo.me/listings/52a7bb17e365c3e95cfeb70521721400"
+                  imgUrl="http://tx-actris.photos.mlsfinder.com/photos/9/1/7/1/8/3/9/9171839-1.jpg"
+                  address="1600 Haskell St"
+                  price="685,000"
+                  neighborhood="Central East Austin"
+                  cityStateZip="Austin, TX 78702"
+                  bed="4"
+                  bath="2.5"
+                  sqft="1,971"
+                  mlsID="9171839"
+                />
                 </div>
               </div>
             </section>
