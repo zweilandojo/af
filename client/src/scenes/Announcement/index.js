@@ -20,7 +20,7 @@ class Announcement extends React.Component {
           </div>
         </header>
 
-        <div className="text-center pt-16 mb-8">
+        <div className="text-center my-8">
           <h2 className="mb-2 text-3xl font-medium">What’s new?</h2>
           <p className="text-grey-dark text-base flex items-start justify-center">
             <span className="inline-block px-8 leading-normal">We’ve spruced up the place since you were last here. Take a look.</span>
@@ -47,7 +47,7 @@ class Announcement extends React.Component {
           <div className="container flex items-center px-6 mx-auto max-w-lg">
             <div className="flex-1">
               <Link to="/" className="btn btn-blue block text-center text-lg">
-                Onward
+                Continue
               </Link>
             </div>
           </div>
