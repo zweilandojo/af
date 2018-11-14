@@ -82,6 +82,7 @@ h1 { font-size: 1.5rem } /* 24px */
 .bg-white { background-color: white; }
 
 .bg-blue { background-color: #3366FF; }
+.bg-blue-lightest { background-color: #86B1FF; }
 .bg-red-light { background-color: #F68EB1; }
 .bg-green { background-color: #00CA4C; }
 .bg-green-light { background-color: #62F1AC; }

@@ -28,7 +28,7 @@ const ReferralProfile = () => (
       </header>
 
       <div className="app-banner text-center mb-6">
-        <div className="avatar avatar-lg flex items-center">
+        <div className="avatar avatar-lg bg-blue-lightest flex items-center">
           <span className="block w-full text-center mt-2">G</span>
         </div>
         <h2 className="mb-2 text-white">
