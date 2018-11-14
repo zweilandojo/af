@@ -72,7 +72,7 @@ class Loading extends React.Component {
 
     const redirectToReferrer = this.state.redirectToReferrer;
         if (redirectToReferrer === true) {
-            return <Redirect to="/" />
+            return <Redirect to="/announcement" />
         }
 
     console.log('This happens 8th - after I get data.');

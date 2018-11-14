@@ -11,6 +11,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import SignIn from './scenes/SignIn/SignIn.js';
 import AuthVerify from './scenes/SignIn/AuthVerify.js';
 import Loading from './scenes/SignIn/Loading.js';
+import Announcement from './scenes/Announcement/index.js';
+
 import Home_All from './scenes/Home/Home_All.js';
 import Home_NeedsReview from './scenes/Home/Home_NeedsReview.js';
 import Home_ZeroState from './scenes/Home/Home_ZeroState.js';
@@ -39,6 +41,8 @@ class App extends Component {
           <Route path="/signin" component={SignIn}/>
           <Route path="/signin-verify" component={AuthVerify}/>
           <Route path="/loading" component={Loading}/>
+
+          <Route path="/announcement" component={Announcement}/>
 
           <Route exact path="/home-all" component={Home_All}/>
           <Route exact path="/" component={Home_NeedsReview}/>

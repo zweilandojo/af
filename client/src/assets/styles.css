@@ -177,7 +177,7 @@ a {
 .avatar-lg {
   width: 5.5rem;
   height: 5.5rem;
-  background-color: #86B1FF;
+  /* background-color: #86B1FF; */
   border-radius: 100%;
   color: white;
   font-size: 1.75rem;
@@ -203,13 +203,16 @@ a {
   width: 100%;
   background: #3366ff;
 }
-.btn-green {
+.btn-green, .btn-blue {
   background: #00CA4C;
   color: white;
   min-height: 48px;
   border-radius: 4rem;
   font-size: 1.125rem;
   line-height: 48px;
+}
+.btn-blue {
+  background: #3366FF;
 }
 .btn-social {
   background: white;
