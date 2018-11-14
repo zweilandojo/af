@@ -14,7 +14,7 @@ class Milestones extends React.Component {
 
           <div className="flex justify-between flex-wrap">
             <div className="py-4 text-center">
-              <div className="text-2xl bg-white border border-color-light rounded-full h-16 w-16 text-center mr-4">
+              <div className="text-2xl bg-grey-lightest rounded-full h-16 w-16 text-center mr-4">
                 <span className="inline-block mt-5">{this.props.talk}</span>
               </div>
               <div className="mt-4">
@@ -23,7 +23,7 @@ class Milestones extends React.Component {
               </div>
             </div>
             <div className="py-4 text-center">
-              <div className="text-2xl bg-white border border-color-light rounded-full h-16 w-16 text-center mr-4">
+              <div className="text-2xl bg-grey-lightest rounded-full h-16 w-16 text-center mr-4">
                 <span className="inline-block mt-5">{this.props.set}</span>
               </div>
               <div className="mt-4">
@@ -32,7 +32,7 @@ class Milestones extends React.Component {
               </div>
             </div>
             <div className="py-4 text-center">
-              <div className="text-2xl bg-white border border-color-light rounded-full h-16 w-16 text-center mr-4">
+              <div className="text-2xl bg-grey-lightest rounded-full h-16 w-16 text-center mr-4">
                 <span className="inline-block mt-5">{this.props.met}</span>
               </div>
               <div className="mt-4">
@@ -41,7 +41,7 @@ class Milestones extends React.Component {
               </div>
             </div>
             <div className="py-4 text-center">
-              <div className="text-2xl bg-white border border-color-light rounded-full h-16 w-16 text-center mr-4">
+              <div className="text-2xl bg-grey-lightest rounded-full h-16 w-16 text-center mr-4">
                 <span className="inline-block mt-5">{this.props.offer}</span>
               </div>
               <div className="mt-4">
@@ -50,7 +50,7 @@ class Milestones extends React.Component {
               </div>
             </div>
             <div className="py-4 text-center">
-              <div className="text-2xl bg-white border border-color-light rounded-full h-16 w-16 text-center mr-4">
+              <div className="text-2xl bg-grey-lightest rounded-full h-16 w-16 text-center mr-4">
                 <span className="inline-block mt-5">{this.props.accept}</span>
               </div>
               <div className="mt-4">
@@ -59,7 +59,7 @@ class Milestones extends React.Component {
               </div>
             </div>
             <div className="py-4 text-center">
-              <div className="text-2xl bg-white border border-color-light rounded-full h-16 w-16 text-center mr-4">
+              <div className="text-2xl bg-grey-lightest rounded-full h-16 w-16 text-center mr-4">
                 <span className="inline-block mt-5">{this.props.transact}</span>
               </div>
               <div className="mt-4">
