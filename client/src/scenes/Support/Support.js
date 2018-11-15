@@ -53,7 +53,7 @@ const Support = () => (
         </a>
       </div>
     </div>
-    <div className="text-center bg-white border-t border-b border-grey-light mt-32">
+    <div className="text-center bg-white mt-32">
       <Link to="/signin" className="block text-red text-lg py-6">Sign Out</Link>
     </div>
     {/*

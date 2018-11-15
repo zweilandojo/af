@@ -126,7 +126,7 @@ const ReferralProfile = () => (
                   Desired Location
                 </div>
                 <div className="w-1/2">
-                  <span className="text-grey">Missing</span>
+                  <span className="text-grey">Unknown</span>
                 </div>
               </li>
               <li className="flex border-b border-grey-light pt-3 pb-2">
