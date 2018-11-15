@@ -112,7 +112,7 @@ class ReferralProfile extends React.Component {
         </div>
 
         <main className="container mx-auto px-2 pb-24 max-w-lg">
-          <section className="pb-6 mb-6 mt-8">
+          <section className="pb-6 mb-6 mt-10">
               <header className="mb-6">
                 <h3 className="mb-4 ml-6 text-2xl">
                   Progress
@@ -307,7 +307,6 @@ class ReferralProfile extends React.Component {
 
             <section className="fixed pin-b actions">
               <div className="container flex items-center px-6 mx-auto max-w-lg">
-                <span className="flex-1 text-xs text-grey-dark">Everything look good?</span>
                 <div className="flex-1">
                   <button className="btn btn-green">Save</button>
                 </div>

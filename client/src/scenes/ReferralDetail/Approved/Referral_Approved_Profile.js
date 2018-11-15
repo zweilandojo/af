@@ -89,7 +89,7 @@ const ReferralProfile = () => (
   </div>
 
     <main className="container mx-auto px-2 max-w-lg">
-      <section className="pb-6 mb-6 mt-8">
+      <section className="pb-6 mb-6 mt-10">
           <header className="mb-6">
             <h3 className="mb-4 ml-6 text-2xl">
               About
@@ -232,7 +232,7 @@ const ReferralProfile = () => (
         </section>
     </main>
     <footer className="mb-12 flex">
-      <Link to="/support" className="w-full text-center mr-4 inline-block py-6 px-4 border border-grey-light rounded-full text-lg">
+      <Link to="/support" className="w-full text-center mr-4 inline-block py-6 px-4 rounded-full text-lg">
         Support
       </Link>{/*
       <Link to="/" className="w-1/2 md:w-1/2 text-center inline-block py-6 px-4 border border-grey-light rounded-full text-lg">

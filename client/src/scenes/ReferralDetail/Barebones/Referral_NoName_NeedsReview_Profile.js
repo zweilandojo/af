@@ -101,7 +101,7 @@ class ReferralProfile extends React.Component {
       </div>
 
         <main className="container mx-auto px-2 max-w-lg">
-          <section className="pb-6 mb-6 mt-8">
+          <section className="pb-6 mb-6 mt-10">
               <header className="mb-4">
                 <h3 className="ml-6 text-2xl">
                   About
