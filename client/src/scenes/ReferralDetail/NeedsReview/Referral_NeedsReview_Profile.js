@@ -97,7 +97,7 @@ class ReferralProfile extends React.Component {
 
       </div>
 
-        <main className="container mx-auto px-2 pb-24 max-w-lg">
+        <main className="container mx-auto px-2 max-w-lg">
           <section className="pb-6 mb-6 mt-8">
               <header className="mb-4">
                 <h3 className="ml-6 text-2xl">
@@ -198,7 +198,7 @@ class ReferralProfile extends React.Component {
               </div>
             </section>
 
-            <section className="pb-6 mb-6">
+            <section className="pb-6">
               <header className="mb-4">
                 <h3 className="mb-4 ml-6 text-2xl">
                   OJO handoff notes
@@ -271,6 +271,14 @@ class ReferralProfile extends React.Component {
               </div>
             </section>
         </main>
+        <footer className="mb-12 flex">
+          <Link to="/support" className="w-full text-center mr-4 inline-block py-6 px-4 border border-grey-light rounded-full text-lg">
+            Support
+          </Link>{/*
+          <Link to="/" className="w-1/2 md:w-1/2 text-center inline-block py-6 px-4 border border-grey-light rounded-full text-lg">
+            Send Feedback
+          </Link>*/}
+        </footer>
       </div>
     )
   }

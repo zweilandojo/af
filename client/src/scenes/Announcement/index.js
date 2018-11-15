@@ -36,8 +36,8 @@ class Announcement extends React.Component {
               <div className="mx-auto w-16 h-16 mb-8 flex-no-shrink rounded-full flex items-center justify-center">
                 <img src={illustrationProfile} className="w-12" alt="illustration" />
               </div>
-              <div className="max-w-xs mx-auto">
-                <span className="text-lg leading-normal block mb-3">Referral Profiles, now in OJO</span>
+              <div className="max-w-sm mx-auto">
+                <span className="text-lg leading-normal block mb-2">Referral Profiles, now in OJO</span>
                 <span className="text-base leading-normal text-grey-dark">View your OJO referral’s contact info, their buying preferences, and favorite homes.</span>
               </div>
             </div>
@@ -45,7 +45,7 @@ class Announcement extends React.Component {
           </div>
         </main>
 
-        <section className="fixed pin-b actions">
+        <section className="max-w-md mx-auto mt-10">
           <div className="container flex items-center px-6 mx-auto max-w-lg">
             <div className="flex-1">
               <Link to="/" className="btn btn-blue block text-center text-lg">

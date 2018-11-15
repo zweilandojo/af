@@ -474,6 +474,7 @@ select {
 /* App Header */
 .app-header {
   height: 4rem; /* 64px */
+  background-color: rgba(255,255,255,0.96);
 }
 
 .app-header-back-button {
@@ -582,19 +583,18 @@ select {
 /* Snackbar */
 #snackbar {
   visibility: hidden;
-  min-width: 250px;
-  /* margin-left: -125px; Divide value of min-width by 2 */
-  background-color: #fff /*rgba(33,33,33,.9)*/;
-  color: #212121;
-  text-align: center;
-  border-radius: 0.4375rem;
-  padding: 1rem;
-  position: fixed;
-  z-index: 1;
-  left: 1rem;
-  bottom: 2.5rem;
-  box-shadow: 0 0 8px 0 rgba(0,0,0,0.04),
-              0 0 16px 0 rgba(0,0,0,0.08);
+  width: auto;
+    background-color: #fff;
+    color: #212121;
+    text-align: center;
+    border-radius: 0.4375rem;
+    padding: 1.5rem 3rem;
+    position: fixed;
+    z-index: 1;
+    top: 4rem;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.04), 0 0 16px 0 rgba(0,0,0,0.08);
+    left: 50%;
+    transform: translateX(-50%);
 }
 #snackbar.show {
   visibility: visible;
@@ -605,20 +605,20 @@ select {
 }
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 2.5rem; opacity: 1;}
+  from {top: 0; opacity: 0;}
+  to {top: 4rem; opacity: 1;}
 }
 @keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 2.5rem; opacity: 1;}
+  from {top: 0; opacity: 0;}
+  to {top: 4rem; opacity: 1;}
 }
 @-webkit-keyframes fadeout {
-  from {bottom: 32px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+  from {top: 4rem; opacity: 1;}
+  to {top: 0; opacity: 0;}
 }
 @keyframes fadeout {
-  from {bottom: 2.5rem; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+  from {top: 4rem; opacity: 1;}
+  to {top: 0; opacity: 0;}
 }
 
 

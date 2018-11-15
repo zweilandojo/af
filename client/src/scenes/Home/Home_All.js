@@ -199,14 +199,14 @@ class HomeNeedsReview extends React.Component {
 
           <Milestones talk="83" set="66" met="33" offer="0" accept="0" transact="0" />
 
-          <div className="mb-8 flex">
-            <Link to="/support" className="w-1/2 md:w-1/2 text-center mr-4 inline-block py-6 px-4 border border-grey-light rounded-full text-lg">
+          <footer className="mb-12 flex">
+            <Link to="/support" className="w-full text-center mr-4 inline-block py-6 px-4 border border-grey-light rounded-full text-lg">
               Support
-            </Link>
+            </Link>{/*
             <Link to="/" className="w-1/2 md:w-1/2 text-center inline-block py-6 px-4 border border-grey-light rounded-full text-lg">
               Send Feedback
-            </Link>
-          </div>
+            </Link>*/}
+          </footer>
         </main>
 
         {/* BEGIN: REFERRAL LIST ZERO STATE */}
