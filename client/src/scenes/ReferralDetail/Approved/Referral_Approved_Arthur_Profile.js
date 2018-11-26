@@ -215,6 +215,7 @@ class ReferralProfile extends React.Component {
               <header className="mb-4">
                 <h3 className="mb-4 ml-6 text-2xl">
                   Agent notes
+                  <div className="tag new ml-3">NEW</div>
                 </h3>
               </header>
               <div className="border border-grey-light p-8 rounded-lg">
