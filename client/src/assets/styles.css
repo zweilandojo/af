@@ -604,16 +604,6 @@ select {
   flex: 1 0 auto;
   content: "";
 }
-@media (min-width: 600px) {
-  .modal-manager .modal-scroller:not(.full-screen)::after,
-  .modal-manager .modal-scroller:not(.full-screen)::before {
-    min-height: 40px;
-    height: 40px;
-    -webkit-flex: 1 1 20px;
-    -ms-flex: 1 1 20px;
-    flex: 1 1 20px;
-  }
-}
 .modal-manager .modal-scroller {
   position: fixed;
   z-index: 21;
@@ -651,8 +641,62 @@ select {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   min-height: 100%;
+  overflow: hidden;
   width: 100%;
   cursor: default;
+}
+.modal-window-content {
+    padding: 0;
+}
+.modal-window .content,
+.modal-window .modal-window-content {
+  position: relative;
+  z-index: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  /* -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; */
+  padding: 0;
+  min-width: 320px;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .modal-manager .modal-scroller:not(.full-screen)::after,
+  .modal-manager .modal-scroller:not(.full-screen)::before {
+    min-height: 40px;
+    height: 40px;
+    -webkit-flex: 1 1 20px;
+    -ms-flex: 1 1 20px;
+    flex: 1 1 20px;
+  }
+  .modal-window-content {
+      width: 500px;
+  }
+  .modal-window .content {
+      width: 500px;
+      min-height: 120px;
+      padding: 2rem;
+  }
+  .modal-window {
+    min-height: 90%;
+    border-radius: 14px;
+    width: auto;
+  }
+  .modal-window .content .actions .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 fade-in {
   opacity: 1;

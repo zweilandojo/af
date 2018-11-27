@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import AppHeader from '../../components/AppHeader/index.js';
 import AgentHomeBanner from '../../components/AgentHomeBanner/index.js';
 import Milestones from '../../components/Milestones/index.js';
+// import ModalManager from '../../components/ModalManager/index.js'
+
 
 // Assets
 import iconPerson from '../../assets/images/icon-person.svg';
@@ -131,6 +133,10 @@ class HomeNeedsReview extends React.Component {
             </Link>*/}
           </footer>
         </main>
+
+        {/* <ModalManager /> */}
+
+
       </div>
     )
   }
