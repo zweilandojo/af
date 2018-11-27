@@ -557,11 +557,11 @@ select {
   border: 4px solid transparent;
   border-top-color: #BDBDBD;
 }
-#loader:before{
+#loader:before {
   z-index: 100;
   animation: spin .5s infinite;
 }
-#loader:after{
+#loader:after {
   border: 4px solid white;
 }
 @keyframes spin{
@@ -580,19 +580,88 @@ select {
   }
 }
 
-/* Modals */
+
+/* Modal */
 .modal-manager .modal-overlay {
-    position: fixed;
-    z-index: 20;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .2s ease-out,visibility 0s .2s linear;
-    background-color: rgba(0,0,0,.3);
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .2s ease-out,visibility 0s .2s linear;
+  background-color: rgba(0,0,0,.3);
 }
+.modal-manager .modal-scroller::after,
+.modal-manager .modal-scroller::before {
+  width: 100%;
+  min-height: 0;
+  height: 0;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  content: "";
+}
+@media (min-width: 600px) {
+  .modal-manager .modal-scroller:not(.full-screen)::after,
+  .modal-manager .modal-scroller:not(.full-screen)::before {
+    min-height: 40px;
+    height: 40px;
+    -webkit-flex: 1 1 20px;
+    -ms-flex: 1 1 20px;
+    flex: 1 1 20px;
+  }
+}
+.modal-manager .modal-scroller {
+  position: fixed;
+  z-index: 21;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  min-width: 320px;
+  overflow-y: auto;
+}
+.modal-window {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #fff;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  min-height: 100%;
+  width: 100%;
+  cursor: default;
+}
+fade-in {
+  opacity: 1;
+  transition: opacity .3s .2s linear;
+}
+.fade-in.show {
+  transition-delay: .5s;
+}
+
 
 /* Tags */
 .tag {
