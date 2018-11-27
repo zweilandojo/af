@@ -29,7 +29,7 @@ class ModalManager extends React.Component {
                     </div>
                     <div className="ml-4">
                       <span className="text-base font-medium leading-normal block mb-0">Referral details</span>
-                      <span className="text-sm leading-normal text-grey-dark">Now view your OJO referral’s buying preferences, favorite homes, and more.</span>
+                      <span className="text-sm leading-normal text-grey-dark">View your OJO referral’s preferences, favorite homes, and more.</span>
                     </div>
                   </div>
 
