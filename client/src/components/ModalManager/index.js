@@ -39,7 +39,7 @@ class ModalManager extends React.Component {
                     </div>
                     <div className="ml-4">
                       <span className="text-base font-medium leading-normal block mb-0">Note history</span>
-                      <span className="text-sm leading-normal text-grey-dark">Quickly recall details about your OJO referrals, on the go.</span>
+                      <span className="text-sm leading-normal text-grey-dark">Quickly recall details about your OJO referrals on the go.</span>
                     </div>
                   </div>
               </main>
