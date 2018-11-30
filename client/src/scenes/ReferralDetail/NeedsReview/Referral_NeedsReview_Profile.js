@@ -9,6 +9,7 @@ import iconChevronLeftWhite from '../../../assets/images/icon-chevron-left-w.png
 
 // Components
 import HomeListItem from '../../../components/HomeListItem/index.js';
+import AppHeaderReferral from '../../../components/AppHeaderReferral/index.js';
 
 class ReferralProfile extends React.Component {
   componentDidMount() {
@@ -24,13 +25,11 @@ class ReferralProfile extends React.Component {
                 <img src={iconChevronLeftWhite} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
               </Link>
             </div>
-            {/*
-            <div className="w-1/3 text-center align-middle">
-              <div className="">
-              </div>
-            </div>
-            */}
           </header>
+
+          {/* Begin: Fixed App Header for Referrals */}
+          <AppHeaderReferral userFullName="Arthur Belling" />
+          {/* End: Fixed App Header for Referrals */}
 
           <div className="app-banner text-center mb-6">
             <div className="avatar avatar-lg flex items-center">

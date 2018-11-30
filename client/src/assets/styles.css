@@ -476,14 +476,14 @@ select {
   height: 4rem; /* 64px */
   background-color: rgba(255,255,255,0.96);
 }
-.app-referral-header {
+.app-header-referral {
   display: none;
   z-index: 2;
   top: 0;
   -webkit-animation: slideOutTop 0.5s;
   animation: slideOutTop 0.5s;
 }
-.app-referral-header.showit {
+.app-header-referral.showit {
   display: flex;
   -webkit-animation: slideInTop 0.5s;
   animation: slideInTop 0.5s;

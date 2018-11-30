@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Assets
 import iconChatWhite from '../../../assets/images/icon-chat-w.png';
 import iconPhoneWhite from '../../../assets/images/icon-phone-w.png';
 import iconEmailWhite from '../../../assets/images/icon-email-w.png';
 import iconChevronLeftWhite from '../../../assets/images/icon-chevron-left-w.png';
+
+// Components
+import AppHeaderReferral from '../../../components/AppHeaderReferral/index.js';
 
 class ReferralProfile extends React.Component {
   componentDidMount() {
@@ -31,13 +35,11 @@ class ReferralProfile extends React.Component {
                 <img src={iconChevronLeftWhite} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
               </Link>
             </div>
-            {/*
-            <div className="w-1/3 text-center align-middle">
-              <div className="">
-              </div>
-            </div>
-            */}
           </header>
+
+          {/* Begin: Fixed App Header for Referrals */}
+          <AppHeaderReferral userFullName="Arthur Belling" />
+          {/* End: Fixed App Header for Referrals */}
 
           <div className="app-banner text-center mb-6">
             <div className="avatar avatar-lg bg-blue-lightest flex items-center">

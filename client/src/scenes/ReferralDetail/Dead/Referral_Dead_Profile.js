@@ -9,7 +9,7 @@ import iconEmailWhite from '../../../assets/images/icon-email-w.png';
 import iconChevronLeftWhite from '../../../assets/images/icon-chevron-left-w.png';
 
 // Components
-// ...nothing yet...
+import AppHeaderReferral from '../../../components/AppHeaderReferral/index.js';
 
 const ReferralProfile = () => (
   <div className="app">
@@ -20,13 +20,11 @@ const ReferralProfile = () => (
             <img src={iconChevronLeftWhite} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
           </Link>
         </div>
-        {/*
-        <div className="w-1/3 text-center align-middle">
-          <div className="">
-          </div>
-        </div>
-        */}
       </header>
+
+      {/* Begin: Fixed App Header for Referrals */}
+      <AppHeaderReferral userFullName="+1 (512) 897-1234" />
+      {/* End: Fixed App Header for Referrals */}
 
       <div className="app-banner text-center mb-6">
         <div className="avatar avatar-lg flex items-center">
