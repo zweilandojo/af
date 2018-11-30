@@ -6,7 +6,6 @@ import iconPerson from '../../../assets/images/icon-person.svg';
 import iconChatWhite from '../../../assets/images/icon-chat-w.png';
 import iconPhoneWhite from '../../../assets/images/icon-phone-w.png';
 import iconEmailWhite from '../../../assets/images/icon-email-w.png';
-import iconChevronLeftWhite from '../../../assets/images/icon-chevron-left-w.png';
 
 // Components
 import AppHeaderReferral from '../../../components/AppHeaderReferral/index.js';
@@ -30,14 +29,6 @@ class ReferralProfile extends React.Component {
     return(
       <div className="app">
         <div className="review-status-wrapper review-status_needs-review">
-          <header className="h-16 flex fixed pin-t w-full">
-            <div className="w-1/3 app-header-back-button">
-              <Link to="/" className="block">
-                <img src={iconChevronLeftWhite} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
-              </Link>
-            </div>
-          </header>
-
           {/* Begin: Fixed App Header for Referrals */}
           <AppHeaderReferral userFullName="+1 (512) 555-1234" />
           {/* End: Fixed App Header for Referrals */}

@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import iconChatWhite from '../../../assets/images/icon-chat-w.png';
 import iconPhoneWhite from '../../../assets/images/icon-phone-w.png';
 import iconEmailWhite from '../../../assets/images/icon-email-w.png';
-import iconChevronLeftWhite from '../../../assets/images/icon-chevron-left-w.png';
 
 // Components
 import AppHeaderReferral from '../../../components/AppHeaderReferral/index.js';
@@ -13,14 +12,6 @@ import AppHeaderReferral from '../../../components/AppHeaderReferral/index.js';
 const ReferralReviewApproved = () => (
   <div className="app">
     <div className="review-status-wrapper">
-      <header className="h-16 flex fixed pin-t w-full">
-        <div className="w-1/3 app-header-back-button">
-          <Link to="/" className="block">
-            <img src={iconChevronLeftWhite} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
-          </Link>
-        </div>
-      </header>
-
       {/* Begin: Fixed App Header for Referrals */}
       <AppHeaderReferral userFullName="Arthur Belling" />
       {/* End: Fixed App Header for Referrals */}
