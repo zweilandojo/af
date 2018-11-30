@@ -47,13 +47,13 @@ class AppHeaderReferral extends React.Component {
         <div className="w-1/3 app-header-back-button">
           <Link to="/" className="block">
             <img src={iconChevronLeftBlue} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
-            <span>Home</span>
+            {/*<span>Home</span>*/}
           </Link>
         </div>
 
         <div className="w-1/3 text-center align-middle">
           <div className="mt-6">
-            <h4 className="text-black text-lg mb-1">{this.props.userFullName}</h4>
+            <h4 className="text-black text-lg mb-1 truncate">{this.props.userFullName}</h4>
           </div>
         </div>
 

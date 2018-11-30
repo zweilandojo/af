@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import logoBlueCircle from '../../assets/images/logo-ojo-bg-blue.png';
 
 const AppHeader = () => (
-  <header className="app-header fixed pin-t w-full flex content-start flex-wrap">
+  <header className="app-header w-full flex content-start flex-wrap">
     <div className="w-1/3">
       {/* Nothing. Waiting for future menu. */}
     </div>

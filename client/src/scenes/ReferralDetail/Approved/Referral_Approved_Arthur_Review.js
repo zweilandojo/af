@@ -29,7 +29,7 @@ class ReferralProfile extends React.Component {
     return (
       <div className="app">
         <div className="review-status-wrapper review-status_approved">
-          <header className="h-16 flex">
+          <header className="h-16 flex fixed pin-t w-full">
             <div className="w-1/3 app-header-back-button">
               <Link to="/" className="block">
                 <img src={iconChevronLeftWhite} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
@@ -41,7 +41,7 @@ class ReferralProfile extends React.Component {
           <AppHeaderReferral userFullName="Arthur Belling" />
           {/* End: Fixed App Header for Referrals */}
 
-          <div className="app-banner text-center mb-6">
+          <div className="app-banner text-center mb-6 pt-16">
             <div className="avatar avatar-lg bg-blue-lightest flex items-center">
               <span className="block w-full text-center mt-2">A</span>
             </div>

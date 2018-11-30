@@ -14,7 +14,7 @@ import AppHeaderReferral from '../../../components/AppHeaderReferral/index.js';
 const ReferralProfile = () => (
   <div className="app">
     <div className="review-status-wrapper">
-      <header className="h-16 flex">
+      <header className="h-16 flex fixed pin-t w-full">
         <div className="w-1/3 app-header-back-button">
           <Link to="/" className="block">
             <img src={iconChevronLeftWhite} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
@@ -26,7 +26,7 @@ const ReferralProfile = () => (
       <AppHeaderReferral userFullName="Arthur Belling" />
       {/* End: Fixed App Header for Referrals */}
 
-      <div className="app-banner text-center mb-6">
+      <div className="app-banner text-center mb-6 pt-16">
         <div className="avatar avatar-lg bg-blue-lightest flex items-center">
           <span className="block w-full text-center mt-2">G</span>
         </div>
