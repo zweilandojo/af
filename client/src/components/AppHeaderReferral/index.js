@@ -82,6 +82,14 @@ class AppHeaderReferral extends React.Component {
                 </div>
               </div>
             </a>
+
+            <a href="mailto:referral@domain.com" className="py-6 px-4 block text-center text-blue">
+              <div className="btn-contact-icon flex items-center">
+                <div className="block w-full flex items-center justify-center">
+                  <img src={iconEmailWhite} className="h-5" alt="" />
+                </div>
+              </div>
+            </a>
           </div>
         </header>
 
