@@ -343,7 +343,7 @@ class ReferralProfile extends React.Component {
             <section className="mb-10">
               <header className="mb-5 ml-6">
                 <h3 className="text-2xl">
-                  Review Note
+                  Notes
                 </h3>
               </header>
               <div className="border border-grey-light p-8 rounded-lg">
