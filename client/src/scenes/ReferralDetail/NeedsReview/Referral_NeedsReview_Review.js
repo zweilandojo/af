@@ -318,7 +318,7 @@ class ReferralProfile extends React.Component {
                   Projected close month
                 </h3>
               </header>
-              <div className="border-t border-grey-light p-8 px-6">
+              <div className="border-t border-grey-light p-6">
                 <select className="input select" placeholder="Select a month...">
                   <option defaultValue>Select a month...</option>
                   <option>I don’t know</option>
@@ -346,10 +346,10 @@ class ReferralProfile extends React.Component {
                   Notes
                 </h3>
               </header>
-              <div className="border-t border-grey-light p-8 px-6">
+              <div className="border-t border-grey-light p-6">
                 <textarea className="input textarea" placeholder="Write a note...">
                 </textarea>
-                <Link to="" className="mt-6 block text-center">
+                <Link to="" className="mt-8 block text-center">
                   View Note History
                 </Link>
               </div>
