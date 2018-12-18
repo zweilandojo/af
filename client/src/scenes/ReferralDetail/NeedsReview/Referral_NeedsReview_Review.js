@@ -98,96 +98,183 @@ class ReferralProfile extends React.Component {
         </div>
 
         <main className="container mx-auto px-2 pb-24 max-w-lg">
-          <section className="pb-6 mb-6 mt-10">
-              <header className="mb-6">
-                <h3 className="mb-4 ml-6 text-2xl">
-                  Progress
-                  {/*
-                    <span className="ml-2 text-sm text-grey float-right">(0% complete)</span>
-                  */}
-                </h3>
-              </header>
-              <div className="border border-grey-light p-8 rounded-lg">
-                <p className="text-grey-dark text-base mb-8">Which steps have you completed?</p>
 
-                <ul className="list-reset text-center block">
-                  <li className="btn-stroked mr-1 mb-3">
-                    <label className="">
-                      <input
-                        type="checkbox"
-                        className="checkbox float-left"
-                        value={this.state.isChecked}
-                        onChange={this.handleChange}
-                        checked="true"
-                      />
-                      <span className="slider"></span>
-                      <span className="text">Talk</span>
-                    </label>
-                  </li>
-                  <li className="btn-stroked mr-1 mb-3">
-                    <label className="">
-                      <input
-                        type="checkbox"
-                        className="checkbox float-left"
-                        value={this.state.isChecked}
-                        onChange={this.handleChange}
-                      />
-                      <span className="slider"></span>
-                      <span className="text">Set</span>
-                    </label>
-                  </li>
-                  <li className="btn-stroked mr-1 mb-3">
-                    <label className="">
-                      <input
-                        type="checkbox"
-                        className="checkbox float-left"
-                        value={this.state.isChecked}
-                        onChange={this.handleChange}
-                      />
-                      <span className="slider"></span>
-                      <span className="text">Met</span>
-                    </label>
-                  </li>
-                  <li className="btn-stroked mr-1 mb-3">
-                    <label className="">
-                      <input
-                        type="checkbox"
-                        className="checkbox float-left"
-                        value={this.state.isChecked}
-                        onChange={this.handleChange}
-                      />
-                      <span className="slider"></span>
-                      <span className="text">Offer</span>
-                    </label>
-                  </li>
-                  <li className="btn-stroked mr-1 mb-3">
-                    <label className="">
-                      <input
-                        type="checkbox"
-                        className="checkbox float-left"
-                        value={this.state.isChecked}
-                        onChange={this.handleChange}
-                      />
-                      <span className="slider"></span>
-                      <span className="text">Accept</span>
-                    </label>
-                  </li>
-                  <li className="btn-stroked mr-1 mb-3">
-                    <label className="">
-                      <input
-                        type="checkbox"
-                        className="checkbox float-left"
-                        value={this.state.isChecked}
-                        onChange={this.handleChange}
-                      />
-                      <span className="slider"></span>
-                      <span className="text">Closed</span>
-                    </label>
-                  </li>
-                </ul>
+          <section className="mt-10 mb-10">
+            <header className="flex">
+              <h3 className="mb-4 ml-6 text-2xl flex-1">
+                Status
+              </h3>
+              <div className="flex-1 text-right mr-6 leading-normal">
+                {/* <Link to="/" className="text-base text-grey-dark mr-6">Hibernate</Link> */}
+                <Link to="/" className="text-base text-grey-dark underline">Release...</Link>
               </div>
-            </section>
+            </header>
+            <div className="border border-grey-light p-8 pb-6 rounded-lg">
+              <ul className="list-reset block text-center">
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="checkbox"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                      checked="true"
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Talked</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="checkbox"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Met</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="checkbox"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Seeing Homes</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="checkbox"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Offer</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="checkbox"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Accepted</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="checkbox"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Closed</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </section>
 
+          <section className="mb-10">
+            <header className="mb-5 ml-6">
+              <h3 className="text-2xl">
+                Communication
+              </h3>
+            </header>
+            <div className="border border-grey-light p-8 pb-6 rounded-lg">
+              <ul className="list-reset block text-center">
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="radio"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                      name="responsiveness"
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Responsive</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="radio"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                      name="responsiveness"
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Unresponsive</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="mb-10">
+            <header className="mb-4 ml-6">
+              <h3 className="text-2xl">
+                Finances
+              </h3>
+            </header>
+            <div className="border border-grey-light p-8 pb-6 rounded-lg">
+              <ul className="list-reset block text-center">
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="checkbox"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Pre-Approved</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="checkbox"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Good Credit</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="checkbox"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Credit Issues</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+            {/*
             <section className="pb-6 mb-6">
               <header className="mb-4">
                 <h3 className="mb-4 ml-6 text-2xl">
@@ -223,16 +310,15 @@ class ReferralProfile extends React.Component {
                 </div>
               </form>
             </section>
+            */}
 
-            <section className="pb-6 mb-6">
-              <header className="mb-4">
-                <h3 className="mb-4 ml-6 text-2xl">
+            <section className="mb-10">
+              <header className="mb-5 ml-6">
+                <h3 className="text-2xl">
                   Projected close month
                 </h3>
               </header>
               <div className="border border-grey-light p-8 rounded-lg">
-                <p className="text-grey-dark text-base mb-8">When do you think they’ll close?</p>
-
                 <select className="input select" placeholder="Select a month...">
                   <option defaultValue>Select a month...</option>
                   <option>I don’t know</option>
@@ -254,31 +340,22 @@ class ReferralProfile extends React.Component {
               </div>
             </section>
 
-            <section className="pb-6 mb-6">
-              <header className="mb-4">
-                <h3 className="mb-4 ml-6 text-2xl">
-                  Notes
+            <section className="mb-10">
+              <header className="mb-5 ml-6">
+                <h3 className="text-2xl">
+                  Review Note
                 </h3>
               </header>
               <div className="border border-grey-light p-8 rounded-lg">
-
-                <textarea className="input textarea" placeholder="Add a note...">
+                <textarea className="input textarea" placeholder="Write a note...">
                 </textarea>
-
-                {/* BEGIN Simple notes history */}
-                <div className="referral-notes_list_item flex py-4 mt-4">
-                  <div className="referral-notes_list_item_content flex w-full">
-                    <span className="w-1/4 text-sm text-grey-dark">
-                      Nov 2, 2018 11:21 AM
-                    </span>
-                    <p className="w-3/4 text-black text-sm">
-                      Talked with Arthur. Planning to meet next Tuesday.
-                    </p>
-                  </div>
-                </div>
-                {/* END Simple notes history */}
-
+                <Link to="" className="mt-6 block text-center">
+                  View Note History
+                </Link>
               </div>
+            </section>
+
+            <section className="mb-10">
             </section>
 
             <section className="fixed pin-b actions">
