@@ -101,15 +101,15 @@ class ReferralProfile extends React.Component {
 
           <section className="mt-10 mb-10">
             <header className="flex">
-              <h3 className="mb-4 ml-6 text-2xl flex-1">
+              <h3 className="mb-4 text-2xl flex-1">
                 Status
               </h3>
-              <div className="flex-1 text-right mr-6 leading-normal">
+              <div className="flex-1 text-right leading-normal">
                 {/* <Link to="/" className="text-base text-grey-dark mr-6">Hibernate</Link> */}
                 <Link to="/" className="text-base text-grey-dark underline">Release...</Link>
               </div>
             </header>
-            <div className="border-t border-grey-light p-6">
+            <div className="border-t border-grey-light py-6">
               <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -189,12 +189,12 @@ class ReferralProfile extends React.Component {
           </section>
 
           <section className="mb-10">
-            <header className="mb-5 ml-6">
+            <header className="mb-5">
               <h3 className="text-2xl">
                 Communication
               </h3>
             </header>
-            <div className="border-t border-grey-light p-6">
+            <div className="border-t border-grey-light py-6">
               <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -227,12 +227,12 @@ class ReferralProfile extends React.Component {
           </section>
 
           <section className="mb-10">
-            <header className="mb-4 ml-6">
+            <header className="mb-4">
               <h3 className="text-2xl">
                 Finances
               </h3>
             </header>
-            <div className="border-t border-grey-light p-6">
+            <div className="border-t border-grey-light py-6">
               <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -313,12 +313,12 @@ class ReferralProfile extends React.Component {
             */}
 
             <section className="mb-10">
-              <header className="mb-5 ml-6">
+              <header className="mb-5">
                 <h3 className="text-2xl">
                   Projected close month
                 </h3>
               </header>
-              <div className="border-t border-grey-light p-6">
+              <div className="border-t border-grey-light py-6">
                 <select className="input select" placeholder="Select a month...">
                   <option defaultValue>Select a month...</option>
                   <option>I don’t know</option>
@@ -341,12 +341,12 @@ class ReferralProfile extends React.Component {
             </section>
 
             <section className="mb-10">
-              <header className="mb-5 ml-6">
+              <header className="mb-5">
                 <h3 className="text-2xl">
                   Notes
                 </h3>
               </header>
-              <div className="border-t border-grey-light p-6">
+              <div className="border-t border-grey-light py-6">
                 <textarea className="input textarea" placeholder="Write a note...">
                 </textarea>
                 <Link to="" className="mt-8 block text-center">

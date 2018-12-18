@@ -90,11 +90,11 @@ class ReferralProfile extends React.Component {
         <main className="container mx-auto px-2 max-w-lg">
           <section className="pb-6 mb-6 mt-10">
               <header className="mb-4">
-                <h3 className="ml-6 text-2xl">
+                <h3 className="text-2xl">
                   About
                 </h3>
               </header>
-              <div className="border-t border-grey-light p-8 px-6">
+              <div className="border-t border-grey-light py-6">
                 <ul className="text-base leading-normal list-reset">
                   <li className="border-b border-grey-light flex pb-2">
                     <div className="w-1/2 text-grey-dark">
