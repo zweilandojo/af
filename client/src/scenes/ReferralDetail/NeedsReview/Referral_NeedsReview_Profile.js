@@ -94,7 +94,7 @@ class ReferralProfile extends React.Component {
                   About
                 </h3>
               </header>
-              <div className="border border-grey-light p-8 rounded-lg">
+              <div className="border-t border-grey-light p-8 px-6">
                 <ul className="text-base leading-normal list-reset">
                   <li className="border-b border-grey-light flex pb-2">
                     <div className="w-1/2 text-grey-dark">
@@ -194,7 +194,7 @@ class ReferralProfile extends React.Component {
                   OJO handoff notes
                 </h3>
               </header>
-              <div className="border border-grey-light p-8 rounded-lg">
+              <div className="border-t border-grey-light p-8 px-6">
                 <p className="text-grey-dark text-base mb-8">
                   Last updated Aug 10, 2018 2:15 PM
                 </p>
@@ -216,10 +216,7 @@ class ReferralProfile extends React.Component {
                   Arthur’s favorites
                 </h3>
               </header>
-              <div className="border border-grey-light p-8 rounded-lg">
-                <p className="text-grey-dark text-base mb-8">
-                  A few homes Arthur really likes
-                </p>
+              <div className="border-t border-grey-light p-8 px-6">
                 <div className="home-list flex flex-wrap -mx-2">
                 <HomeListItem
                   homeUrl="https://consumer.agent.ojo.me/listings/fa6010b1f2e6d48ed1e8fc323e00c60f"

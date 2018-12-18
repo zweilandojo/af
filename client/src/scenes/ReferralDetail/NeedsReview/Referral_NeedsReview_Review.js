@@ -109,7 +109,7 @@ class ReferralProfile extends React.Component {
                 <Link to="/" className="text-base text-grey-dark underline">Release...</Link>
               </div>
             </header>
-            <div className="border border-grey-light p-8 pb-6 rounded-lg">
+            <div className="border-t border-grey-light p-8 px-6 pb-6 rounded-lg">
               <ul className="list-reset block text-center">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -194,7 +194,7 @@ class ReferralProfile extends React.Component {
                 Communication
               </h3>
             </header>
-            <div className="border border-grey-light p-8 pb-6 rounded-lg">
+            <div className="border-t border-grey-light p-8 px-6 pb-6 rounded-lg">
               <ul className="list-reset block text-center">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -232,7 +232,7 @@ class ReferralProfile extends React.Component {
                 Finances
               </h3>
             </header>
-            <div className="border border-grey-light p-8 pb-6 rounded-lg">
+            <div className="border-t border-grey-light p-8 px-6 pb-6">
               <ul className="list-reset block text-center">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -318,7 +318,7 @@ class ReferralProfile extends React.Component {
                   Projected close month
                 </h3>
               </header>
-              <div className="border border-grey-light p-8 rounded-lg">
+              <div className="border-t border-grey-light p-8 px-6">
                 <select className="input select" placeholder="Select a month...">
                   <option defaultValue>Select a month...</option>
                   <option>I don’t know</option>
@@ -346,7 +346,7 @@ class ReferralProfile extends React.Component {
                   Notes
                 </h3>
               </header>
-              <div className="border border-grey-light p-8 rounded-lg">
+              <div className="border-t border-grey-light p-8 px-6">
                 <textarea className="input textarea" placeholder="Write a note...">
                 </textarea>
                 <Link to="" className="mt-6 block text-center">
