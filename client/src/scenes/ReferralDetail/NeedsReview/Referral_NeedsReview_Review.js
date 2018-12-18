@@ -109,8 +109,8 @@ class ReferralProfile extends React.Component {
                 <Link to="/" className="text-base text-grey-dark underline">Release...</Link>
               </div>
             </header>
-            <div className="border-t border-grey-light p-8 px-6 pb-6">
-              <ul className="list-reset block text-center">
+            <div className="border-t border-grey-light p-6">
+              <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
                     <input
@@ -194,8 +194,8 @@ class ReferralProfile extends React.Component {
                 Communication
               </h3>
             </header>
-            <div className="border-t border-grey-light p-8 px-6 pb-6">
-              <ul className="list-reset block text-center">
+            <div className="border-t border-grey-light p-6">
+              <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
                     <input
@@ -232,8 +232,8 @@ class ReferralProfile extends React.Component {
                 Finances
               </h3>
             </header>
-            <div className="border-t border-grey-light p-8 px-6 pb-6">
-              <ul className="list-reset block text-center">
+            <div className="border-t border-grey-light p-6">
+              <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
                     <input
