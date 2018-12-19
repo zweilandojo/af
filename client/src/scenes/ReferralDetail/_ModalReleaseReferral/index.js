@@ -26,25 +26,25 @@ class Modal_Release_Referral extends React.Component {
     return (
       <div className="app">
         <header className="app-header fixed pin-t w-full bg-white border-b border-grey-light flex">
-          <div className="w-1/3 app-header-back-button">
+          <div className="w-1/4 app-header-back-button">
             <Link to="/referral-needsReview-review" className="block">
               <img src={iconCloseBlue} className="icon icon-close-blue w-4 mr-1 float-left" alt="close modal" />
             </Link>
           </div>
-          <div className="w-1/3 text-center">
+          <div className="w-1/2 text-center">
             <h6 className="text-base font-medium py-6 text-lg leading-tight">
               Release Referral
             </h6>
           </div>
         </header>
 
-        <div className="container mx-auto px-6 mt-24">
+        <div className="container mx-auto px-6 my-24">
           <div className="text-center mb-6">
             <img src={imgReleaseReferral} className="h-48" alt="release" />
           </div>
           <div className="max-w-sm mx-auto">
             <p className="leading-normal text-base mb-8">
-              Releasing a referral will remove them and allow them to be reassigned to another agent.
+              Releasing a referral will remove them and allow them to be reassigned to another agent. This cannot be undone.
             </p>
             <h4 className="text-lg mb-6">Still want to release them? Tell us why:</h4>
 
@@ -131,12 +131,12 @@ class Modal_Release_Referral extends React.Component {
         </div>
 
         <section className="fixed pin-b actions">
-          <div className="container flex items-center mx-auto max-w-sm">
-            <div className="w-1/4">
+          <div className="container flex items-center mx-auto max-w-sm px-4">
+            <div className="w-1/3 ml-10 md:ml-0">
               <Link to="/referral-needsReview-review" className="text-grey-dark underline">Cancel</Link>
             </div>
-            <div className="w-3/4">
-              <Link to="/home-approved-arthur" className="btn btn-red block text-center text-lg">Remove &amp; Reassign</Link>
+            <div className="w-2/3">
+              <Link to="/home-approved-arthur" className="btn btn-red block text-center text-lg">Release</Link>
             </div>
           </div>
         </section>
