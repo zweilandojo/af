@@ -34,7 +34,7 @@ class ReferralProfile extends React.Component {
       <div className="app">
         <div className="review-status-wrapper review-status_approved">
           {/* Begin: Fixed App Header for Referrals */}
-          <AppHeaderReferral userFullName="Arthur Belling" />
+          <AppHeaderReferral userFullName="Sofia Perez" />
           {/* End: Fixed App Header for Referrals */}
 
           <div className="app-banner text-center mb-6 pt-16">
@@ -42,7 +42,7 @@ class ReferralProfile extends React.Component {
               <span className="block w-full text-center mt-2">A</span>
             </div>
             <h2 className="mb-2 text-white">
-              Arthur Belling
+              Sofia Perez
             </h2>
             <h4 className="font-normal text-white text-grey-dark text-sm">
               Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Nov 1, 2018

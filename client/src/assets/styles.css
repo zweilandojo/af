@@ -154,6 +154,10 @@ h1 { font-size: 1.5rem } /* 24px */
   border-color: #EEEEEE;
 }
 
+.border-grey-lighter {
+  border-color: #FAFAFA;
+}
+
 .rounded-lg {
   border-radius: 0.875rem;
 }
@@ -204,7 +208,7 @@ a {
   width: 100%;
   background: #3366ff;
 }
-.btn-green, .btn-blue {
+.btn-green, .btn-blue, .btn-red {
   background: #00CA4C;
   color: white;
   min-height: 48px;
@@ -214,6 +218,9 @@ a {
 }
 .btn-blue {
   background: #3366FF;
+}
+.btn-red {
+  background: #E91E63;
 }
 .btn-social {
   background: white;

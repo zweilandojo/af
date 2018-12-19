@@ -13,7 +13,7 @@ class AppHeaderReferral extends React.Component {
     super(props);
     this.state = {
       referralHeader: null,
-      userFullName: "Arthur Belling"
+      userFullName: "Sofia Perez"
     };
   }
   componentDidMount() {
@@ -53,21 +53,21 @@ class AppHeaderReferral extends React.Component {
           </div>
         </header>
 
-        <header className="app-header-referral fixed flex h-16 bg-white w-full pin-t border-b border-grey-lighter" id="appReferralHeader">
-          <div className="w-1/3 app-header-back-button">
+        <header className="app-header-referral fixed flex h-16 bg-white w-full pin-t border-b border-grey-light" id="appReferralHeader">
+          <div className="w-1/4 app-header-back-button">
             <Link to="/" className="block">
               <img src={iconChevronLeftBlue} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
               {/*<span>Home</span>*/}
             </Link>
           </div>
 
-          <div className="w-1/3 text-center align-middle">
+          <div className="w-1/2 text-center align-middle">
             <div className="mt-6">
               <h4 className="text-black text-lg mb-1 truncate">{this.props.userFullName}</h4>
             </div>
           </div>
 
-          <div className="w-1/3 flex text-center align-middle">
+          <div className="w-1/4 flex text-center align-middle">
             <a href="sms:15125551234" className="py-6 px-4 block text-center text-blue">
               <div className="btn-contact-icon flex items-center">
                 <div className="block w-full flex items-center justify-center">

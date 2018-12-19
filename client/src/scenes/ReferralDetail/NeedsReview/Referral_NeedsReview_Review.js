@@ -29,7 +29,7 @@ class ReferralProfile extends React.Component {
       <div className="app">
         <div className="review-status-wrapper review-status_needs-review">
           {/* Begin: Fixed App Header for Referrals */}
-          <AppHeaderReferral userFullName="Arthur Belling" />
+          <AppHeaderReferral userFullName="Sofia Perez" />
           {/* End: Fixed App Header for Referrals */}
 
           <div className="app-banner text-center mb-6 pt-16">
@@ -106,7 +106,7 @@ class ReferralProfile extends React.Component {
               </h3>
               <div className="flex-1 text-right leading-normal">
                 {/* <Link to="/" className="text-base text-grey-dark mr-6">Hibernate</Link> */}
-                <Link to="/" className="text-base text-grey-dark underline">Release...</Link>
+                <Link to="/modal-release-referral" className="text-base text-grey-dark underline">Release...</Link>
               </div>
             </header>
             <div className="border-t border-grey-light p-6">

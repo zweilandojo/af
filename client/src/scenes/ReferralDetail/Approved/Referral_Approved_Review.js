@@ -13,7 +13,7 @@ const ReferralReviewApproved = () => (
   <div className="app">
     <div className="review-status-wrapper">
       {/* Begin: Fixed App Header for Referrals */}
-      <AppHeaderReferral userFullName="Arthur Belling" />
+      <AppHeaderReferral userFullName="Sofia Perez" />
       {/* End: Fixed App Header for Referrals */}
 
       <div className="app-banner text-center mb-6 pt-16">

@@ -28,6 +28,7 @@ import Referral_Barebones_NeedsReview_Profile from './scenes/ReferralDetail/Bare
 import Referral_Barebones_NeedsReview_Review from './scenes/ReferralDetail/Barebones/Referral_NoName_NeedsReview_Review.js';
 import Referral_Dead_Profile from './scenes/ReferralDetail/Dead/Referral_Dead_Profile.js';
 import Referral_Dead_Review from './scenes/ReferralDetail/Dead/Referral_Dead_Review.js';
+import Modal_Release_Referral from './scenes/ReferralDetail/_ModalReleaseReferral/index.js';
 
 import Support from './scenes/Support/Support.js';
 import Settings from './scenes/Settings/Settings.js';
@@ -62,6 +63,7 @@ class App extends Component {
           <Route path="/referral-barebones-needsReview-review" component={Referral_Barebones_NeedsReview_Review}/>
           <Route path="/referral-dead-profile" component={Referral_Dead_Profile}/>
           <Route path="/referral-dead-review" component={Referral_Dead_Review}/>
+          <Route path="/modal-release-referral" component={Modal_Release_Referral}/>
 
           <Route path="/settings" component={Settings}/>
 
