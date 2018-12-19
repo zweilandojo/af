@@ -21,12 +21,30 @@ class ReferralProfile extends React.Component {
     super(props);
     this.state = {
       isChecked: props.isChecked || false,
+      isHistoryShown: props.isHistoryShown || false,
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleToggleNoteHistory = this.handleToggleNoteHistory.bind(this);
   }
   handleChange() {
     this.setState({ isChecked: !this.state.isChecked })
+  }
+  handleToggleNoteHistory() {
+    // Toggles visiblity of Note History (i.e. Activity List)
+    const activityListContainer = document.getElementById('activity-list-container')
+    const btnShowNotes = document.getElementById('btnShowNotes')
+    btnShowNotes.style.display = 'none'
+    this.setState({ isHistoryShown: !this.state.isHistoryShown })
+    console.log(this);
+    if(this.state.isHistoryShown === false) {
+      activityListContainer.classList.remove("hide")
+      activityListContainer.classList.add("show")
+    } else {
+      activityListContainer.classList.remove("show")
+      activityListContainer.classList.add("hide")
+    }
+
   }
   render() {
     return(
@@ -355,13 +373,17 @@ class ReferralProfile extends React.Component {
               <div className="border-t border-grey-light p-6">
                 <textarea className="input textarea" placeholder="Write a note...">
                 </textarea>
-                <Link to="" className="mt-8 block text-center">
+                <button
+                  className="mt-8 block mx-auto text-blue text-base outline-none"
+                  onClick={this.handleToggleNoteHistory}
+                  id="btnShowNotes"
+                >
                   View Note History
-                </Link>
+                </button>
               </div>
             </section>
 
-            <section className="mb-24">
+            <section className="mb-24 hide" id="activity-list-container">
               <header className="mb-8 mx-6">
                 <h3 className="text-2xl">
                   <img src={iconActivityList} className="w-6" alt="activity list" />
@@ -369,7 +391,6 @@ class ReferralProfile extends React.Component {
                 </h3>
               </header>
               <div className="activity-list px-6">
-
                 <div className="mb-6 activity-list_list-item flex">
                   <div className="mr-4">
                     <div className="avatar avatar-sm">

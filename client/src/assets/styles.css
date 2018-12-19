@@ -896,3 +896,13 @@ fade-in {
   overflow: hidden;
   display: block;
 }
+
+/* Activity List */
+#activity-list-container.show {
+  display: block;
+}
+#activity-list-container.hide {
+  display: none;
+}
+.activity-list {}
+.activity-list_list-item {}
