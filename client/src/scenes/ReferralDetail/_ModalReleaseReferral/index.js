@@ -15,12 +15,28 @@ class Modal_Release_Referral extends React.Component {
     super(props);
     this.state = {
       isChecked: props.isChecked || false,
+      isOtherTextareaShown: props.isOtherTextareaShown || false,
     };
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this)
+    this.handleOtherTextareaToggle = this.handleOtherTextareaToggle.bind(this)
   }
   handleChange() {
     this.setState({ isChecked: !this.state.isChecked })
+  }
+  handleOtherTextareaToggle() {
+
+    // Toggles visiblity of Note History (i.e. Activity List)
+    const otherTextareaContainer = document.getElementById('otherTextareaContainer')
+
+    this.setState({ isOtherTextareaShown: !this.state.isOtherTextareaShown })
+
+    console.log(this);
+    if(this.state.isOtherTextareaShown === false) {
+      otherTextareaContainer.classList.remove("hidden")
+    } else {
+      otherTextareaContainer.classList.add("hidden")
+    }
   }
   render() {
     return (
@@ -116,11 +132,12 @@ class Modal_Release_Referral extends React.Component {
                     className="checkbox float-left"
                     value={this.state.isChecked}
                     onChange={this.handleChange}
+                    onClick={this.handleOtherTextareaToggle}
                   />
                   <span className="slider"></span>
                   <span className="text">Other</span>
                 </label>
-                <div className="mt-4">
+                <div className="mt-4 hidden" id="otherTextareaContainer">
                   <textarea className="input textarea" placeholder="What was the reason?">
                   </textarea>
                 </div>
