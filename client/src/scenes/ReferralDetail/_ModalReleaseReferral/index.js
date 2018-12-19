@@ -59,8 +59,8 @@ class Modal_Release_Referral extends React.Component {
             <img src={imgReleaseReferral} className="h-32 md:h-48" alt="release" />
           </div>
           <div className="max-w-sm mx-auto">
-            <p className="leading-normal text-base mb-8">
-              Releasing a referral will remove them and allow them to be reassigned to another agent. This cannot be undone.
+            <p className="leading-normal text-sm text-grey-dark mb-8">
+              Releasing a referral removes them and allows them to be assigned to another agent. This cannot be undone.
             </p>
             <h4 className="text-lg mb-6">Still want to release them? Tell us why:</h4>
 
@@ -149,12 +149,7 @@ class Modal_Release_Referral extends React.Component {
 
         <section className="fixed pin-b actions">
           <div className="container flex items-center mx-auto max-w-sm px-4">
-            <div className="w-1/3 ml-10 md:ml-0">
-              <Link to="/referral-needsReview-review" className="text-grey-dark underline">Cancel</Link>
-            </div>
-            <div className="w-2/3">
-              <Link to="/home-approved-arthur" className="btn btn-red block text-center text-lg">Release</Link>
-            </div>
+            <Link to="/home-approved-arthur" className="btn btn-red block text-center text-lg">Release</Link>
           </div>
         </section>
       </div>

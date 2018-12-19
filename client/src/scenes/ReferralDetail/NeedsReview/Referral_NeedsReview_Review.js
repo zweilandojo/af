@@ -334,7 +334,7 @@ class ReferralProfile extends React.Component {
             <section className="mb-12">
               <header className="mb-5 mx-4">
                 <h3 className="text-2xl">
-                  Projected close month
+                  Projected closing month
                 </h3>
               </header>
               <div className="border-t border-grey-light py-6 px-4">
