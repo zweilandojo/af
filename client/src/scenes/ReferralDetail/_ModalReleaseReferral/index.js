@@ -56,7 +56,7 @@ class Modal_Release_Referral extends React.Component {
 
         <div className="container mx-auto px-6 my-24">
           <div className="text-center mb-6">
-            <img src={imgReleaseReferral} className="h-48" alt="release" />
+            <img src={imgReleaseReferral} className="h-32 md:h-48" alt="release" />
           </div>
           <div className="max-w-sm mx-auto">
             <p className="leading-normal text-base mb-8">
