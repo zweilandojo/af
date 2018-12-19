@@ -9,7 +9,7 @@ import imgReleaseReferral from '../../../assets/images/illustrations/release-ref
 
 class Modal_Release_Referral extends React.Component {
   componentDidMount() {
-    //window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
   constructor(props) {
     super(props);
