@@ -34,10 +34,10 @@ class ReferralProfile extends React.Component {
 
           <div className="app-banner text-center mb-6 pt-16">
             <div className="avatar avatar-lg flex items-center">
-              <span className="block w-full text-center mt-2">A</span>
+              <span className="block w-full text-center mt-2">S</span>
             </div>
             <h2 className="mb-2 text-white">
-              Arthur Belling
+              Sofia Perez
             </h2>
             <h4 className="font-normal text-white text-grey-dark text-sm">
               Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Nov 1, 2018
@@ -100,7 +100,7 @@ class ReferralProfile extends React.Component {
         <main className="container mx-auto px-2 pb-24 max-w-lg">
 
           <section className="mt-10 mb-10">
-            <header className="flex">
+            <header className="flex mx-6">
               <h3 className="mb-4 text-2xl flex-1">
                 Status
               </h3>
@@ -109,7 +109,7 @@ class ReferralProfile extends React.Component {
                 <Link to="/" className="text-base text-grey-dark underline">Release...</Link>
               </div>
             </header>
-            <div className="border-t border-grey-light py-6">
+            <div className="border-t border-grey-light p-6">
               <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -189,12 +189,12 @@ class ReferralProfile extends React.Component {
           </section>
 
           <section className="mb-10">
-            <header className="mb-5">
+            <header className="mb-5 mx-6">
               <h3 className="text-2xl">
                 Communication
               </h3>
             </header>
-            <div className="border-t border-grey-light py-6">
+            <div className="border-t border-grey-light p-6">
               <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -227,12 +227,12 @@ class ReferralProfile extends React.Component {
           </section>
 
           <section className="mb-10">
-            <header className="mb-4">
+            <header className="mb-5 mx-6">
               <h3 className="text-2xl">
                 Finances
               </h3>
             </header>
-            <div className="border-t border-grey-light py-6">
+            <div className="border-t border-grey-light p-6">
               <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -313,12 +313,12 @@ class ReferralProfile extends React.Component {
             */}
 
             <section className="mb-10">
-              <header className="mb-5">
+              <header className="mb-5 mx-6">
                 <h3 className="text-2xl">
                   Projected close month
                 </h3>
               </header>
-              <div className="border-t border-grey-light py-6">
+              <div className="border-t border-grey-light p-6">
                 <select className="input select" placeholder="Select a month...">
                   <option defaultValue>Select a month...</option>
                   <option>I don’t know</option>
@@ -341,12 +341,12 @@ class ReferralProfile extends React.Component {
             </section>
 
             <section className="mb-10">
-              <header className="mb-5">
+              <header className="mb-5 mx-6">
                 <h3 className="text-2xl">
                   Notes
                 </h3>
               </header>
-              <div className="border-t border-grey-light py-6">
+              <div className="border-t border-grey-light p-6">
                 <textarea className="input textarea" placeholder="Write a note...">
                 </textarea>
                 <Link to="" className="mt-8 block text-center">

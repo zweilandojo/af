@@ -240,7 +240,7 @@ a {
   cursor: pointer;
   font-size: 1rem;
   line-height: 24px;
-  padding: .75rem 1rem;
+  padding: .5rem 1rem;
   display: inline-block;
   position: relative;
 }
@@ -348,8 +348,7 @@ input:checked + .slider:before {
   display: block;
   border: 2px solid #eee;
   border-radius: 0.4375rem;
-  padding: .875rem 1rem;
-  min-height: 56px;
+  padding: .75rem 1rem;
 }
 .textarea {
   min-height: 8rem;
@@ -357,10 +356,10 @@ input:checked + .slider:before {
 }
 select {
   background: white;
-  background-image: url(./images/icon-arrow-down-circle.svg);
+  background-image: url(./images/icons/icon-chevron-down-slate.png);
   background-repeat: no-repeat;
   background-position: 96% 50%;
-  border-radius: 56px;
+  background-size: 16px;
 }
 .input-radio {
   background: #fff;
@@ -768,13 +767,14 @@ fade-in {
   min-width: 22rem;
   max-width: 90%;
   background-color: #212121;
+  background-color: rgba(33,33,33, .9);
   color: #fff;
   text-align: center;
   border-radius: 2rem;
   padding: 1.5rem 2rem;
   position: fixed;
   z-index: 1;
-  bottom: 3rem;
+  bottom: 2rem;
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.04), 0 0 16px 0 rgba(0,0,0,0.08);
   left: 50%;
   transform: translateX(-50%);
@@ -789,18 +789,18 @@ fade-in {
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
   from {bottom: 0; opacity: 0;}
-  to {bottom: 3rem; opacity: 1;}
+  to {bottom: 2rem; opacity: 1;}
 }
 @keyframes fadein {
   from {bottom: 0; opacity: 0;}
-  to {bottom: 3rem; opacity: 1;}
+  to {bottom: 2rem; opacity: 1;}
 }
 @-webkit-keyframes fadeout {
-  from {bottom: 3rem; opacity: 1;}
+  from {bottom: 2rem; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
 @keyframes fadeout {
-  from {bottom: 3rem; opacity: 1;}
+  from {bottom: 2rem; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
 

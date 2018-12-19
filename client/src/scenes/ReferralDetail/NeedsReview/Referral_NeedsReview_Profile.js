@@ -24,10 +24,10 @@ class ReferralProfile extends React.Component {
 
           <div className="app-banner text-center mb-6 pt-16">
             <div className="avatar avatar-lg flex items-center">
-              <span className="block w-full text-center mt-2">A</span>
+              <span className="block w-full text-center mt-2">S</span>
             </div>
             <h2 className="mb-2 text-white">
-              Arthur Belling
+              Sofia Perez
             </h2>
             <h4 className="font-normal text-white text-grey-dark text-sm">
               Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Nov 1, 2018
@@ -88,13 +88,13 @@ class ReferralProfile extends React.Component {
       </div>
 
         <main className="container mx-auto px-2 max-w-lg">
-          <section className="pb-6 mb-6 mt-10">
-              <header className="mb-4">
+          <section className="mb-10 mt-10">
+              <header className="mb-6 mx-6">
                 <h3 className="text-2xl">
                   About
                 </h3>
               </header>
-              <div className="border-t border-grey-light py-6">
+              <div className="border-t border-grey-light p-6">
                 <ul className="text-base leading-normal list-reset">
                   <li className="border-b border-grey-light flex pb-2">
                     <div className="w-1/2 text-grey-dark">
@@ -188,18 +188,19 @@ class ReferralProfile extends React.Component {
               </div>
             </section>
 
-            <section className="pb-6">
-              <header className="mb-4">
-                <h3 className="mb-4 ml-6 text-2xl">
-                  OJO handoff notes
+            <section className="mb-10">
+              <header className="mb-5 mx-6">
+                <h3 className="text-2xl">
+                  Handoff notes
                 </h3>
               </header>
-              <div className="border-t border-grey-light p-8 px-6">
-                <p className="text-grey-dark text-base mb-8">
-                  Last updated Aug 10, 2018 2:15 PM
+              <div className="border-t border-grey-light p-6">
+                <p className="mb-2 leading-normal">
+                  <strong className="text-black font-semibold">OJO</strong>
+                  <span className="text-sm text-grey-dark ml-4">Aug 10, 2018 at 2:15 PM</span>
                 </p>
                 <p className="text-black text-base leading-normal">
-                  Arthur would like to speak about a home purchase.<br/>
+                  Sofia would like to speak about a home purchase.<br/>
                   Best time to contact: Evening (6-9 pm)<br/>
                   Area: Hyde Park, Central East Side, Southeast Austin<br/>
                   First Time Buyer: Y<br/>
@@ -213,7 +214,7 @@ class ReferralProfile extends React.Component {
             <section className="pb-6 mb-6">
               <header className="mb-4">
                 <h3 className="mb-4 ml-6 text-2xl">
-                  Arthur’s favorites
+                  Sofia’s favorites
                 </h3>
               </header>
               <div className="border-t border-grey-light p-8 px-6">

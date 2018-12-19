@@ -41,11 +41,11 @@ class HomeNeedsReview extends React.Component {
             <div>
               <Link to="/referral-needsReview-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
-                  <div className="avatar-initials">A</div>
+                  <div className="avatar-initials">S</div>
                 </div>
                 <div className="flex-initial ml-4">
                   <span className="text-lg block mb-1">
-                    Arthur Belling
+                    Sofia Perez
                   </span>
                   <div>
                     <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />

@@ -43,7 +43,7 @@ class HomeNeedsReview extends React.Component {
             <div className="border border-grey-light p-8 rounded-lg">
               <div className="clearfix">
                 <p className="text-grey-dark float-left text-base mb-6">
-                  Please review by Wed, Nov 7
+                  Please review by Wed, Dec 27
                 </p>
               </div>
 
@@ -51,11 +51,11 @@ class HomeNeedsReview extends React.Component {
             <div>
               <Link to="/referral-approved-arthur-profile" className="py-4 border-b border-grey-light flex">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-green-light text-white">
-                  <div className="avatar-initials">A</div>
+                  <div className="avatar-initials">S</div>
                 </div>
                 <div className="flex-initial ml-4">
                   <span className="text-lg block mb-1">
-                    Arthur Belling
+                    Sofia Perez
                   </span>
                   <div>
                     <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
@@ -147,7 +147,7 @@ class HomeNeedsReview extends React.Component {
 
         <div id="snackbar" className="shadow">
           <span className="inline-block mr-2" aria-label="thumbsup" role="img">👍</span>
-          Arthur has been updated
+          Sofia has been updated
         </div>
       </div>
     )
