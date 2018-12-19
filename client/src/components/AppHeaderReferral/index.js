@@ -41,6 +41,10 @@ class AppHeaderReferral extends React.Component {
   componentWillUnmount() {
     this.referralHeader = null;
   }
+  handleScrollTop() {
+    // While fixed header is visible, user can scroll to top by clicking on Page Title (i.e. User's Full Name)
+    window.scroll({top: 0, left: 0, behavior: 'smooth' })
+  }
   render() {
     return (
       <div>
@@ -57,13 +61,17 @@ class AppHeaderReferral extends React.Component {
           <div className="w-1/4 app-header-back-button">
             <Link to="/" className="block">
               <img src={iconChevronLeftBlue} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
-              {/*<span>Home</span>*/}
             </Link>
           </div>
 
           <div className="w-1/2 text-center align-middle">
             <div className="mt-6">
-              <h4 className="text-black text-lg mb-1 truncate">{this.props.userFullName}</h4>
+              <h4
+                className="text-black text-lg mb-1 truncate"
+                onClick={this.handleScrollTop}
+              >
+                {this.props.userFullName}
+              </h4>
             </div>
           </div>
 

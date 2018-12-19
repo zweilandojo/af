@@ -45,9 +45,6 @@ class ReferralProfile extends React.Component {
       activityListContainer.classList.add("hide")
     }
   }
-  handleScrollTop() {
-    console.log('scroll top')
-  }
   render() {
     return(
       <div className="app">
@@ -392,7 +389,7 @@ class ReferralProfile extends React.Component {
                   <span className="inline-block ml-4">Activity</span>
                 </h3>
               </header>
-              <div className="activity-list px-6">
+              <div className="activity-list px-4">
                 <div className="mb-6 activity-list_list-item flex">
                   <div className="mr-4">
                     <div className="avatar avatar-sm">
