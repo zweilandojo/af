@@ -256,37 +256,37 @@ class ReferralProfile extends React.Component {
             <div className="border-t border-grey-light py-6 px-4">
               <div className="mb-2">
                 <label className="text-base input-radio-container">Pre-approved
-                  <input type="radio" className="input-radio mr-2" name="relationship" />
+                  <input type="radio" className="input-radio mr-2" name="finances" />
                   <span className="checkmark"></span>
                 </label>
               </div>
               <div className="mb-2">
                 <label className="text-base input-radio-container">Shopping Lenders
-                  <input type="radio" className="input-radio mr-2" name="relationship" />
+                  <input type="radio" className="input-radio mr-2" name="finances" />
                   <span className="checkmark"></span>
                 </label>
               </div>
               <div className="mb-2">
                 <label className="text-base input-radio-container">Repairing Finances
-                  <input type="radio" className="input-radio mr-2" name="relationship" />
+                  <input type="radio" className="input-radio mr-2" name="finances" />
                   <span className="checkmark"></span>
                 </label>
               </div>
               <div className="mb-2">
                 <label className="text-base input-radio-container">
-                  <input type="radio" checked="true" className="input-radio mr-2" name="relationship" />
+                  <input type="radio" checked="true" className="input-radio mr-2" name="finances" />
                   <span className="checkmark"></span>
                 </label>
               </div>
               <div className="mb-2">
                 <label className="text-base input-radio-container">Unable to Buy
-                  <input type="radio" className="input-radio mr-2" name="relationship" />
+                  <input type="radio" className="input-radio mr-2" name="finances" />
                   <span className="checkmark"></span>
                 </label>
               </div>
               <div className="mb-2">
                 <label className="text-base input-radio-container">Unknown
-                  <input type="radio" className="input-radio mr-2" name="relationship" />
+                  <input type="radio" className="input-radio mr-2" name="finances" />
                   <span className="checkmark"></span>
                 </label>
               </div>
