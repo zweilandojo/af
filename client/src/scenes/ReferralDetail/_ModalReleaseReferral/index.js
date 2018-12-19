@@ -64,7 +64,7 @@ class Modal_Release_Referral extends React.Component {
             </p>
             <h4 className="text-lg mb-6">Still want to release them? Tell us why:</h4>
 
-            <ul className="list-reset block">
+            <ul className="list-reset block pb-20">
               <li className="btn-stroked mr-1 mb-3 w-full">
                 <label className="w-full text-center">
                   <input
