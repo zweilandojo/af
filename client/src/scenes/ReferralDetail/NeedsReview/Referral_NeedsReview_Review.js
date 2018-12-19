@@ -99,7 +99,7 @@ class ReferralProfile extends React.Component {
 
         <main className="container mx-auto px-2 pb-24 max-w-lg">
 
-          <section className="mt-10 mb-10">
+          <section className="mt-10 mb-8">
             <header className="flex mx-6">
               <h3 className="mb-4 text-2xl flex-1">
                 Status
@@ -188,7 +188,7 @@ class ReferralProfile extends React.Component {
             </div>
           </section>
 
-          <section className="mb-10">
+          <section className="mb-8">
             <header className="mb-5 mx-6">
               <h3 className="text-2xl">
                 Communication
@@ -226,7 +226,7 @@ class ReferralProfile extends React.Component {
             </div>
           </section>
 
-          <section className="mb-10">
+          <section className="mb-8">
             <header className="mb-5 mx-6">
               <h3 className="text-2xl">
                 Finances
@@ -312,7 +312,7 @@ class ReferralProfile extends React.Component {
             </section>
             */}
 
-            <section className="mb-10">
+            <section className="mb-8">
               <header className="mb-5 mx-6">
                 <h3 className="text-2xl">
                   Projected close month
@@ -340,7 +340,7 @@ class ReferralProfile extends React.Component {
               </div>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-8">
               <header className="mb-5 mx-6">
                 <h3 className="text-2xl">
                   Notes
@@ -355,7 +355,7 @@ class ReferralProfile extends React.Component {
               </div>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-24">
             </section>
 
             <section className="fixed pin-b actions">
