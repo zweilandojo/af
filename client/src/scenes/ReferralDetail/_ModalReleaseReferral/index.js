@@ -110,7 +110,7 @@ class Modal_Release_Referral extends React.Component {
                     onChange={this.handleChange}
                   />
                   <span className="slider"></span>
-                  <span className="text">Wrong service area</span>
+                  <span className="text">Outside my area</span>
                 </label>
               </li>
               <li className="btn-stroked mr-1 mb-3 w-full">
@@ -122,7 +122,7 @@ class Modal_Release_Referral extends React.Component {
                     onChange={this.handleChange}
                   />
                   <span className="slider"></span>
-                  <span className="text">Not interested</span>
+                  <span className="text">No longer looking</span>
                 </label>
               </li>
               <li className="btn-stroked mr-1 mb-3 w-full">

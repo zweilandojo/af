@@ -142,7 +142,7 @@ class ReferralProfile extends React.Component {
                       checked="true"
                     />
                     <span className="slider"></span>
-                    <span className="text">Talked</span>
+                    <span className="text">Connected</span>
                   </label>
                 </li>
                 <li className="btn-stroked mr-1 mb-3">
@@ -166,7 +166,7 @@ class ReferralProfile extends React.Component {
                       onChange={this.handleChange}
                     />
                     <span className="slider"></span>
-                    <span className="text">Seeing Homes</span>
+                    <span className="text">Showing Homes</span>
                   </label>
                 </li>
                 <li className="btn-stroked mr-1 mb-3">
@@ -254,44 +254,42 @@ class ReferralProfile extends React.Component {
               </h3>
             </header>
             <div className="border-t border-grey-light py-6 px-4">
-              <ul className="list-reset block">
-                <li className="btn-stroked mr-1 mb-3">
-                  <label className="">
-                    <input
-                      type="checkbox"
-                      className="checkbox float-left"
-                      value={this.state.isChecked}
-                      onChange={this.handleChange}
-                    />
-                    <span className="slider"></span>
-                    <span className="text">Pre-Approved</span>
-                  </label>
-                </li>
-                <li className="btn-stroked mr-1 mb-3">
-                  <label className="">
-                    <input
-                      type="checkbox"
-                      className="checkbox float-left"
-                      value={this.state.isChecked}
-                      onChange={this.handleChange}
-                    />
-                    <span className="slider"></span>
-                    <span className="text">Good Credit</span>
-                  </label>
-                </li>
-                <li className="btn-stroked mr-1 mb-3">
-                  <label className="">
-                    <input
-                      type="checkbox"
-                      className="checkbox float-left"
-                      value={this.state.isChecked}
-                      onChange={this.handleChange}
-                    />
-                    <span className="slider"></span>
-                    <span className="text">Credit Issues</span>
-                  </label>
-                </li>
-              </ul>
+              <div className="mb-2">
+                <label className="text-base input-radio-container">Pre-approved
+                  <input type="radio" className="input-radio mr-2" name="relationship" />
+                  <span className="checkmark"></span>
+                </label>
+              </div>
+              <div className="mb-2">
+                <label className="text-base input-radio-container">Shopping Lenders
+                  <input type="radio" className="input-radio mr-2" name="relationship" />
+                  <span className="checkmark"></span>
+                </label>
+              </div>
+              <div className="mb-2">
+                <label className="text-base input-radio-container">Repairing Finances
+                  <input type="radio" className="input-radio mr-2" name="relationship" />
+                  <span className="checkmark"></span>
+                </label>
+              </div>
+              <div className="mb-2">
+                <label className="text-base input-radio-container">
+                  <input type="radio" checked="true" className="input-radio mr-2" name="relationship" />
+                  <span className="checkmark"></span>
+                </label>
+              </div>
+              <div className="mb-2">
+                <label className="text-base input-radio-container">Unable to Buy
+                  <input type="radio" className="input-radio mr-2" name="relationship" />
+                  <span className="checkmark"></span>
+                </label>
+              </div>
+              <div className="mb-2">
+                <label className="text-base input-radio-container">Unknown
+                  <input type="radio" className="input-radio mr-2" name="relationship" />
+                  <span className="checkmark"></span>
+                </label>
+              </div>
             </div>
           </section>
 
