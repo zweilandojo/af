@@ -188,6 +188,14 @@ a {
   font-size: 1.75rem;
   margin: 0 auto 1rem;
 }
+.avatar-sm {
+  width: 32px;
+  height: 32px;
+  background: #eee;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+}
 
 
 /*

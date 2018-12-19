@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 import iconChatWhite from '../../../assets/images/icon-chat-w.png';
 import iconPhoneWhite from '../../../assets/images/icon-phone-w.png';
 import iconEmailWhite from '../../../assets/images/icon-email-w.png';
+import iconActivityList from '../../../assets/images/icons/icon-activity-list.png';
+import iconNoteList from '../../../assets/images/icons/icon-note-list.png';
+import logoBlueCircle from '../../../assets/images/logo-ojo-bg-blue.png';
+
 
 // Components
 import AppHeaderReferral from '../../../components/AppHeaderReferral/index.js';
@@ -343,7 +347,9 @@ class ReferralProfile extends React.Component {
             <section className="mb-8">
               <header className="mb-5 mx-6">
                 <h3 className="text-2xl">
-                  Notes
+
+                <img src={iconNoteList} className="w-6" alt="note list" />
+                <span className="inline-block ml-4">Notes</span>
                 </h3>
               </header>
               <div className="border-t border-grey-light p-6">
@@ -356,6 +362,89 @@ class ReferralProfile extends React.Component {
             </section>
 
             <section className="mb-24">
+              <header className="mb-6 mx-6">
+                <h3 className="text-2xl">
+                  <img src={iconActivityList} className="w-6" alt="activity list" />
+                  <span className="inline-block ml-4">Activity</span>
+                </h3>
+              </header>
+              <div className="activity-list px-6">
+
+                <div className="mb-6 activity-list_list-item flex">
+                  <div className="mr-4">
+                    <div className="avatar avatar-sm">
+                      <span className="block w-full text-center mt-1">S</span>
+                    </div>
+                  </div>
+                  <div className="">
+                    <p className="mb-1 leading-normal">
+                      <strong className="text-black text-lg font-medium">Sandra</strong>
+                      <span className="text-sm text-grey-dark ml-2">2 hours ago</span>
+                    </p>
+                    <p className="text-black text-base leading-normal">
+                      Sofia is looking with her partner Kareem
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mb-6 activity-list_list-item flex">
+                  <div className="mr-4">
+                    <div className="avatar avatar-sm">
+                      <span className="block w-full text-center mt-1">S</span>
+                    </div>
+                  </div>
+                  <div className="">
+                    <p className="mb-1 leading-normal">
+                      <strong className="text-black text-lg font-medium">Sandra</strong>
+                      <span className="text-sm text-grey-dark ml-2">4 hours ago</span>
+                    </p>
+                    <p className="text-black text-base leading-normal">
+                      I sent her some properties to view. She will let me know which ones she is interested in.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mb-6 activity-list_list-item flex">
+                  <div className="mr-4">
+                    <div className="avatar avatar-sm">
+                      <span className="block w-full text-center mt-1">S</span>
+                    </div>
+                  </div>
+                  <div className="">
+                    <p className="mb-1 leading-normal">
+                      <strong className="text-black text-lg font-medium">Sandra</strong>
+                      <span className="text-sm text-grey-dark ml-2">Dec 11, 2018 at 4:32 PM</span>
+                    </p>
+                    <p className="text-black text-base leading-normal">
+                      Talked with Sofia this morning. Planning to meet next Tuesday.
+                    </p>
+                  </div>
+                </div>
+
+
+                <div className="mb-6 activity-list_list-item flex">
+                  <div className="mr-4">
+                    <div className="avatar avatar-sm">
+                      <img src={logoBlueCircle} className="w-8 no-stretch" alt="OJO Logo" />
+                    </div>
+                  </div>
+                  <div className="">
+                    <p className="mb-1 leading-normal">
+                      <strong className="text-black text-lg font-medium">OJO</strong>
+                      <span className="text-sm text-grey-dark ml-2">Dec 1, 2018 at 2:15 PM</span>
+                    </p>
+                    <p className="text-black text-base leading-normal">
+                      Sofia would like to speak about a home purchase.<br />
+                      Best time to contact: Evening (6-9 pm)<br />
+                      Area: Hyde Park, Central East Side, Southeast Austin<br />
+                      First Time Buyer: Y<br />
+                      Property Inquired:<br />
+                      1158 Ridgeway Dr #A<br />
+                      Austin, TX 78702
+                    </p>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <section className="fixed pin-b actions">
