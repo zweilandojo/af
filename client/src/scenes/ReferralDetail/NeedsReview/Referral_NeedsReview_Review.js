@@ -261,13 +261,13 @@ class ReferralProfile extends React.Component {
                 </label>
               </div>
               <div className="mb-2">
-                <label className="text-base input-radio-container">Shopping Lenders
+                <label className="text-base input-radio-container">Moving forward {/*Shopping Lenders*/}
                   <input type="radio" className="input-radio mr-2" name="finances" />
                   <span className="checkmark"></span>
                 </label>
               </div>
               <div className="mb-2">
-                <label className="text-base input-radio-container">Repairing Finances
+                <label className="text-base input-radio-container">Repairing finances
                   <input type="radio" className="input-radio mr-2" name="finances" />
                   <span className="checkmark"></span>
                 </label>
@@ -279,7 +279,7 @@ class ReferralProfile extends React.Component {
                 </label>
               </div>
               <div className="mb-2">
-                <label className="text-base input-radio-container">Unable to Buy
+                <label className="text-base input-radio-container">Unable to buy
                   <input type="radio" className="input-radio mr-2" name="finances" />
                   <span className="checkmark"></span>
                 </label>
