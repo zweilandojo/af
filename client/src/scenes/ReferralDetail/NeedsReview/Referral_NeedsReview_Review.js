@@ -362,7 +362,7 @@ class ReferralProfile extends React.Component {
             </section>
 
             <section className="mb-24">
-              <header className="mb-6 mx-6">
+              <header className="mb-8 mx-6">
                 <h3 className="text-2xl">
                   <img src={iconActivityList} className="w-6" alt="activity list" />
                   <span className="inline-block ml-4">Activity</span>
