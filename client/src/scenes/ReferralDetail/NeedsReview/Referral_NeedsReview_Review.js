@@ -210,7 +210,7 @@ class ReferralProfile extends React.Component {
           </section>
 
           <section className="mb-8">
-            <header className="mb-5 mx-3">
+            <header className="mb-4 mx-3">
               <h3 className="text-2xl">
                 Communication
               </h3>
@@ -248,7 +248,7 @@ class ReferralProfile extends React.Component {
           </section>
 
           <section className="mb-8">
-            <header className="mb-5 mx-3">
+            <header className="mb-4 mx-3">
               <h3 className="text-2xl">
                 Pre-Approval
               </h3>
@@ -350,7 +350,7 @@ class ReferralProfile extends React.Component {
             */}
 
             <section className="mb-12">
-              <header className="mb-5 mx-3">
+              <header className="mb-4 mx-3">
                 <h3 className="text-2xl">
                   Projected closing month
                 </h3>
@@ -378,7 +378,7 @@ class ReferralProfile extends React.Component {
             </section>
 
             <section className="mb-8">
-              <header className="mb-5 mx-3">
+              <header className="mb-4 mx-3">
                 <h3 className="text-2xl">
 
                 <img src={iconNoteList} className="w-6" alt="note list" />

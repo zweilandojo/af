@@ -27,7 +27,7 @@ class ReferralProfile extends React.Component {
             <div className="avatar avatar-lg flex items-center">
               <span className="block w-full text-center mt-2">S</span>
             </div>
-            <h2 className="mb-2 text-white">
+            <h2 className="mb-4 text-white">
               Sofia Perez
             </h2>
             <h4 className="font-normal text-white text-grey-dark text-sm">
@@ -90,7 +90,7 @@ class ReferralProfile extends React.Component {
 
         <main className="container mx-auto px-2 max-w-lg">
           <section className="mb-10 mt-10">
-              <header className="mb-6 mx-3">
+              <header className="mb-4 mx-3">
                 <h3 className="text-2xl">
                   About
                 </h3>
@@ -189,8 +189,8 @@ class ReferralProfile extends React.Component {
               </div>
             </section>
 
-            <section className="mb-10">
-              <header className="mb-5 mx-3">
+            <section className="mb-6">
+              <header className="mb-4 mx-3">
                 <h3 className="text-2xl">
                   Handoff notes
                 </h3>
@@ -225,7 +225,7 @@ class ReferralProfile extends React.Component {
 
             <section className="pb-6 mb-6">
               <header className="mb-4">
-                <h3 className="mb-4 ml-6 text-2xl">
+                <h3 className="mx-3 text-2xl">
                   Sofia’s favorites
                 </h3>
               </header>
