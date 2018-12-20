@@ -121,7 +121,7 @@ class ReferralProfile extends React.Component {
         <main className="container mx-auto px-2 pb-24 max-w-lg">
 
           <section className="mt-10 mb-8">
-            <header className="flex mx-4">
+            <header className="flex mx-3">
               <h3 className="mb-4 text-2xl flex-1">
                 Status
               </h3>
@@ -130,7 +130,7 @@ class ReferralProfile extends React.Component {
                 <Link to="/modal-release-referral" className="text-base text-grey-dark underline">Release...</Link>
               </div>
             </header>
-            <div className="border-t border-grey-light py-6 px-4">
+            <div className="border-t border-grey-light py-6 px-3">
               <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -210,12 +210,12 @@ class ReferralProfile extends React.Component {
           </section>
 
           <section className="mb-8">
-            <header className="mb-5 mx-4">
+            <header className="mb-5 mx-3">
               <h3 className="text-2xl">
                 Communication
               </h3>
             </header>
-            <div className="border-t border-grey-light py-6 px-4">
+            <div className="border-t border-grey-light py-6 px-3">
               <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -248,12 +248,12 @@ class ReferralProfile extends React.Component {
           </section>
 
           <section className="mb-8">
-            <header className="mb-5 mx-4">
+            <header className="mb-5 mx-3">
               <h3 className="text-2xl">
                 Pre-Approval
               </h3>
             </header>
-            <div className="border-t border-grey-light py-6 px-4">
+            <div className="border-t border-grey-light py-6 px-3">
               <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -350,12 +350,12 @@ class ReferralProfile extends React.Component {
             */}
 
             <section className="mb-12">
-              <header className="mb-5 mx-4">
+              <header className="mb-5 mx-3">
                 <h3 className="text-2xl">
                   Projected closing month
                 </h3>
               </header>
-              <div className="border-t border-grey-light py-6 px-4">
+              <div className="border-t border-grey-light py-6 px-3">
                 <select className="input select" placeholder="Select a month...">
                   <option defaultValue>Select a month...</option>
                   <option>I don’t know</option>
@@ -378,14 +378,14 @@ class ReferralProfile extends React.Component {
             </section>
 
             <section className="mb-8">
-              <header className="mb-5 mx-4">
+              <header className="mb-5 mx-3">
                 <h3 className="text-2xl">
 
                 <img src={iconNoteList} className="w-6" alt="note list" />
                 <span className="inline-block ml-4">Notes</span>
                 </h3>
               </header>
-              <div className="border-t border-grey-light py-6 px-4">
+              <div className="border-t border-grey-light py-6 px-3">
                 <textarea className="input textarea" placeholder="Write a note...">
                 </textarea>
                 <button
@@ -399,13 +399,13 @@ class ReferralProfile extends React.Component {
             </section>
 
             <section className="mb-24 hide" id="activity-list-container">
-              <header className="mb-8 mx-4">
+              <header className="mb-8 mx-3">
                 <h3 className="text-2xl">
                   <img src={iconActivityList} className="w-6" alt="activity list" />
                   <span className="inline-block ml-4">Activity</span>
                 </h3>
               </header>
-              <div className="activity-list px-4">
+              <div className="activity-list px-3">
                 <div className="mb-6 activity-list_list-item flex">
                   <div className="mr-4">
                     <div className="avatar avatar-sm">
@@ -456,7 +456,6 @@ class ReferralProfile extends React.Component {
                     </p>
                   </div>
                 </div>
-
 
                 <div className="mb-6 activity-list_list-item flex">
                   <div className="mr-4">

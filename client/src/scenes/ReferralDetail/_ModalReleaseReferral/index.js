@@ -58,11 +58,11 @@ class Modal_Release_Referral extends React.Component {
           <div className="text-center mb-6">
             <img src={imgReleaseReferral} className="h-32 md:h-48" alt="release" />
           </div>
-          <div className="max-w-sm mx-auto">
+          <div className="max-w-sm mx-auto text-center">
             <p className="leading-normal text-sm text-grey-dark mb-8">
               Releasing will remove and reassign <strong className="font-medium text-black">Sofia Perez</strong>. This cannot be undone.
             </p>
-            <h4 className="text-lg mb-6">Still want to release them? Tell us why:</h4>
+            <h4 className="text-lg mb-6">Why didn’t they work out?</h4>
 
             <ul className="list-reset block pb-20">
               <li className="btn-stroked mr-1 mb-3 w-full">

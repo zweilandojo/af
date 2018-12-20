@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import iconChatWhite from '../../../assets/images/icon-chat-w.png';
 import iconPhoneWhite from '../../../assets/images/icon-phone-w.png';
 import iconEmailWhite from '../../../assets/images/icon-email-w.png';
+import logoBlueCircle from '../../../assets/images/logo-ojo-bg-blue.png';
 
 // Components
 import HomeListItem from '../../../components/HomeListItem/index.js';
@@ -89,12 +90,12 @@ class ReferralProfile extends React.Component {
 
         <main className="container mx-auto px-2 max-w-lg">
           <section className="mb-10 mt-10">
-              <header className="mb-6 mx-6">
+              <header className="mb-6 mx-3">
                 <h3 className="text-2xl">
                   About
                 </h3>
               </header>
-              <div className="border-t border-grey-light p-6">
+              <div className="border-t border-grey-light py-6 px-3">
                 <ul className="text-base leading-normal list-reset">
                   <li className="border-b border-grey-light flex pb-2">
                     <div className="w-1/2 text-grey-dark">
@@ -189,25 +190,36 @@ class ReferralProfile extends React.Component {
             </section>
 
             <section className="mb-10">
-              <header className="mb-5 mx-6">
+              <header className="mb-5 mx-3">
                 <h3 className="text-2xl">
                   Handoff notes
                 </h3>
               </header>
-              <div className="border-t border-grey-light p-6">
-                <p className="mb-2 leading-normal">
-                  <strong className="text-black font-semibold">OJO</strong>
-                  <span className="text-sm text-grey-dark ml-4">Aug 10, 2018 at 2:15 PM</span>
-                </p>
-                <p className="text-black text-base leading-normal">
-                  Sofia would like to speak about a home purchase.<br/>
-                  Best time to contact: Evening (6-9 pm)<br/>
-                  Area: Hyde Park, Central East Side, Southeast Austin<br/>
-                  First Time Buyer: Y<br/>
-                  Property Inquired:<br/>
-                  1158 Ridgeway Dr #A<br/>
-                  Austin, TX 78702
-                </p>
+              <div className="border-t border-grey-light py-6 px-3">
+                <div className="activity-list">
+                  <div className="mb-6 activity-list_list-item flex">
+                    <div className="mr-4">
+                      <div className="avatar avatar-sm">
+                        <img src={logoBlueCircle} className="w-8 no-stretch" alt="OJO Logo" />
+                      </div>
+                    </div>
+                    <div className="">
+                      <p className="mb-1 leading-normal">
+                        <strong className="text-black text-lg font-medium">OJO</strong>
+                        <span className="text-sm text-grey-dark ml-2">Dec 1, 2018 at 2:15 PM</span>
+                      </p>
+                      <p className="text-black text-base leading-normal">
+                        Sofia would like to speak about a home purchase.<br />
+                        Best time to contact: Evening (6-9 pm)<br />
+                        Area: Hyde Park, Central East Side, Southeast Austin<br />
+                        First Time Buyer: Y<br />
+                        Property Inquired:<br />
+                        1158 Ridgeway Dr #A<br />
+                        Austin, TX 78702
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
 
