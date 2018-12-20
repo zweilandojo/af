@@ -24,7 +24,7 @@ class HomeNeedsReview extends React.Component {
         <AppHeader />
         <AgentHomeBanner firstName="Matt" temperature="74" />
 
-        <main className="container mx-auto px-2 max-w-lg">
+        <main className="container mx-auto px-5 max-w-lg">
           <div className="referral-tracking clearfix mb-12">
             <h3 className="mb-3 text-2xl">
               Referrals
