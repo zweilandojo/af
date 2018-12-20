@@ -120,12 +120,12 @@ class ReferralProfile extends React.Component {
 
         <main className="container mx-auto px-5 pb-24 max-w-lg">
 
-          <section className="mt-10 mb-8">
-            <header className="flex">
-              <h3 className="mb-3 text-2xl flex-1">
+          <section className="my-12">
+            <header className="flex mb-4">
+              <h3 className="text-3xl font-regular flex-1">
                 Status
               </h3>
-              <div className="flex-1 text-right leading-normal">
+              <div className="flex-1 text-right leading-loose">
                 {/* <Link to="/" className="text-base text-grey-dark mr-6">Hibernate</Link> */}
                 <Link to="/modal-release-referral" className="text-base text-grey-dark underline">Release...</Link>
               </div>
@@ -209,9 +209,9 @@ class ReferralProfile extends React.Component {
             </div>
           </section>
 
-          <section className="mb-8">
-            <header className="mb-3">
-              <h3 className="text-2xl">
+          <section className="my-12">
+            <header className="mb-4">
+              <h3 className="text-3xl font-regular">
                 Communication
               </h3>
             </header>
@@ -247,9 +247,9 @@ class ReferralProfile extends React.Component {
             </div>
           </section>
 
-          <section className="mb-8">
-            <header className="mb-3">
-              <h3 className="text-2xl">
+          <section className="my-12">
+            <header className="mb-4">
+              <h3 className="text-3xl font-regular">
                 Pre-Approval
               </h3>
             </header>

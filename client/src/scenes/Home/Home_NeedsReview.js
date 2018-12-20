@@ -25,14 +25,16 @@ class HomeNeedsReview extends React.Component {
         <AgentHomeBanner firstName="Matt" temperature="74" />
 
         <main className="container mx-auto px-5 max-w-lg">
-          <div className="referral-tracking clearfix mb-12">
-            <h3 className="mb-3 text-2xl">
-              Referrals
-            </h3>
-            <p className="text-grey-dark text-sm mb-6">
-              Please review by Wed, Dec 27
-            </p>
-            <div className="border-t border-b border-grey-light">
+          <div className="referral-tracking mb-12">
+            <header className="mb-4">
+              <h3 className="mb-2 text-3xl w-1/2">
+                Referrals
+              </h3>
+              <p className="text-grey-dark leading-loose text-sm">
+                Review by Wed, Dec 27
+              </p>
+            </header>
+            <div className="">
             {/* REFERRAL TRACKING LIST */}
             <div>
               <Link to="/referral-needsReview-review" className="py-6 border-b border-grey-light flex referral-list_needs-review">

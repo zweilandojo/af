@@ -26,6 +26,14 @@ body {
 h1, h2, h3, h4 { font-family: "Sofia Pro Medium", sans-serif; font-weight: 500;}
 h1 { font-size: 1.5rem } /* 24px */
 
+.text-sm {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+.text-base {
+  font-size: 1.0625rem; /*17px*/
+  line-height: 1.4117647059; /*24px*/
+}
 .text-xl {
   font-size: 1.3125rem;
 }
@@ -883,7 +891,7 @@ fade-in {
   content: "";
   width: 32px;
   height: 4px;
-  background: #BDBDBD;
+  background: white;
   border-radius: 4px;
   position: absolute;
   top: 8px; left: 50%;
