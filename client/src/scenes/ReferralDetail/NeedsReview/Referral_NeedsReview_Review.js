@@ -307,6 +307,19 @@ class ReferralProfile extends React.Component {
                     <span className="text">Denied</span>
                   </label>
                 </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="radio"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                      name="pre-approval"
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Unknown</span>
+                  </label>
+                </li>
               </ul>
             </div>
           </section>
@@ -329,7 +342,7 @@ class ReferralProfile extends React.Component {
                       name="credit"
                     />
                     <span className="slider"></span>
-                    <span className="text">Good Credit</span>
+                    <span className="text">Good</span>
                   </label>
                 </li>
                 <li className="btn-stroked mr-1 mb-3">
@@ -342,7 +355,7 @@ class ReferralProfile extends React.Component {
                       name="credit"
                     />
                     <span className="slider"></span>
-                    <span className="text">Repairing Credit</span>
+                    <span className="text">Repairing</span>
                   </label>
                 </li>
                 <li className="btn-stroked mr-1 mb-3">
@@ -355,7 +368,7 @@ class ReferralProfile extends React.Component {
                       name="credit"
                     />
                     <span className="slider"></span>
-                    <span className="text">Bad Credit</span>
+                    <span className="text">Poor</span>
                   </label>
                 </li>
                 <li className="btn-stroked mr-1 mb-3">

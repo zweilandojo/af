@@ -60,7 +60,7 @@ class Modal_Release_Referral extends React.Component {
           </div>
           <div className="max-w-sm mx-auto">
             <p className="leading-normal text-sm text-grey-dark mb-8">
-              Releasing a referral removes them and allows them to be assigned to another agent. This cannot be undone.
+              Releasing will remove and reassign <strong className="font-medium text-black">Sofia Perez</strong>. This cannot be undone.
             </p>
             <h4 className="text-lg mb-6">Still want to release them? Tell us why:</h4>
 
