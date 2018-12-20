@@ -311,6 +311,70 @@ class ReferralProfile extends React.Component {
             </div>
           </section>
 
+          <section className="mb-8">
+            <header className="mb-5 mx-4">
+              <h3 className="text-2xl">
+                Credit
+              </h3>
+            </header>
+            <div className="border-t border-grey-light py-6 px-4">
+              <ul className="list-reset block">
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="radio"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                      name="credit"
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Good Credit</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="radio"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                      name="credit"
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Repairing Credit</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="radio"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                      name="credit"
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Bad Credit</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="radio"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                      name="credit"
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Unknown</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </section>
+
             {/*
             <section className="pb-6 mb-6">
               <header className="mb-4">

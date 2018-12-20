@@ -18,7 +18,7 @@ class Milestones extends React.Component {
                 <span className="inline-block mt-5">{this.props.talk}</span>
               </div>
               <div className="mt-4">
-                <h4 className="w-16 mb-2 font-lg">Talk</h4>
+                <h4 className="w-16 mb-2 font-lg">Connected</h4>
                 {/* <p className="text-grey-dark font-normal text-sm">Have you made first contact?</p> */}
               </div>
             </div>
@@ -27,7 +27,7 @@ class Milestones extends React.Component {
                 <span className="inline-block mt-5">{this.props.set}</span>
               </div>
               <div className="mt-4">
-                <h4 className="w-16 mb-2 font-lg">Set</h4>
+                <h4 className="w-16 mb-2 font-lg">Met</h4>
                 {/* <p className="text-grey-dark font-normal text-sm">Have you scheduled a time to meet in-person?</p> */}
               </div>
             </div>
@@ -36,7 +36,7 @@ class Milestones extends React.Component {
                 <span className="inline-block mt-5">{this.props.met}</span>
               </div>
               <div className="mt-4">
-                <h4 className="w-16 mb-2 font-lg">Met</h4>
+                <h4 className="w-16 mb-2 font-lg">Showing</h4>
                 {/* <p className="text-grey-dark font-normal text-sm">Did you meet the referral in-person?</p> */}
               </div>
             </div>
@@ -54,7 +54,7 @@ class Milestones extends React.Component {
                 <span className="inline-block mt-5">{this.props.accept}</span>
               </div>
               <div className="mt-4">
-                <h4 className="w-16 mb-2 font-lg">Accept</h4>
+                <h4 className="w-16 mb-2 font-lg">Accepted</h4>
                 {/* <p className="text-grey-dark font-normal text-sm">Has the seller accepted your client’s offer?</p> */}
               </div>
             </div>
