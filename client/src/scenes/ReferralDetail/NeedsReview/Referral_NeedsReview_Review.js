@@ -57,7 +57,7 @@ class ReferralProfile extends React.Component {
             <div className="avatar avatar-lg flex items-center">
               <span className="block w-full text-center mt-2">S</span>
             </div>
-            <h2 className="mb-2 text-white">
+            <h2 className="mb-4 text-white">
               Sofia Perez
             </h2>
             <h4 className="font-normal text-white text-grey-dark text-sm">
