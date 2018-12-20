@@ -261,7 +261,7 @@ class ReferralProfile extends React.Component {
                 </label>
               </div>
               <div className="mb-2">
-                <label className="text-base input-radio-container">Moving forward {/*Shopping Lenders*/}
+                <label className="text-base input-radio-container">Working with Lender
                   <input type="radio" className="input-radio mr-2" name="finances" />
                   <span className="checkmark"></span>
                 </label>

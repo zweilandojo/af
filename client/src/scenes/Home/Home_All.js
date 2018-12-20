@@ -103,7 +103,7 @@ class HomeNeedsReview extends React.Component {
                     <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                     <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
                     <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <span className="ml-1 inline text-grey-dark text-xs">Set</span>
+                    <span className="ml-1 inline text-grey-dark text-xs">Met</span>
                   </div>
                 </div>
                 <div className="flex-1 text-right">
