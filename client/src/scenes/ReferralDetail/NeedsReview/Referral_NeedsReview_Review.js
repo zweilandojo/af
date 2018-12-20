@@ -250,46 +250,64 @@ class ReferralProfile extends React.Component {
           <section className="mb-8">
             <header className="mb-5 mx-4">
               <h3 className="text-2xl">
-                Finances
+                Pre-Approval
               </h3>
             </header>
             <div className="border-t border-grey-light py-6 px-4">
-              <div className="mb-2">
-                <label className="text-base input-radio-container">Pre-approved
-                  <input type="radio" className="input-radio mr-2" name="finances" />
-                  <span className="checkmark"></span>
-                </label>
-              </div>
-              <div className="mb-2">
-                <label className="text-base input-radio-container">Working with Lender
-                  <input type="radio" className="input-radio mr-2" name="finances" />
-                  <span className="checkmark"></span>
-                </label>
-              </div>
-              <div className="mb-2">
-                <label className="text-base input-radio-container">Repairing finances
-                  <input type="radio" className="input-radio mr-2" name="finances" />
-                  <span className="checkmark"></span>
-                </label>
-              </div>
-              <div className="mb-2">
-                <label className="text-base input-radio-container">
-                  <input type="radio" checked="true" className="input-radio mr-2" name="finances" />
-                  <span className="checkmark"></span>
-                </label>
-              </div>
-              <div className="mb-2">
-                <label className="text-base input-radio-container">Unable to buy
-                  <input type="radio" className="input-radio mr-2" name="finances" />
-                  <span className="checkmark"></span>
-                </label>
-              </div>
-              <div className="mb-2">
-                <label className="text-base input-radio-container">Unknown
-                  <input type="radio" className="input-radio mr-2" name="finances" />
-                  <span className="checkmark"></span>
-                </label>
-              </div>
+              <ul className="list-reset block">
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="radio"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                      name="pre-approval"
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Pre-approved</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="radio"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                      name="pre-approval"
+                    />
+                    <span className="slider"></span>
+                    <span className="text">In-progress</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="radio"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                      name="pre-approval"
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Not started</span>
+                  </label>
+                </li>
+                <li className="btn-stroked mr-1 mb-3">
+                  <label className="">
+                    <input
+                      type="radio"
+                      className="checkbox float-left"
+                      value={this.state.isChecked}
+                      onChange={this.handleChange}
+                      name="pre-approval"
+                    />
+                    <span className="slider"></span>
+                    <span className="text">Denied</span>
+                  </label>
+                </li>
+              </ul>
             </div>
           </section>
 
