@@ -278,7 +278,7 @@ class ReferralProfile extends React.Component {
                       name="pre-approval"
                     />
                     <span className="slider"></span>
-                    <span className="text">In-progress</span>
+                    <span className="text">Able</span>
                   </label>
                 </li>
                 <li className="btn-stroked mr-1 mb-3">
@@ -291,7 +291,7 @@ class ReferralProfile extends React.Component {
                       name="pre-approval"
                     />
                     <span className="slider"></span>
-                    <span className="text">Not started</span>
+                    <span className="text">Unable</span>
                   </label>
                 </li>
                 <li className="btn-stroked mr-1 mb-3">
@@ -302,83 +302,6 @@ class ReferralProfile extends React.Component {
                       value={this.state.isChecked}
                       onChange={this.handleChange}
                       name="pre-approval"
-                    />
-                    <span className="slider"></span>
-                    <span className="text">Denied</span>
-                  </label>
-                </li>
-                <li className="btn-stroked mr-1 mb-3">
-                  <label className="">
-                    <input
-                      type="radio"
-                      className="checkbox float-left"
-                      value={this.state.isChecked}
-                      onChange={this.handleChange}
-                      name="pre-approval"
-                    />
-                    <span className="slider"></span>
-                    <span className="text">Unknown</span>
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <header className="mb-5 mx-4">
-              <h3 className="text-2xl">
-                Credit
-              </h3>
-            </header>
-            <div className="border-t border-grey-light py-6 px-4">
-              <ul className="list-reset block">
-                <li className="btn-stroked mr-1 mb-3">
-                  <label className="">
-                    <input
-                      type="radio"
-                      className="checkbox float-left"
-                      value={this.state.isChecked}
-                      onChange={this.handleChange}
-                      name="credit"
-                    />
-                    <span className="slider"></span>
-                    <span className="text">Good</span>
-                  </label>
-                </li>
-                <li className="btn-stroked mr-1 mb-3">
-                  <label className="">
-                    <input
-                      type="radio"
-                      className="checkbox float-left"
-                      value={this.state.isChecked}
-                      onChange={this.handleChange}
-                      name="credit"
-                    />
-                    <span className="slider"></span>
-                    <span className="text">Repairing</span>
-                  </label>
-                </li>
-                <li className="btn-stroked mr-1 mb-3">
-                  <label className="">
-                    <input
-                      type="radio"
-                      className="checkbox float-left"
-                      value={this.state.isChecked}
-                      onChange={this.handleChange}
-                      name="credit"
-                    />
-                    <span className="slider"></span>
-                    <span className="text">Poor</span>
-                  </label>
-                </li>
-                <li className="btn-stroked mr-1 mb-3">
-                  <label className="">
-                    <input
-                      type="radio"
-                      className="checkbox float-left"
-                      value={this.state.isChecked}
-                      onChange={this.handleChange}
-                      name="credit"
                     />
                     <span className="slider"></span>
                     <span className="text">Unknown</span>
