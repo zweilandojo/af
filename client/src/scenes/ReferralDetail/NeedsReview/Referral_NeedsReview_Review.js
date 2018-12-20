@@ -57,24 +57,24 @@ class ReferralProfile extends React.Component {
             <div className="avatar avatar-lg flex items-center">
               <span className="block w-full text-center mt-2">S</span>
             </div>
-            <h2 className="mb-4 text-white">
+            <h2 className="mb-2 text-white">
               Sofia Perez
             </h2>
             <h4 className="font-normal text-white text-grey-dark text-sm">
               Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Nov 1, 2018
             </h4>
             <div className="flex justify-center">
-              <a href="sms:15125551234" className="py-6 px-4 block text-center">
+              <a href="sms:15125551234" className="py-6 w-1/5 md:w-16 md:mx-1 block text-center">
                 <div className="btn-contact-icon flex items-center">
                   <div className="block w-full flex items-center justify-center">
                     <img src={iconChatWhite} className="w-5" alt="sms message" />
                   </div>
                 </div>
                 <small className="block text-white">
-                  sms
+                  message
                 </small>
               </a>
-              <a href="tel:15125551234" className="py-6 px-4 block text-center">
+              <a href="tel:15125551234" className="py-6 w-1/5 md:w-16 md:mx-1 block text-center">
                 <div className="btn-contact-icon flex items-center">
                   <div className="block w-full flex items-center justify-center">
                     <img src={iconPhoneWhite} className="h-5" alt="" />
@@ -86,7 +86,7 @@ class ReferralProfile extends React.Component {
               </a>
 
               {/* Begin Missing Email State */}
-              <div className="py-6 px-4 block text-center opacity-50">
+              <div className="py-6 w-1/5 md:w-16 md:mx-1 text-center opacity-50">
                 <div className="btn-contact-icon flex items-center">
                   <div className="block w-full flex items-center justify-center">
                     <img src={iconEmailWhite} className="w-5" alt="" />
@@ -118,11 +118,11 @@ class ReferralProfile extends React.Component {
 
         </div>
 
-        <main className="container mx-auto px-2 pb-24 max-w-lg">
+        <main className="container mx-auto px-5 pb-24 max-w-lg">
 
           <section className="mt-10 mb-8">
-            <header className="flex mx-3">
-              <h3 className="mb-4 text-2xl flex-1">
+            <header className="flex">
+              <h3 className="mb-3 text-2xl flex-1">
                 Status
               </h3>
               <div className="flex-1 text-right leading-normal">
@@ -130,7 +130,7 @@ class ReferralProfile extends React.Component {
                 <Link to="/modal-release-referral" className="text-base text-grey-dark underline">Release...</Link>
               </div>
             </header>
-            <div className="border-t border-grey-light py-6 px-3">
+            <div className="border-t border-grey-light py-5">
               <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -210,12 +210,12 @@ class ReferralProfile extends React.Component {
           </section>
 
           <section className="mb-8">
-            <header className="mb-4 mx-3">
+            <header className="mb-3">
               <h3 className="text-2xl">
                 Communication
               </h3>
             </header>
-            <div className="border-t border-grey-light py-6 px-3">
+            <div className="border-t border-grey-light py-5">
               <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -248,12 +248,12 @@ class ReferralProfile extends React.Component {
           </section>
 
           <section className="mb-8">
-            <header className="mb-4 mx-3">
+            <header className="mb-3">
               <h3 className="text-2xl">
                 Pre-Approval
               </h3>
             </header>
-            <div className="border-t border-grey-light py-6 px-3">
+            <div className="border-t border-grey-light py-5">
               <ul className="list-reset block">
                 <li className="btn-stroked mr-1 mb-3">
                   <label className="">
@@ -350,12 +350,12 @@ class ReferralProfile extends React.Component {
             */}
 
             <section className="mb-12">
-              <header className="mb-4 mx-3">
+              <header className="mb-3">
                 <h3 className="text-2xl">
                   Projected closing month
                 </h3>
               </header>
-              <div className="border-t border-grey-light py-6 px-3">
+              <div className="border-t border-grey-light py-5">
                 <select className="input select" placeholder="Select a month...">
                   <option defaultValue>Select a month...</option>
                   <option>I don’t know</option>
@@ -378,14 +378,13 @@ class ReferralProfile extends React.Component {
             </section>
 
             <section className="mb-8">
-              <header className="mb-4 mx-3">
+              <header className="mb-3">
                 <h3 className="text-2xl">
-
-                <img src={iconNoteList} className="w-6" alt="note list" />
-                <span className="inline-block ml-4">Notes</span>
+                  <img src={iconNoteList} className="w-6" alt="note list" />
+                  <span className="inline-block ml-4">Notes</span>
                 </h3>
               </header>
-              <div className="border-t border-grey-light py-6 px-3">
+              <div className="border-t border-grey-light py-5">
                 <textarea className="input textarea" placeholder="Write a note...">
                 </textarea>
                 <button
@@ -399,13 +398,13 @@ class ReferralProfile extends React.Component {
             </section>
 
             <section className="mb-24 hide" id="activity-list-container">
-              <header className="mb-8 mx-3">
+              <header className="mb-8">
                 <h3 className="text-2xl">
                   <img src={iconActivityList} className="w-6" alt="activity list" />
                   <span className="inline-block ml-4">Activity</span>
                 </h3>
               </header>
-              <div className="activity-list px-3">
+              <div className="activity-list">
                 <div className="mb-6 activity-list_list-item flex">
                   <div className="mr-4">
                     <div className="avatar avatar-sm">

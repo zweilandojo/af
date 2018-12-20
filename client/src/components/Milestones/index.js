@@ -4,14 +4,10 @@ class Milestones extends React.Component {
   render() {
     return (
       <div className="milestone-count mb-12">
-        <h3 className="mb-4 ml-6 text-2xl">
+        <h3 className="mb-3 text-2xl">
           Your Stats
         </h3>
-        <div className="border border-grey-light p-8 rounded-lg">
-          <p className="text-grey-dark text-base mb-6">
-            An overview of your progress
-          </p>
-
+        <div className="border-t border-grey-light py-5">
           <div className="flex justify-between flex-wrap">
             <div className="py-4 text-center">
               <div className="text-2xl bg-grey-lightest rounded-full h-16 w-16 text-center mr-4">

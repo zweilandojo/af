@@ -39,7 +39,7 @@ class ReferralProfile extends React.Component {
 
           <div className="app-banner text-center mb-6 pt-16">
             <div className="avatar avatar-lg bg-blue-lightest flex items-center">
-              <span className="block w-full text-center mt-2">A</span>
+              <span className="block w-full text-center mt-2">S</span>
             </div>
             <h2 className="mb-2 text-white">
               Sofia Perez
@@ -69,8 +69,7 @@ class ReferralProfile extends React.Component {
                 </small>
               </a>
 
-              {/* Begin Missing Email State */}
-              <div className="py-6 px-4 block text-center opacity-50">
+              <div className="py-6 px-4 block text-center">
                 <div className="btn-contact-icon flex items-center">
                   <div className="block w-full flex items-center justify-center">
                     <img src={iconEmailWhite} className="w-5" alt="" />
@@ -80,7 +79,6 @@ class ReferralProfile extends React.Component {
                   email
                 </small>
               </div>
-              {/* End Missing Email State */}
 
             </div>
           </div>
@@ -102,14 +100,14 @@ class ReferralProfile extends React.Component {
 
       </div>
 
-        <main className="container mx-auto px-2 max-w-lg">
+        <main className="container mx-auto px-4 max-w-lg">
           <section className="pb-6 mb-6 mt-10">
               <header className="mb-4">
-                <h3 className="ml-6 text-2xl">
+                <h3 className="text-2xl">
                   About
                 </h3>
               </header>
-              <div className="border border-grey-light p-8 rounded-lg">
+              <div className="border-t border-grey-light py-6">
                 <ul className="text-base leading-normal list-reset">
                   <li className="border-b border-grey-light flex pb-2">
                     <div className="w-1/2 text-grey-dark">
@@ -124,7 +122,8 @@ class ReferralProfile extends React.Component {
                       Email
                     </div>
                     <div className="w-1/2">
-                      <span className="text-grey">Unknown</span>
+                      <a href="mailto:sofia.perez@gmail.com" className="">sofia.perez@gmail.com</a>
+                      {/* <span className="text-grey">Unknown</span> */}
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">

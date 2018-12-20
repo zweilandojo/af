@@ -27,24 +27,24 @@ class ReferralProfile extends React.Component {
             <div className="avatar avatar-lg flex items-center">
               <span className="block w-full text-center mt-2">S</span>
             </div>
-            <h2 className="mb-4 text-white">
+            <h2 className="mb-2 text-white">
               Sofia Perez
             </h2>
             <h4 className="font-normal text-white text-grey-dark text-sm">
               Buyer <span className="opacity-50 mx-1">&#8226;</span> Referred: Nov 1, 2018
             </h4>
             <div className="flex justify-center">
-              <a href="sms:15125551234" className="py-6 px-4 block text-center">
+              <a href="sms:15125551234" className="py-6 w-1/5 md:w-16 md:mx-1 block text-center">
                 <div className="btn-contact-icon flex items-center">
                   <div className="block w-full flex items-center justify-center">
                     <img src={iconChatWhite} className="w-5" alt="sms message" />
                   </div>
                 </div>
                 <small className="block text-white">
-                  sms
+                  message
                 </small>
               </a>
-              <a href="tel:15125551234" className="py-6 px-4 block text-center">
+              <a href="tel:15125551234" className="py-6 w-1/5 md:w-16 md:mx-1 block text-center">
                 <div className="btn-contact-icon flex items-center">
                   <div className="block w-full flex items-center justify-center">
                     <img src={iconPhoneWhite} className="h-5" alt="" />
@@ -56,7 +56,7 @@ class ReferralProfile extends React.Component {
               </a>
 
               {/* Begin Missing Email State */}
-              <div className="py-6 px-4 block text-center opacity-50">
+              <div className="py-6 w-1/5 md:w-16 md:mx-1 text-center opacity-50">
                 <div className="btn-contact-icon flex items-center">
                   <div className="block w-full flex items-center justify-center">
                     <img src={iconEmailWhite} className="w-5" alt="" />
@@ -88,14 +88,14 @@ class ReferralProfile extends React.Component {
 
       </div>
 
-        <main className="container mx-auto px-2 max-w-lg">
+        <main className="container mx-auto px-5 max-w-lg">
           <section className="mb-10 mt-10">
-              <header className="mb-4 mx-3">
+              <header className="mb-3">
                 <h3 className="text-2xl">
                   About
                 </h3>
               </header>
-              <div className="border-t border-grey-light py-6 px-3">
+              <div className="border-t border-grey-light py-5">
                 <ul className="text-base leading-normal list-reset">
                   <li className="border-b border-grey-light flex pb-2">
                     <div className="w-1/2 text-grey-dark">
@@ -190,12 +190,12 @@ class ReferralProfile extends React.Component {
             </section>
 
             <section className="mb-6">
-              <header className="mb-4 mx-3">
+              <header className="mb-4">
                 <h3 className="text-2xl">
                   Handoff notes
                 </h3>
               </header>
-              <div className="border-t border-grey-light py-6 px-3">
+              <div className="border-t border-grey-light py-6">
                 <div className="activity-list">
                   <div className="mb-6 activity-list_list-item flex">
                     <div className="mr-4">
@@ -225,11 +225,11 @@ class ReferralProfile extends React.Component {
 
             <section className="pb-6 mb-6">
               <header className="mb-4">
-                <h3 className="mx-3 text-2xl">
+                <h3 className="text-2xl">
                   Sofia’s favorites
                 </h3>
               </header>
-              <div className="border-t border-grey-light p-8 px-6">
+              <div className="border-t border-grey-light py-8">
                 <div className="home-list flex flex-wrap -mx-2">
                 <HomeListItem
                   homeUrl="https://consumer.agent.ojo.me/listings/fa6010b1f2e6d48ed1e8fc323e00c60f"

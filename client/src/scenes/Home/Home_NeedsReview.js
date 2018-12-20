@@ -25,21 +25,17 @@ class HomeNeedsReview extends React.Component {
         <AgentHomeBanner firstName="Matt" temperature="74" />
 
         <main className="container mx-auto px-2 max-w-lg">
-
           <div className="referral-tracking clearfix mb-12">
-            <h3 className="mb-4 ml-6 text-2xl">
+            <h3 className="mb-3 text-2xl">
               Referrals
             </h3>
-            <div className="border border-grey-light p-8 rounded-lg">
-              <div className="clearfix">
-                <p className="text-grey-dark float-left text-base mb-6">
-                  Please review by Wed, Nov 7
-                </p>
-              </div>
-
+            <p className="text-grey-dark text-sm mb-6">
+              Please review by Wed, Dec 27
+            </p>
+            <div className="border-t border-b border-grey-light">
             {/* REFERRAL TRACKING LIST */}
             <div>
-              <Link to="/referral-needsReview-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
+              <Link to="/referral-needsReview-review" className="py-6 border-b border-grey-light flex referral-list_needs-review">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
                   <div className="avatar-initials">S</div>
                 </div>
@@ -64,7 +60,7 @@ class HomeNeedsReview extends React.Component {
                 </div>
               </Link>
 
-              <Link to="/referral-barebones-needsReview-review" className="py-4 border-b border-grey-light flex referral-list_needs-review">
+              <Link to="/referral-barebones-needsReview-review" className="py-6 border-b border-grey-light flex referral-list_needs-review">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
                   <img src={iconPerson} className="avatar-image" alt="avatar" />
                   <div className="avatar-initials"></div>
@@ -92,7 +88,7 @@ class HomeNeedsReview extends React.Component {
                 </div>
               </Link>
 
-              <Link to="/referral-dead-review" className="pt-4 flex referral-list_dead">
+              <Link to="/referral-dead-review" className="py-6 flex referral-list_dead">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-grey-light text-white">
                   <img src={iconPerson} className="avatar-image" alt="avatar" />
                   <div className="avatar-initials"></div>
