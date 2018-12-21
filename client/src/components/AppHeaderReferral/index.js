@@ -48,7 +48,6 @@ class AppHeaderReferral extends React.Component {
   render() {
     return (
       <div>
-
         <header className="h-16 flex fixed pin-t w-full">
           <div className="w-1/3 app-header-back-button">
             <Link to="/" className="block">
@@ -57,7 +56,7 @@ class AppHeaderReferral extends React.Component {
           </div>
         </header>
 
-        <header className="app-header-referral fixed flex h-16 bg-white w-full pin-t border-b border-grey-light" id="appReferralHeader">
+        <header className="app-header-referral fixed flex h-16 bg-white w-full pin-t" id="appReferralHeader">
           <div className="w-1/4 app-header-back-button">
             <Link to="/" className="block">
               <img src={iconChevronLeftBlue} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />
