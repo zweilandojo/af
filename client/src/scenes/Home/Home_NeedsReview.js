@@ -24,24 +24,34 @@ class HomeNeedsReview extends React.Component {
         <AppHeader />
         {/* <AgentHomeBanner firstName="Matt" temperature="74" />*/}
 
-        <main className="container mx-auto px-5 max-w-md">
-          <div className="referral-tracking my-10 mb-20">
-            <header className="mb-4">
-              <h3 className="mb-1 font-semibold text-3xl w-1/2">
-                Referrals
+        <main className="container mx-auto px-5 max-w-lg md:pt-6">
+          <div className="referral-tracking my-10 mb-16">
+            <header className="mb-6">
+              <h3 className="mb-2 font-bold text-4xl w-1/2">
+                Aloha, Sandra.
               </h3>
-              <p className="text-grey-dark leading-loose text-sm">
-                Review by Wed, Dec 27
+              <p className="text-grey-darkest mb-2 leading-loose text-base">
+                Review your referrals by Wed, Dec 27.
               </p>
+              <div className="leading-loose uppercase text-grey-dark text-xs">
+                <span className="inline-block mr-4">
+                  <span className="">Met</span>
+                  <span className="ml-1">0</span>
+                </span>
+                <span className="inline-block mr-4">
+                  <span className="">Offer</span>
+                  <span className="ml-1">0</span>
+                </span>
+                <span className="inline-block mr-4">
+                  <span className="">Closed</span>
+                  <span className="ml-1">0</span>
+                </span>
+              </div>
             </header>
-            <div className="search mb-2">
-              <input className="bg-grey-lightest w-full px-4 py-3 rounded"
-                    type="search" placeholder="Search..." />
-            </div>
             <div className="">
             {/* REFERRAL TRACKING LIST */}
             <div>
-              <Link to="/referral-needsReview-review" className="pt-4 flex referral-list_needs-review">
+              <Link to="/referral-needsReview-review" className="pt-3 flex referral-list_needs-review">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-12 w-12 bg-grey text-white">
                   <div className="avatar-initials text-xl mt-1">S</div>
                 </div>
@@ -49,14 +59,14 @@ class HomeNeedsReview extends React.Component {
                   <span className="text-lg mt-2 block font-medium text-black">
                     Sofia Perez
                   </span>
-                  <div className="pb-4">
+                  <div className="pb-3">
                     <span className="inline-block text-grey-dark tracking-normal text-sm text-green">New</span>
                   </div>
                   <span className="absolute pin-r pin-t text-red text-sm mt-2 mr-1">Review</span>
                 </div>
               </Link>
 
-              <Link to="/referral-barebones-needsReview-review" className="pt-4 flex referral-list_needs-review">
+              <Link to="/referral-barebones-needsReview-review" className="pt-3 flex referral-list_needs-review">
                 <div className="avatar avatar-m rounded-full flex items-center justify-center h-12 w-12 bg-grey text-white">
                   <div className="avatar-initials text-xl mt-1">A</div>
                 </div>
@@ -64,23 +74,23 @@ class HomeNeedsReview extends React.Component {
                   <span className="text-lg mt-2 block font-medium text-black">
                     Arthur Belling
                   </span>
-                  <div className="pb-4">
+                  <div className="pb-3">
                     <span className="inline-block text-grey-dark tracking-normal text-sm">Met</span>
                   </div>
                   <span className="absolute pin-r pin-t text-red text-sm mt-2 mr-1">Review</span>
                 </div>
               </Link>
 
-              <Link to="/referral-dead-review" className="pt-5 flex referral-list_dead opacity-50">
-                <div className="avatar avatar-m rounded-full flex items-center justify-center h-12 w-12 bg-grey text-white">
+              <Link to="/referral-dead-review" className="pt-3 flex referral-list_dead">
+                <div className="opacity-50 avatar avatar-m rounded-full flex items-center justify-center h-12 w-12 bg-grey text-white">
                   <img src={iconPerson} className="avatar-image" alt="avatar" />
                   <div className="avatar-initials"></div>
                 </div>
                 <div className="flex-1 relative ml-4 border-b border-grey-lighter">
-                  <span className="text-lg mt-2 block font-medium text-black">
+                  <span className="opacity-50 text-lg mt-2 block font-medium text-black">
                     15128971234
                   </span>
-                  <div className="pb-4">
+                  <div className="pb-3 opacity-50">
                     <span className="inline-block text-grey-dark tracking-normal text-sm">Dead</span>
                   </div>
                   <span className="absolute pin-r pin-t text-red text-sm mt-2 mr-1">
@@ -92,11 +102,14 @@ class HomeNeedsReview extends React.Component {
           </div>
           </div>
 
-          <Milestones talk="3" set="0" met="0" offer="0" accept="0" transact="0" />
+          {/*<Milestones talk="3" set="0" met="0" offer="0" accept="0" transact="0" />*/}
 
-          <footer className="mb-12 flex">
-            <Link to="/support" className="w-full text-center mr-4 block py-6 px-4 rounded-full text-lg">
-              Support
+          <footer className="mb-12">
+            <Link
+              to="/support"
+              className="text-grey-darkest text-sm font-medium px-4 pt-3 pb-2 shadow rounded"
+            >
+              Need help?
             </Link>{/*
             <Link to="/" className="w-1/2 md:w-1/2 text-center inline-block py-6 px-4 border border-grey-light rounded-full text-lg">
               Send Feedback

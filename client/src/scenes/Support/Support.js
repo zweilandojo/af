@@ -15,7 +15,7 @@ const Support = () => (
         </Link>
       </div>
       <div className="w-1/3 text-center">
-        <h6 className="text-base font-medium py-6 leading-normal">
+        <h6 className="text-base font-semibold py-6 leading-normal">
           OJO Support
         </h6>
       </div>
