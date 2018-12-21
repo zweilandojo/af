@@ -30,8 +30,10 @@ import Referral_Dead_Profile from './scenes/ReferralDetail/Dead/Referral_Dead_Pr
 import Referral_Dead_Review from './scenes/ReferralDetail/Dead/Referral_Dead_Review.js';
 import Modal_Release_Referral from './scenes/ReferralDetail/_ModalReleaseReferral/index.js';
 
-import Support from './scenes/Support/Support.js';
+import Profile from './scenes/Profile/index.js';
 import Settings from './scenes/Settings/Settings.js';
+
+import Support from './scenes/Support/Support.js';
 
 
 class App extends Component {
@@ -65,6 +67,7 @@ class App extends Component {
           <Route path="/referral-dead-review" component={Referral_Dead_Review}/>
           <Route path="/modal-release-referral" component={Modal_Release_Referral}/>
 
+          <Route path="/profile" component={Profile}/>
           <Route path="/settings" component={Settings}/>
 
         </div>

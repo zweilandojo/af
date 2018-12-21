@@ -14,7 +14,7 @@ const AppHeader = () => (
 
     <div className="absolute pin-r px-6 py-4">
       <Link to="/" className="inline-block text-black font-semibold p-3">Home</Link>
-      <Link to="/sshaw" className="inline-block text-grey font-semibold p-3">Sandra</Link>
+      <Link to="/profile" className="inline-block text-grey font-semibold p-3">Sandra</Link>
     </div>
 
     <div className="container mx-auto max-w-lg invisible lg:visible">
