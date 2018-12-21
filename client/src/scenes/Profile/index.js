@@ -70,34 +70,34 @@ class Profile extends React.Component {
                   <h3 className="text-2xl mb-6">Account</h3>
                   <ul className="border-t border-grey-light text-sm leading-normal list-reset">
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/2 text-grey-dark">
-                        Phone Number
+                      <div className="w-1/3 text-grey-dark">
+                        Phone
                       </div>
-                      <div className="w-1/2 text-right">
+                      <div className="w-2/3">
                         <span className="text-black">+1 (555) 512-1234</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/2 text-grey-dark">
-                        Email Address
+                      <div className="w-1/3 text-grey-dark">
+                        Email
                       </div>
-                      <div className="w-1/2 text-right">
+                      <div className="w-2/3 truncate">
                         <span className="text-black">sandra.shaw@coldwellbanker.com</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/2 text-grey-dark">
+                      <div className="w-1/3 text-grey-dark">
                         Agent Type
                       </div>
-                      <div className="w-1/2 text-right">
+                      <div className="w-2/3">
                         <span className="text-black">Listing</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/2 text-grey-dark">
-                        Agent Matching
+                      <div className="w-1/3 text-grey-dark">
+                        Matching
                       </div>
-                      <div className="w-1/2 text-right">
+                      <div className="w-2/3">
                         <span className="text-black">Yes</span>
                       </div>
                     </li>
@@ -108,59 +108,59 @@ class Profile extends React.Component {
                   <h3 className="text-2xl mb-6">Brokerage</h3>
                   <ul className="border-t border-grey-light text-sm leading-normal list-reset">
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/2 text-grey-dark">
-                        Brokerage Name
+                      <div className="w-1/3 text-grey-dark">
+                        Name
                       </div>
-                      <div className="w-1/2 text-right">
+                      <div className="w-2/3 truncate">
                         <span className="text-black">Coldwell Banker United, Realtors</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/2 text-grey-dark">
+                      <div className="w-1/3 text-grey-dark">
                         Office
                       </div>
-                      <div className="w-1/2 text-right">
+                      <div className="w-2/3">
                         <span className="text-black">Downtown</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/2 text-grey-dark">
-                        Brokerage Address
+                      <div className="w-1/3 text-grey-dark">
+                        Address
                       </div>
-                      <div className="w-1/2 text-right">
+                      <div className="w-2/3 truncate">
                         <span className="text-black">1617 W 6th St c, Austin, TX 78703</span>
                       </div>
                     </li>
 
                     <li className="border-b border-grey-light flex pt-3 pb-2">
                       <div className="w-1/3 text-grey-dark">
-                        Brokerage Phone
+                        Phone
                       </div>
-                      <div className="w-2/3 text-right">
+                      <div className="w-2/3">
                         <span className="text-black">(512) 876-0480</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/2 text-grey-dark">
+                      <div className="w-1/3 text-grey-dark">
                         Website
                       </div>
-                      <div className="w-1/2 text-right truncate">
+                      <div className="w-2/3 truncate">
                         <span className="text-black">{'https://www.coldwellbankerhomes.com/austin-houston'}</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/2 text-grey-dark">
+                      <div className="w-1/3 text-grey-dark">
                         State
                       </div>
-                      <div className="w-1/2 text-right">
+                      <div className="w-2/3">
                         <span className="text-black">Texas</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/2 text-grey-dark">
+                      <div className="w-1/3 text-grey-dark">
                         Timezone
                       </div>
-                      <div className="w-1/2 text-right">
+                      <div className="w-2/3">
                         <span className="text-black">America/Chicago</span>
                       </div>
                     </li>
@@ -171,18 +171,18 @@ class Profile extends React.Component {
                   <h3 className="text-2xl mb-6">Market &amp; Areas</h3>
                   <ul className="border-t border-grey-light text-sm leading-normal list-reset">
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/2 text-grey-dark">
-                        Metro / Market
+                      <div className="w-1/3 text-grey-dark">
+                        Market
                       </div>
-                      <div className="w-1/2 text-right">
+                      <div className="w-2/3">
                         <span className="text-black">Austin, TX</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/2 text-grey-dark">
+                      <div className="w-1/3 text-grey-dark">
                         Areas
                       </div>
-                      <div className="w-1/2 text-right">
+                      <div className="w-2/3">
                         <span className="text-black">Central Austin, East Central Austin, Downtown Austin, Northwest Austin, South Austin, Southwest Austin, Hyde Park, West Austin, Tarrytown, Cedar Park</span>
                       </div>
                     </li>
