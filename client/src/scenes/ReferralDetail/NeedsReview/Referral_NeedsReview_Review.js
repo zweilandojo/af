@@ -122,7 +122,7 @@ class ReferralProfile extends React.Component {
 
           <section className="my-12">
             <header className="flex mb-4">
-              <h3 className="text-3xl font-regular flex-1">
+              <h3 className="text-2xl font-regular flex-1">
                 Status
               </h3>
               <div className="flex-1 text-right leading-loose">
@@ -211,7 +211,7 @@ class ReferralProfile extends React.Component {
 
           <section className="my-12">
             <header className="mb-4">
-              <h3 className="text-3xl font-regular">
+              <h3 className="text-2xl font-regular">
                 Communication
               </h3>
             </header>
@@ -249,7 +249,7 @@ class ReferralProfile extends React.Component {
 
           <section className="my-12">
             <header className="mb-4">
-              <h3 className="text-3xl font-regular">
+              <h3 className="text-2xl font-regular">
                 Pre-Approval
               </h3>
             </header>

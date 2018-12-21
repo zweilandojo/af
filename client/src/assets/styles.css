@@ -3,10 +3,22 @@
 @font-face {
   font-family: "Sofia Pro Regular";
   src: url('./fonts/Sofia/Sofia-Pro-Regular.otf');
+  font-weight: 500;
 }
 @font-face {
   font-family: "Sofia Pro Medium";
   src: url('./fonts/Sofia/Sofia-Pro-Medium.otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Sofia Pro Semi Bold";
+  src: url('./fonts/Sofia/Sofia-Pro-Semi-Bold.otf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Sofia Pro Bold";
+  src: url('./fonts/Sofia/Sofia-Pro-Bold.otf');
+  font-weight: 800;
 }
 
 
@@ -51,6 +63,14 @@ h1 { font-size: 1.5rem } /* 24px */
   font-family: "Sofia Pro Medium", sans-serif;
   font-weight: 500;
 }
+.font-semibold {
+  font-family: "Sofia Pro Semi Bold", sans-serif;
+  font-weight: 600;
+}
+.font-bold {
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-weight: 700;
+}
 
 /* Gradient Text */
 .hi {
@@ -79,6 +99,7 @@ h1 { font-size: 1.5rem } /* 24px */
 
 .text-blue { color: #3366FF; }
 .text-red { color: #EC1561; }
+.text-green { color: #00CA4C; }
 
 /* Background Color */
 .bg-black { background-color: #212121; }
@@ -301,7 +322,7 @@ a {
   bottom: 0;
   background-color: white;
   border: 2px solid #eee;
-  border-radius: 0.4375rem;
+  border-radius: 2.5rem;
   z-index: 0;
 }
 .slider:before {
@@ -321,7 +342,7 @@ a {
 }
 input:checked + .slider {
   background-color: #F0FDF6;
-  border-color: #69F0AE;
+  border-color: #F0FDF6;
 }
 input:focus + .slider {
 
@@ -501,8 +522,8 @@ select {
 
 /* App Header */
 .app-header {
-  height: 4rem; /* 64px */
-  background-color: rgba(255,255,255,0.96);
+  height: 4rem;
+  background-color: white;
 }
 .app-header-referral {
   display: none;

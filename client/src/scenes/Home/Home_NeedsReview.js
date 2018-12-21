@@ -22,98 +22,70 @@ class HomeNeedsReview extends React.Component {
     return (
       <div className="app">
         <AppHeader />
-        <AgentHomeBanner firstName="Matt" temperature="74" />
+        {/* <AgentHomeBanner firstName="Matt" temperature="74" />*/}
 
-        <main className="container mx-auto px-5 max-w-lg">
-          <div className="referral-tracking mb-12">
+        <main className="container mx-auto px-5 max-w-md">
+          <div className="referral-tracking my-10 mb-20">
             <header className="mb-4">
-              <h3 className="mb-2 text-3xl w-1/2">
+              <h3 className="mb-1 font-semibold text-3xl w-1/2">
                 Referrals
               </h3>
               <p className="text-grey-dark leading-loose text-sm">
                 Review by Wed, Dec 27
               </p>
             </header>
+            <div className="search mb-2">
+              <input className="bg-grey-lightest w-full px-4 py-3 rounded"
+                    type="search" placeholder="Search..." />
+            </div>
             <div className="">
             {/* REFERRAL TRACKING LIST */}
             <div>
-              <Link to="/referral-needsReview-review" className="py-6 border-b border-grey-light flex referral-list_needs-review">
-                <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
-                  <div className="avatar-initials">S</div>
+              <Link to="/referral-needsReview-review" className="pt-4 flex referral-list_needs-review">
+                <div className="avatar avatar-m rounded-full flex items-center justify-center h-12 w-12 bg-grey text-white">
+                  <div className="avatar-initials text-xl mt-1">S</div>
                 </div>
-                <div className="flex-initial ml-4">
-                  <span className="text-lg block mb-1">
+                <div className="flex-1 relative ml-4 border-b border-grey-lighter">
+                  <span className="text-lg mt-2 block font-medium text-black">
                     Sofia Perez
                   </span>
-                  <div>
-                    <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <span className="ml-1 inline text-grey-dark text-xs">Connected</span>
+                  <div className="pb-4">
+                    <span className="inline-block text-grey-dark tracking-normal text-sm text-green">New</span>
                   </div>
-                </div>
-                <div className="flex-1 text-right">
-                  <div>
-                    <span className="text-red text-base mr-1">Review</span>
-                  </div>
+                  <span className="absolute pin-r pin-t text-red text-sm mt-2 mr-1">Review</span>
                 </div>
               </Link>
 
-              <Link to="/referral-barebones-needsReview-review" className="py-6 border-b border-grey-light flex referral-list_needs-review">
-                <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-red-light text-white">
-                  <img src={iconPerson} className="avatar-image" alt="avatar" />
-                  <div className="avatar-initials"></div>
+              <Link to="/referral-barebones-needsReview-review" className="pt-4 flex referral-list_needs-review">
+                <div className="avatar avatar-m rounded-full flex items-center justify-center h-12 w-12 bg-grey text-white">
+                  <div className="avatar-initials text-xl mt-1">A</div>
                 </div>
-                <div className="flex-initial ml-4">
-                  <span className="text-lg block mb-1">
-                    15125551234
+                <div className="flex-1 relative ml-4 border-b border-grey-lighter">
+                  <span className="text-lg mt-2 block font-medium text-black">
+                    Arthur Belling
                   </span>
-                  <div>
-                    <img src={iconCheckboxChecked} className="h-3 w-3 mr-px" alt="" />
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <span className="ml-1 inline text-grey-dark text-xs">
-                      Connected
-                    </span>
+                  <div className="pb-4">
+                    <span className="inline-block text-grey-dark tracking-normal text-sm">Met</span>
                   </div>
-                </div>
-                <div className="flex-1 text-right">
-                  <div>
-                    <span className="text-red text-base mr-1">Review</span>
-                  </div>
+                  <span className="absolute pin-r pin-t text-red text-sm mt-2 mr-1">Review</span>
                 </div>
               </Link>
 
-              <Link to="/referral-dead-review" className="py-6 flex referral-list_dead">
-                <div className="avatar avatar-m rounded-full flex items-center justify-center h-10 w-10 bg-grey-light text-white">
+              <Link to="/referral-dead-review" className="pt-5 flex referral-list_dead opacity-50">
+                <div className="avatar avatar-m rounded-full flex items-center justify-center h-12 w-12 bg-grey text-white">
                   <img src={iconPerson} className="avatar-image" alt="avatar" />
                   <div className="avatar-initials"></div>
                 </div>
-                <div className="flex-initial ml-4">
-                  <span className="text-lg block mb-1">
+                <div className="flex-1 relative ml-4 border-b border-grey-lighter">
+                  <span className="text-lg mt-2 block font-medium text-black">
                     15128971234
                   </span>
-                  <div>
-                    <img src={iconCheckboxgrey} className="h-3 w-3 mr-px" alt="" />
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <div className="inline-block h-3 w-3 border border-grey-light rounded-full bg-white mr-px"></div>
-                    <span className="ml-1 inline text-grey-dark text-xs">Dead</span>
+                  <div className="pb-4">
+                    <span className="inline-block text-grey-dark tracking-normal text-sm">Dead</span>
                   </div>
-                </div>
-                <div className="flex-1 text-right">
-                  <div>
-                    <span className="text-red text-sm mr-1"></span>
+                  <span className="absolute pin-r pin-t text-red text-sm mt-2 mr-1">
                     <img src={iconChevronRightgrey} className="svg-grey" alt="" />
-                  </div>
+                  </span>
                 </div>
               </Link>
             </div>
