@@ -72,7 +72,7 @@ class ReferralProfile extends React.Component {
           </div>
 
           <nav className="nav nav-tabs card-top">
-            <div className="max-w-lg mx-auto">
+            <div className="max-w-md mx-auto">
               <div className="tab active">
                 <Link to="/referral-needsReview-profile">
                   Profile
@@ -88,7 +88,7 @@ class ReferralProfile extends React.Component {
 
       </div>
 
-        <main className="container mx-auto px-5 max-w-lg">
+        <main className="container mx-auto px-5 max-w-md">
           <section className="my-12">
               <header className="mb-4">
                 <h3 className="text-3xl">
@@ -98,90 +98,90 @@ class ReferralProfile extends React.Component {
               <div className="border-t border-grey-light">
                 <ul className="text-sm leading-normal list-reset">
                   <li className="border-b border-grey-light flex pt-3 pb-2">
-                    <div className="w-1/3 text-grey-dark">
+                    <div className="w-1/2 text-grey-dark">
                       Phone
                     </div>
-                    <div className="w-2/3 text-right">
+                    <div className="w-1/2">
                       <a href="tel:15555121234">+1 (555) 512-1234</a>
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
-                    <div className="w-1/3 text-grey-dark">
+                    <div className="w-1/2 text-grey-dark">
                       Email
                     </div>
-                    <div className="w-2/3 text-right">
+                    <div className="w-1/2">
                       <span className="text-grey">Unknown</span>
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
-                    <div className="w-1/3 text-grey-dark">
+                    <div className="w-1/2 text-grey-dark">
                       Current Area
                     </div>
-                    <div className="w-2/3 text-right">
+                    <div className="w-1/2">
                       Cedar Park, TX
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
-                    <div className="w-1/3 text-grey-dark">
+                    <div className="w-1/2 text-grey-dark">
                       Desired Area
                     </div>
-                    <div className="w-2/3 text-right">
+                    <div className="w-1/2">
                       Hyde Park, Central East Austin, Southeast Austin
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
-                    <div className="w-1/3 text-grey-dark">
+                    <div className="w-1/2 text-grey-dark">
                       Budget
                     </div>
-                    <div className="w-2/3 text-right">
+                    <div className="w-1/2">
                       $300 - $500k
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
-                    <div className="w-1/3 text-grey-dark">
+                    <div className="w-1/2 text-grey-dark">
                       Property Type
                     </div>
-                    <div className="w-2/3 text-right">
+                    <div className="w-1/2">
                       Homes, Townhomes
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
-                    <div className="w-1/3 text-grey-dark">
+                    <div className="w-1/2 text-grey-dark">
                       Bed
                     </div>
-                    <div className="w-2/3 text-right">
+                    <div className="w-1/2">
                       3+
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
-                    <div className="w-1/3 text-grey-dark">
+                    <div className="w-1/2 text-grey-dark">
                       Bath
                     </div>
-                    <div className="w-2/3 text-right">
+                    <div className="w-1/2">
                       2+
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
-                    <div className="w-1/3 text-grey-dark">
+                    <div className="w-1/2 text-grey-dark">
                       Financing
                     </div>
-                    <div className="w-2/3 text-right">
+                    <div className="w-1/2">
                       Has a lender
                     </div>
                   </li>
                   <li className="border-b border-grey-light flex pt-3 pb-2">
-                    <div className="w-1/3 text-grey-dark">
+                    <div className="w-1/2 text-grey-dark">
                       Timeline
                     </div>
-                    <div className="w-2/3 text-right">
+                    <div className="w-1/2">
                       Less than 6 months
                     </div>
                   </li>
                   <li className="flex pt-3">
-                    <div className="w-1/3 text-grey-dark">
+                    <div className="w-1/2 text-grey-dark">
                       Lead Source
                     </div>
-                    <div className="w-2/3 text-right">
+                    <div className="w-1/2">
                       Facebook
                     </div>
                   </li>

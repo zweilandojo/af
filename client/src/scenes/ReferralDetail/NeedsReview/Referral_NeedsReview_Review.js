@@ -102,7 +102,7 @@ class ReferralProfile extends React.Component {
           </div>
 
           <nav className="nav nav-tabs card-top">
-            <div className="max-w-lg mx-auto">
+            <div className="max-w-md mx-auto">
               <div className="tab">
                 <Link to="/referral-needsReview-profile">
                   Profile
@@ -118,7 +118,7 @@ class ReferralProfile extends React.Component {
 
         </div>
 
-        <main className="container mx-auto px-5 pb-24 max-w-lg">
+        <main className="container mx-auto px-5 pb-24 max-w-md">
 
           <section className="my-12">
             <header className="flex mb-4">
@@ -482,7 +482,7 @@ class ReferralProfile extends React.Component {
             </section>
 
             <section className="fixed pin-b actions">
-              <div className="container flex items-center px-6 mx-auto max-w-lg">
+              <div className="container flex items-center px-6 mx-auto max-w-md">
                 <div className="flex-1">
                   <Link to="/home-approved-arthur" className="btn btn-green block text-center text-lg">Save</Link>
                 </div>
