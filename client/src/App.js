@@ -13,10 +13,10 @@ import AuthVerify from './scenes/SignIn/AuthVerify.js';
 import Loading from './scenes/SignIn/Loading.js';
 import Announcement from './scenes/Announcement/index.js';
 
-import Home_All from './scenes/Home/Home_All.js';
-import Home_NeedsReview from './scenes/Home/Home_NeedsReview.js';
-import Home_ZeroState from './scenes/Home/Home_ZeroState.js';
+import Home from './scenes/Home/Home.js';
 import Home_Approved_Arthur from './scenes/Home/Home_Approved_Arthur.js';
+
+import ReferralProfile from './scenes/ReferralDetail/ReferralProfile.js';
 
 import Referral_Approved_Profile from './scenes/ReferralDetail/Approved/Referral_Approved_Profile.js';
 import Referral_Approved_Review from './scenes/ReferralDetail/Approved/Referral_Approved_Review.js';
@@ -30,8 +30,8 @@ import Referral_Dead_Profile from './scenes/ReferralDetail/Dead/Referral_Dead_Pr
 import Referral_Dead_Review from './scenes/ReferralDetail/Dead/Referral_Dead_Review.js';
 import Modal_Release_Referral from './scenes/ReferralDetail/_ModalReleaseReferral/index.js';
 
-import Profile from './scenes/Profile/index.js';
-import Settings from './scenes/Settings/Settings.js';
+import AccountProfile from './scenes/Account/Profile';
+import AccountSettings from './scenes/Account/Settings.js';
 
 import Support from './scenes/Support/Support.js';
 
@@ -47,10 +47,10 @@ class App extends Component {
 
           <Route path="/announcement" component={Announcement}/>
 
-          <Route exact path="/home-all" component={Home_All}/>
-          <Route exact path="/" component={Home_NeedsReview}/>
-          <Route exact path="/home-zero" component={Home_ZeroState}/>
+          <Route exact path="/" component={Home}/>
           <Route exact path="/home-approved-arthur" component={Home_Approved_Arthur}/>
+
+          <Route path="/referral/:id" component={ReferralProfile}/>
 
           <Route path="/support" component={Support}/>
 
@@ -67,8 +67,8 @@ class App extends Component {
           <Route path="/referral-dead-review" component={Referral_Dead_Review}/>
           <Route path="/modal-release-referral" component={Modal_Release_Referral}/>
 
-          <Route path="/profile" component={Profile}/>
-          <Route path="/settings" component={Settings}/>
+          <Route path="/account/profile" component={AccountProfile}/>
+          <Route path="/account/settings" component={AccountSettings}/>
 
         </div>
       </Router>
