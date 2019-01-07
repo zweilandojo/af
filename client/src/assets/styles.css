@@ -701,9 +701,7 @@ select {
 
 
 /* Referral List */
-.referral-list a:last-child {
-  border: 0;
-}
+.referral-list a:last-child {}
 .referral-list_needs-review .avatar-image {
   opacity: .6;
 }

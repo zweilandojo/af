@@ -45,12 +45,9 @@ const Home = ({ data: { loading, error, agent } }) => {
       <div className="app">
         <AppHeader />
 
-        <main className="container mx-auto md:pt-8 px-5 max-w-md">
+        <main className="container mx-auto pt-2 md:pt-20 px-5 max-w-md">
           <div className="referral-tracking my-10 mb-16">
             <header className="mb-12 text-center">
-              <div className="md:invisible mb-4 md:mb-0">
-                <img src={logoBlueCircle} alt="OJO" className="h-12 w-12" />
-              </div>
               <h3 className="mb-2 font-bold text-4xl">
                 Aloha, {agent.firstName}.
               </h3>
@@ -72,7 +69,7 @@ const Home = ({ data: { loading, error, agent } }) => {
             {agent.referrals.length < 0 &&
               <div className="referral-tracking clearfix mb-12">
                 <div className="">
-                  <h3 className="mb-4 text-2xl">
+                  <h3 className="mb-4 text-sm uppercase">
                     Referrals
                   </h3>
                   <p className="text-base text-grey mb-6">
@@ -126,13 +123,12 @@ const Home = ({ data: { loading, error, agent } }) => {
 
             {agent.referrals.length > 0 &&
             <div className="">
-              <h3 className="mb-4 text-2xl">
-                Referrals
-              </h3>
-              <p className="text-base text-grey-dark mb-6">
-                Review your referrals by Wed, Jan 9, 2019
-              </p>
-              <div className="referral-list">
+              <header className="">
+                <h3 className="mb-4 text-2xl font-regular">
+                  Referrals
+                </h3>
+              </header>
+              <div className="referral-list border-t border-grey-light">
               {agent.referrals.map(referral => (
                 <Link to={`/referral/${referral.id}`} className={"py-4 border-b border-grey-light flex " + (referral.isReviewed !== true ? 'referral-list_needs-review' : '')}>
                   <div className={"avatar avatar-m rounded-full flex flex-no-shrink items-center justify-center h-12 w-12 text-white " + (referral.isReviewed !== true ? 'bg-red-light' : 'bg-gradient-blue-green')}>
@@ -163,10 +159,6 @@ const Home = ({ data: { loading, error, agent } }) => {
               </div>
             </div>
           }
-          </div>
-
-          <div className="mt-16 p-3 text-center">
-            <Link to="/support" className="mb-6 mr-6 inline-block py-4 px-10 border border-grey-light rounded-full">Support</Link>
           </div>
         </main>
 
