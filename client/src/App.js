@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 // Assets
 // ...nothing yet...
@@ -8,27 +8,27 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 // ...nothing yet...
 
 // Scenes
-import SignIn from './scenes/SignIn/SignIn.js';
-import AuthVerify from './scenes/SignIn/AuthVerify.js';
-import Loading from './scenes/SignIn/Loading.js';
-import Announcement from './scenes/Announcement/index.js';
+import SignIn from './scenes/SignIn/SignIn.js'
+import AuthVerify from './scenes/SignIn/AuthVerify.js'
+import Loading from './scenes/SignIn/Loading.js'
+import Announcement from './scenes/Announcement/index.js'
 
-import Home from './scenes/Home/Home.js';
-import Home_Approved_Arthur from './scenes/Home/Home_Approved_Arthur.js';
+import Home from './scenes/Home/Home.js'
+import Home_Approved_Arthur from './scenes/Home/Home_Approved_Arthur.js'
 
-import ReferralProfile from './scenes/ReferralDetail/ReferralProfile.js';
+import ReferralProfile from './scenes/ReferralDetail/ReferralProfile.js'
 
-import Referral_Approved_Profile from './scenes/ReferralDetail/Approved/Referral_Approved_Profile.js';
-import Referral_Approved_Review from './scenes/ReferralDetail/Approved/Referral_Approved_Review.js';
-import Referral_Approved_Arthur_Profile from './scenes/ReferralDetail/Approved/Referral_Approved_Arthur_Profile.js';
-import Referral_Approved_Arthur_Review from './scenes/ReferralDetail/Approved/Referral_Approved_Arthur_Review.js';
-import Referral_NeedsReview_Profile from './scenes/ReferralDetail/NeedsReview/Referral_NeedsReview_Profile.js';
-import Referral_NeedsReview_Review from './scenes/ReferralDetail/NeedsReview/Referral_NeedsReview_Review.js';
-import Referral_Barebones_NeedsReview_Profile from './scenes/ReferralDetail/Barebones/Referral_NoName_NeedsReview_Profile.js';
-import Referral_Barebones_NeedsReview_Review from './scenes/ReferralDetail/Barebones/Referral_NoName_NeedsReview_Review.js';
-import Referral_Dead_Profile from './scenes/ReferralDetail/Dead/Referral_Dead_Profile.js';
-import Referral_Dead_Review from './scenes/ReferralDetail/Dead/Referral_Dead_Review.js';
-import Modal_Release_Referral from './scenes/ReferralDetail/_ModalReleaseReferral/index.js';
+import Referral_Approved_Profile from './scenes/ReferralDetail/Approved/Referral_Approved_Profile.js'
+import Referral_Approved_Review from './scenes/ReferralDetail/Approved/Referral_Approved_Review.js'
+import Referral_Approved_Arthur_Profile from './scenes/ReferralDetail/Approved/Referral_Approved_Arthur_Profile.js'
+import Referral_Approved_Arthur_Review from './scenes/ReferralDetail/Approved/Referral_Approved_Arthur_Review.js'
+import Referral_NeedsReview_Profile from './scenes/ReferralDetail/NeedsReview/Referral_NeedsReview_Profile.js'
+import Referral_NeedsReview_Review from './scenes/ReferralDetail/NeedsReview/Referral_NeedsReview_Review.js'
+import Referral_Barebones_NeedsReview_Profile from './scenes/ReferralDetail/Barebones/Referral_NoName_NeedsReview_Profile.js'
+import Referral_Barebones_NeedsReview_Review from './scenes/ReferralDetail/Barebones/Referral_NoName_NeedsReview_Review.js'
+import Referral_Dead_Profile from './scenes/ReferralDetail/Dead/Referral_Dead_Profile.js'
+import Referral_Dead_Review from './scenes/ReferralDetail/Dead/Referral_Dead_Review.js'
+import Modal_ReleaseReferral from './scenes/ReferralDetail/Actions/Modal_ReleaseReferral'
 
 import AccountProfile from './scenes/Account/Profile';
 import AccountSettings from './scenes/Account/Settings.js';
@@ -65,7 +65,7 @@ class App extends Component {
           <Route path="/referral-barebones-needsReview-review" component={Referral_Barebones_NeedsReview_Review}/>
           <Route path="/referral-dead-profile" component={Referral_Dead_Profile}/>
           <Route path="/referral-dead-review" component={Referral_Dead_Review}/>
-          <Route path="/modal-release-referral" component={Modal_Release_Referral}/>
+          <Route path="/modal-release-referral" component={Modal_ReleaseReferral}/>
 
           <Route path="/account/profile" component={AccountProfile}/>
           <Route path="/account/settings" component={AccountSettings}/>

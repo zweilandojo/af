@@ -62,7 +62,7 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
       <div className="app">
         <AppHeader />
 
-        <main className="container mx-auto mt-20 px-5 max-w-md md:pt-6">
+        <main className="container mx-auto mt-24 px-5 max-w-md md:pt-6">
           <div className="referral-tracking my-10 mb-16">
             <header className="mb-12 relative">
               <h3 className="mb-2 font-bold text-4xl">
@@ -89,50 +89,39 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
               </p>
             </header>
             <div className="flex flex-wrap">
-              <div className="w-full sm:w-1/4 mb-10 leading-loose text-sm font-medium">
-                <div className="mb-2">
-                  <a href="#account" className="text-black">Account</a>
-                </div>
-                <div className="mb-2">
-                  <a href="#brokerage" className="text-black">Brokerage</a>
-                </div>
-                <div className="mb-2">
-                  <a href="#areas" className="text-black">Market &amp; Areas</a>
-                </div>
-              </div>
-              <div className="w-full sm:w-3/4">
+              <div className="w-full">
                 <section className="mb-16" id="account">
                   <h3 className="text-2xl mb-6">Account</h3>
                   <ul className="border-t border-grey-light text-sm leading-normal list-reset">
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         Phone
                       </div>
-                      <div className="w-2/3 text-right">
+                      <div className="w-1/2">
                         <span className="text-black">{agent.phone}</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         Email
                       </div>
-                      <div className="w-2/3 truncate text-right">
+                      <div className="w-1/2 truncate">
                         <span className="text-black">{agent.email}</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         Agent Type
                       </div>
-                      <div className="w-2/3 text-right">
+                      <div className="w-1/2">
                         <span className="text-black">{agent.agentType}</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         Matching
                       </div>
-                      <div className="w-2/3 text-right">
+                      <div className="w-1/2">
                         <span className="text-black">{agent.isMatching}</span>
                       </div>
                     </li>
@@ -144,58 +133,58 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
                   {agent.brokerages.map(brokerage => (
                   <ul className="border-t border-grey-light text-sm leading-normal list-reset">
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         Name
                       </div>
-                      <div className="w-2/3 truncate text-right">
+                      <div className="w-1/2 truncate">
                         <span className="text-black">{brokerage.name}</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         Office
                       </div>
-                      <div className="w-2/3 text-right">
+                      <div className="w-1/2">
                         <span className="text-black">{brokerage.office}</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         Address
                       </div>
-                      <div className="w-2/3 truncate text-right">
+                      <div className="w-1/2 truncate">
                         <span className="text-black">{brokerage.officeAddress}</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         Phone
                       </div>
-                      <div className="w-2/3 text-right">
+                      <div className="w-1/2">
                         <span className="text-black">{brokerage.officePhone}</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         Website
                       </div>
-                      <div className="w-2/3 truncate text-right">
+                      <div className="w-1/2 truncate">
                         <span className="text-black">{brokerage.officeWebsite}</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         State
                       </div>
-                      <div className="w-2/3 text-right">
+                      <div className="w-1/2">
                         <span className="text-black">{brokerage.state}</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         Timezone
                       </div>
-                      <div className="w-2/3 text-right">
+                      <div className="w-1/2">
                         <span className="text-black">{brokerage.timezone}</span>
                       </div>
                     </li>
@@ -207,25 +196,25 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
                   <h3 className="text-2xl mb-6">Market &amp; Areas</h3>
                   <ul className="border-t border-grey-light text-sm leading-normal list-reset">
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         Market
                       </div>
-                      <div className="w-2/3 text-right">
+                      <div className="w-1/2">
                         <span className="text-black">Austin, TX</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
+                      <div className="w-1/2 text-grey-dark">
                         Areas
                       </div>
-                      <div className="w-2/3 text-right">
+                      <div className="w-1/2">
                         <span className="text-black">Central Austin, East Central Austin, Downtown Austin, Northwest Austin, South Austin, Southwest Austin, Hyde Park, West Austin, Tarrytown, Cedar Park</span>
                       </div>
                     </li>
                   </ul>
                 </section>
 
-                <div className="mt-16">
+                <div className="mt-16 p-3 text-center">
                   <Link to="/signin" className="block text-red text-base">Sign Out</Link>
                 </div>
               </div>

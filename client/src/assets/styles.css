@@ -560,11 +560,9 @@ select {
   background-color: white;
 }
 .app-header-links {
-  display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  margin-top: 12px;
 }
 .app-header-links a {
   color: #757575;
