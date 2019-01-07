@@ -120,6 +120,10 @@ h1 { font-size: 1.5rem } /* 24px */
   background: -webkit-linear-gradient(top, #3366FF 0%, #62F1AC 100%);
   background: linear-gradient(180deg, #3366FF 0%, #62F1AC 100%);
 }
+.bg-gradient-blue-red {
+  background: -webkit-linear-gradient(top, #3366FF 0%, #F68EB1 100%);
+  background: linear-gradient(180deg, #3366FF 0%, #F68EB1 100%);
+}
 
 .svg-gray {
   fill: #BDBDBD;
