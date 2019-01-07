@@ -15,27 +15,27 @@ export const Agent = gql`
 `
 const AppHeader = ({ data: { agent } }) => {
   return (
-    <header className="w-full fixed pin-t z-10 bg-white">
-      <div className="mx-auto max-w-xl flex">
+    <header className="app-header-nav border-b border-grey-light w-full fixed pin-t z-10">
+      <div className="mx-auto flex">
 
         <div className="flex-1 text-left">
-          <Link to="/" className="inline-block flex-no-shrink px-6 py-4">
+          <Link to="/" className="inline-block flex-no-shrink px-6 py-3">
             <img src={logoBlueCircle} className="w-8 h-8" alt="OJO Logo" />
           </Link>
         </div>
 
-        <div className="flex-1">
-          {/*<NavLink to="/" exact activeClassName="active">
-            <div className="px-2 py-1">Home</div>
-          </NavLink>*/}
-        </div>
+        <div className="flex-1 flex justify-end text-right app-header-links mr-2">
+          <NavLink to="/" exact className="inline-block py-6" activeClassName="active">
+            <div className="px-2">Home</div>
+          </NavLink>
 
-        <div className="flex-1 text-right">
-          <NavLink to="/account/profile" className="inline-block flex-no-shrink px-6 py-4" activeClassName="active">
+          <NavLink to="/account/profile" className="flex items-center inline-block flex-no-shrink px-6 py-3" activeClassName="active">
             <div className="h-8 w-8 bg-purple rounded-full inline-block flex flex-no-shrink items-center justify-center">
               <span className="avatar-initials text-white text-sm mt-1 font-normal">{agent.firstName.charAt(0)}</span>
             </div>
-            {/*<div className="px-2 py-1">Sandra</div>*/}
+            <div className="px-2 py-1">
+              {agent.firstName}
+            </div>
           </NavLink>
         </div>
 

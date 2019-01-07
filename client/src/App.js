@@ -8,13 +8,15 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 // ...nothing yet...
 
 // Scenes
-import SignIn from './scenes/SignIn/SignIn.js'
-import AuthVerify from './scenes/SignIn/AuthVerify.js'
-import Loading from './scenes/SignIn/Loading.js'
-import Announcement from './scenes/Announcement/index.js'
+import SignIn from './scenes/SignIn/SignIn'
+import AuthVerify from './scenes/SignIn/AuthVerify'
+import Loading from './scenes/SignIn/Loading'
+import Announcement from './scenes/Announcement/index'
 
-import Home from './scenes/Home/Home.js'
+import Home from './scenes/Home/Home'
 import Home_Approved_Arthur from './scenes/Home/Home_Approved_Arthur.js'
+
+import Search from './scenes/Search'
 
 import ReferralProfile from './scenes/ReferralDetail/ReferralProfile.js'
 
@@ -31,7 +33,7 @@ import Referral_Dead_Review from './scenes/ReferralDetail/Dead/Referral_Dead_Rev
 import Modal_ReleaseReferral from './scenes/ReferralDetail/Actions/Modal_ReleaseReferral'
 
 import AccountProfile from './scenes/Account/Profile';
-import AccountSettings from './scenes/Account/Settings.js';
+import AccountSettings from './scenes/Account/Settings';
 
 import Support from './scenes/Support/Support.js';
 
@@ -49,6 +51,8 @@ class App extends Component {
 
           <Route exact path="/" component={Home}/>
           <Route exact path="/home-approved-arthur" component={Home_Approved_Arthur}/>
+
+          <Route exact path="/search" component={Search}/>
 
           <Route path="/referral/:id" component={ReferralProfile}/>
 

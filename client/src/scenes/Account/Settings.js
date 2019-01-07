@@ -7,11 +7,11 @@ import { graphql } from 'react-apollo'
 import AppHeader from '../../components/AppHeader/index.js'
 
 // Assets
-import iconPerson from '../../assets/images/icon-person.svg'
-import iconCheckboxChecked from '../../assets/images/icon-checkmark-checked.svg'
-import iconCheckboxgrey from '../../assets/images/icon-checkmark-checked-gray.svg'
-import iconChevronRightgrey from '../../assets/images/icon-chevron-right-gray.svg'
-import logoBlueCircle from '../../assets/images/logo-ojo-bg-blue.png'
+// import iconPerson from '../../assets/images/icon-person.svg'
+// import iconCheckboxChecked from '../../assets/images/icon-checkmark-checked.svg'
+// import iconCheckboxgrey from '../../assets/images/icon-checkmark-checked-gray.svg'
+// import iconChevronRightgrey from '../../assets/images/icon-chevron-right-gray.svg'
+// import logoBlueCircle from '../../assets/images/logo-ojo-bg-blue.png'
 import logoOJOWhite from '../../assets/images/ojo-logo-white.svg'
 
 export const Agent = gql`

@@ -49,7 +49,7 @@ class AppHeaderReferral extends React.Component {
     return (
       <div>
         <header className="h-16 fixed pin-t w-full">
-          <div className="mx-auto max-w-xl flex">
+          <div className="flex">
             <div className="w-1/3 app-header-back-button">
               <Link to="/" className="block">
                 <img src={iconChevronLeftWhite} className="icon icon-chevron-left mr-1 float-left" alt="chevron left" />

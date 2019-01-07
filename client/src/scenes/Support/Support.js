@@ -9,7 +9,7 @@ import iconEmailWhite from '../../assets/images/icon-email-w.png';
 const Support = () => (
   <div className="app">
     <header className="app-header fixed pin-t w-full bg-white">
-      <div className="mx-auto flex max-w-xl">
+      <div className="flex">
         <div className="w-1/3 app-header-back-button">
           <Link to="/" className="block">
             <img src={iconChevronLeft} className="icon icon-chevron-left mr-1 float-left" alt="back icon" />

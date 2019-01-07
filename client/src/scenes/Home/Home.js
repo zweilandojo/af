@@ -5,15 +5,15 @@ import { graphql } from 'react-apollo'
 
 // Components
 import AppHeader from '../../components/AppHeader/index.js'
-import AgentHomeBanner from '../../components/AgentHomeBanner/index.js'
-import Milestones from '../../components/Milestones/index.js'
+import NavFooter from '../../components/NavFooter'
 
 // Assets
-import iconPerson from '../../assets/images/icon-person.svg'
-import iconCheckboxChecked from '../../assets/images/icon-checkmark-checked.svg'
-import iconCheckboxgrey from '../../assets/images/icon-checkmark-checked-gray.svg'
+// import iconPerson from '../../assets/images/icon-person.svg'
+// import iconCheckboxChecked from '../../assets/images/icon-checkmark-checked.svg'
+// import iconCheckboxgrey from '../../assets/images/icon-checkmark-checked-gray.svg'
 import iconChevronRightgrey from '../../assets/images/icon-chevron-right-gray.svg'
 import logoOJOWhite from '../../assets/images/ojo-logo-white.svg'
+import logoBlueCircle from '../../assets/images/logo-ojo-bg-blue-lg.png';
 
 export const Agent = gql`
   query {
@@ -45,9 +45,12 @@ const Home = ({ data: { loading, error, agent } }) => {
       <div className="app">
         <AppHeader />
 
-        <main className="container mx-auto pt-20 px-5 max-w-md">
+        <main className="container mx-auto md:pt-8 px-5 max-w-md">
           <div className="referral-tracking my-10 mb-16">
             <header className="mb-12 text-center">
+              <div className="md:invisible mb-4 md:mb-0">
+                <img src={logoBlueCircle} alt="OJO" className="h-12 w-12" />
+              </div>
               <h3 className="mb-2 font-bold text-4xl">
                 Aloha, {agent.firstName}.
               </h3>
@@ -162,14 +165,12 @@ const Home = ({ data: { loading, error, agent } }) => {
           }
           </div>
 
-          <footer className="mb-12 fixed pin-r pin-b mr-6">
-            <Link to="/support"
-              className="text-grey-darkest leading-loose text-sm font-medium px-4 py-3 shadow rounded hover:bg-grey-lightest"
-            >
-              Need help?
-            </Link>
-          </footer>
+          <div className="mt-16 p-3 text-center">
+            <Link to="/support" className="mb-6 mr-6 inline-block py-4 px-10 border border-grey-light rounded-full">Support</Link>
+          </div>
         </main>
+
+        <NavFooter />
       </div>
     )
   }
