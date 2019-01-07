@@ -8,19 +8,22 @@ import iconEmailWhite from '../../assets/images/icon-email-w.png';
 
 const Support = () => (
   <div className="app">
-    <header className="app-header fixed pin-t w-full bg-white  flex">
-      <div className="w-1/3 app-header-back-button">
-        <Link to="/" className="block">
-          <img src={iconChevronLeft} className="icon icon-chevron-left mr-1 float-left" alt="back icon" />
-        </Link>
-      </div>
-      <div className="w-1/3 text-center">
-        <h6 className="text-base font-semibold py-6 leading-normal">
-          OJO Support
-        </h6>
-      </div>
-      <div className="w-1/3 text-right">
-        {/* Nothing here */}
+    <header className="app-header fixed pin-t w-full bg-white">
+      <div className="mx-auto flex max-w-xl">
+        <div className="w-1/3 app-header-back-button">
+          <Link to="/" className="block">
+            <img src={iconChevronLeft} className="icon icon-chevron-left mr-1 float-left" alt="back icon" />
+            <span>Back</span>
+          </Link>
+        </div>
+        <div className="flex-1 py-6 text-center">
+          <span className="inline-block font-bold leading-tight">
+            OJO Support
+          </span>
+        </div>
+        <div className="w-1/3 text-right">
+          {/* Nothing here */}
+        </div>
       </div>
     </header>
     <div className="container mx-auto px-6 mt-24">

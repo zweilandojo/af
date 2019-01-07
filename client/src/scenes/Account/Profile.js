@@ -13,6 +13,8 @@ import iconCheckboxgrey from '../../assets/images/icon-checkmark-checked-gray.sv
 import iconChevronRightgrey from '../../assets/images/icon-chevron-right-gray.svg'
 import logoBlueCircle from '../../assets/images/logo-ojo-bg-blue.png'
 import logoOJOWhite from '../../assets/images/ojo-logo-white.svg'
+import iconChevronLeft from '../../assets/images/icon-chevron-left.svg';
+
 
 export const Agent = gql`
   query {
@@ -60,27 +62,64 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
   if (!loading) {
     return (
       <div className="app">
-        <AppHeader />
+      <header className="w-full fixed pin-t z-10 bg-white">
+        <div className="mx-auto max-w-xl flex">
+          <div className="w-1/3 app-header-back-button">
+            <Link to="/" className="block">
+              <img src={iconChevronLeft} className="icon icon-chevron-left mr-1 float-left" alt="back icon" />
+              <span>Back</span>
+            </Link>
+          </div>
 
-        <main className="container mx-auto mt-24 px-5 max-w-md md:pt-6">
+          <div className="flex-1 py-6 text-center">
+            <span className="inline-block font-bold leading-tight">Profile</span>
+          </div>
+
+          <div className="flex-1 py-6 text-right">
+            <Link to="/account/settings" className="leading-tight inline-block px-6" activeClassName="active">
+              Settings
+            </Link>
+          </div>
+
+          {/*
+          <div className="py-3 px-5 text-center mx-auto max-w-lg">
+            <input
+              className="app-search-input"
+              type="search"
+              placeholder="Search"
+            />
+          </div>
+          */}
+        </div>
+      </header>
+
+        <main className="container mx-auto pt-12 px-5 max-w-xl">
           <div className="referral-tracking my-10 mb-16">
-            <header className="mb-12 relative">
-              <h3 className="mb-2 font-bold text-4xl">
+            <header className="mb-12 relative text-center">
+              <div className="avatar avatar-lg flex bg-purple items-center">
+                <span className="block w-full text-center mt-2">{agent.firstName.charAt(0)}</span>
+              </div>
+
+              <h3 className="mb-3 font-bold text-4xl">
                 {agent.firstName + ' ' + agent.lastName}
               </h3>
 
-              <div className="leading-loose font-semibold uppercase text-grey-dark text-xs">
-                <span className="inline-block mr-4">
-                  <span className="">Referrals</span>
-                  <span className="ml-1">3</span>
+              <Link to="/account/editprofile" className="clearfix max-w-xs mx-auto mb-6 block py-4 px-4 border border-grey-light rounded-full">
+                Edit Profile
+              </Link>
+
+              <div className="leading-tight mb-4 uppercase text-grey-dark text-xs">
+                <span className="inline-block">
+                  <span className="text-xl text-black">3</span>
+                  <span className="tracking-wide block">Referrals</span>
                 </span>
-                <span className="inline-block mr-4">
-                  <span className="">Closed</span>
-                  <span className="ml-1">0</span>
+                <span className="inline-block mx-8">
+                  <span className="text-xl text-black">0</span>
+                  <span className="tracking-wide block">Closed</span>
                 </span>
-                <span className="inline-block mr-4">
-                  <span className="">Close Rate</span>
-                  <span className="ml-1">0%</span>
+                <span className="inline-block">
+                  <span className="text-xl text-black">0%</span>
+                  <span className="tracking-wide block">Close Rate</span>
                 </span>
               </div>
 

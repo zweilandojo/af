@@ -16,9 +16,9 @@ export const Agent = gql`
 const AppHeader = ({ data: { agent } }) => {
   return (
     <header className="w-full fixed pin-t z-10 bg-white">
-      <div className="mx-auto max-w-md flex">
+      <div className="mx-auto max-w-xl flex">
 
-        <div className="flex-1">
+        <div className="flex-1 text-left">
           <Link to="/" className="inline-block flex-no-shrink px-6 py-4">
             <img src={logoBlueCircle} className="w-8 h-8" alt="OJO Logo" />
           </Link>
@@ -30,9 +30,9 @@ const AppHeader = ({ data: { agent } }) => {
           </NavLink>*/}
         </div>
 
-        <div className="flex-1 relative text-right">
+        <div className="flex-1 text-right">
           <NavLink to="/account/profile" className="inline-block flex-no-shrink px-6 py-4" activeClassName="active">
-            <div className="h-8 w-8 bg-purple-light rounded-full inline-block flex flex-no-shrink items-center justify-center">
+            <div className="h-8 w-8 bg-purple rounded-full inline-block flex flex-no-shrink items-center justify-center">
               <span className="avatar-initials text-white text-sm mt-1 font-normal">{agent.firstName.charAt(0)}</span>
             </div>
             {/*<div className="px-2 py-1">Sandra</div>*/}
