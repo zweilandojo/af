@@ -51,18 +51,18 @@ const Home = ({ data: { loading, error, agent } }) => {
               <h3 className="mb-2 font-bold text-4xl">
                 Aloha, {agent.firstName}.
               </h3>
-              <div className="leading-loose font-semibold uppercase text-grey-dark text-xs">
-                <span className="inline-block mr-4">
-                  <span className="">Met</span>
-                  <span className="ml-1">0</span>
+              <div className="leading-tight mb-4 uppercase text-grey-dark text-xs">
+                <span className="inline-block">
+                  <span className="text-xl text-black">3</span>
+                  <span className="tracking-wide block">Met</span>
                 </span>
-                <span className="inline-block mr-4">
-                  <span className="">Offer</span>
-                  <span className="ml-1">0</span>
+                <span className="inline-block mx-8">
+                  <span className="text-xl text-black">1</span>
+                  <span className="tracking-wide block">Offered</span>
                 </span>
-                <span className="inline-block mr-4">
-                  <span className="">Closed</span>
-                  <span className="ml-1">0</span>
+                <span className="inline-block">
+                  <span className="text-xl text-black">0</span>
+                  <span className="tracking-wide block">Closed</span>
                 </span>
               </div>
             </header>
