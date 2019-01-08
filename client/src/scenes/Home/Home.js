@@ -13,7 +13,6 @@ import NavFooter from '../../components/NavFooter'
 // import iconCheckboxgrey from '../../assets/images/icon-checkmark-checked-gray.svg'
 import iconChevronRightgrey from '../../assets/images/icon-chevron-right-gray.svg'
 import logoOJOWhite from '../../assets/images/ojo-logo-white.svg'
-import logoBlueCircle from '../../assets/images/logo-ojo-bg-blue-lg.png';
 
 export const Agent = gql`
   query {
@@ -128,7 +127,10 @@ const Home = ({ data: { loading, error, agent } }) => {
                   Referrals
                 </h3>
               </header>
-              <div className="referral-list border-t border-grey-light">
+              <div className="">
+                <input type="text" name="filterReferrals" className="input input-search text-base" placeholder="Filter" id="filterReferrals" />
+              </div>
+              <div className="referral-list">
               {agent.referrals.map(referral => (
                 <Link to={`/referral/${referral.id}`} className={"py-4 border-b border-grey-light flex " + (referral.isReviewed !== true ? 'referral-list_needs-review' : '')}>
                   <div className={"avatar avatar-m rounded-full flex flex-no-shrink items-center justify-center h-12 w-12 text-white " + (referral.isReviewed !== true ? 'bg-red-light' : 'bg-gradient-blue-green')}>
@@ -160,7 +162,7 @@ const Home = ({ data: { loading, error, agent } }) => {
             </div>
           }
           </div>
-          <div className="mt-16 p-3 text-center">
+          <div className="mt-16 mb-16 p-3 text-center">
             <Link to="/support" className="mb-6 mr-6 inline-block py-4 px-10 border border-grey-light hover:bg-grey-lightest hover:border-grey-lightest rounded-full">Support</Link>
           </div>
         </main>

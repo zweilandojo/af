@@ -10,13 +10,14 @@ const NavFooter = () => {
           Home
         </div>
       </NavLink>
+      {/*
       <NavLink to="/search" className="nav-footer_link" activeClassName="active">
         <div className="nav-icon nav-icon-search"></div>
         <div className="">
           Search
         </div>
       </NavLink>
-
+      */}
       <NavLink to="/account/profile" className="nav-footer_link" activeClassName="active">
         <div className="nav-icon nav-icon-profile"></div>
         <div className="">

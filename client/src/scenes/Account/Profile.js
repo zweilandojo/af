@@ -9,7 +9,6 @@ import NavFooter from '../../components/NavFooter'
 
 // Assets
 import logoOJOWhite from '../../assets/images/ojo-logo-white.svg'
-import iconChevronLeft from '../../assets/images/icon-chevron-left.svg';
 
 
 export const Agent = gql`

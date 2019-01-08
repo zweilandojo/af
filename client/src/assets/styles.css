@@ -411,6 +411,15 @@ input:checked + .slider:before {
   min-height: 8rem;
   padding-top: 1rem;
 }
+.input-search {
+  background-image: url(./images/navbar/icon-search-inactive.png);
+  background-repeat: no-repeat;
+  background-position: 1rem 50%;
+  background-size: 16px;
+  padding: .5rem 1rem .5rem 3rem;
+  background-color: #fafafa;
+  border: none;
+}
 select {
   background: white;
   background-image: url(./images/icons/icon-chevron-down-slate.png);
@@ -650,7 +659,7 @@ select {
   display: flex;
 }
 .nav-footer_link {
-  width: 33.333333%;
+  width: 50%;
   text-align: center;
   font-size: .825rem;
   color: #757575;
