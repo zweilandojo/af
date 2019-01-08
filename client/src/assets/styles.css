@@ -417,9 +417,15 @@ input:checked + .slider:before {
   background-position: 1rem 50%;
   background-size: 16px;
   padding: .5rem 1rem .5rem 3rem;
-  background-color: #fafafa;
+  background-color: #fff;
   border: none;
+  outline: none;
+  width: 100%;
 }
+.input-search:hover, .input-search:focus  {
+  background-color: #fafafa;
+}
+
 select {
   background: white;
   background-image: url(./images/icons/icon-chevron-down-slate.png);
