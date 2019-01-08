@@ -160,6 +160,9 @@ const Home = ({ data: { loading, error, agent } }) => {
             </div>
           }
           </div>
+          <div className="mt-16 p-3 text-center">
+            <Link to="/support" className="mb-6 mr-6 inline-block py-4 px-10 border border-grey-light hover:bg-grey-lightest hover:border-grey-lightest rounded-full">Support</Link>
+          </div>
         </main>
 
         <NavFooter />

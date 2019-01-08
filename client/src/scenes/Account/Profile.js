@@ -225,8 +225,8 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
                 </section>
 
                 <div className="mt-16 p-3 text-center">
-                  <Link to="/support" className="mb-6 mr-6 inline-block py-4 px-10 border border-grey-light rounded-full">Support</Link>
-                  <Link to="/signin" className="mb-6 inline-block py-4 px-10 border border-grey-light rounded-full text-red">Sign Out</Link>
+                  <Link to="/support" className="mb-6 mr-6 inline-block py-4 px-10 border border-grey-light rounded-full hover:bg-grey-lightest hover:border-grey-lightest">Support</Link>
+                  <Link to="/signin" className="mb-6 inline-block py-4 px-10 border border-grey-light rounded-full text-red hover:bg-grey-lightest hover:border-grey-lightest">Sign Out</Link>
                 </div>
               </div>
             </div>

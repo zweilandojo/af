@@ -1,10 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 // Assets
-import iconChevronLeft from '../../assets/images/icon-chevron-left.svg';
-import iconPhoneWhite from '../../assets/images/icon-phone-w.png';
-import iconEmailWhite from '../../assets/images/icon-email-w.png';
+import iconChevronLeft from '../../assets/images/icon-chevron-left.svg'
+import iconPhoneWhite from '../../assets/images/icon-phone-w.png'
+import iconEmailWhite from '../../assets/images/icon-email-w.png'
+import iconQuestionMarkWhite from '../../assets/images/icon-question-mark-w.png'
+
 
 const Support = () => (
   <div className="app">
@@ -36,6 +38,15 @@ const Support = () => (
       </h4>
       */}
       <div className="max-w-sm mx-auto">
+        <a href="https://ojo.zendesk.com/hc/en-us/sections/360003187571-FAQ" className="clearfix mb-4 block py-4 px-4 border border-grey-light rounded-full">
+          <div className="float-left mr-4 bg-blue-light rounded-full h-10 w-10 flex items-center justify-center">
+            <img className="icon icon-question-mark h-6" src={iconQuestionMarkWhite} alt="phone icon" />
+          </div>
+          <div className="float-left">
+            <span className="block text-lg text-black leading-normal">Frequently Asked Questions</span>
+            <span className="block text-sm text-grey-dark">Get answers to common problems</span>
+          </div>
+        </a>
         <a href="mailto:support@ojolabs.com" className="clearfix mb-4 block py-4 px-4 border border-grey-light rounded-full">
           <div className="float-left mr-4 bg-blue rounded-full h-10 w-10 flex items-center justify-center">
             <img className="icon icon-email w-5" src={iconEmailWhite} alt="email icon" />
@@ -58,9 +69,10 @@ const Support = () => (
     </div>
     {/*
     <div className="text-center text-red py-4 mt-4">
-      <p className="text-grey-darker text-sm">v1.0.9</p>
+      <p className="text-grey-darker text-sm">v1.1.3</p>
     </div>
     */}
+
   </div>
 )
 
