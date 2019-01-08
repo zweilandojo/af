@@ -127,9 +127,11 @@ const Home = ({ data: { loading, error, agent } }) => {
                   Referrals
                 </h3>
               </header>
+              {/*
               <div className="">
                 <input type="text" name="filterReferrals" className="input input-search text-base" placeholder="Filter" id="filterReferrals" />
               </div>
+              */}
               <div className="referral-list">
               {agent.referrals.map(referral => (
                 <Link to={`/referral/${referral.id}`} className={"py-4 border-b border-grey-light flex " + (referral.isReviewed !== true ? 'referral-list_needs-review' : '')}>
