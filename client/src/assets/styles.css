@@ -631,6 +631,7 @@ select {
 
 .app-header-nav {
   background: white;
+  padding: .5rem 1rem;
 }
 @media only screen and (max-width: 768px) {
   .app-header-nav {

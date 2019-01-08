@@ -45,7 +45,7 @@ const Home = ({ data: { loading, error, agent } }) => {
       <div className="app">
         <AppHeader />
 
-        <main className="container mx-auto pt-2 md:pt-20 px-5 max-w-md">
+        <main className="container mx-auto pt-2 md:pt-24 px-5 max-w-md">
           <div className="referral-tracking my-10 mb-16">
             <header className="mb-12 text-center">
               <h3 className="mb-2 font-bold text-4xl">

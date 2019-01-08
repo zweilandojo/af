@@ -15,7 +15,7 @@ export const Agent = gql`
 `
 const AppHeader = ({ data: { agent } }) => {
   return (
-    <header className="app-header-nav border-b border-grey-light w-full fixed pin-t z-10">
+    <header className="app-header-nav w-full fixed pin-t z-10">
       <div className="mx-auto flex">
 
         <div className="flex-1 text-left">
@@ -25,7 +25,7 @@ const AppHeader = ({ data: { agent } }) => {
         </div>
 
         <div className="flex-1 flex justify-end text-right app-header-links mr-2">
-          <NavLink to="/" exact className="inline-block py-6" activeClassName="active">
+          <NavLink to="/" exact className="inline-block py-6 mr-4" activeClassName="active">
             <div className="px-2">Home</div>
           </NavLink>
 

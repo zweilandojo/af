@@ -73,12 +73,8 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
               </h3>
 
               <h4 className="font-normal text-grey-dark text-sm mb-4">
-                Joined on {agent.createdAt}
+                {agent.agentType} Agent <span className="opacity-50 mx-1">•</span> Joined Dec 28, 2019
               </h4>
-
-              <Link to="/account/editprofile" className="mx-auto mb-6 inline-block py-3 px-8 border border-grey-light rounded-full">
-                Edit Profile
-              </Link>
 
               <div className="leading-tight mb-4 uppercase text-grey-dark text-xs">
                 <span className="inline-block">
@@ -102,38 +98,63 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
             <div className="flex flex-wrap">
               <div className="w-full">
                 <section className="mb-16" id="account">
-                  <h3 className="text-2xl mb-6">Account</h3>
+                  <h3 className="text-2xl mb-6">You</h3>
+                  <form className="border-t border-grey-light text-sm leading-normal list-reset">
+
+                    <div className="my-4 flex">
+                      <div className="w-1/2 pr-3">
+                        <label htmlFor="agentFirstName" className="text-xs text-grey-dark">First Name</label>
+                        <input type="text" name="agentFirstName" className="input text-lg" placeholder="" id="agentFirstName" value={agent.firstName} />
+                      </div>
+
+                      <div className="w-1/2 pl-3">
+                        <label htmlFor="agentFirstName" className="text-xs text-grey-dark">Last Name</label>
+                        <input type="text" name="agentFirstName" className="input text-lg" placeholder="" id="agentLastName" value={agent.lastName} />
+                      </div>
+                    </div>
+
+                    <div className="my-4 flex flex-wrap">
+                      <div className="w-full sm:w-1/2 sm:pr-3">
+                        <label htmlFor="agentPhone" className="text-xs text-grey-dark">Phone</label>
+                        <input type="tel" name="agentPhone" className="input mb-4 text-lg" placeholder="(555) 555-1234" id="agentPhone" value={agent.phone} />
+                      </div>
+                      <div className="w-full sm:pl-4 sm:w-1/2">
+                        <label htmlFor="agentEmail" className="text-xs text-grey-dark">Email</label>
+                        <input type="text" name="agentEmail" className="input text-lg" placeholder="you@domain.com" id="agentEmail" value={agent.email} />
+                      </div>
+                    </div>
+
+                    <div className="my-4">
+                      <div className="text-grey-dark">
+                        <input type='checkbox' checked="checked" className="" />
+                        <label className="ml-2">Accepting Leads</label>
+                      </div>
+                    </div>
+
+                    <button type="submit" className="mb-6 font-semibold text-base mr-6 inline-block py-4 px-10 border border-grey-light rounded-full">
+                      Save Changes
+                    </button>
+
+                  </form>
+                </section>
+
+                <section className="mb-16" id="areas">
+                  <h3 className="text-2xl mb-6">Market &amp; Areas</h3>
                   <ul className="border-t border-grey-light text-sm leading-normal list-reset">
                     <li className="border-b border-grey-light flex pt-3 pb-2">
                       <div className="w-1/3 text-grey-dark">
-                        Phone
+                        Market
                       </div>
                       <div className="w-2/3">
-                        <span className="text-black">{agent.phone}</span>
+                        <span className="text-black">Austin, TX</span>
                       </div>
                     </li>
                     <li className="border-b border-grey-light flex pt-3 pb-2">
                       <div className="w-1/3 text-grey-dark">
-                        Email
-                      </div>
-                      <div className="w-2/3 truncate">
-                        <span className="text-black">{agent.email}</span>
-                      </div>
-                    </li>
-                    <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
-                        Agent Type
+                        Areas
                       </div>
                       <div className="w-2/3">
-                        <span className="text-black">{agent.agentType}</span>
-                      </div>
-                    </li>
-                    <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
-                        Matching
-                      </div>
-                      <div className="w-2/3">
-                        <span className="text-black">{agent.isMatching}</span>
+                        <span className="text-black">Central Austin, East Central Austin, Downtown Austin, Northwest Austin, South Austin, Southwest Austin, Hyde Park, West Austin, Tarrytown, Cedar Park</span>
                       </div>
                     </li>
                   </ul>
@@ -201,28 +222,6 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
                     </li>
                   </ul>
                 ))}
-                </section>
-
-                <section className="mb-16" id="areas">
-                  <h3 className="text-2xl mb-6">Market &amp; Areas</h3>
-                  <ul className="border-t border-grey-light text-sm leading-normal list-reset">
-                    <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
-                        Market
-                      </div>
-                      <div className="w-2/3">
-                        <span className="text-black">Austin, TX</span>
-                      </div>
-                    </li>
-                    <li className="border-b border-grey-light flex pt-3 pb-2">
-                      <div className="w-1/3 text-grey-dark">
-                        Areas
-                      </div>
-                      <div className="w-2/3">
-                        <span className="text-black">Central Austin, East Central Austin, Downtown Austin, Northwest Austin, South Austin, Southwest Austin, Hyde Park, West Austin, Tarrytown, Cedar Park</span>
-                      </div>
-                    </li>
-                  </ul>
                 </section>
 
                 <div className="mt-16 p-3 text-center">
