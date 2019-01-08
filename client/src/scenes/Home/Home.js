@@ -122,14 +122,14 @@ const Home = ({ data: { loading, error, agent } }) => {
 
             {agent.referrals.length > 0 &&
             <div className="">
-              <header className="border-b border-grey-light mb-3">
+              <header className="">
                 <h3 className="mb-4 text-2xl font-regular">
                   Referrals
                 </h3>
               </header>
 
-              <div className="">
-                <input type="text" name="filterReferrals" className="input input-search text-base" placeholder="Filter" id="filterReferrals" />
+              <div className="mb-2">
+                <input type="text" name="filterReferrals" className="input input-search text-base" placeholder="Filter by name" id="filterReferrals" />
               </div>
 
               <div className="referral-list">

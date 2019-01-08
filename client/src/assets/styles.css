@@ -113,9 +113,9 @@ h1 { font-size: 1.5rem } /* 24px */
 .bg-blue { background-color: #3366FF; }
 .bg-blue-lightest { background-color: #86B1FF; }
 .bg-red-light { background-color: #F68EB1; }
-.bg-green { background-color: #00CA4C; }
+.bg-green-dark { background-color: #00963E; }
+.bg-green { background-color: #00C853; }
 .bg-green-light { background-color: #62F1AC; }
-
 .bg-gradient-blue-green {
   background: -webkit-linear-gradient(top, #3366FF 0%, #62F1AC 100%);
   background: linear-gradient(180deg, #3366FF 0%, #62F1AC 100%);
@@ -128,55 +128,6 @@ h1 { font-size: 1.5rem } /* 24px */
 .svg-gray {
   fill: #BDBDBD;
 }
-
-/* Circle Chart Removing the circle chart from the design
-// Leaving for now just in case there's a business made to keep it
-
-.circular-chart-wrapper {
-  position: relative;
-  float: right;
-  top: 0;
-  width: 3rem;
-  height: 3rem;
-  text-align: center;
-}
-.circular-chart-wrapper svg {
-  position: absolute;
-  top: -8px; left: 0;
-}
-.circular-chart {
-  display: block;
-  width: 48px;
-  max-height: 250px;
-}
-.circle {
-  stroke: #EC1561;
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
-  z-index: 0;
-}
-.circular-chart-back .circle {
-  animation: none;
-  stroke: #EEEEEE;
-}
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-.circular-chart-percentage {
-  font-size: 16px;
-  display: block;
-  width: 100%;
-  position: relative;
-  top: 8px; right: -1px;
-}
-.percentage-sign {
-  font-size: 9px;
-}
-*/
 
 
 /*
@@ -195,6 +146,9 @@ h1 { font-size: 1.5rem } /* 24px */
 .border-grey-lighter {
   border-color: #FAFAFA;
 }
+.border-green { border-color: #62F1AC; }
+
+/* Border Radius */
 
 .rounded {
   border-radius: 7px;
@@ -402,7 +356,6 @@ input:checked + .slider:before {
 }
 .input {
   width: 100%;
-  display: block;
   border: 2px solid #eee;
   border-radius: 0.4375rem;
   padding: .75rem 1rem;
@@ -418,9 +371,10 @@ input:checked + .slider:before {
   background-size: 16px;
   padding: .5rem 1rem .5rem 3rem;
   background-color: #fff;
-  border: none;
   outline: none;
   width: 100%;
+  border: 0;
+  display: inline-block;
 }
 .input-search:hover, .input-search:focus  {
   background-color: #fafafa;

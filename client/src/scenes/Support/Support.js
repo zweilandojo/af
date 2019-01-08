@@ -38,16 +38,16 @@ const Support = () => (
       </h4>
       */}
       <div className="max-w-sm mx-auto">
-        <a href="https://ojo.zendesk.com/hc/en-us/sections/360003187571-FAQ" className="clearfix mb-4 block py-4 px-4 border border-grey-light rounded-full">
-          <div className="float-left mr-4 bg-blue-light rounded-full h-10 w-10 flex items-center justify-center">
+        <a href="https://ojo.zendesk.com/hc/en-us/sections/360003187571-FAQ" className="clearfix mb-4 block py-4 px-4 border border-grey-light rounded-full hover:bg-grey-lightest hover:border-grey-lightest">
+          <div className="float-left mr-4 bg-grey-darkest rounded-full h-10 w-10 flex items-center justify-center">
             <img className="icon icon-question-mark h-6" src={iconQuestionMarkWhite} alt="phone icon" />
           </div>
           <div className="float-left">
-            <span className="block text-lg text-black leading-normal">Frequently Asked Questions</span>
-            <span className="block text-sm text-grey-dark">Get answers to common problems</span>
+            <span className="block text-lg text-black leading-normal">Common Questions</span>
+            <span className="block text-sm text-grey-dark">The most frequently asked</span>
           </div>
         </a>
-        <a href="mailto:support@ojolabs.com" className="clearfix mb-4 block py-4 px-4 border border-grey-light rounded-full">
+        <a href="mailto:support@ojolabs.com" className="clearfix mb-4 block py-4 px-4 border border-grey-light rounded-full hover:bg-grey-lightest hover:border-grey-lightest">
           <div className="float-left mr-4 bg-blue rounded-full h-10 w-10 flex items-center justify-center">
             <img className="icon icon-email w-5" src={iconEmailWhite} alt="email icon" />
           </div>
@@ -56,7 +56,7 @@ const Support = () => (
             <span className="block text-sm text-grey-dark">Typically responds within 24 hours</span>
           </div>
         </a>
-        <a href="tel:18669731703" className="clearfix block py-4 px-4 border border-grey-light rounded-full">
+        <a href="tel:18669731703" className="clearfix block py-4 px-4 border border-grey-light rounded-full hover:bg-grey-lightest hover:border-grey-lightest">
           <div className="float-left mr-4 bg-green rounded-full h-10 w-10 flex items-center justify-center">
             <img className="icon icon-phone w-5" src={iconPhoneWhite} alt="phone icon" />
           </div>

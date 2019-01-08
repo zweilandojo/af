@@ -60,7 +60,7 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
       <div className="app">
         <AppHeader />
 
-        <main className="container mx-auto md:pt-16 px-5 max-w-md">
+        <main className="container mx-auto md:pt-16 px-5">
           <div className="referral-tracking my-10 mb-16">
             <header className="mb-12 relative text-center">
               <div className="avatar avatar-lg flex bg-purple items-center">
@@ -94,51 +94,12 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
                 <a href={agent.websiteUrl}>{agent.websiteUrl}</a>
               </p>
             </header>
-            <div className="flex flex-wrap">
-              <div className="w-full">
-                <section className="mb-16" id="account">
-                  <h3 className="text-2xl mb-6">You</h3>
-                  <form className="border-t border-grey-light text-sm leading-normal list-reset">
+            <div className="">
+              <div className="w-full flex flex-wrap">
 
-                    <div className="my-4 flex">
-                      <div className="w-1/2 pr-3">
-                        <label htmlFor="agentFirstName" className="text-xs text-grey-dark">First Name</label>
-                        <input type="text" name="agentFirstName" className="input text-lg" placeholder="" id="agentFirstName" value={agent.firstName} />
-                      </div>
-
-                      <div className="w-1/2 pl-3">
-                        <label htmlFor="agentFirstName" className="text-xs text-grey-dark">Last Name</label>
-                        <input type="text" name="agentFirstName" className="input text-lg" placeholder="" id="agentLastName" value={agent.lastName} />
-                      </div>
-                    </div>
-
-                    <div className="my-4 flex flex-wrap">
-                      <div className="w-full sm:w-1/2 sm:pr-3">
-                        <label htmlFor="agentPhone" className="text-xs text-grey-dark">Phone</label>
-                        <input type="tel" name="agentPhone" className="input mb-4 text-lg" placeholder="(555) 555-1234" id="agentPhone" value={agent.phone} />
-                      </div>
-                      <div className="w-full sm:pl-4 sm:w-1/2">
-                        <label htmlFor="agentEmail" className="text-xs text-grey-dark">Email</label>
-                        <input type="text" name="agentEmail" className="input text-lg" placeholder="you@domain.com" id="agentEmail" value={agent.email} />
-                      </div>
-                    </div>
-
-                    <div className="my-4">
-                      <div className="text-grey-dark">
-                        <input type='checkbox' checked="checked" className="" />
-                        <label className="ml-2">Accepting Leads</label>
-                      </div>
-                    </div>
-
-                    <button type="submit" className="mb-6 font-semibold text-base mr-6 inline-block py-4 px-10 border border-grey-light rounded-full">
-                      Save Changes
-                    </button>
-
-                  </form>
-                </section>
-
+              <div className="md:w-1/2 md:pr-8">
                 <section className="mb-16" id="areas">
-                  <h3 className="text-2xl mb-6">Market &amp; Areas</h3>
+                  <h3 className="text-2xl mb-6">Your Market &amp; Areas</h3>
                   <ul className="border-t border-grey-light text-sm leading-normal list-reset">
                     <li className="border-b border-grey-light flex pt-3 pb-2">
                       <div className="w-1/3 text-grey-dark">
@@ -160,7 +121,7 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
                 </section>
 
                 <section className="mb-16" id="brokerage">
-                  <h3 className="text-2xl mb-6">Brokerage</h3>
+                  <h3 className="text-2xl mb-6">Your Brokerage</h3>
                   {agent.brokerages.map(brokerage => (
                   <ul className="border-t border-grey-light text-sm leading-normal list-reset">
                     <li className="border-b border-grey-light flex pt-3 pb-2">
@@ -221,6 +182,137 @@ const AccountProfile = ({ data: { loading, error, agent } }) => {
                     </li>
                   </ul>
                 ))}
+                </section>
+              </div>
+
+                <section className="mb-16 md:w-1/2 md:pl-8" id="account">
+                  <h3 className="text-2xl mb-6">You</h3>
+                  <form className="border-t border-grey-light text-sm leading-normal list-reset">
+
+                    <div className="my-4 flex">
+                      <div className="w-1/2 pr-3">
+                        <label htmlFor="agentFirstName" className="text-xs text-grey-dark">First Name</label>
+                        <input type="text" name="agentFirstName" className="input text-lg" placeholder="" id="agentFirstName" value={agent.firstName} />
+                      </div>
+
+                      <div className="w-1/2 pl-3">
+                        <label htmlFor="agentFirstName" className="text-xs text-grey-dark">Last Name</label>
+                        <input type="text" name="agentFirstName" className="input text-lg" placeholder="" id="agentLastName" value={agent.lastName} />
+                      </div>
+                    </div>
+
+                    <div className="my-4 flex flex-wrap">
+                      <div className="w-full sm:w-1/2 sm:pr-3">
+                        <label htmlFor="agentPhone" className="text-xs text-grey-dark">Phone</label>
+                        <input type="tel" name="agentPhone" className="input text-lg" placeholder="(555) 555-1234" id="agentPhone" value={agent.phone} />
+                      </div>
+                    </div>
+
+                    <div className="w-full my-4">
+                      <label htmlFor="agentEmail" className="text-xs text-grey-dark">Email</label>
+                      <input type="text" name="agentEmail" className="input text-lg" placeholder="you@domain.com" id="agentEmail" value={agent.email} />
+                    </div>
+
+                    <div className="my-4 flex flex-wrap">
+                      <div className="w-full sm:w-1/2 sm:pr-3">
+                        <label htmlFor="agentCity" className="text-xs text-grey-dark">City</label>
+                        <input type="text" name="agentCity" className="input text-lg" placeholder="e.g. Austin" id="agentCity" />
+                      </div>
+                      <div className="w-full sm:w-1/2 sm:pr-3">
+                        <label htmlFor="agentState" className="text-xs text-grey-dark">State</label>
+                        <select className="input select text-lg">
+                          <option>Arizona - AZ</option>
+                          <option>Arkansas - AR</option>
+                          <option>California - CA</option>
+                          <option>Colorado - CO</option>
+                          <option>Connecticut - CT</option>
+                          <option>Delaware - DE</option>
+                          <option>Florida - FL</option>
+                          <option>Georgia - GA</option>
+                          <option>Hawaii - HI</option>
+                          <option>Idaho - ID</option>
+                          <option>Illinois - IL</option>
+                          <option>Indiana - IN</option>
+                          <option>Iowa - IA</option>
+                          <option>Kansas - KS</option>
+                          <option>Kentucky - KY</option>
+                          <option>Louisiana - LA</option>
+                          <option>Maine - ME</option>
+                          <option>Maryland - MD</option>
+                          <option>Massachusetts - MA</option>
+                          <option>Michigan - MI</option>
+                          <option>Minnesota - MN</option>
+                          <option>Mississippi - MS</option>
+                          <option>Missouri - MO</option>
+                          <option>Montana - MT</option>
+                          <option>Nebraska - NE</option>
+                          <option>Nevada - NV</option>
+                          <option>New Hampshire - NH</option>
+                          <option>New Jersey - NJ</option>
+                          <option>New Mexico - NM</option>
+                          <option>New York - NY</option>
+                          <option>North Carolina - NC</option>
+                          <option>North Dakota - ND</option>
+                          <option>Ohio - OH</option>
+                          <option>Oklahoma - OK</option>
+                          <option>Oregon - OR</option>
+                          <option>Pennsylvania - PA</option>
+                          <option>Rhode Island - RI</option>
+                          <option>South Carolina - SC</option>
+                          <option>South Dakota - SD</option>
+                          <option>Tennessee - TN</option>
+                          <option>Texas - TX</option>
+                          <option>Utah - UT</option>
+                          <option>Vermont - VT</option>
+                          <option>Virginia - VA</option>
+                          <option>Washington - WA</option>
+                          <option>West Virginia - WV</option>
+                          <option>Wisconsin - WI</option>
+                          <option>Wyoming - WY</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="w-full my-4">
+                      <label htmlFor="agentBrokerage" className="text-xs text-grey-dark">Brokerage</label>
+                      <select className="input select text-lg">
+                        <option>Better Homes and Gardens Bradfield Properties</option>
+                        <option>Better Homes and Gardens Real Estate HomeCity</option>
+                        <option>Better Homes and Gardens Metro Brokers</option>
+                        <option>Coldwell Banker United, Realtors</option>
+                        <option>Coldwell Banker Residential Brokerage - Denver, CO</option>
+                        <option>Coldwell Banker Residential Brokerage - MA</option>
+                        <option>Coldwell Banker Residential Brokerage - Miami, FL</option>
+                        <option>Coldwell Banker Residential Brokerage - Orlando, FL</option>
+                        <option>Coldwell Banker Residential Brokerage - WI</option>
+                        <option>Coldwell Banker Preferred</option>
+                        <option>Coldwell Banker King Thompson</option>
+                        <option>Royal LePage</option>
+                      </select>
+                    </div>
+
+                    <div className="w-1/2 my-4">
+                      <label htmlFor="leaderRouter" className="text-xs text-grey-dark">LeadRouter Agent ID</label>
+                      <input type="text" name="leaderRouter" className="input text-lg" placeholder="e.g. 14232983" id="leaderRouter" />
+                    </div>
+
+                    <div className="w-full my-4">
+                      <input type='checkbox' checked="checked" className="" />
+                      <label className="ml-2">Signed ICA</label>
+                    </div>
+
+                    <div className="my-4">
+                      <div className="text-grey-dark">
+                        <input type='checkbox' checked="checked" className="" />
+                        <label className="ml-2 text-black">Accepting Leads</label>
+                      </div>
+                    </div>
+
+                    <button type="submit" className="mb-6 font-semibold text-base mr-6 inline-block py-4 px-10 border border-grey-light rounded-full hover:bg-green hover:text-white hover:border-green">
+                      Save Changes
+                    </button>
+
+                  </form>
                 </section>
 
                 <div className="mt-16 p-3 text-center">
