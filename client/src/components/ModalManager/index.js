@@ -41,7 +41,7 @@ class ModalManager extends React.Component {
                   </div>
                   <div className="ml-4">
                     <span className="text-base font-medium leading-normal block mb-0">Milestone Update</span>
-                    <span className="text-sm leading-normal text-grey-dark">New “showing homes” milestone. Removed “set” and changed “talked” to “connected.”</span>
+                    <span className="text-sm leading-normal text-grey-dark">New Showing Homes milestone. Removed Set and changed Talked to Connected.</span>
                   </div>
                 </div>
 
@@ -51,7 +51,7 @@ class ModalManager extends React.Component {
                   </div>
                   <div className="ml-4">
                     <span className="text-base font-medium leading-normal block mb-0">Communication + Pre-Approval</span>
-                    <span className="text-sm leading-normal text-grey-dark">s your referral responsive? Financially prepared? Track it here.</span>
+                    <span className="text-sm leading-normal text-grey-dark">Is your referral responsive? Financially prepared? Track it here.</span>
                   </div>
                 </div>
 
