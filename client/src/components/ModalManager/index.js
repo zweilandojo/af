@@ -31,7 +31,7 @@ class ModalManager extends React.Component {
                   </div>
                   <div className="ml-4">
                     <span className="text-base font-medium leading-normal block mb-0">Release a Referral</span>
-                    <span className="text-sm leading-normal text-grey-dark">Referral not working out? Release it so that it is no longer assigned to you. Dead referrals will automatically be moved to released.</span>
+                    <span className="text-sm leading-normal text-grey-dark">Referral not working out? Release them so they&#39;re no longer assigned to you. Dead is now Release.</span>
                   </div>
                 </div>
 
@@ -41,7 +41,7 @@ class ModalManager extends React.Component {
                   </div>
                   <div className="ml-4">
                     <span className="text-base font-medium leading-normal block mb-0">Milestone Update</span>
-                    <span className="text-sm leading-normal text-grey-dark">New Showing Homes milestone. Removed Set and changed Talked to Connected.</span>
+                    <span className="text-sm leading-normal text-grey-dark">New Showing Homes milestone added! We also removed Set and changed Talked to Connected.</span>
                   </div>
                 </div>
 
@@ -61,7 +61,7 @@ class ModalManager extends React.Component {
                   </div>
                   <div className="ml-4">
                     <span className="text-base font-medium leading-normal block mb-0">Note History</span>
-                    <span className="text-sm leading-normal text-grey-dark">View a timeline of your notes</span>
+                    <span className="text-sm leading-normal text-grey-dark">View a timeline of your notes.</span>
                   </div>
                 </div>
 
