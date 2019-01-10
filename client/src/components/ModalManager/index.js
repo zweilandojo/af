@@ -7,6 +7,7 @@ import iconReleaseNotes from '../../assets/images/new-release-icons/icon-notes.p
 import iconReleaseBinoculars from '../../assets/images/new-release-icons/icon-binoculars.png';
 import iconReleaseBird from '../../assets/images/new-release-icons/icon-bird.png';
 import iconReleaseCommPre from '../../assets/images/new-release-icons/icon-responsive-finance.png';
+import iconReleaseMilestones from '../../assets/images/new-release-icons/icon-milestones.png';
 
 class ModalManager extends React.Component {
   render() {
@@ -20,7 +21,7 @@ class ModalManager extends React.Component {
               <header className="m-8">
                 <h2 className="text-3xl font-medium leading-normal">What’s new?</h2>
                 <p className="text-grey-dark text-sm leading-normal">
-                  We’ve spruced up the place since you were last here. Take a look.
+                  We’ve improved the place since you were last here. Take a look.
                 </p>
               </header>
 
@@ -37,7 +38,7 @@ class ModalManager extends React.Component {
 
                 <div className="flex mb-8">
                   <div className="w-16 h-16 mb-4 flex-no-shrink bg-white border border-lightest rounded-full flex items-center justify-center">
-                    <img src={iconReleaseNotes} className="w-5" alt="Note history" />
+                    <img src={iconReleaseMilestones} className="w-6" alt="Milestones" />
                   </div>
                   <div className="ml-4">
                     <span className="text-base font-medium leading-normal block mb-0">Milestone Update</span>
@@ -47,7 +48,7 @@ class ModalManager extends React.Component {
 
                 <div className="flex mb-8">
                   <div className="w-16 h-16 mb-4 flex-no-shrink bg-white border border-lightest rounded-full flex items-center justify-center">
-                    <img src={iconReleaseCommPre} className="w-8" alt="Note history" />
+                    <img src={iconReleaseCommPre} className="w-8" alt="Communication Pre-Approval" />
                   </div>
                   <div className="ml-4">
                     <span className="text-base font-medium leading-normal block mb-0">Communication + Pre-Approval</span>
@@ -55,6 +56,7 @@ class ModalManager extends React.Component {
                   </div>
                 </div>
 
+                {/*
                 <div className="flex mb-8">
                   <div className="w-16 h-16 mb-8 flex-no-shrink bg-white border border-lightest rounded-full flex items-center justify-center">
                     <img src={iconReleaseNotes} className="w-5" alt="Note history" />
@@ -65,7 +67,6 @@ class ModalManager extends React.Component {
                   </div>
                 </div>
 
-                {/*
                 <div className="flex mb-8">
                   <div className="w-16 h-16 mb-4 flex-no-shrink bg-white border border-lightest rounded-full flex items-center justify-center">
                     <img src={iconReleaseBinoculars} className="w-8" alt="Referral details" />
