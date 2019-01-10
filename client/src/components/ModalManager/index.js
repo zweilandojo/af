@@ -40,18 +40,28 @@ class ModalManager extends React.Component {
                     <img src={iconReleaseNotes} className="w-5" alt="Note history" />
                   </div>
                   <div className="ml-4">
-                    <span className="text-base font-medium leading-normal block mb-0">Note history</span>
-                    <span className="text-sm leading-normal text-grey-dark">View a timeline of your notes.</span>
+                    <span className="text-base font-medium leading-normal block mb-0">Milestone Update</span>
+                    <span className="text-sm leading-normal text-grey-dark">New “showing homes” milestone. Removed “set” and changed “talked” to “connected.”</span>
+                  </div>
+                </div>
+
+                <div className="flex mb-8">
+                  <div className="w-16 h-16 mb-4 flex-no-shrink bg-white border border-lightest rounded-full flex items-center justify-center">
+                    <img src={iconReleaseCommPre} className="w-8" alt="Note history" />
+                  </div>
+                  <div className="ml-4">
+                    <span className="text-base font-medium leading-normal block mb-0">Communication + Pre-Approval</span>
+                    <span className="text-sm leading-normal text-grey-dark">s your referral responsive? Financially prepared? Track it here.</span>
                   </div>
                 </div>
 
                 <div className="flex mb-8">
                   <div className="w-16 h-16 mb-8 flex-no-shrink bg-white border border-lightest rounded-full flex items-center justify-center">
-                    <img src={iconReleaseCommPre} className="w-8" alt="Note history" />
+                    <img src={iconReleaseNotes} className="w-5" alt="Note history" />
                   </div>
                   <div className="ml-4">
-                    <span className="text-base font-medium leading-normal block mb-0">Communication + Pre-Approval</span>
-                    <span className="text-sm leading-normal text-grey-dark">Is your referral responsive? Financially prepared? Track it here.</span>
+                    <span className="text-base font-medium leading-normal block mb-0">Note History</span>
+                    <span className="text-sm leading-normal text-grey-dark">View a timeline of your notes</span>
                   </div>
                 </div>
 
