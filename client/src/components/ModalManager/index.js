@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 // import iconClose from '../../assets/images/icon-close.png';
 import iconReleaseNotes from '../../assets/images/new-release-icons/icon-notes.png';
 import iconReleaseBinoculars from '../../assets/images/new-release-icons/icon-binoculars.png';
+import iconReleaseBird from '../../assets/images/new-release-icons/icon-bird.png';
+import iconReleaseCommPre from '../../assets/images/new-release-icons/icon-responsive-finance.png';
 
 class ModalManager extends React.Component {
   render() {
@@ -23,25 +25,47 @@ class ModalManager extends React.Component {
               </header>
 
               <main className="mx-8">
-                  <div className="flex mb-8">
-                    <div className="w-16 h-16 mb-4 flex-no-shrink bg-white border border-lightest rounded-full flex items-center justify-center">
-                      <img src={iconReleaseBinoculars} className="w-8" alt="Referral details" />
-                    </div>
-                    <div className="ml-4">
-                      <span className="text-base font-medium leading-normal block mb-0">Referral details</span>
-                      <span className="text-sm leading-normal text-grey-dark">View your OJO referral’s preferences, favorite homes, and more.</span>
-                    </div>
+                <div className="flex mb-8">
+                  <div className="w-16 h-16 mb-4 flex-no-shrink bg-white border border-lightest rounded-full flex items-center justify-center">
+                    <img src={iconReleaseBird} className="w-8" alt="Referral details" />
                   </div>
+                  <div className="ml-4">
+                    <span className="text-base font-medium leading-normal block mb-0">Release a Referral</span>
+                    <span className="text-sm leading-normal text-grey-dark">Referral not working out? Release it so that it is no longer assigned to you. Dead referrals will automatically be moved to released.</span>
+                  </div>
+                </div>
 
-                  <div className="flex mb-8">
-                    <div className="w-16 h-16 mb-8 flex-no-shrink bg-white border border-lightest rounded-full flex items-center justify-center">
-                      <img src={iconReleaseNotes} className="w-5" alt="Note history" />
-                    </div>
-                    <div className="ml-4">
-                      <span className="text-base font-medium leading-normal block mb-0">Note history</span>
-                      <span className="text-sm leading-normal text-grey-dark">Quickly recall details about your OJO referrals on the go.</span>
-                    </div>
+                <div className="flex mb-8">
+                  <div className="w-16 h-16 mb-4 flex-no-shrink bg-white border border-lightest rounded-full flex items-center justify-center">
+                    <img src={iconReleaseNotes} className="w-5" alt="Note history" />
                   </div>
+                  <div className="ml-4">
+                    <span className="text-base font-medium leading-normal block mb-0">Note history</span>
+                    <span className="text-sm leading-normal text-grey-dark">View a timeline of your notes.</span>
+                  </div>
+                </div>
+
+                <div className="flex mb-8">
+                  <div className="w-16 h-16 mb-8 flex-no-shrink bg-white border border-lightest rounded-full flex items-center justify-center">
+                    <img src={iconReleaseCommPre} className="w-8" alt="Note history" />
+                  </div>
+                  <div className="ml-4">
+                    <span className="text-base font-medium leading-normal block mb-0">Communication + Pre-Approval</span>
+                    <span className="text-sm leading-normal text-grey-dark">Is your referral responsive? Financially prepared? Track it here.</span>
+                  </div>
+                </div>
+
+                {/*
+                <div className="flex mb-8">
+                  <div className="w-16 h-16 mb-4 flex-no-shrink bg-white border border-lightest rounded-full flex items-center justify-center">
+                    <img src={iconReleaseBinoculars} className="w-8" alt="Referral details" />
+                  </div>
+                  <div className="ml-4">
+                    <span className="text-base font-medium leading-normal block mb-0">Referral details</span>
+                    <span className="text-sm leading-normal text-grey-dark">View your OJO referral’s preferences, favorite homes, and more.</span>
+                  </div>
+                </div>
+                */}
               </main>
 
               <section className="absolute pin-b actions">
