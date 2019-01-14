@@ -54,17 +54,13 @@ class Modal_Release_Referral extends React.Component {
           </div>
         </header>
 
-        <div className="container mx-auto px-6 my-24">
-          <div className="text-center mb-6">
-            <img src={imgReleaseReferral} className="h-32" alt="release" />
-          </div>
+        <div className="container mx-auto px-6 mt-24">
           <div className="max-w-sm mx-auto">
             <p className="leading-normal text-sm text-grey-dark mb-8">
-              Releasing will remove and reassign <strong className="font-medium text-black">Sofia Perez</strong> and cannot be undone.
+              Remove and reassign <strong className="font-medium text-black">Sofia Perez</strong>. This cannot be undone.
             </p>
             <h4 className="text-base mb-6">What was the issue?</h4>
-
-            <ul className="list-reset block pb-20">
+            <ul className="list-reset block pb-6">
               <li className="btn-stroked mr-1 mb-3 w-full">
                 <label className="w-full text-center">
                   <input
@@ -143,7 +139,9 @@ class Modal_Release_Referral extends React.Component {
                 </div>
               </li>
             </ul>
-
+            <div className="text-center mb-24">
+              <img src={imgReleaseReferral} className="h-32" alt="release" />
+            </div>
           </div>
         </div>
 
