@@ -309,7 +309,7 @@ a {
 }
 input:checked + .slider {
   background-color: #F0FDF6;
-  border-color: #F0FDF6;
+  border-color: rgba(0, 200, 83, .3);
 }
 input:focus + .slider {
 
