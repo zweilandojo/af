@@ -659,7 +659,7 @@ select {
   background: transparent;
   left: 0;
   right: 0;
-  padding: 0 0 1.5rem;
+  padding: 0 1.5rem 1.5rem;
   z-index: 2;
 }
 .actions .btn {

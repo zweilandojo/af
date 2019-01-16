@@ -57,7 +57,7 @@ class Modal_Release_Referral extends React.Component {
         <div className="container mx-auto px-6 mt-24">
           <div className="max-w-sm mx-auto">
             <p className="leading-normal text-sm text-grey-dark mb-8">
-              Remove and reassign <strong className="font-medium text-black">Sofia Perez</strong>. This cannot be undone.
+              <strong className="font-medium text-black">Sofia Perez</strong> not working out? Release them so they&#39;re no longer assigned to you. Dead is now Release.
             </p>
             <h4 className="text-base mb-6">What was the issue?</h4>
             <ul className="list-reset block pb-6">
@@ -139,14 +139,15 @@ class Modal_Release_Referral extends React.Component {
                 </div>
               </li>
             </ul>
+            {/*
             <div className="text-center mb-24">
               <img src={imgReleaseReferral} className="h-32" alt="release" />
-            </div>
+            </div> */}
           </div>
         </div>
 
         <section className="fixed pin-b actions">
-          <div className="container flex items-center mx-auto max-w-sm px-4">
+          <div className="container flex items-center mx-auto max-w-sm">
             <Link to="/home-approved-arthur" className="btn btn-red block text-center text-lg">Release</Link>
           </div>
         </section>

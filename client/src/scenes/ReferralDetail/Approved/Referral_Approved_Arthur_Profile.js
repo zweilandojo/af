@@ -84,7 +84,7 @@ class ReferralProfile extends React.Component {
           </div>
 
           <nav className="nav nav-tabs card-top">
-            <div className="max-w-lg mx-auto">
+            <div className="max-w-sm mx-auto">
               <div className="tab active">
                 <Link to="/referral-approved-arthur-profile">
                   Profile

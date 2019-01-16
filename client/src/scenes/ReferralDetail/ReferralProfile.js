@@ -94,7 +94,7 @@ const ReferralProfile = ({ data: { loading, error, customer } }) => {
           </div>
 
           <nav className="nav nav-tabs card-top">
-            <div className="max-w-md mx-auto">
+            <div className="max-w-sm mx-auto">
               <div className="tab active">
                 <Link to="/referral-needsReview-profile">
                   Profile
